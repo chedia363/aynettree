@@ -16,7 +16,8 @@ if(!$system['system_public']) {
 
 // check username
 if(is_empty($_GET['username']) || !valid_username($_GET['username'])) {
-	_error(404);
+	// _error(404);
+	modal("MESSAGE", __("Message"), __("Check your username"));
 }
 
 try {
@@ -53,7 +54,9 @@ try {
 	if($group['group_privacy'] == "secret") {
 		if($group['i_joined'] != "approved" && !$group['i_admin']) {
 			if($user->_data['user_group'] != '1') {
-				_error(404);
+				// _error(404);
+				modal("MESSAGE", __("Message"), __("you don't have permisson to this!"));
+
 			}
 		}
 	}
@@ -140,7 +143,8 @@ try {
 			/* get album */
 			$album = $user->get_album($_GET['id']);
 			if(!$album || ($album['group_id'] != $group['group_id']) ) {
-				_error(404);
+				// _error(404);
+				modal("MESSAGE", __("Message"), __("Album not found!"));
 			}
 			/* assign variables */
 			$smarty->assign('album', $album);
@@ -161,7 +165,8 @@ try {
 		case 'invites':
 			/* check if the viewer is a group member */
 			if($group['i_joined'] != "approved") {
-				_error(404);
+				// _error(404);
+				modal("MESSAGE", __("Message"), __("you are not member in this group"));				
 			}
 			/* get invites */
 			$group['invites'] = $user->get_group_invites($group['group_id']);
@@ -170,7 +175,8 @@ try {
 		case 'settings':
 			/* check if the viewer is the admin */
 			if(!$group['i_admin']) {
-				_error(404);
+				// _error(404);
+				modal("MESSAGE", __("Message"), __("you are not the admin"));
 			}
 			/* get sub_view content */
 			$sub_view = $_GET['id'];
@@ -209,7 +215,8 @@ try {
 				case 'delete':
 					/* check if the viewer not the super admin */
 					if($user->_data['user_id'] != $group['group_admin']) {
-						_error(404);
+						// _error(404);
+						modal("MESSAGE", __("Message"), __("you are not the super admin"));
 					}
 					break;
 				

@@ -39,7 +39,9 @@ try {
 	if($event['event_privacy'] == "secret") {
 		if(!$event['i_joined'] && !$event['i_admin']) {
 			if($user->_data['user_group'] != '1') {
-				_error(404);
+				// _error(404);
+				modal("MESSAGE", __("Message"), __("you don't have permisson to this!"));
+
 			}
 		}
 	}
@@ -90,7 +92,8 @@ try {
 			/* get album */
 			$album = $user->get_album($_GET['id']);
 			if(!$album || ($album['event_id'] != $event['event_id']) ) {
-				_error(404);
+				// _error(404);
+				modal("MESSAGE", __("Message"), __("Album not found!"));
 			}
 			/* assign variables */
 			$smarty->assign('album', $album);
@@ -128,7 +131,8 @@ try {
 		case 'invites':
 			/* check if the viewer is a event member */
 			if(!$event['i_joined']) {
-				_error(404);
+				// _error(404);
+				modal("MESSAGE", __("sorry"), __("you must be joined first"));
 			}
 			/* get invites */
 			$event['members'] = $user->get_event_invites($event['event_id']);
@@ -138,7 +142,8 @@ try {
 		case 'settings':
 			/* check if the viewer is the admin */
 			if($user->_data['user_id'] != $event['event_admin']) {
-				_error(404);
+				// _error(404);
+				modal("MESSAGE", __("sorry"), __("you are not the admin"));
 			}
 
 			/* get sub_view content */
@@ -169,7 +174,9 @@ try {
 		case 'about':
 			/* check if the viewer is a event member */
 			if($event['i_joined']) {
-				_error(404);
+				// _error(404);
+				modal("MESSAGE", __("Message"), __("you are not member in this event"));
+
 			}
 			break;
 		

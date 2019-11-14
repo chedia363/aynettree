@@ -16,7 +16,8 @@ if(!$system['system_public']) {
 
 // forums enabled
 if(!$system['forums_enabled']) {
-	_error(404);
+	// _error(404);
+	modal("MESSAGE", __("Message"), __("Forum must be enabled"));
 }
 
 try {
@@ -59,7 +60,8 @@ try {
 			// get forum
 			$forum = $user->get_forum($_GET['forum_id']);
 			if(!$forum)  {
-				_error(404);
+				// _error(404);
+				modal("MESSAGE", __("sorry"), __("This Forum doesn't exist"));
 			}
 			/* get threads */
 			if($forum['forum_threads'] > 0) {
@@ -99,7 +101,8 @@ try {
 			// get forum
 			$forum = $user->get_forum($_GET['forum_id'], false);
 			if(!$forum)  {
-				_error(404);
+				// _error(404);
+				modal("MESSAGE", __("sorry"), __("This Forum doesn't exist"));
 			}
 			/* assign variables */
 			$smarty->assign('forum', $forum);

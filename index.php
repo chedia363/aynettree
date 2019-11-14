@@ -60,7 +60,8 @@ try {
 			case 'popular':
 				// check if popular posts enabled
 				if(!$system['popular_posts_enabled']) {
-				    _error(404);
+					// _error(404);
+					modal("MESSAGE", __("Message"), __("Popular posts must be enabled"));
 				}
 
 				// page header
@@ -75,7 +76,8 @@ try {
 			case 'discover':
 				// check if discover posts enabled
 				if(!$system['discover_posts_enabled']) {
-				    _error(404);
+					// _error(404);
+					modal("MESSAGE", __("Message"), __("Discover posts must be enabled"));
 				}
 
 				// page header
@@ -90,7 +92,8 @@ try {
 			case 'articles':
 				// check if blogs enabled
 				if(!$system['blogs_enabled']) {
-				    _error(404);
+					// _error(404);
+					modal("MESSAGE", __("Message"), __("blog must be enabled"));
 				}
 
 				// page header
@@ -105,7 +108,8 @@ try {
 			case 'products':
 				// check if market enabled
 				if(!$system['market_enabled']) {
-				    _error(404);
+					// _error(404);
+					modal("MESSAGE", __("Message"), __("Market must be enabled"));
 				}
 				// page header
 				page_header(__("My Products"));
