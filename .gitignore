@@ -1,5 +1,7 @@
 content/themes/default/templates_compiled/
 content/uploads/
-includes/
+includes/ajax/
+includes/assets/
+includes/libs/
 content/themes/default.zip/
 content/themes/default/images/
