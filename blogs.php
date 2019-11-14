@@ -16,7 +16,8 @@ if(!$system['system_public']) {
 
 // check if blogs enabled
 if(!$system['blogs_enabled']) {
-    _error(404);
+	// _error(404);
+	modal("MESSAGE", __("Message"), __("Blog must be enabled"));
 }
 
 try {
@@ -66,7 +67,8 @@ try {
 			// get article
 			$article = $user->get_post($_GET['post_id']);
 			if(!$article)  {
-				_error(404);
+				// _error(404);
+				modal("MESSAGE", __("Message"), __("Article doesn't exist"));
 			}
 			/* assign variables */
 			$smarty->assign('article', $article);
@@ -101,7 +103,8 @@ try {
 			// get article
 			$article = $user->get_post($_GET['post_id']);
 			if(!$article)  {
-				_error(404);
+				// _error(404);
+				modal("MESSAGE", __("Message"), __("Article doesn't exist"));
 			}
 			/* assign variables */
 			$smarty->assign('article', $article);
@@ -114,7 +117,8 @@ try {
 
 			// check if blogs enabled
 			if(!$user->_data['can_write_articles']) {
-			    _error(404);
+				// _error(404);
+				modal("MESSAGE", __("Message"), __("Blog must be enabled"));
 			}
 
 			// page header
