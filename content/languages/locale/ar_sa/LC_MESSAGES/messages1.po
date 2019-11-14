@@ -1,0 +1,7502 @@
+
+msgid "Error"
+msgstr "خطأ"
+
+msgid "System Message"
+msgstr "رسالة النظام"
+
+msgid "You don't have the right permission to access this"
+msgstr "ليس لديك صلاحية الوصول إلى هذه الصفحة"
+
+msgid "Admin Panel"
+msgstr "لوحة تحكم مسؤول النظام"
+
+msgid "Admin"
+msgstr "مسؤول النظام"
+
+msgid "System Settings"
+msgstr "إعدادات النظام"
+
+msgid "Posts Settings"
+msgstr "إعدادات المشاركات"
+
+msgid "Registration Settings"
+msgstr "إعدادات التسجيل"
+
+msgid "Emails Settings"
+msgstr "إعدادات البريد الإلكتروني"
+
+msgid "SMS Settings"
+msgstr "إعدادات الرسائل القصيرة"
+
+msgid "Chat Settings"
+msgstr "إعدادات المحادثة"
+
+msgid "Uploads Settings"
+msgstr "إعدادات التحميل "
+
+msgid "General Settings"
+msgstr "الإعدادات العامة"
+
+msgid "Security Settings"
+msgstr "إعدادات الأمان"
+
+
+msgid "Payments Settings"
+msgstr "إعدادات الدفع"
+
+msgid "Limits Settings"
+msgstr "إعدادات القيود" 
+
+msgid "Analytics Settings"
+msgstr "إعدادات التحليلات"
+
+msgid "Themes"
+msgstr "المظهر"
+
+msgid "Add New"
+msgstr "إضافة جديدة"
+
+msgid "Design"
+msgstr "التصميم"
+
+msgid "Languages"
+msgstr "اللغات"
+
+msgid "Currencies"
+msgstr "العملات"
+
+msgid "Users"
+msgstr "المستخدمون"
+
+msgid "Admins"
+msgstr "مسؤولو النظام"
+
+msgid "Moderators"
+msgstr "المشرفون"
+
+msgid "Online"
+msgstr "متصل"
+
+msgid "Banned"
+msgstr "محظور"
+
+msgid "Categories"
+msgstr "التصنيف"
+
+msgid "Add New Category"
+msgstr "إضافة تصنيف جديد"
+
+msgid "Panels"
+msgstr "المجالس"
+
+msgid "Events"
+msgstr "المناسبات"
+
+msgid "Blogs"
+msgstr "المدونات"
+
+msgid "Market"
+msgstr "المتجر"
+
+msgid "Forums"
+msgstr "المنتديات"
+
+msgid "Settings"
+msgstr "الإعدادات"
+
+msgid "Add New Forum"
+msgstr "إضافة منتدى جديد"
+
+msgid "Movies"
+msgstr "الأفلام"
+
+msgid "Add New Movie"
+msgstr "إضافة فيلم جديد"
+
+msgid "Genres"
+msgstr "أنواع الأفلام"
+
+msgid "Add New Genre"
+msgstr "إضافة نوع جديد"
+
+msgid "Games"
+msgstr "الألعاب"
+
+msgid "Ads"
+msgstr "إعلانات"
+
+msgid "System Ads"
+msgstr "إعلانات النظام"
+
+msgid "Users Ads"
+msgstr "إعلانات المستخدمين"
+
+msgid "Pro Packages"
+msgstr "الباقات"
+
+msgid "Subscribers"
+msgstr "المشتركون"
+
+msgid "Earnings"
+msgstr "أرباح"
+
+msgid "Bank Receipts"
+msgstr "إيصالات البنك"
+
+msgid "Affiliates"
+msgstr "نظام التسويق"
+
+msgid "Payment Requests"
+msgstr "طلبات الدفع"
+
+msgid "Points System"
+msgstr "نظام النقاط"
+
+msgid "Reports"
+msgstr "التقارير"
+
+msgid "Forum Thread"
+msgstr "موضوع"
+
+msgid "Forum Reply"
+msgstr "رد"
+
+msgid "Banned IPs"
+msgstr "المحظور IP"
+
+msgid "Verification"
+msgstr "التوثيق"
+
+msgid "Requests"
+msgstr "الطلبات"
+
+msgid "Verified Users"
+msgstr "توثيق المستخدمين"
+
+msgid "Verified Pages"
+msgstr "توثيق الصفحات"
+
+msgid "Tools"
+msgstr "الأدوات"
+
+msgid "Fake Users Generator"
+msgstr "توليد أعضاء وهميين "
+
+msgid "Auto Connect"
+msgstr "اتصال تلقائي"
+
+msgid "Garbage Collector"
+msgstr "سلة المهملات"
+
+msgid "Backup Database & Files"
+msgstr "النسخ الاحتياطي للبيانات والملفات"
+
+msgid "Custom Fields"
+msgstr "تخصيص البيانات المطلوبة"
+
+msgid "Static Pages"
+msgstr "الصفحات‪ الثابتة"‬‬‬‬‬‬‬‬‬‬‬
+
+msgid "Widgets"
+msgstr "القطع"  
+
+msgid "Emojis"
+msgstr "الرموز التعبيرية"
+
+msgid "Edit Emoji"
+msgstr "تعديل رمز تعبيري"
+
+msgid "Add New Emoji"
+msgstr "إضافة رمز تعبيري"
+
+msgid "Stickers"
+msgstr "الملصقات"
+
+msgid "Edit Sticker"
+msgstr "تعديل الملصق"
+
+msgid "Add New Sticker"
+msgstr "إضافة ملصق جديد"
+
+msgid "Gifts"
+msgstr "الهدايا"
+
+msgid "Edit Gift"
+msgstr "تحرير الهدية"
+
+msgid "Add New Gift"
+msgstr "أضف هدية جديدة"
+
+msgid "Announcements"
+msgstr "إعلانات" 
+
+msgid "Mass Notifications"
+msgstr "التنبيهات"
+
+msgid "Newsletter"
+msgstr " المراسلات البريدية للنشرات الإخبارية"
+
+msgid "Changelog"
+msgstr "التعديلات"
+
+msgid "Ads Manager"
+msgstr "مسؤول الإعلانات" 
+
+msgid "New Campaign"
+msgstr "إنشاء حملة" 
+
+msgid "Edit Campaign"
+msgstr "تحرير الحملة"
+
+msgid "Wallet"
+msgstr "المحفظة"
+
+msgid "Edit Article"
+msgstr "تحرير المقال"
+
+msgid "Write New Article"
+msgstr "كتابة مقال جديد" 
+
+msgid "Your IP has been blocked"
+msgstr "الخاص بك IP تم حظر " 
+
+msgid "Your account has been blocked"
+msgstr "تم حظر حسابك"
+
+msgid "Contact Us"
+msgstr "اتصل بنا"
+
+msgid "Explorer"
+msgstr "المستكشف"
+
+msgid "Posts Directory"
+msgstr "دليل المشاركات"
+
+msgid "Users Directory"
+msgstr "دليل الأعضاء"
+
+msgid "Pages Directory"
+msgstr "دليل الصفحات"
+
+msgid "Events Directory"
+msgstr "دليل المناسبات "
+
+msgid "Discover Events"
+msgstr "اكتشف المناسبات"
+
+msgid "Going Events"
+msgstr "مناسبات قائمة" 
+
+msgid "Interested Events"
+msgstr "مناسبات مهتم بها"
+
+msgid "Invited Events"
+msgstr "مناسبات مدعو إليها"
+
+msgid "Your Events"
+msgstr "مناسباتك"
+
+msgid "Write New Thread"
+msgstr "كتابة تسلسل جديد"
+
+msgid "Edit Thread"
+msgstr "تعديل التسلسل "
+
+msgid "Post Discussion "
+msgstr "إضافة نقاش"
+
+msgid "Edit Discussion"
+msgstr "تحرير المناقشة"
+
+msgid "My Threads"
+msgstr "مواضيعي المتسلسلة"
+
+msgid "My Discussion"
+msgstr "مناقشاتي"
+
+msgid "Search"
+msgstr "البحث"
+
+msgid "Search Results"
+msgstr "نتائج البحث"
+
+msgid "Discover Games"
+msgstr "اكتشف الألعاب"
+
+msgid "Your Games"
+msgstr "ألعابك"
+
+msgid "N/A"
+msgstr "N/A"
+
+msgid "Discover Panels"
+msgstr "اكتشف مجالس"
+
+msgid "Joined Panels"
+msgstr "مجالس أتابعها"
+
+msgid "Your Panels"
+msgstr "مجالس خاصة بك"
+
+msgid "Welcome"
+msgstr "مرحباً بحضراتكم"
+
+msgid "Popular Posts"
+msgstr "مشاركات مشهورة"
+
+msgid "Discover Posts"
+msgstr "اكتشاف المشاركات"
+
+msgid "My Articles"
+msgstr "مقالاتي"
+
+msgid "My Products"
+msgstr "منتجاتي"
+
+msgid "Saved Posts"
+msgstr "مشاركات محفوظة"
+
+msgid "Memories"
+msgstr "ذكريات"
+
+msgid "Boosted Posts"
+msgstr "تعزيز الوظائف"  
+
+msgid "Boosted Pages"
+msgstr "الصفحات المدعومة"
+
+msgid "Messages"
+msgstr "الرسائل"
+
+msgid "Notifications"
+msgstr "الإشعارات"
+
+msgid "Packages"
+msgstr "الباقات"
+
+msgid "Discover Pages"
+msgstr "اكتشاف صفحات"
+
+msgid "Liked Pages"
+msgstr "صفحات أعجبتني بها"
+
+msgid "Your Pages"
+msgstr "صفحاتك"
+
+msgid "Discover member"
+msgstr "اكتشاف أعضاء"
+
+msgid "Find member"
+msgstr "البحث عن أعضاء"
+
+msgid "Friend Requests"
+msgstr "طلبات الصداقة"
+
+msgid "Friend Requests Sent"
+msgstr "طلبات الصداقة المرسلة"
+
+msgid "Account Settings"
+msgstr "إعدادات الحساب"
+
+msgid "Edit Profile"
+msgstr "تحرير الملف الشخصي"
+
+msgid "Change Password"
+msgstr "تغيير كلمة المرور"
+
+msgid "Manage Sessions"
+msgstr "إدارة الجلسات"
+
+msgid "Two steps Authentication " 
+msgstr "توثيق بخطوتين"
+
+msgid "Privacy"
+msgstr "الخصوصية"
+
+msgid "Linked Accounts"
+msgstr "الحسابات المرتبطة"
+
+msgid "Membership"
+msgstr "العضوية"
+
+msgid "Affiliates Payments"
+msgstr "الشركات التابعة المدفوعات"  الدفع 
+
+msgid "points"
+msgstr "النقاط"
+
+msgid "Points Payments"
+msgstr "دفعات النقاط" نقاط مجمعة
+
+msgid "Bank Transfers"
+msgstr "التحويلات المصرفية"
+
+msgid "Blocking"
+msgstr "حظر"
+
+msgid "Download Your Information"
+msgstr "قم بتنزيل معلوماتك"
+
+msgid "Delete Account"
+msgstr "حذف الحساب"
+
+msgid "Login"
+msgstr "دخول"
+
+msgid "Sign Up"
+msgstr "تسجيل"
+
+msgid "Forgot your password?"
+msgstr "هل نسيت كلمة المرور؟"
+
+msgid "Getting Started"
+msgstr "بدء العمل"
+
+msgid "Add New Ads"
+msgstr "إضافة إعلان"
+
+msgid "Go Back"
+msgstr "عودة "
+
+msgid "Turn off the ad blocker or add this web page's URL as an exception so you use ads system without any problems"
+msgstr "أوقف مانع الإعلانات أو أضف عنوان URL لصفحة الويب هذه كاستثناء حتى تستخدم نظام الإعلانات دون أي مشاكل"
+
+msgid "After you turn off the ad blocker, you'll need to refresh your screen"
+msgstr "بعد إيقاف مانع الإعلانات ، ستحتاج إلى تحديث شاشتك"
+
+msgid "Make sure you have configured"
+msgstr "تأكد من أنك قد قمت بتهيئتها"
+
+msgid "Allow users to create ads"
+msgstr "السماح للأعضاء بإنشاء الإعلانات"
+
+msgid "Cost by View"
+msgstr "التكلفة حسب المشاهدة"
+
+msgid "Cost by Click"
+msgstr "التكلفة عن طريق النقر"
+
+msgid "Save Changes"
+msgstr "حفظ التعديلات"
+
+msgid "ID"
+msgstr "المعرف"
+
+msgid "Title"
+msgstr "العنوان"
+
+msgid "Place"
+msgstr "المكان"
+
+msgid "Date"
+msgstr "التاريخ"
+
+msgid "Actions"
+msgstr "الإجراء"
+
+msgid "Home  Page"
+msgstr "الصفحة الرئيسية"
+
+msgid "Search  Page"
+msgstr "صفحة البحث"
+
+msgid "Discover People Page"
+msgstr "صفحة اكتشاف الأعضاء"
+
+msgid "Notifications  Page"
+msgstr "صفحة الإخطارات"
+
+msgid "Post Page"
+msgstr "صفحة النشر"
+
+msgid "Photo  Page"
+msgstr "صفحة صورة"
+
+msgid "Explorer  Page"
+msgstr "صفحة المستكشف"
+
+msgid "Market  Page"
+msgstr "صفحة السوق"
+
+msgid "Movies  Page"
+msgstr "صفحة الأفلام"
+
+msgid "Posts Feed"
+msgstr "المشاركات"
+
+msgid "Article Page"
+msgstr "صفحة المقالات"
+
+msgid "Header"
+msgstr "رأس الصفحة"
+
+msgid "Footer"
+msgstr "ذيل الصفحة"
+
+msgid "HTML"
+msgstr "HTML"
+
+msgid "By"
+msgstr "بواسطة"
+
+msgid "Budget"
+msgstr "ميزانية"
+
+msgid "Spend"
+msgstr "أنفق "
+
+msgid "Clicks/Views"
+msgstr "نقرات / المشاهدات"
+
+msgid "Status"
+msgstr "الحالة"
+
+msgid "Clicks"
+msgstr "النقرات"
+
+msgid "Views"
+msgstr "ظهور"
+
+msgid "Active"
+msgstr "فعّال"
+
+msgid "Not Active"
+msgstr "غير فعّال"
+
+msgid "Affiliates Enabled"
+msgstr "تمكين نظام الإحالات"
+
+msgid "Enable or Disable the affiliates system"
+msgstr "تمكين أو تعطيل نظام الإحالات "
+
+msgid "User Earn Money When"
+msgstr "العضو يكسب المال عندما"  
+
+msgid "New User Registered"
+msgstr "تسجيل مستخدم جديد"
+
+msgid "New User Registered & Bought Pro Package"
+msgstr "تسجيل مستخدم جديد & اشترِ باقة احترافية حزمة برو"
+
+msgid "If registration type is 'Subscriptions Only' User will earn money from new registration only"
+msgstr "إذا كان نوع تسجيل المستخدم: مجرد \" اشتراك فقط \" سوف تكسب المال من التسجيل فقط"
+
+msgid "Payment Method"
+msgstr "طريقة الدفع"
+
+msgid "Paypal"
+msgstr "باي بال"
+
+msgid "Skrill"
+msgstr "Skrill"
+
+msgid "Both"
+msgstr "كلاهما"
+
+msgid "Users can send withdrawal requests via any of these methods"
+msgstr "يمكن للمستخدم إرسال طلب السحب عبر أي من هذه الطرق"
+
+msgid "Minimum Withdrawal Request"
+msgstr "الحد الأدنى لطلب السحب"
+
+msgid "The minimum amount of money so user can send a withdrawal request"
+msgstr "الحد الأدنى من المال حتى يتمكن للمستخدم إرسال طلب السحب"
+
+msgid "Payment Type"
+msgstr "نوع الدفع"
+
+msgid "Fixed Price/Referred"
+msgstr "سعر ثابت / المشار إليه"
+
+msgid "Percentage"
+msgstr "النسبة المئوية"
+
+msgid "Percentage will work only with pro packages"
+msgstr "النسبة المئوية ستعمل فقط مع الباقة الاحترافية"
+
+msgid "Price/Referred"
+msgstr "السعر / المحالين"
+
+msgid "The price for each new referred user"
+msgstr "هذا السعر لكل مستخدم جديد محال"
+
+msgid "The percentage from package price for each new referred user registered and bought pro package"
+msgstr "النسبة المئوية من سعر الباقة لكل مستخدم جديد تمت إحالته واشترى الباقة الاحترافية"
+
+msgid "You will need to make the payments from your Paypal/Skrill account"
+msgstr "Paypal/Skrill سوف تحتاج إلى إجراء الدفعات من حسابك في "
+
+msgid "After making the payment you can mark the payment request as paid"
+msgstr "بعد إجراء الدفع يمكنك وضع علامة على طلب الدفع كمدفوعات "
+
+msgid "User"
+msgstr "مستخدم"
+
+msgid "Email"
+msgstr "البريد الإلكتروني"
+
+msgid "Amount"
+msgstr "كمية"
+
+msgid "Method"
+msgstr "طريقة"
+
+msgid "Referrals"
+msgstr "الإحالات"
+
+msgid "Show"
+msgstr "عرض"
+
+msgid "Add New Announcement"
+msgstr "إضافة إعلان جديد"
+
+msgid "Name"
+msgstr "الاسم"
+
+msgid "Type"
+msgstr "النوع"
+
+msgid "Start Date"
+msgstr "تاريخ البدء"
+
+msgid "End Date"
+msgstr "تاريخ الانتهاء"
+
+msgid "Announcement name will appear only in the admin panel (mandatory)"
+msgstr "سيظهر اسم الإعلان فقط في لوحة الإدارة (إلزامي)"
+
+msgid "Announcement title will appear on the announcement block"
+msgstr " سيظهر عنوان الإعلان في مانع الإعلانات "
+
+msgid "Success"
+msgstr "بنجاح"
+
+msgid "Warning"
+msgstr "تحذير"
+
+msgid "Danger"
+msgstr "خطر"
+
+msgid "Info"
+msgstr "معلومات"
+
+msgid "Your current server datetime is"
+msgstr "التوقيت الحالي للسيرفر هو"
+
+msgid "Announcement name will appear only in the admin panel"
+msgstr "سيظهر اسم الإعلان فقط في لوحة التحكم "
+
+msgid "Handle"
+msgstr "مقبض"
+
+msgid "Time"
+msgstr "الوقت"
+
+msgid "Add Wallet Balance"
+msgstr "إضافة رصيد للمحفظة"
+
+msgid "Package"
+msgstr "باقة"
+
+msgid "Add New IP"
+msgstr "اضافة IP جديد"
+
+msgid "IP Address"
+msgstr "IP عنوان"
+
+msgid "Add New Currency"
+msgstr "إضافة عملة جديدة"
+
+msgid "Code"
+msgstr "شفرة"
+
+msgid "Symbol"
+msgstr "رمز"
+
+msgid "Default"
+msgstr "الافتراضي"
+
+msgid "Yes"
+msgstr "نعم"
+
+msgid "No"
+msgstr "لا"
+
+msgid "Currency Name"
+msgstr "اسم العملة"
+
+msgid "Currency name, For Example: U.S. Dollar, Euro or Pound Sterling"
+msgstr "اسم العملة ، على سبيل المثال: الدولار الأمريكي أو اليورو أو الجنيه الإسترليني"
+
+msgid "Currency Code"
+msgstr "رمز العملة"
+
+msgid "Currency code, For Example: USD, EUR or GBP"
+msgstr "  رمز العملة ، على سبيل المثال USD أو EUR , GBP "
+
+msgid "Currency Symbol"
+msgstr "رمز العملة"
+
+msgid "Currency symbol, For Example: $, € or £"
+msgstr "رمز العملة ، على سبيل المثال$ ,€, £ "
+
+msgid "Add New Field"
+msgstr "إضافة حقل جديد"
+
+msgid "Label"
+msgstr "ضع الكلمة المناسبة"
+
+msgid "For"
+msgstr "لــــ"
+
+msgid "Order"
+msgstr "طلب"
+
+msgid "Mandatory"
+msgstr "إلزامي"
+
+msgid "Page"
+msgstr "صفحة"
+
+msgid "panel"
+msgstr "مجلس"
+
+msgid "Event"
+msgstr "مناسبة"
+
+msgid "Textbox"
+msgstr "مربع الكتابة"
+
+msgid "Text area"
+msgstr "ناحية النص"
+
+msgid "Select Box"
+msgstr "حدد مربع"
+
+msgid "Basic Info"
+msgstr "معلومات أساسية"
+
+msgid "Work Info"
+msgstr "معلومات العمل"
+
+msgid "Location Info"
+msgstr "معلومات السكن"
+
+msgid "Education Info"
+msgstr "معلومات التعليم"
+
+msgid "Other Info"
+msgstr "معلومات أخرى"
+
+msgid "Field For"
+msgstr "حقل"
+
+msgid "User Profile"
+msgstr "ملف العضو "
+
+msgid "Where you want to use this field for user profile, page, panel or event"
+msgstr "حيث تريد استخدام هذا الحقل لملف تعريف المستخدم أو الصفحة أو  المجالس أو المناسبة"
+
+msgid "Select Options"
+msgstr "أشر على الخيارات"
+
+msgid "One option per line"
+msgstr "خيار واحد في كل سطر"
+
+msgid "Description"
+msgstr "التفاصيل"
+
+msgid "The description will show under the field"
+msgstr "سيظهر الوصف أسفل الحقل"
+
+msgid "Field place in settings page"
+msgstr "مكان الحقل في صفحة الإعدادات"
+
+msgid "Value Length"
+msgstr "طول القيمة"
+
+msgid "Default value is 32, and max value is 1000"
+msgstr "القيمة الافتراضية هي 32، والقيمة القصوى هي 1000"
+
+msgid "The order of this field, custom fields will be displayed in ascending order"
+msgstr "ترتيب هذا الحقل ، سيتم عرض الحقول المخصصة بترتيب تصاعدي"
+
+msgid "User must fill the field"
+msgstr "يجب على المستخدم ملء الحقل"
+
+msgid "Show in Registration"
+msgstr "تظهر في التسجيل"
+
+msgid "Show the field in the user registration, create page, create group or create event"
+msgstr "إظهار الحقل في تسجيل المستخدم أو إنشاء صفحة أو إنشاء مجلس أو إنشاء حدث"
+
+msgid "Show in Profile Page"
+msgstr "عرض في صفحة الملف الشخصي"
+
+msgid "Show the field in the user's profile page, fan page, group or event"
+msgstr "إظهار الحقل في صفحة الملف الشخصي للمستخدم أو صفحة المعجبين أو المجلس أو المناسبة"
+
+msgid "The label of your custom field, also will be used as a placeholder"
+msgstr "سيتم استخدام تصنيف الحقل المخصص أيضًا كعنصر نائب" 
+
+msgid "The type of your custom field"
+msgstr "نوع تخصيص الحقل الخاص بك" 
+
+msgid "Dashboard"
+msgstr "لوحة التحكم"
+
+msgid "Manage Users"
+msgstr "إدارة المستخدمين"
+
+msgid "Males"
+msgstr "ذكور"
+
+msgid "Females"
+msgstr "إناث"
+
+msgid "Others"
+msgstr "أخرى"
+
+msgid "Manage Banned"
+msgstr "إدارة المحظورين"
+
+msgid "Not Activated"
+msgstr "غير مفعل"
+
+msgid "Manage Online"
+msgstr "إدارة المتصلين"
+
+msgid "Posts"
+msgstr "المشاركات"
+
+msgid "Manage Reports"
+msgstr "إدارة التقارير"
+
+msgid " discussion"
+msgstr "مناقشات"  
+
+msgid "Manage Pages"
+msgstr "إدارة الصفحات"
+
+msgid "Manage Panels"
+msgstr "إدارة المجالس"
+
+msgid "Manage Events"
+msgstr "إدارة المناسبات"
+
+msgid "Night Mode is Default"
+msgstr "الوضع الليلي هو الافتراضي"
+
+msgid "Make the night mode is the default mode of your website"
+msgstr "اجعل الوضع الليلي هو الوضع الافتراضي لصفحتك"
+
+msgid "Users Can Change Mode"
+msgstr "يمكن للأعضاء تغيير الوضع"
+
+msgid "Allow users to select between day and night mode"
+msgstr "السماح للمستخدمين بالاختيار بين وضع النهار والليل"
+
+msgid "Website Logo"
+msgstr "صورة شعار الموقع"
+
+msgid "Default Home Wallpaper"
+msgstr "الخلفيات الافتراضية للرئيسية"
+
+msgid "Use the default"
+msgstr "استخدام الافتراضي"
+
+msgid "Custom Home Wallpaper"
+msgstr "خصص خلفية الصفحة الرئيسية"
+
+msgid "Default Favicon"
+msgstr "رمز المفضلة الافتراضي"
+
+msgid "preview"
+msgstr "معاينة"
+
+msgid "Custom Favicon"
+msgstr "رمز المفضلة المخصص"
+
+msgid "Default OG-Image"
+msgstr "صورة النشر الافتراضية"
+
+msgid "Custom OG-Image"
+msgstr "صورة النشر المخصصة"
+
+msgid "The perfect size for your og-image should be (width: 590px & height: 300px)"
+msgstr "الحجم المثالي للصورة الخاصة بك og (العرض : 590px الارتفاع: 300px)"
+
+msgid "Enable Customization"
+msgstr "تمكين التخصيص"
+
+msgid "Turn the customization On and Off"
+msgstr "تشغيل وإيقاف التخصيص"
+
+msgid "Background Color"
+msgstr "لون الخلفية"
+
+msgid "Link Color"
+msgstr "لون الرابط"
+
+msgid "Header Color"
+msgstr "لون رأس الصفحة"
+
+msgid "Header Search Background"
+msgstr "خلفية بحث رأس الصفحة"
+
+msgid "Header Search Font"
+msgstr "خط بحث رأس الصفحة"
+
+msgid "Button Primary"
+msgstr "الزر الأساسي"
+
+msgid "Custom CSS"
+msgstr "CSS تخصص نمط"
+
+msgid "Header Custom CSS"
+msgstr "CSS رأس الصفحة مخصص"
+
+msgid "Header Custom JavaScript"
+msgstr "JavaScript رأس الصفحة مخصص"
+
+msgid "The code will be added in head tag"
+msgstr "سيتم إضافة الرمز في التاج"
+
+msgid "Footer Custom JavaScript"
+msgstr "JavaScript التذييل مخصص"
+
+msgid "The code will be added at the end of body tag"
+msgstr "ستتم إضافة الرمز في نهاية علامة النص الأساسي"
+
+msgid "Preview"
+msgstr "معاينة"
+
+msgid "Pattern"
+msgstr "النمط"
+
+msgid "Class"
+msgstr "التخصص"
+
+msgid "aaynet uses Twemoji Awesome and you can check"
+msgstr "ويم التحقق من Twemoji Awesome آي نت يستخدم" 
+
+msgid "Emoji Cheat Sheet"
+msgstr "دليل الرموز التعبيرية"
+
+msgid "for the Emojis, You must replace underscores with hyphens, For example: :hatching_chick: for pattern and hatching-chickas for class"
+msgstr "chickas للنمط والفقس hatching_chick: بالنسبة إلى الرموز التعبيرية ، يجب استبدال الشُرط السفلية مع الواصلات ، على سبيل المثال:"
+
+msgid "View Event"
+msgstr "عرض المناسبات"
+
+msgid "Delete All Posts"
+msgstr "حذف جميع المشاركات"
+
+msgid "Interested"
+msgstr "مهتم بها" 
+
+msgid "Going"
+msgstr "قائمة"
+
+msgid "Invited"
+msgstr "مدعو إليها"
+
+msgid "Public"
+msgstr "عام"
+
+msgid "Closed"
+msgstr "مغلقة"
+
+msgid "Secret"
+msgstr "سرية"
+
+msgid "Event ID"
+msgstr "معرف المناسبة"
+
+msgid "Event Settings"
+msgstr "إعدادات المناسبة"
+
+msgid "Name Your Event"
+msgstr "اسم المناسبة"
+
+msgid "Location"
+msgstr "الموقع"
+
+msgid "Select Privacy"
+msgstr "اختيار الخصوصية"
+
+msgid "Category"
+msgstr "التصنيف"
+
+msgid "About"
+msgstr "حول"
+
+msgid "Turn the forums On and Off"
+msgstr "تفعيل وإلغاء تفعيل المنتديات"
+
+msgid "Online Users"
+msgstr "أعضاء متصلون"
+
+msgid "Show online users"
+msgstr "عرض الأعضاء المتصلين"
+
+msgid "Statistics"
+msgstr "الإحصائيات"
+
+msgid "Show forums statistics"
+msgstr "عرض إحصائيات المنتديات"
+
+msgid "Threads"
+msgstr "المواضيع المتسلسلة"
+
+msgid "Section"
+msgstr "القسم"
+
+msgid "Set as a Section"
+msgstr "تعيين كقسم"
+
+msgid "Add New game"
+msgstr "إضافة لعبة جديدة"
+
+msgid "Game"
+msgstr "لعبة"
+
+msgid "Game Source"
+msgstr "مصدر اللعبة"
+
+msgid "The source link of your embedded game"
+msgstr "رابط مصدر اللعبة الخاصة بك"
+
+msgid "Thumbnail"
+msgstr "صورة مصغّرة"
+
+msgid "Image"
+msgstr "صورة"
+
+msgid "The perfect size for your gift image should be (wdith: 250px & height: 250px)"
+msgstr "(يجب أن يكون الحجم المثالي لصورة الهدية (العرض: 250 بكسل والطول: 250 بكسل"
+
+msgid "View Group"
+msgstr "عرض المجموعة"
+
+msgid "Members"
+msgstr "الأعضاء"
+
+msgid "Group ID" 
+msgstr "معرف المجموعة"
+
+msgid "Group Settings"
+msgstr "إعدادات المجموعة"
+
+msgid "Name Your Group"
+msgstr "اسم المجموعة"
+
+msgid "Web Address"
+msgstr "الرابط"
+
+msgid "New Invitation Code"
+msgstr "رمز دعوة جديد"
+
+msgid "Your invitation code is"
+msgstr "رمز الدعوة الخاص بك هو"
+
+msgid "Send Invitation Code"
+msgstr "إرسال رمز الدعوة"
+
+msgid "To which email address you want to send this invitation code"
+msgstr "إلى أي بريد إلكتروني تريد إرسال رمز الدعوة إليه"
+
+msgid "Cancel"
+msgstr "إلغاء"
+
+msgid "Send"
+msgstr "إرسال"
+
+msgid "Add New Language"
+msgstr "إضافة لغة جديدة"
+
+msgid "Dir"
+msgstr "اتجاه"
+
+msgid "Enabled"
+msgstr "مفعل"
+
+msgid "Make it the default language of the site"
+msgstr "اختر اللغة الافتراضية للموقع"
+
+msgid "Make it enbaled so the user can translate the site to it"
+msgstr "جعله متاحًا حتى يستطيع المستخدم ترجمة الموقع"
+
+msgid "Language country_code, For Example: en_us, ar_sa or fr_fr"
+msgstr "رموز لغات الدول مثل: en_us, ar_sa or fr_fr "
+
+msgid "Native Name"
+msgstr "الاسم الأصلي"
+
+msgid "The native name of this language"
+msgstr "الاسم الأصلي لهذه اللغة"
+
+msgid "Flag"
+msgstr "علم"
+
+msgid "Direction"
+msgstr "اتجاه"
+
+msgid "The direction of this language 'Left To Right' or 'Right To Left'"
+msgstr "اتجاه هذه اللغة '\"من اليسار إلى اليمين\"' أو '\"من اليمين إلى اليسار\"'"
+
+msgid "Source"
+msgstr "المصدر"
+
+msgid "Release"
+msgstr "سنة الإطلاق"
+
+msgid "YouTube"
+msgstr "يوتيوب"
+
+msgid "Vimeo"
+msgstr "فيميو"
+
+msgid "Link"
+msgstr "رابط"
+
+msgid "Uploaded"
+msgstr "مرفوع"
+
+msgid "Movie Source"
+msgstr "مصدر الفيلم"
+
+msgid "From YouTube, Vimeo or site.com/movie.mp4"
+msgstr "من YouTube أو Vimeo أو site.com/movie.mp4"
+
+msgid "Or Upload Movie"
+msgstr "أو تحميل الفيلم"
+
+msgid "Uploaded Successfully"
+msgstr "تم التحميل بنجاح"
+
+msgid "Maximum file size is"
+msgstr "الحد الأقصى لحجم الملف هو"
+
+msgid "KB"
+msgstr "كيلو بايت"
+
+msgid "and allowed extensions are"
+msgstr "والامتيازات المسموح بها هي"
+
+msgid "You can change the"
+msgstr "يمكنك تغيير"
+
+msgid "Movie Title"
+msgstr "عنوان الفيلم"
+
+msgid "IMDB"
+msgstr "IMDB"
+
+msgid "IMDB Link, Example:"
+msgstr "رابط IMDB ، مثال:"
+
+msgid "Movie Stars"
+msgstr "نجوم الفيلم"
+
+msgid "Separated by a comma (,) Example: Tom Hanks, Julia Roberts, Jim Carrey"
+msgstr "مفصولة بفاصلة (،) مثال: توم هانكس ، جوليا روبرتس ، جيم كاري"
+
+msgid "Release Year"
+msgstr "سنة الاطلاق"
+
+msgid "Movie release year, Example: 1995"
+msgstr "سنة إصدار الفيلم ، مثال: 1995"
+
+msgid "Duration"
+msgstr "المدة"
+
+msgid "Movie duration in minutes, Example: 120"
+msgstr "مدة الفيلم بالدقائق ، مثال: 120"
+
+msgid "Poster"
+msgstr "بوستر الفليم"
+
+msgid "Subject"
+msgstr "الموضوع"
+
+msgid "Message"
+msgstr "رسالة"
+
+msgid "Is HTML"
+msgstr "هل هي HTML"
+
+msgid "The message will be sent as HTML instead of plain text"
+msgstr "سيتم إرسال الرسالة بتنسيق HTML بدلاً من النص العادي"
+
+msgid "Send to"
+msgstr "ارسال الى"
+
+msgid "All Users"
+msgstr "كل المستخدمين"
+
+msgid "Active Users"
+msgstr "المستخدمون النشطون"
+
+msgid "Inactive Users"
+msgstr "المستخدمون غير النشطين"
+
+msgid "Test Message"
+msgstr "رسالة الاختبار"
+
+msgid "The message will sent to Website Email only"
+msgstr "سيتم إرسال الرسالة إلى البريد الإلكتروني للموقع فقط"
+
+msgid "Enable you to send notifications to all site users"
+msgstr "تمكّنك من إرسال إشعارات إلى جميع مستخدمي الموقع"
+
+msgid "URL"
+msgstr "رابط"
+
+msgid "Notification link used when user clicks on the notification"
+msgstr "رابط الإشعار المستخدم عندما ينقر المستخدم على الإشعار"
+
+msgid "Add New Package"
+msgstr "إضافة حزمة جديدة"
+
+msgid "Price"
+msgstr "السعر"
+
+msgid "Period"
+msgstr "فترة"
+
+msgid "Boost Posts"
+msgstr "المشاركات المعززة"
+
+msgid "Boost Pages"
+msgstr "الصفحات المعززة"
+
+msgid "Life Time"
+msgstr "وقت التنشيط"
+
+msgid "Paid Every"
+msgstr "دفع الكل"
+
+msgid "Day"
+msgstr "يوم"
+
+msgid "Week"
+msgstr "اسبوع"
+
+msgid "Month"
+msgstr "شهر"
+
+msgid "Year"
+msgstr "سنة"
+
+msgid "For example every 15 days, 2 Months, 1 Year"
+msgstr "على سبيل المثال كل 15 يوما، 2 أشهر، 1 سنة"
+
+msgid "Color"
+msgstr "اللون"
+
+msgid "The theme color for this package"
+msgstr "لون الحزمة"
+
+msgid "Icon"
+msgstr "ايقونة"
+
+msgid "The perfect size for icon should be (wdith: 60px & height: 60px)"
+msgstr "يجب أن يكون الحجم المثالي للأيقونة (العرض: 60 بكسل والارتفاع: 60 بكسل)"
+
+msgid "Verification Badge Enabled"
+msgstr "تم تمكين شارة التحقق"
+
+msgid "Enable verification badge with this package"
+msgstr "تمكين شارة التحقق مع هذه الحزمة"
+
+msgid "Boost Posts Enabled"
+msgstr "تمكين المشاركات المعززة"
+
+msgid "Enable boost posts feature"
+msgstr "تمكين ميزة نشر المشاركات"
+
+msgid "Posts Boosts"
+msgstr "مشاركات معززة"
+
+msgid "Max posts boosts allowed"
+msgstr "أعلى حد للمشاركات المعززة"
+
+msgid "Boost Pages Enabled"
+msgstr "تمكين الصفحات المعززة"
+
+msgid "Enable boost pages feature"
+msgstr "تمكين ميزة نشر الصفحات"
+
+msgid "Pages Boosts"
+msgstr "الصفحات المعززة"
+
+msgid "Max pages boosts allowed"
+msgstr "أعلى حد للصفحات المعززة"
+
+msgid "Garbage collector will remove all expired subscribers and their boosted posts and pages"
+msgstr "سيزيل جامع القمامة جميع المشتركين المنتهي صلاحيتهم والمشاركات والصفحات المعززة"
+
+msgid "Run"
+msgstr "يركض"
+
+msgid "Subscription"
+msgstr "اشتراك"
+
+msgid "Expiration"
+msgstr "انتهاء الصلاحية"
+
+msgid "Remaining"
+msgstr "المتبقي"
+
+msgid "Days"
+msgstr "أيام"
+
+msgid "Expired"
+msgstr "منتهية"
+
+msgid "Total earnings"
+msgstr "الأرباح الكلية"
+
+msgid "This month earnings"
+msgstr "أرباح هذا الشهر"
+
+msgid "Total Sales"
+msgstr "إجمالي المبيعات"
+
+msgid "Total Earnings"
+msgstr "الأرباح الكلية"
+
+msgid "View Page"
+msgstr "عرض الصفحة"
+
+msgid "Pages"
+msgstr "صفحات"
+
+msgid "Verified"
+msgstr "موثوق"
+
+msgid "Page ID"
+msgstr "معرف الصفحة"
+
+msgid "Page Settings"
+msgstr "إعدادات الصفحة"
+
+msgid "Page Info"
+msgstr "معلومات الصفحة"
+
+msgid "Verified Page"
+msgstr "صفحة موثوقة"
+
+msgid "Name Your Page"
+msgstr "اسم صفحتك"
+
+msgid "Company"
+msgstr "الشركة"
+
+msgid "Phone"
+msgstr "هاتف"
+
+msgid "Website"
+msgstr " الموقع الإلكتروني " 
+
+msgid "Reset"
+msgstr "إعادة تعيين"
+
+msgid "Points Enabled"
+msgstr "تفعيل نظام النقاط"
+
+msgid "Enable or Disable the points system"
+msgstr "تمكين أو تعطيل نظام النقاط"
+
+msgid "Users Can Withdraw Earned Money"
+msgstr "يمكن للمستخدمين سحب الأموال المكتسبة"
+
+msgid "If enabled users will be able to withdraw earned money"
+msgstr "في حالة تمكين المستخدمين ، سيتمكنون من سحب الأموال المكتسبة"
+
+msgid "Users Can Transfer Earned Money To Wallet"
+msgstr "يمكن للمستخدمين نقل الأموال المكتسبة إلى المحفظة"
+
+msgid "If Ads enabled users will be able to transfer earned money to their wallet"
+msgstr "إذا تم تمكين الإعلانات ، فسيتمكن المستخدمون من تحويل الأموال المكتسبة إلى محفظتهم"
+
+msgid "Points"
+msgstr "نقاط"
+
+msgid "How much points eqaul to"
+msgstr "كم نقطة تساوي"
+
+msgid "Points/Post"
+msgstr "نقطة / مشاركة"
+
+msgid "How many points user will get for each new post"
+msgstr "كم عدد النقاط التي سيحصل عليها المستخدم لكل منشور جديد"
+
+msgid "Points/Comment"
+msgstr "نقطة / تعليق"
+
+msgid "How many points user will get for each new comment"
+msgstr "كم عدد النقاط التي سيحصل عليها المستخدم لكل تعليق جديد"
+
+msgid "Points/Reaction"
+msgstr "نقطة / رد الفعل"
+
+msgid "How many points user will get for each reaction"
+msgstr "كم عدد النقاط التي سيحصل عليها المستخدم لكل رد فعل"
+
+msgid "Free Users Daily Limit"
+msgstr "المستخدمين المجانين اليوميين"
+
+msgid "The maximum number of points regular user can get per day"
+msgstr "الحد الأقصى لعدد النقاط التي يمكن أن يحصل عليها المستخدم العادي يوميًا"
+
+msgid "Pro Users Daily Limit"
+msgstr "الموالية للمستخدمين الحد اليومي"
+
+msgid "The maximum number of points pro user can get per day"
+msgstr "الحد الأقصى لعدد النقاط التي يمكن للمستخدم الحصول عليها في اليوم الواحد"
+
+msgid "Node"
+msgstr "الاصل"
+
+msgid "Reporter By"
+msgstr "مراسل بواسطة"
+
+msgid "View Post"
+msgstr "مشاهدة المشاركة " 
+
+msgid "View Comment"
+msgstr "مشاهدةالنقاش "
+
+msgid "View Thread"
+msgstr "عرض الموضوع"
+
+msgid "View Reply"
+msgstr "عرض الرد"
+
+msgid "General"
+msgstr "عام"
+
+msgid "Features"
+msgstr "الخصائص"
+
+msgid "Website Public"
+msgstr "الموقع العام"
+
+msgid "Make the website public to allow non logged users to view website content"
+msgstr "اجعل موقع الويب عامًا للسماح للمستخدمين غير المسجلين بمشاهدة محتوى موقع الويب"
+
+msgid "Website Live"
+msgstr "الموقع يعمل"
+
+msgid "Turn the entire website On and Off"
+msgstr "تشغيل كامل الموقع وإيقاف"
+
+msgid "Shutdown Message"
+msgstr "رسالة إيقاف التشغيل"
+
+msgid "The text that is presented when the site is closed"
+msgstr "النص الذي يتم عرض عند إغلاق الموقع"
+
+msgid "Website Title"
+msgstr "عنوان الموقع"
+
+msgid "Title of your website"
+msgstr "عنوان موقع الويب الخاص بك"
+
+msgid "Website Description"
+msgstr "وصف الموقع"
+
+msgid "Description of your website"
+msgstr "وصف لموقع الويب الخاص بك"
+
+msgid "Website Keywords"
+msgstr "الكلمات الرئيسية على الإنترنت"
+
+msgid "Example: social, sngine, social site"
+msgstr "على سبيل المثال: الاجتماعية،  والموقع الاجتماعي"
+
+msgid "Website Email"
+msgstr "البريد الإلكتروني للموقع"
+
+msgid "The contact email that all messages send to"
+msgstr "البريد الإلكتروني للاتصال الذي ترسل اليه جميع الرسائل"
+
+msgid "Datetime Format"
+msgstr "تنسيق التاريخ"
+
+msgid "Example"
+msgstr "مثال"
+
+msgid "Select the datetime format of the datetime picker"
+msgstr "حدد تنسيق وقت التاريخ لمنتقي التاريخ"
+
+msgid "Turn the contact us page On and Off"
+msgstr "يمكنك تشغيل صفحة الاتصال بنا وإيقافها"
+
+msgid "Enable the directory for better SEO results"
+msgstr "تفعيل المستكشف لنتائج بحث افضل في مواقع البحث"
+
+msgid "Users can create pages or only admins/moderators"
+msgstr "يمكن للمستخدمين إنشاء صفحات أو مدراء/المشرفين فقط"
+
+msgid "Users can create groups or only admins/moderators"
+msgstr "يمكن للمستخدمين إنشاء مجالس أو مدراء/المشرفين فقط"
+
+msgid "Users can create events or only admins/moderators"
+msgstr "يمكن للمستخدمين إنشاء مناسبات أو مدراء / مشرفين فقط"
+
+msgid "Allow users to create blogs"
+msgstr "تمكين الأعضاء من إضافة مدونات"
+
+msgid "Users Can Write Articles?"
+msgstr "يمكن للمستخدمين كتابة المقالات؟"
+
+msgid "Users can write articles or only admins/moderators"
+msgstr "يمكن للمستخدمين كتابة المقالات أو المدراء / المشرفين فقط"
+
+msgid "Allow users to sell/buy products"
+msgstr "السماح للمستخدمين بيع / شراء المنتجات"
+
+msgid "Turn the movies On and Off"
+msgstr "قم بتشغيل الأفلام وإيقافها"
+
+msgid "Turn the games On and Off"
+msgstr "تشغيل وإيقاف الألعاب"
+
+msgid "DayTime Messages"
+msgstr "رسائل التحية اليومية"
+
+msgid "Turn the DayTime Messages (Good Morning, Afternoon, Evening) On and Off"
+msgstr "تفعيل و إيقاف الرسائل اليومية (صباح الخير، مساء الخير)"
+
+msgid "Pokes"
+msgstr "الوخزات"
+
+msgid "Enable users to poke each others"
+msgstr "السماح للمستخدمين بإرسال الوخزات بينهم"
+
+msgid "Enable users to send gifts to each others"
+msgstr "تمكين المستخدمين من إرسال الهدايا إلى بعضهم البعض"
+
+msgid "Profile Visit Notification"
+msgstr "إخطارات الزيارة الشخصية"
+
+msgid "Turn the profile visit notification On and Off"
+msgstr "إعلام الزيارة الشخصية بتشغيل وإيقاف"
+
+msgid "Browser Notifications"
+msgstr "إخطارات المتصفح"
+
+msgid "Turn the browser notifications On and Off"
+msgstr "يمكنك تشغيل إشعارات المتصفح وإيقافها"
+
+msgid "Noty Notifications"
+msgstr "إخطارات Noty"
+
+msgid "Turn the noty notifications On and Off"
+msgstr "تحويل الإشعارات noty تشغيل وإيقاف"
+
+msgid "Cookie Consent"
+msgstr "موافقة ملفات تعريف الارتباط"
+
+msgid "Turn the cookie consent notification On and Off"
+msgstr "تشغيل الإشعار بموافقة ملفات تعريف الارتباط أو إيقافه"
+
+msgid "Adblock Detector"
+msgstr "Adblock كاشف"
+
+msgid "Turn the Adblock auto detector notification On and Off"
+msgstr "وإيقافه Adblock قم بتشغيل إعلام الكشف التلقائي عن"
+
+msgid "(Note: Admin is exception)"
+msgstr "(ملاحظة: المسؤول استثناء)"
+
+msgid "Red block message will appear to make user disable adblock from his browser"
+msgstr "من متصفحه adblock سوف تظهر رسالة كتلة حمراء لجعل المستخدم تعطيل"
+
+msgid "Stories"
+msgstr "الجلسات"
+
+msgid "Turn the stories On and Off"
+msgstr "تمكين وتعطيل الجلسات"
+
+msgid "Stories are photos and videos that only last 24 hours"
+msgstr "الجلسات عبارة عن صور ومقاطع فيديو تستمر 24 ساعة فقط"
+
+msgid "Turn the popular posts On and Off"
+msgstr "تمكين وتعطيل المشاركات العامة"
+
+msgid "Popular posts are public posts ordered by most reactions, comments & shares"
+msgstr "المشاركات العامة هي اللي حصلت على أكثر الردود والنقاشات والمشاركة"
+
+msgid "Turn the discover posts On and Off"
+msgstr "تمكين وتعطيل رسائل الاكتشاف"
+
+msgid "Discover posts are public posts ordered from most recent to old"
+msgstr "اكتشاف المشاركات هي منشورات عامة يتم طلبها من الأحدث إلى الأقدم"
+
+msgid "Turn the memories On and Off"
+msgstr "تمكين وتعطيل الذكريات"
+
+msgid "Memories are posts from the same day on last year"
+msgstr "الذكريات هي مشاركات نفس اليوم من العام الماضي"
+
+msgid "Wall Posts"
+msgstr "منشورات الحائط"
+
+msgid "Users can publish posts on their friends walls"
+msgstr "يمكن للمستخدمين نشر مشاركات على  سجلات الأصدقاء"
+
+msgid "Polls"
+msgstr "استطلاعات"
+
+msgid "Turn the poll posts On and Off"
+msgstr "شغّل مشاركات تمكين وتعطيل الاستطلاع وإيقافها"
+
+msgid "GIF"
+msgstr "GIF"
+
+msgid "Turn the gif posts On and Off"
+msgstr "تمكين وتعطيل منشورات gif "
+
+msgid "Giphy API Key"
+msgstr "مفتاح API جيفي"
+
+msgid "Check the documentation to learn how to get this key"
+msgstr "تحقق من الوثائق لمعرفة كيفية الحصول على هذا المفتاح"
+
+msgid "Geolocation"
+msgstr "تحديد الموقع الجغرافي"
+
+msgid "Turn the post Geolocation On and Off"
+msgstr "بعد تمكين وتعطيل تحديد الموقع الجغرافي بتشغيل وإيقاف"
+
+msgid "Geolocation Google Key"
+msgstr "مفتاح تحديد الموقع الجغرافي لجوجل"
+
+msgid "Post Translation"
+msgstr "ترجمة المشاركات"
+
+msgid "Turn the post translation On and Off"
+msgstr "تمكين وتعطيل ترجمة المشاركات"
+
+msgid "Social Media Share"
+msgstr "المشاركة عبر حسابات التواصل" 
+
+msgid "Turn the social media share for posts On and Off"
+msgstr "تمكين وتعطيل مشاركة المنشورات عبر حسابات التواصل"
+
+msgid "Smart YouTube Player"
+msgstr "مشغل YouTube الذكي"
+
+msgid "Smart YouTube player will save a lot of bandwidth"
+msgstr "مشغل Smart YouTube سيوفر الكثير من النطاق الترددي"
+
+msgid "Max Post Characters"
+msgstr "ماكس بوست شخصيات"
+
+msgid "The Maximum allowed characters length (0 for unlimited)"
+msgstr "((الحد الأقصى المسموح به لأحرف النقاش (0 لغير محدود"
+
+msgid "Max Comment Characters"
+msgstr "عدد الحروف المسموح بها للتعليق"
+
+msgid "The Maximum allowed comment characters length (0 for unlimited)"
+msgstr "(الحد الأقصى المسموح به لأحرف التعليق النقاش (0 لغير محدود"
+
+msgid "Max Posts/Hour"
+msgstr "ماكس المشاركات / ساعة"
+
+msgid "The Maximum number of posts that user can publish per hour (0 for unlimited)"
+msgstr "(الحد الأقصى لعدد المشاركات التي يمكن للمستخدم نشرها في الساعة (0 لغير محدود"
+
+msgid "Max Comments/Hour"
+msgstr "ماكس التعليقات / ساعة"
+
+msgid "The Maximum number of comments that user can publish per hour (0 for unlimited)"
+msgstr "(الحد الأقصى لعدد التعليقات التي يمكن للمستخدم نشرها في الساعة (0 لغير محدود"
+
+msgid "Default Posts Privacy"
+msgstr "المشاركات الافتراضية الخصوصية"
+
+msgid "Friend"
+msgstr "أصدقاء"
+
+msgid "Only Me"
+msgstr "أنا فقط"
+
+msgid "Trending Hashtags"
+msgstr "تتجه علامات التصنيف"  
+
+msgid "Turn the trending hashtags feature On and Off"
+msgstr "قم بتشغيل ميزة علامات التجزئة \"تشغيل وإيقاف\"
+
+msgid "Trending Interval"
+msgstr "تتجه الفاصل"
+
+msgid "Last 24 Hours"
+msgstr "أخر 24 ساعه"
+
+msgid "Last Week"
+msgstr "الاسبوع الماضي"
+
+msgid "Last Month"
+msgstr "الشهر الماضي"
+
+msgid "Select the interval of trending hashtags"
+msgstr "حدد الفاصل الزمني لتوجيه علامات التجزئة"
+
+msgid "Hashtags Limit"
+msgstr "علامات التصنيف الحد"
+
+msgid "How many hashtags you want to display"
+msgstr "عدد علامات التجزئة التي تريد عرضها"
+
+msgid "Registration"
+msgstr "التسجيل"
+
+msgid "Social Login"
+msgstr "دخول بواسطة المواقع الاجتماعية"
+
+msgid "Invitation Codes"
+msgstr "رموز الدعوة"
+
+msgid "If Registration is Free and Pro Packages enabled they will be used as an optional upgrading plans"
+msgstr "إذا كان التسجيل مجاني وحزم برو مفعلة سيتم استخدامها كخطط ترقية اختيارية"
+
+msgid "Registration Enabled"
+msgstr "تمكين التسجيل"
+
+msgid "Allow users to create accounts"
+msgstr "السماح للمستخدمين بإنشاء حسابات"
+
+msgid "Registration Type"
+msgstr "نوع التسجيل"
+
+msgid "Free"
+msgstr "مجاني"
+
+msgid "Subscriptions Only"
+msgstr "الاشتراكات فقط"
+
+msgid "Allow users to create accounts Free or via Subscriptions only"
+msgstr "السماح للمستخدمين بإنشاء حسابات مجانية أو الاشتراكات فقط"
+
+msgid "Invitation Enabled"
+msgstr "دعوة ممكنة"
+
+msgid "This option is used to invite users by sending invitation code only by admin if the registration is turned off"
+msgstr "يستخدم هذا الخيار لدعوة المستخدمين عن طريق إرسال رمز الدعوة فقط من قبل المسؤول إذا تم إيقاف التسجيل"
+
+msgid "Invite Friends Widget"
+msgstr "دعوة أصدقاء"
+
+msgid "Enable users to invite their friends by sending invitation emails (registration must be enabled)"
+msgstr "(تمكين المستخدمين من دعوة أصدقائهم عن طريق إرسال رسائل البريد الإلكتروني للدعوة (يجب تمكين التسجيل"
+
+msgid "Invitations/Day"
+msgstr "دعوات / يوم"
+
+msgid "Number of invitations allowed to each user per day (0 for unlimited)"
+msgstr "(عدد الدعوات المسموح بها لكل مستخدم يوميًا (0 لغير محدود"
+
+msgid "Pro Packages Enabled"
+msgstr "تفعيل الحزم المدفوعة"
+
+msgid "Enable pro packages to be used as upgrading plans or for subscriptions"
+msgstr "تمكين الحزم المدفوعة لاستخدامها كخطط ترقية أو للاشتراكات"
+
+msgid "Users Can Buy Packages From Wallet Balance"
+msgstr "يمكن للمستخدمين شراء حزم من رصيد المحفظة"
+
+msgid "Enable users to buy packages from their wallet balance"
+msgstr "تمكين المستخدمين من شراء حزم من رصيد محفظتهم"
+
+msgid "Make sure you have enabled"
+msgstr "تأكد من تمكينك"
+
+msgid "Ads System"
+msgstr "نظام الإعلانات"
+
+msgid "Activation Enabled"
+msgstr "تم تمكين التنشيط"
+
+msgid "Enable account activation to send activation code to user's email/phone"
+msgstr "تمكين تفعيل الحساب لإرسال رمز التفعيل إلى البريد الإلكتروني للمستخدم / الهاتف"
+
+msgid "Activation Via"
+msgstr "تفعيل عبر"
+
+msgid "SMS"
+msgstr "الرسائل القصيرة"
+
+msgid "Select Email or SMS activation to send activation code to user's email/phone"
+msgstr "حدد البريد الإلكتروني أو تفعيل الرسائل القصيرة لإرسال رمز التفعيل إلى البريد الإلكتروني / الهاتف"
+
+msgid "Enable two-factor authentication to log in with a code from your email/phone as well as a password"
+msgstr "تمكين المصادقة الثنائية لتسجيل الدخول باستخدام رمز من بريدك الإلكتروني / هاتفك وكذلك كلمة مرور"
+
+msgid "Two-Factor Authentication Via"
+msgstr "المصادقة الثنائية عن طريق"
+
+msgid "Google Authenticator"
+msgstr "مصدق جوجل"
+
+msgid "Select Email, SMS or Google Authenticator to send log in code to user"
+msgstr "حدد البريد الإلكتروني أو الرسائل القصيرة أو مصدق جوجل لإرسال رمز تسجيل الدخول إلى المستخدم"
+
+msgid "Verification Requests"
+msgstr "طلبات التحقق"
+
+msgid "Turn the verification requests from users & pages On and Off"
+msgstr "يمكنك تشغيل او أيقاف طلبات التحقق من المستخدمين والصفحات"
+
+msgid "Age Restriction"
+msgstr "شرط العمر أو السن"
+
+msgid "Enable/Disable age restriction"
+msgstr "تمكين / تعطيل تقييد العمر"
+
+msgid "Minimum Age"
+msgstr "الحد الإدنى للعمر"
+
+msgid "The minimum age required to register (in years)"
+msgstr "الحد الأدنى للسن المسموح للتسجيل (بالسنوات)"
+
+msgid "Enable/Disable getting started page after registration"
+msgstr "تمكين/تعطيل بدء الصفحة بعد التسجيل"
+
+msgid "Allow users to delete their account"
+msgstr "السماح للمستخدمين بحذف الحساب"
+
+msgid "Download User Information"
+msgstr "تحميل معلومات المستخدم"
+
+msgid "Allow users to download their account information from settings page"
+msgstr "السماح للمستخدمين بتنزيل معلومات حساباتهم من صفحة الإعدادات"
+
+msgid "Max Accounts/IP"
+msgstr "الحد الأقصى الحسابات / الملكية الفكرية "
+
+msgid "The Maximum number of accounts allowed to register per IP (0 for unlimited)"
+msgstr "عدد الحسابات المسموح به للتسجيل في مجال الملكية الفكرية (0 من أجل غير محدود)"
+
+msgid "Max Friends/User"
+msgstr "الحد الأقصى للأصدقاء / المستخدم"
+
+msgid "The Maximum number of friends allowed per User (0 for unlimited)"
+msgstr "(الحد الأقصى لعدد الأصدقاء المسموح لكل مستخدم (0 لغير محدود"
+
+msgid "Social Logins"
+msgstr "تسجيل الدخول الإجتماعي"
+
+msgid "Turn registration/login via social media (Facebook, Twitter and etc) On and Off"
+msgstr "إذن الدخول عبر الفيسبوك وتويتر إلى موقعك"
+
+msgid "Facebook"
+msgstr "فيسبوك"
+
+msgid "Turn registration/login via Facebook On and Off"
+msgstr "السماح بتسجيل الدخول عبر الفيسبوك"
+
+msgid "Facebook App ID"
+msgstr "رقم الـهوية الخاصه بتطبيق الفيسبوك"
+
+msgid "Facebook App Secret"
+msgstr "كلمة مرور تطبيق الفيس بوك"
+
+msgid "Twitter"
+msgstr "تويتر"
+
+msgid "Turn registration/login via Twitter On and Off"
+msgstr "السماح بتسجيل الدخول عبر تويتر"
+
+msgid "Twitter App ID"
+msgstr "معرف التطبيق تويتر"
+
+msgid "Twitter App Secret"
+msgstr "سر التطبيق تويتر"
+
+msgid "Instagram"
+msgstr "أنستجرام"
+
+msgid "Turn registration/login via Instagram On and Off"
+msgstr "تشغيل او إيقاف تسجيل الدخول عبر إينستاجرام"
+
+msgid "Instagram App ID"
+msgstr "معرف تطبيق إنستاجرام"
+
+msgid "Instagram App Secret"
+msgstr "سر تطبيق إنستاجرام"
+
+msgid "Linkedin"
+msgstr "Linkedin"
+
+msgid "Turn registration/login via Linkedin On and Off"
+msgstr "التسجيل/تسجيل الدخول عبر Linkedin على وإيقاف تشغيل"
+
+msgid "Linkedin App ID"
+msgstr "معرف التطبيق Linkedin"
+
+msgid "Linkedin App Secret"
+msgstr "مفتاح سر لينكدين"
+
+msgid "Vkontakte"
+msgstr "Vkontakte"
+
+msgid "Turn registration/login via Vkontakte On and Off"
+msgstr "التسجيل/تسجيل الدخول عن طريق Vkontakte على وإيقاف تشغيل"
+
+msgid "Vkontakte App ID"
+msgstr "معرف التطبيق Vkontakte"
+
+msgid "Vkontakte App Secret"
+msgstr "سر التطبيق Vkontakte"
+
+msgid "This system is used to invite users if the registration is turned off"
+msgstr "يتم استخدام هذا النظام لدعوة المستخدمين في حالة إيقاف التسجيل"
+
+msgid "Generate New Code"
+msgstr "توليد قانون جديد"
+
+msgid "Invitation Code"
+msgstr "شفرة الدعوة"
+
+msgid "Valid"
+msgstr "صالح"
+
+msgid "Created"
+msgstr "أشأت"
+
+msgid "Emails"
+msgstr "الإيميلات"
+
+msgid "SMTP"
+msgstr "SMTP"
+
+msgid "Email Notifications"
+msgstr "تنبيهات البريد الالكترونى"
+
+msgid "SMTP Emails"
+msgstr "رسائل البريد الإلكتروني SMTP"
+
+msgid "Enable/Disable SMTP email system"
+msgstr "نظام البريد الإلكتروني SMTP تمكين/تعطيل"
+
+msgid "PHP mail() function will be used in case of disabled"
+msgstr "سيتم استخدام الدالة mail() بي في حالة المعوقين"
+
+msgid "SMTP Require Authentication"
+msgstr "SMTP يتطلب مصادقة"
+
+msgid "Enable/Disable SMTP authentication"
+msgstr " تمكين/تعطيل مصادقة بروتوكول نقل البريد الإلكتروني "
+
+msgid "SMTP SSL Encryption"
+msgstr "تشفير SSL SMTP"
+
+msgid "Enable/Disable SMTP SSL encryption"
+msgstr "تمكين / تعطيل تشفير SSL SMTP"
+
+msgid "TLS encryption will be used in case of disabled"
+msgstr "سيتم استخدام تشفير TLS في حالة تعطيل"
+
+msgid "SMTP Server"
+msgstr "بروتوكول إرسال البريد البسيط"
+
+msgid "SMTP Port"
+msgstr "منفذ SMTP"
+
+msgid "SMTP Username"
+msgstr "اسم المستخدم SMTP"
+
+msgid "SMTP Password"
+msgstr "كلمة مرور SMTP"
+
+msgid "Set From"
+msgstr "تعيين من"
+
+msgid "Set the From email address"
+msgstr "تعيين عنوان البريد الإلكتروني"
+
+msgid "For example: email@domain.com"
+msgstr "email@domain.com:على سبيل المثال "
+
+msgid "Test Connection"
+msgstr "اختبار الاتصال"
+
+msgid "Enable/Disable email notifications system"
+msgstr "تمكين / تعطيل نظام إشعارات البريد الإلكتروني"
+
+msgid "Email User When"
+msgstr "مستخدم البريد الإلكتروني متى"
+
+msgid "Someone liked his post"
+msgstr "الإعجاب  بالمشاركة"
+
+msgid "Someone commented on his post"
+msgstr "التعليق على المشاركة"
+
+msgid "Someone shared his post"
+msgstr "مشاركة المشاركة"
+
+msgid "Someone posted on his timeline"
+msgstr "الكتابه الى الحائط"
+
+msgid "Someone mentioned him"
+msgstr "ذكره شخص ما"
+
+msgid "Someone visited his profile"
+msgstr "زار شخص ملفه الشخصي"
+
+msgid "Someone sent him or accepted his friend requset"
+msgstr "طلبات الصداقة وقبول طلبات الصداقة"
+
+msgid "Twilio Account SID"
+msgstr "حساب Twilio SID"
+
+msgid "Twilio AUTH TOKEN"
+msgstr "Twilio AUTH TOKEN"
+
+msgid "Twilio Phone Number"
+msgstr "رقم هاتف Twilio"
+
+msgid "Test Phone Number"
+msgstr "اختبار رقم الهاتف"
+
+msgid "Your phone number to test the SMS service i.e +12344567890"
+msgstr "رقم هاتفك لاختبار خدمة SMS بمعنى +12344567890"
+
+msgid "A test SMS will be sent to this phone number when you test the connection"
+msgstr "سيتم إرسال اختبار SMS إلى رقم الهاتف هذا عند اختبار الاتصال"
+
+msgid "Chat"
+msgstr "الدردشة"
+
+msgid "Chat Enabled"
+msgstr "تمكين الدردشة"
+
+msgid "Turn the chat system On and Off"
+msgstr "تشغيل نظام الدردشة وإيقاف"
+
+msgid "User Status Enabled"
+msgstr "حالة المستخدم تمكين"
+
+msgid "Turn the Last Seen On and Off"
+msgstr "تشغيل آخر ينظر إليها وإيقاف تشغيلها"
+
+msgid "Typing Status Enabled"
+msgstr "تمكين حالة الكتابة"
+
+msgid "Turn the Typing Status On and Off"
+msgstr "قم بتشغيل وضع الكتابة وإيقاف تشغيله"
+
+msgid "Seen Status Enabled"
+msgstr "تم تمكين الحالة"
+
+msgid "Turn the Seen Status On and Off"
+msgstr "قم بتشغيل حالة المشاهدة وإيقافها"
+
+msgid "Video Call Enabled"
+msgstr "مكالمة الفيديو ممكّنة"
+
+msgid "Turn the video call system On and Off"
+msgstr "إيقاف تشغيل نظام مكالمة الفيديو وإيقاف تشغيله"
+
+msgid "Audio Call Enabled"
+msgstr "تمكين المكالمة الصوتية"
+
+msgid "Turn the audio call system On and Off"
+msgstr "قم بتشغيل نظام مكالمات الصوت وإيقاف تشغيله"
+
+msgid "Twilio API SID"
+msgstr "Twilio API SID"
+
+msgid "Twilio API SECRET"
+msgstr "Twilio api سر"
+
+msgid "Uploads"
+msgstr "تم رفعها"
+
+msgid "Amazon S3"
+msgstr "أمازونية"
+
+msgid "Your server max upload size"
+msgstr "أقصى حجم تحميل لخادمك"
+
+msgid "You can't upload files larger than"
+msgstr "لا يمكنك تحميل ملفات أكبر من"
+
+msgid "To upload larger files, contact your hosting provider"
+msgstr "لتحميل ملفات أكبر ، اتصل بموفر الاستضافة الخاص بك"
+
+msgid "Uploads Directory"
+msgstr "مجلد رفع الملفات"
+
+msgid "The path of uploads local directory"
+msgstr "مسار دليل التحميل"
+
+msgid "Uploads Prefix"
+msgstr "تحميل بادئة"
+
+msgid "Add a prefix to the uploaded files (No spaces or special characters only like 'mysite' or 'my_site')"
+msgstr "(إضافة بادئة إلى الملفات التي تم تحميلها (لا توجد مسافات أو أحرف خاصة فقط مثل موقعي أو موقعي"
+
+msgid "Max Profile Photo Size"
+msgstr "الحد الأقصى لحجم الصورة الشخصية"
+
+msgid "The Maximum size of profile photo"
+msgstr "الحد الأقصى لحجم الصورة الشخصية"
+
+msgid "in kilobytes (1 M = 1024 KB)"
+msgstr "بالكيلو بايت (1 م = 1024 كيلو بايت)"
+
+msgid "Max Cover Photo Size"
+msgstr "الحد الأقصى لحجم الصورة الغطاء"
+
+msgid "The Maximum size of cover photo"
+msgstr "الحد الأقصى لحجم الصورة الغطاء"
+
+msgid "Photo Upload"
+msgstr "رفع صورة"
+
+msgid "Enable photo upload to share & upload photos to the site"
+msgstr "تمكين تحميل الصور حصة & تحميل الصور إلى الموقع"
+
+msgid "Max Photo Size"
+msgstr "الحد الأقصى لحجم الصورة"
+
+msgid "The Maximum size of uploaded photo in posts"
+msgstr "الحد الأقصى لحجم الصورة الذي تم تحميله في الوظائف"
+
+msgid "in kilobytes (1M = 1024KB)"
+msgstr "بالكيلو بايت (1 م = 1024 كيلو بايت)"
+
+msgid "Photo Quality"
+msgstr "جودة الصورة"
+
+msgid "High Quality"
+msgstr "جودة عالية"
+
+msgid "Medium Quality"
+msgstr "جودة متوسطة"
+
+msgid "Low Quality"
+msgstr "جودة منخفضة"
+
+msgid "Video Upload"
+msgstr "تحميل الفيديو"
+
+msgid "Enable video upload to share & upload videos to the site"
+msgstr "تمكين تحميل الفيديو مشاركة آند تحميل ملفات الفيديو إلى الموقع"
+
+msgid "Max video size"
+msgstr "الحد الأقصى لحجم الفيديو"
+
+msgid "The Maximum size of uploaded video in posts"
+msgstr "الحد الأقصى لحجم الفيديو الذي تم تحميله في الوظائف"
+
+msgid "Video extensions"
+msgstr "امتدادات الفيديو"
+
+msgid "Allowed video extensions (separated with comma ',)"
+msgstr "يسمح لامتدادات الفيديو (مفصولة بفاصلة ',)"
+
+msgid "Audio Upload"
+msgstr "تحميل الصوت"
+
+msgid "Enable audio upload to share & upload sounds to the site"
+msgstr "تمكين تحميل الصوت حصة & تحميل الأصوات إلى الموقع"
+
+msgid "Max audio size"
+msgstr "الحد الأقصى لحجم الصوت"
+
+msgid "The Maximum size of uploaded audio in posts"
+msgstr "الحد الأقصى لحجم الصوت الذي تم تحميله في الوظائف"
+
+msgid "Audio extensions"
+msgstr "امتدادات الصوت"
+
+msgid "Allowed audio extensions (separated with comma ',)"
+msgstr "يسمح ملحقات الصوت (مفصولة بفاصلة ',)"
+
+msgid "File Upload"
+msgstr "تحميل الملف"
+
+msgid "Enable file upload to share & upload files to the site"
+msgstr "تمكين تحميل الملف مشاركة & تحميل الملفات إلى الموقع"
+
+msgid "Max file size"
+msgstr "أقصى حجم للملف"
+
+msgid "The Maximum size of uploaded file in posts"
+msgstr "الحد الأقصى لحجم الملف الذي تم تحميله في الوظائف"
+
+msgid "File extensions"
+msgstr "ملحقات الملفات"
+
+msgid "Allowed file extensions (separated with comma ',)"
+msgstr "يسمح ملحقات الملفات (مفصولة بفاصلة ',)"
+
+msgid "Amazon S3 Storage"
+msgstr "تخزين Amazon S3"
+
+msgid "Before enabling Amazon S3, make sure you upload the whole 'uploads' folder to your bucket"
+msgstr "قبل تمكين Amazon S3 ، تأكد من تحميل مجلد \"التحميلات\" بالكامل إلى مجموعة البيانات"
+
+msgid "Before disabling Amazon S3, make sure you download the whole 'uploads' folder to your server"
+msgstr "قبل تعطيل Amazon S3 ، تأكد من تنزيل مجلد \"uploads\" بالكامل إلى خادمك"
+
+msgid "Enable Amazon S3 storage"
+msgstr "تمكين تخزين Amazon S3"
+
+msgid "Bucket Name"
+msgstr "اسم دلو"
+
+msgid "Your Amazon S3 bucket name"
+msgstr "اسمك دلو الامازون S3"
+
+msgid "Bucket Region"
+msgstr "منطقة دلو"
+
+msgid "Your Amazon S3 bucket region"
+msgstr "منطقة دلو Amazon S3 الخاصة بك"
+
+msgid "Access Key ID"
+msgstr "معرف مفتاح الوصول"
+
+msgid "Your Amazon S3 Access Key ID"
+msgstr "رقم تعريف مفتاح الوصول الخاص بك في Amazon S3"
+
+msgid "Access Key Secret"
+msgstr "وصول مفتاح السرية"
+
+msgid "Your Amazon S3 Access Key Secret"
+msgstr "لديك الأمازون S3 وصول مفتاح السرية"
+
+msgid "Security"
+msgstr "الحماية"
+
+msgid "Censored Words Enabled"
+msgstr "عبارة الرقابة ممكنة"
+
+msgid "Enable/Disable Words to be censored"
+msgstr "تمكين/تعطيل \"عبارة\" للرقابة"
+
+msgid "Censored Words"
+msgstr "عبارة مختصرة"
+
+msgid "Words to be censored, separated by a comma (,)"
+msgstr "الكلمات يكون للرقابة، مفصولة بفاصلة ()"
+
+msgid "reCAPTCHA Enabled"
+msgstr "reCAPTCHA ممكن"
+
+msgid "Turn reCAPTCHA On and Off"
+msgstr "تشغيل reCAPTCHA وإيقاف"
+
+msgid "reCAPTCHA Site Key"
+msgstr "reCAPTCHA مفتاح الموقع"
+
+msgid "reCAPTCHA Secret Key"
+msgstr "reCAPTCHA مفتاح السر"
+
+msgid "Payments"
+msgstr "المدفوعات"
+
+msgid "Stripe"
+msgstr "Stripe"
+
+msgid "Currency"
+msgstr "العملة"
+
+msgid "Paypal Enabled"
+msgstr "باي بال ممكن"
+
+msgid "Enable payments via Paypal"
+msgstr "تمكين المدفوعات عن طريق باي بال"
+
+msgid "Paypal Mode"
+msgstr "وضع باي بال"
+
+msgid "Live"
+msgstr "فعّال"
+
+msgid "Sandbox"
+msgstr "رمل"
+
+msgid "PayPal Client ID"
+msgstr "PayPal معرف عميل"
+
+msgid "PayPal Secret Key"
+msgstr "باي بال سر مفتاح"
+
+msgid "Credit Card Enabled"
+msgstr "بطاقة الائتمان ممكن"
+
+msgid "Enable payments via Credit Card"
+msgstr "تمكين المدفوعات عن طريق بطاقة الائتمان"
+
+msgid "Alipay Enabled"
+msgstr "تم تمكين Alipay"
+
+msgid "Enable payments via Alipay"
+msgstr "تمكين المدفوعات عبر Alipay"
+
+msgid "Stripe Mode"
+msgstr "وضع شريط"
+
+msgid "Test"
+msgstr "الفحص"
+
+msgid "Test Secret Key"
+msgstr "اختبار مفتاح السر"
+
+msgid "Stripe secret key that starts with sk_"
+msgstr "مفتاح سري للشريط يبدأ بـ sk_"
+
+msgid "Test Publishable Key"
+msgstr "اختبار مفتاح Publishable"
+
+msgid "Stripe publishable key that starts with pk_"
+msgstr "مفتاح publishable شريطية يبدأ بـ pk_"
+
+msgid "Live Secret Key"
+msgstr "لايف سر مفتاح"
+
+msgid "Live Publishable Key"
+msgstr "مفتاح Publishable المباشر"
+
+msgid "Bank Transfers Enabled"
+msgstr "التحويلات البنكية ممكنة"
+
+msgid "Enable payments via Bank Transfers"
+msgstr "تمكين المدفوعات عن طريق التحويلات المصرفية"
+
+msgid "Bank Name"
+msgstr "اسم البنك"
+
+msgid "Your Bank Name"
+msgstr "اسم البنك الخاص بك"
+
+msgid "Bank Account Number"
+msgstr "رقم الحساب المصرفي"
+
+msgid "Your Bank Account Number"
+msgstr "رقم حسابك البنكي"
+
+msgid "Bank Account Name"
+msgstr "اسم الحساب المصرفي"
+
+msgid "Your Bank Account Name"
+msgstr "اسم حسابك المصرفي"
+
+msgid "Bank Account Routing Code"
+msgstr "رمز توجيه الحساب المصرفي"
+
+msgid "Your Bank Account Routing Code or SWIFT Code"
+msgstr " SWIFT رمز توجيه حسابك المصرفي أو رمز"
+
+msgid "Bank Account Country"
+msgstr "حساب البنك البلد"
+
+msgid "Your Bank Account Country"
+msgstr "بلد حسابك المصرفي"
+
+msgid "Transfer Note"
+msgstr "نقل ملاحظة"
+
+msgid "This note will be displayed to the user while upload his bank transfer receipt"
+msgstr "سيتم عرض هذه الملاحظة للمستخدم أثناء تحميل إيصال التحويل المصرفي الخاص به"
+
+msgid "Website Currency"
+msgstr "عملة الموقع"
+
+msgid "You can add, edit or delete currencies from"
+msgstr "يمكنك إضافة أو تعديل أو حذف العملات من"
+
+msgid "Limits"
+msgstr "القيود"
+
+msgid "Data Heartbeat"
+msgstr "بيانات نبض القلب"
+
+msgid "The update interval to check for new data (in seconds)"
+msgstr "الفاصل الزمني للتحديث للتحقق من بيانات جديدة (بالثواني)"
+
+msgid "Chat Heartbeat"
+msgstr "دردشة نبض القلب"
+
+msgid "The update interval to check for new messages (in seconds)"
+msgstr "الفاصل الزمني للتحديث للتحقق من وجود رسائل جديدة (بالثواني)"
+
+msgid "Offline After"
+msgstr "العمل دون اتصال بعد"
+
+msgid "The amount of time to be considered online since the last user's activity (in seconds)"
+msgstr "مقدار الوقت التي سينظر فيها على الإنترنت منذ النشاط المستخدم الأخير (بالثواني)"
+
+msgid "The maximim value is one day = 86400 seconds"
+msgstr "القيمة القصوى هي يوم واحد = 86400 ثانية"
+
+msgid "Minimum Results"
+msgstr "نتائج الحد الأدنى"
+
+msgid "The Min number of results per request"
+msgstr "عدد النتائج لكل طلب"
+
+msgid "Maximum Results"
+msgstr "أقصى قدر من النتائج"
+
+msgid "The Max number of results per request"
+msgstr "الحد الأقصى لعدد النتائج في كل طلب"
+
+msgid "Minimum Even Results"
+msgstr "النتائج حتى الحد الأدنى"
+
+msgid "The Min even number of results per request"
+msgstr "عدد النتائج لكل طلب"
+
+msgid "Maximum Even Results"
+msgstr "أقصى قدر من النتائج حتى"
+
+msgid "The Max even number of results per request"
+msgstr "عدد النتائج لكل طلب حتى ماكس"
+
+msgid "Analytics"
+msgstr "التحليلات"
+
+msgid "Tracking Code"
+msgstr "أكواد التتبع"
+
+msgid "The analytics tracking code (Ex: Google Analytics)"
+msgstr "تحليلات تتبع التعليمات البرمجية (Ex: تحليلات جوجل)"
+
+msgid "Add New Page"
+msgstr "إضافة صفحة جديدة"
+
+msgid "Page URL"
+msgstr "عنوان رابط الصفحة"
+
+msgid "Page Title"
+msgstr "عنوان الصفحة"
+
+msgid "In Footer Menu"
+msgstr "قائمة الفوتر"
+
+msgid "Valid web address must be a-z0-9_."
+msgstr "يجب أن يكون عنوان الويب صالحًا هو a-z0-9_."
+
+msgid "Page Content"
+msgstr "محتوى الصفحة"
+
+msgid "Add to Footer Menu"
+msgstr "اضافة لقائمة الفوتر"
+
+msgid "Show the page in the footer links menu"
+msgstr "عرض الصفحة في الفوتر"
+
+msgid "Add New Theme"
+msgstr "سمة جديدة"
+
+msgid "Make it the default theme of the site"
+msgstr "جعله السمة الافتراضية لموقع"
+
+msgid "Random Pictures"
+msgstr "صور عشوائية"
+
+msgid "Profile pictures will be generated randomly and may be dublicated"
+msgstr "سيتم إنشاء صور الملف الشخصي بشكل عشوائي وقد تتكرر"
+
+msgid "Number of Users"
+msgstr "عدد المستخدمين"
+
+msgid "How many users you want to generate (Maximum is 1000 per request)"
+msgstr "(عدد المستخدمين الذين تريد إنشاءهم (الحد الأقصى هو 1000 لكل طلب"
+
+msgid "Password"
+msgstr "كلمة المرور"
+
+msgid "This password will be used for all generated accounts (Default is 123456789)"
+msgstr "(سيتم استخدام كلمة المرور هذه لجميع الحسابات التي تم إنشاؤها (الافتراضي هو 123456789"
+
+msgid "Names Language"
+msgstr "لغة الأسماء"
+
+msgid "Select the language of generated account names"
+msgstr "حدد لغة أسماء الحسابات التي تم إنشاؤها"
+
+msgid "Generate"
+msgstr "توليد"
+
+msgid "Auto Friend"
+msgstr "صديق التلقائي"
+
+msgid "When a user creates a new account, select which users you want to auto friend (following included)"
+msgstr "(عندما ينشئ المستخدم حسابًا جديدًا ، حدد المستخدمين الذين ترغب في تكوين صديق لهم (متضمنًا أدناه"
+
+msgid "Select Users"
+msgstr "حدد المستخدمين"
+
+msgid "Search for users you want new accounts to auto friend"
+msgstr "البحث عن المستخدمين الذين تريد حسابات جديدة لصديق السيارات"
+
+msgid "Auto Follow"
+msgstr "اتبع التلقائي"
+
+msgid "When a user creates a new account, select which users you want to auto follow"
+msgstr "عندما ينشئ المستخدم حسابًا جديدًا ، حدد المستخدمين الذين تريد متابعتهم تلقائيًا"
+
+msgid "Search for users you want new accounts to auto follow"
+msgstr "ابحث عن المستخدمين الذين تريد أن تتبعهم حسابات جديدة"
+
+msgid "Auto Like"
+msgstr "إعجاب تلقائي"
+
+msgid "When a user creates a new account, select which pages you want to auto like"
+msgstr "عندما ينشئ المستخدم حسابًا جديدًا ، حدد الصفحات التي ترغب في ظهورها تلقائيًا"
+
+msgid "Select Pages"
+msgstr "اختر الصفحات"
+
+msgid "Search for pages you want new accounts to auto like"
+msgstr "ابحث عن الصفحات التي ترغب في ظهور حسابات جديدة عليها تلقائيًا"
+
+msgid "Auto Join"
+msgstr "الانضمام التلقائي"
+
+msgid "When a user creates a new account, select which groups you want to auto join"
+msgstr "عندما ينشئ المستخدم حسابًا جديدًا ، حدد المجموعات التي تريد الانضمام التلقائي إليها"
+
+msgid "Select Groups"
+msgstr "اختر مجموعات"
+
+msgid "Search for groups you want new accounts to auto join"
+msgstr "ابحث عن مجموعات تريد انضمام حسابات جديدة إليها"
+
+msgid "Garbage collector will remove all selected data and might take some time"
+msgstr "سيقوم جامع البيانات المهملة بإزالة جميع البيانات المحددة وقد يستغرق بعض الوقت"
+
+msgid "What you want to delete"
+msgstr "ما تريد حذفه"
+
+msgid "Delete all not activated accounts"
+msgstr "حذف جميع الحسابات غير المنشط"
+
+msgid "user"
+msgstr "المستعمل"
+
+msgid "Delete users that are not logged in more than 1 week"
+msgstr "احذف المستخدمين الذين لم يقوموا بتسجيل الدخول لأكثر من أسبوع"
+
+msgid "Delete users that are not logged in more than 1 month"
+msgstr "احذف المستخدمين الذين لم يقوموا بتسجيل الدخول لأكثر من شهر"
+
+msgid "Delete users that are not logged in more than 1 year"
+msgstr "احذف المستخدمين الذين لم يقوموا بتسجيل الدخول لأكثر من سنة"
+
+msgid "Delete posts that are longer than 1 week"
+msgstr "احذف المشاركات التي تزيد عن أسبوع واحد"
+
+msgid "post"
+msgstr "نشر"
+
+msgid "Delete posts that are longer than 1 month"
+msgstr "احذف المشاركات التي تزيد عن شهر واحد"
+
+msgid "Delete posts that are longer than 1 year"
+msgstr "حذف المشاركات التي تزيد عن سنة واحدة"
+
+msgid "You last backup"
+msgstr "يمكنك النسخ الاحتياطي الماضي"
+
+msgid "You can find backups in"
+msgstr "يمكنك العثور على نسخ احتياطية في"
+
+msgid "Taking backup might take some time and you can download backups via FTP"
+msgstr "FTP قد يستغرق أخذ نسخة احتياطية بعض الوقت ويمكنك تنزيل النسخ الاحتياطية عبر"
+
+msgid "Select which backup you would like to generate"
+msgstr "حدد النسخة الاحتياطية التي تريد إنشاءها"
+
+msgid "Database"
+msgstr "قاعدة البيانات"
+
+msgid "Files"
+msgstr "الملفات"
+
+msgid "Full Backup"
+msgstr "النسخ الاحتياطي الكامل"
+
+msgid "System"
+msgstr "النظام"
+
+msgid "Modules"
+msgstr "وحدات"
+
+msgid "List Users"
+msgstr "قائمة الأعضاء"
+
+msgid "List Admins"
+msgstr "قائمة المسؤولين"
+
+msgid "List Moderators"
+msgstr "قائمة المشرفين"
+
+msgid "List Online"
+msgstr "إدارة المتصلين"
+
+msgid "List Banned"
+msgstr "القائمة المحظورة"
+
+msgid "List Pages"
+msgstr "قائمة الصفحات"
+
+msgid "List Categories"
+msgstr "قائمة الاقسام"
+
+msgid "List Groups"
+msgstr "قائمة المجالس"
+
+msgid "List Events"
+msgstr "قائمة المناسبات"
+
+msgid "Forums Settings"
+msgstr "إعدادات المنتديات"
+
+msgid "List Forums"
+msgstr "قائمة المنتديات"
+
+msgid "List Movies"
+msgstr "قائمة الأفلام"
+
+msgid "List Genres"
+msgstr "قائمة الأنواع"
+
+msgid "Money"
+msgstr "مال"
+
+msgid "Ads Settings"
+msgstr "إعدادات الإعلانات"
+
+msgid "List System Ads"
+msgstr "قائمة إعلانات النظام"
+
+msgid "List Users Ads"
+msgstr "قائمة المستخدمين الإعلانات"
+
+msgid "List Packages"
+msgstr "قائمة الباقات"
+
+msgid "List Subscribers"
+msgstr "قائمة الاشتراكات"
+
+msgid "Affiliates Settings"
+msgstr "اعدادات التسويق"
+
+msgid "Points Settings"
+msgstr "إعدادات النقاط"
+
+msgid "List Requests"
+msgstr "قائمة الطلبات"
+
+msgid "List Verified Users"
+msgstr "المستخدمين الموثقين"
+
+msgid "List Verified Pages"
+msgstr "الصفحات الموثقة"
+
+msgid "Customization"
+msgstr "الصفحات"
+
+msgid "Reach"
+msgstr "الوصول المحتمل"
+
+msgid "Sngine"
+msgstr "سنجن"
+
+msgid "Build"
+msgstr "بنية"
+
+msgid "View Profile"
+msgstr "عرض الملف الشخصي"
+
+msgid "Manage Banned IPs"
+msgstr "إدارة عناوين IP المحظورة"
+
+msgid "Username"
+msgstr "اسم المستخدم"
+
+
+msgid "Username "
+msgstr "اسم المستخدم (بالإنجليزية)"
+
+msgid "Joined"
+msgstr "انضم"
+
+msgid "Activated"
+msgstr "تم التنشيط"
+
+msgid "No data to show"
+msgstr "لا يوجد نتائج لإظهارها"
+
+msgid "User ID"
+msgstr "هوية المستخدم"
+
+msgid "Last Login"
+msgstr "آخر تسجيل دخول"
+
+msgid "Specialists"
+msgstr "متخصصون"
+
+msgid "Account"
+msgstr "حساب"
+
+msgid "Profile"
+msgstr "الملف الشخصي"
+
+msgid "Extra"
+msgstr "إضافي"
+
+msgid "Verified User"
+msgstr "موثوق"
+
+msgid "Account Activated"
+msgstr "الحساب الخاص بك بالفعل تنشيط!"
+
+msgid "Account activation disabled from your system"
+msgstr "تم تنشيط تنشيط الحساب من نظامك"
+
+msgid "Account activation enabled from your system settings by"
+msgstr "تم تمكين تنشيط الحساب من إعدادات النظام الخاصة بك بواسطة"
+
+msgid "User Group"
+msgstr "مجموعة المستخدمين"
+
+msgid "Administrators"
+msgstr "المدريين"
+
+msgid "Email Address"
+msgstr "عنوان البريد الإلكتروني"
+
+msgid "Email Verified"
+msgstr "توثيق الحساب"
+
+msgid "Phone Number"
+msgstr "رقم الهاتف"
+
+msgid "Phone number (eg. +905...)"
+msgstr "رقم الهاتف (على سبيل المثال +905 ...)"
+
+msgid "Phone Verified"
+msgstr "تم التحقق من الهاتف"
+
+msgid "Basic"
+msgstr "أساسي"
+
+msgid "First Name"
+msgstr "الاسم الأول" 
+
+msgid "Last Name"
+msgstr "الاسم الأخير"
+
+msgid "I am"
+msgstr "أنا"
+
+msgid "Select Sex"
+msgstr "حدد نوع الجنس"
+
+msgid "Male"
+msgstr "ذكر"
+
+msgid "Female"
+msgstr "أنثى"
+
+msgid "Other"
+msgstr "أخرى"
+
+msgid "Relationship Status"
+msgstr "الحالة الاجتماعية"
+
+msgid "Select Relationship"
+msgstr "حدد العلاقة"
+
+msgid "Single"
+msgstr "أعزب"
+
+msgid "In a relationship"
+msgstr "فى علاقة"
+
+msgid "Married"
+msgstr "متزوج"
+
+msgid "It's complicated"
+msgstr "حالة معقدة"
+
+msgid "Separated"
+msgstr "منفصل"
+
+msgid "Divorced"
+msgstr "مطلق"
+
+msgid "Widowed"
+msgstr "ارمل"
+
+msgid "Country"
+msgstr "الدولة"
+
+msgid "Select Country"
+msgstr "حدد الدولة"
+
+msgid "date of birth"
+msgstr "تاريخ الميلاد"
+
+msgid "Select Month"
+msgstr "اختيار شهر"
+
+msgid "Jan"
+msgstr "يناير"
+
+msgid "Feb"
+msgstr "فبراير"
+
+msgid "Mar"
+msgstr "مارس"
+
+msgid "Apr"
+msgstr "أبريل"
+
+msgid "May"
+msgstr "مايو"
+
+msgid "Jun"
+msgstr "يونيو"
+
+msgid "Jul"
+msgstr "يوليو"
+
+msgid "Aug"
+msgstr "اغسطس"
+
+msgid "Sep"
+msgstr "سبتمبر"
+
+msgid "Oct"
+msgstr "أكتوبر"
+
+msgid "Nov"
+msgstr "نوفمبر"
+
+msgid "Dec"
+msgstr "ديسمبر"
+
+msgid "Select Day"
+msgstr "حدد يوم"
+
+msgid "Select Year"
+msgstr "حدد السنة"
+
+msgid "About Me"
+msgstr "سيرة مختصرة"
+
+msgid "Work"
+msgstr "العمل"
+
+msgid "Work Title"
+msgstr "المسمي الوظيفي"
+
+msgid "Work Place"
+msgstr "جهة العمل"
+
+msgid "Work Website"
+msgstr "موقع الجهة على الويب"
+
+msgid "Current City"
+msgstr "المدينة الحالية"
+
+msgid "Hometown"
+msgstr "مسقط المدينة الأصلية"
+
+msgid "Education"
+msgstr "التعليم"
+
+msgid "School"
+msgstr "الجهة التعليمية"
+
+msgid "Major"
+msgstr "المؤهل"
+
+msgid "Social Links"
+msgstr "حسابات التواصل الاجتماعية"
+
+msgid "Facebook Profile URL"
+msgstr "Facebook"
+
+msgid "Twitter Profile URL"
+msgstr "Twitter"
+
+msgid "YouTube Profile URL"
+msgstr "YouTube"
+
+msgid "Instagram Profile URL"
+msgstr "Instagram"
+
+msgid "LinkedIn Profile URL"
+msgstr "LinkedIn"
+
+msgid "If chat disabled you will appear offline and will no see who is online too"
+msgstr "إذا تم تعطيل الدردشة ، فستظهر في وضع عدم الاتصال ولن ترى المتصلين أيضًا"
+
+msgid "Email you with our newsletter"
+msgstr "تلقي نشرة إخبارية بالإيميل"
+
+msgid "From time to time we send newsletter email to all of our members"
+msgstr "من وقت لآخر نرسل رسالة إخبارية بالبريد الإلكتروني إلى جميع الأعضاء"
+
+msgid "Who can poke you"
+msgstr "من يمكن أن يلفت انتباهك"
+
+msgid "Everyone"
+msgstr "الجميع"
+
+msgid "No One"
+msgstr "لا أحد"
+
+msgid "Who can send you gifts"
+msgstr "من يستطيع أن يرسل لك هدية"
+
+msgid "Who can post on your wall"
+msgstr "من ينشر على السجل الحائط الخاص بك"
+
+msgid "Just Me"
+msgstr "أنا فقط"
+
+msgid "my date of birth"
+msgstr "تاريخ ميلادي"
+
+msgid "my relationship"
+msgstr "حالتي الاجتماعية"
+
+msgid "my basic info"
+msgstr "معلوماتي الأساسية"
+
+msgid "my work info"
+msgstr "معلومات عملي"
+
+msgid "my location info"
+msgstr "عنواني"
+
+msgid "education info"
+msgstr "تعليمي"
+
+msgid "other info"
+msgstr "معلومات أخرى"
+
+msgid "My friends"
+msgstr "أصدقائي"
+
+msgid "friends"
+msgstr "الأصدقاء"
+
+msgid "Friends"
+msgstr "الأصدقاء"
+
+msgid " My photos"
+msgstr "صوري"
+
+msgid "liked pages"
+msgstr "صفحات تعجبني"
+
+msgid "joined Panels"
+msgstr "مجالس منضم إليها"
+
+msgid "joined events"
+msgstr "مناسبات منضم إليها"
+
+msgid "Browser"
+msgstr "متصفح"
+
+msgid "OS"
+msgstr "نظام التشغيل"
+
+msgid "IP"
+msgstr "آي بي"
+
+msgid "Package Details"
+msgstr "تفاصيل الحملة"
+
+msgid "per"
+msgstr "لمدة"
+
+msgid "Subscription Date"
+msgstr "تاريخ الاشتراك"
+
+msgid "Expiration Date"
+msgstr "تاريخ الانتهاء"
+
+msgid "Remove Package"
+msgstr "إزالة الحزمة"
+
+msgid "Upgrade Package"
+msgstr "حزمة الترقية"
+
+msgid "Select Package"
+msgstr "أنت مشترك بالفعل في هذه الحزمة ، يرجى تحديد حزمة مختلفة"
+
+msgid "Wallet Balance"
+msgstr "رصيد المحفظة"
+
+msgid "Points Balance"
+msgstr "رصيد المحفظة"
+
+msgid "User/Page"
+msgstr "مستخدم/صفحة"
+
+msgid "Add New widget"
+msgstr "إضافة قسم جديد"
+
+msgid "Article  Page"
+msgstr "صفحة المقالات"
+
+msgid "Manage Ads, Create new Campaign and Access your Wallet"
+msgstr "إدارة الإعلانات ، إنشاء حملة جديدة والوصول إلى محفظتك"
+
+msgid "Ads Campaigns"
+msgstr "اعلانات"
+
+msgid "My Campaigns"
+msgstr "حملاتي"
+
+msgid "Start - End Date"
+msgstr "بداية - تاريخ الانتهاء"
+
+msgid "Bidding"
+msgstr "عرض التسعير"
+
+msgid "Click"
+msgstr "انقر"
+
+msgid "View"
+msgstr "عرض"
+
+msgid "No campaigns to show"
+msgstr "لا حملات لإظهارها"
+
+msgid "Your current wallet credit is"
+msgstr "رصيدك الحالي هو"
+
+msgid "You need to"
+msgstr "أنت بحاجه إلى"
+
+msgid "Replenish your wallet credit"
+msgstr "قم بتجديد رصيد المحفظة الخاص بك"
+
+msgid "Campaign Details"
+msgstr "تفاصيل الحملة"
+
+msgid "Campaign Title"
+msgstr "عنوان الحملة"
+
+msgid "Set a title for your campaign"
+msgstr "عيّن عنوانًا لحملتك"
+
+msgid "Campaign Start Date"
+msgstr "تاريخ بدء الحملة"
+
+msgid "Set Campaign start datetime (UTC)"
+msgstr "تعيين تاريخ بدء الحملة (UTC)"
+
+msgid "Campaign End Date"
+msgstr "تاريخ انتهاء الحملة"
+
+msgid "Set Campaign end datetime (UTC)"
+msgstr "تعيين وقت انتهاء وقت الحملة (UTC)"
+
+msgid "Campaign Budget"
+msgstr "ميزانية الحملة"
+
+msgid "Set a budget for your campaign, campaign will be paused if reached its limit"
+msgstr "قم بتعيين ميزانية لحملتك ، سيتم إيقاف الحملة مؤقتًا إذا وصلت إلى الحد الأقصى"
+
+msgid "Campaign Bidding"
+msgstr "عرض سعر الحملة"
+
+msgid "Pay Per Click"
+msgstr "تدفع عن كل نقر"
+
+msgid "Pay Per View"
+msgstr "الدفع مقابل المشاهدة"
+
+msgid "Target Audience"
+msgstr "إلى"
+
+msgid "Audience Country"
+msgstr "بلد الجمهور"
+
+msgid "Audience Gender"
+msgstr "جمهور الجمهور"
+
+msgid "All"
+msgstr "الكل"
+
+msgid "Audience Relationship"
+msgstr "علاقة الجمهور"
+
+msgid "Potential Reach"
+msgstr "الوصول المحتمل"
+
+msgid "People"
+msgstr "الأعضاء"
+
+msgid "Ads Details"
+msgstr "تفاصيل الإعلانات"
+
+msgid "Ads Title"
+msgstr "عنوان الاعلان"
+
+msgid "Set a title for your ads"
+msgstr "ضع عنوانًا لإعلاناتك"
+
+msgid "Ads Description"
+msgstr "وصف الإعلان"
+
+msgid "Set a description for your ads (maximum 200 characters)"
+msgstr "تعيين وصف لإعلاناتك (بحد أقصى 200 حرف)"
+
+msgid "Advertise For"
+msgstr "الإعلان عن"
+
+msgid "You can advertise for a URL or one of your pages, groups or events"
+msgstr "يمكنك الإعلان عن عنوان URL أو إحدى صفحاتك أو مجالسك أو مناسباتك"
+
+msgid "Target URL"
+msgstr "الرابط:"
+
+msgid "Enter your URL you want to advertise for"
+msgstr "أدخل عنوان URL الذي تريد الإعلان عنه"
+
+msgid "Target Page"
+msgstr "الهدف الصفحة"
+
+msgid "Select Page"
+msgstr "اختر صفحة"
+
+msgid "Select one of your pages you want to advertise for"
+msgstr "اختر واحدة من صفحاتك التي تريد الإعلان عنها"
+
+msgid "Target Group"
+msgstr "المجموعة المستهدفة"
+
+msgid "Select Group"
+msgstr "اختر مجموعة"
+
+msgid "Select one of your groups you want to advertise for"
+msgstr "اختر واحدة من مجالسك التي تريد الإعلان عنها"
+
+msgid "Target Event"
+msgstr "الحدث المستهدف"
+
+msgid "Select Event"
+msgstr "اختر الحدث"
+
+msgid "Select one of your events you want to advertise for"
+msgstr "حدد أحد المناسبات التي تريد الإعلان عنها"
+
+msgid "Ads Placement"
+msgstr "مواضع الإعلانات"
+
+msgid "Newsfeed"
+msgstr "الخلاصة الإخبارية"
+
+msgid "Sidebar"
+msgstr "الشريط الجانبي"
+
+msgid "Ads Image"
+msgstr "صورة الإعلانات"
+
+msgid "The image of your ads, supported formats (JPG, PNG, GIF)"
+msgstr "صورة إعلاناتك ، التنسيقات المدعومة (JPG ، PNG ، GIF)"
+
+msgid "Publish"
+msgstr "نشر"
+
+msgid "Your"
+msgstr "ك"
+
+msgid "transfer transaction successfuly sent"
+msgstr "نقل المعاملة الناجحة المرسلة"
+
+msgid "Congratulation! Your wallet credit replenished successfully with"
+msgstr "تهنئة! تم تجديد رصيد المحفظة بنجاح"
+
+msgid "from your affiliates credit"
+msgstr "من رصيد الشركاء التابعين لك"
+
+msgid "from your points credit"
+msgstr "من رصيد الشركاء التابعين لك"
+
+msgid "payment transaction successfuly done"
+msgstr "نقل المعاملة الناجحة المرسلة"
+
+msgid "Your Credit"
+msgstr "الائتمان الخاصة بك"
+
+msgid "Send & Recieve Money"
+msgstr "إرسال واستلام المال"
+
+msgid "Send Money"
+msgstr "إرسال الأموال"
+
+msgid "Replenish Credit"
+msgstr "تجديد الائتمان"
+
+msgid "Affiliates Credit"
+msgstr "ائتمان الشركات التابعة"
+
+msgid "Points Credit"
+msgstr "دفعات النقاط"
+
+msgid "Withdraw Affiliates Credit"
+msgstr "سحب الائتمان التابع"
+
+msgid "Withdraw Points Credit"
+msgstr "سحب الائتمان التابع"
+
+msgid "Wallet Transactions"
+msgstr "معاملات المحفظة"
+
+msgid "From / To"
+msgstr "من الى"
+
+msgid "To"
+msgstr "إلى"
+
+msgid "From"
+msgstr "من"
+
+msgid "Buy Pro Package"
+msgstr "حزمة برو"
+
+msgid "What are you doing?"
+msgstr "ماذا تفعل؟"
+
+msgid "Upload Photos"
+msgstr "تحميل الصور"
+
+msgid "Check In"
+msgstr "يرجى التحقق من الرسائل القصيرة على هاتفك"
+
+msgid "Feelings/Activity"
+msgstr "مشاعر / نشاط"
+
+msgid "Custom"
+msgstr "مخصص"
+
+msgid "Post"
+msgstr "مشاركة"
+
+msgid "Edit Album"
+msgstr "تعديل الألبوم"
+
+msgid "Save"
+msgstr "حفظ"
+
+msgid "Loading Older Messages"
+msgstr "تحميل الرسائل القديمة"
+
+msgid "Delete"
+msgstr "حذف"
+
+msgid "Typing"
+msgstr "تمكين حالة الكتابة"
+
+msgid "Last Seen"
+msgstr "شوهد لآخر مرة"
+
+msgid "Mutual Friends"
+msgstr "أصدقاء مشتركون"
+
+msgid "See More"
+msgstr "شاهد المزيد"
+
+msgid "Participants"
+msgstr "المشاركون"
+
+msgid "mutual friends"
+msgstr "أصدقاء مشتركون"
+
+msgid "at"
+msgstr "في"
+
+msgid "Confirm"
+msgstr "تأكيد"
+
+msgid "Decline"
+msgstr "رفض"
+
+msgid "Friend Request Sent"
+msgstr "إرسال طلب صديق"
+
+msgid "Add Friend"
+msgstr "إضافة صديق"
+
+msgid "Following"
+msgstr "متابعين"
+
+msgid "Follow"
+msgstr "متابعة"
+
+msgid "Update Info"
+msgstr "تحديث البيانات"
+
+msgid "Unlike"
+msgstr "إلغاء التمييز"
+
+msgid "Like"
+msgstr "تمييز"
+
+msgid "More Stories"
+msgstr "شاهد المزيد"
+
+msgid "No posts to show"
+msgstr "لا توجد مشاركات لإظهار"
+
+msgid "Edit Product"
+msgstr "تحرير المنتج"
+
+msgid "Product Name"
+msgstr "اسم المنتج"
+
+msgid "New"
+msgstr "جديد"
+
+msgid "Used"
+msgstr "مستعمل"
+
+msgid "Sell New Product"
+msgstr "إضافة منتج جديد"
+
+msgid "Photos"
+msgstr "الصور"
+
+msgid "Share"
+msgstr "مشاركة"
+
+msgid "Share the post to"
+msgstr "نشر"
+
+msgid "Timeline"
+msgstr "السجل"
+
+msgid "Create New Story"
+msgstr "إضافة جلسة جديدة"
+
+msgid "Videos"
+msgstr "الفيديوهات"
+
+msgid "No reactions yet"
+msgstr "لا ردود فعل حتى الان"
+
+msgid "People Who Shared This"
+msgstr "الناس الذين يشارك هذا"
+
+msgid "No people shared this"
+msgstr "لم يشارك أي شخص هذا"
+
+msgid "People who voted for this option"
+msgstr "الأعضاء الذين صوتوا لهذا الخيار"
+
+msgid "No people voted for this"
+msgstr "لم يصوت أي شخص لهذا"
+
+msgid "Explore the latest articles"
+msgstr "استكشاف أحدث المقالات"
+
+msgid "More Articles"
+msgstr "المزيد من المقالات"
+
+msgid "No articles to show"
+msgstr "لا توجد مقالات لعرضها"
+
+msgid "Uncategorized"
+msgstr "غير مصنف"
+
+msgid "Read More"
+msgstr "اقراء المزيد"
+
+msgid "Edit"
+msgstr "تصحيح"
+
+msgid "Posted"
+msgstr "نشر بتاريخ"
+
+msgid "Comment"
+msgstr "تعليق"
+
+msgid "Content"
+msgstr "يحتوى"
+
+msgid "Cover"
+msgstr "الغلاف"
+
+msgid "Select Category"
+msgstr "اختار التصنيف"
+
+msgid "Tags"
+msgstr "الوسوم"
+
+msgid "Delete Article"
+msgstr "حذف المقال"
+
+msgid "Contact us and we’ll get back to you as soon as possible"
+msgstr "اتصل بنا وسيتم الرد عليك قريبًا"
+
+msgid "Discover new users’create new connections and make new friends"
+msgstr "اكتشاف أعضاء جدد وإنشاء اتصالات جديدة وصداقات جديدة"
+
+msgid "News Feed"
+msgstr "آخر الأحداث"
+
+
+msgid "Communicate with the people who share your interests"
+msgstr "التواصل مع الأعضاء الذين يشاركونك اهتماماتك"
+
+msgid "Members can organize community events for online and offline doings"
+msgstr "يمكن للأعضاء تنظيم مناسبات واقعية وافتراضية"
+
+msgid "Members can hold conversations in the form of posted messages"
+msgstr "يمكن للأعضاء إجراء محادثات على شكل رسائل منشورة"
+
+msgid "Playing games always fun, Play with the people who share your interests"
+msgstr "لعب ألعاب ممتعة دائماً، تلعب مع الناس الذين تبادل المصالح الخاصة بك"
+
+msgid "No users to show"
+msgstr "لا يوجد مستخدمون للعرض"
+
+msgid "No pages to show"
+msgstr "لا توجد صفحات للعرض "
+
+msgid "No Panels to show"
+msgstr "لا توجد مجالس لعرضها"
+
+msgid "No events to show"
+msgstr "لا توجد مناسبات لعرضها"
+
+msgid "No games to show"
+msgstr "لا توجد ألعاب لإظهارها"
+
+msgid "Drag to reposition cover"
+msgstr "اسحب لتغيير موضع الغطاء"
+
+msgid "Public Event"
+msgstr "مناسبة عامة"
+
+msgid "Closed Event"
+msgstr "مناسبة مغلقة"
+
+msgid "Secret Event"
+msgstr "مناسبة سرية"
+
+msgid "to"
+msgstr "إلى"
+
+msgid "Hosted By"
+msgstr "برعاية"
+
+msgid "See All"
+msgstr "عرض كل النتائج"
+
+msgid "Invite Friends"
+msgstr "ادع أصدقاءك"
+
+msgid "You can access this as your account is system admin account!"
+msgstr "يمكنك الوصول إلى هذا الحساب!"
+
+msgid "Albums"
+msgstr "الألبومات"
+
+msgid "doesn't have photos"
+msgstr "لا يملك صور"
+
+msgid "doesn't have albums"
+msgstr "لا يملك ألبومات"
+
+msgid "Back to Albums"
+msgstr "العودة إلى ألبوم"
+
+msgid "doesn't have videos"
+msgstr "لايوجد فيديوهات"
+
+msgid "Invites"
+msgstr "دعوات"
+
+msgid "No friends to invite"
+msgstr "لا يوجد أصدقاء لدعوتهم"
+
+msgid "No people available"
+msgstr "لا يوجد أعضاء متاحون"
+
+msgid "Delete Event"
+msgstr "حذف المناسبة"
+
+msgid "Once you delete your event you will no longer can access it again"
+msgstr "عند حذف الحدث الخاص بك ، لن يمكنك الوصول إليه مرة أخرى"
+
+msgid "This event is private and you need to be invited to see its info, members and posts"
+msgstr "هذا الحدث خاص ويجب دعوتك للاطلاع على معلوماته وأعضائه ومشاركاته"
+
+msgid "Discover"
+msgstr "اكتشف"
+
+msgid "My Events"
+msgstr "مناسباتي"
+
+msgid "Create Event"
+msgstr "إنشاء مناسبة"
+
+msgid "The great place to discuss topics with other users"
+msgstr "مكان رائع للمناقشة مع المستخدمين الآخرين"
+
+msgid "Home"
+msgstr "الرئيسية"
+
+msgid "Replies"
+msgstr "رد"
+
+msgid "Sub-Forums"
+msgstr "الأقسام الفرعية:"
+
+msgid "What's Going On?"
+msgstr "ما الذي يحدث؟"
+
+msgid "Who's online"
+msgstr "المتواجدون حاليا"
+
+msgid "Forum Statistics"
+msgstr "إحصائيات المنتدى"
+
+msgid "Thread"
+msgstr "تسلسل"
+
+msgid "Last Post"
+msgstr "آخر مشاركة"
+
+msgid "No Threads"
+msgstr "لا يوجد مواضيع متسلسلة"
+
+msgid "Moderator"
+msgstr "وسيط"
+
+msgid "Member"
+msgstr "عضو"
+
+msgid "Update"
+msgstr "تحديث"
+
+msgid "Reply"
+msgstr "الرد"
+
+msgid "Forum"
+msgstr "المنتدى"
+
+msgid "No threads to show"
+msgstr "لا مواضيع لاظهارها"
+
+msgid "No replies to show"
+msgstr "لا توجد ردود لعرضها"
+
+msgid "Keyword(s)"
+msgstr "كلمة / كلمات رئيسية"
+
+msgid "Search For"
+msgstr "ابحث"
+
+msgid "Search in Forum(s)"
+msgstr "البحث في المنتدى (المنتديات)"
+
+msgid "Search All Forums"
+msgstr "البحث في جميع المنتديات"
+
+msgid "Also search in child forums"
+msgstr "ابحث أيضا في منتديات الأطفال"
+
+msgid "Results Found"
+msgstr "نتائج تم إيجادها"
+
+msgid "No results found"
+msgstr "لا توجد نتائج"
+
+msgid "Pending"
+msgstr "قيد الانتظار"
+
+msgid "Join"
+msgstr "انضم إلينا"
+
+msgid "Public Group"
+msgstr "المجموعة العامة"
+
+msgid "Closed Group"
+msgstr "مجموعة مغلقة"
+
+msgid "Secret Group"
+msgstr "المجموعة السرية"
+
+msgid "members"
+msgstr "اعضاء"
+
+msgid "person"
+msgstr "الشخص"
+
+msgid "persons"
+msgstr "الأشخاص"
+
+msgid "wants to join this group"
+msgstr "يريد الانضمام إلى هذه المجموعة"
+
+msgid "doesn't have members"
+msgstr "لا يملك أعضاء"
+
+msgid "Join Requests"
+msgstr "الانضمام إلى الطلبات"
+
+msgid "Delete Group"
+msgstr "حذف المجموعة"
+
+msgid "Can only contain alphanumeric characters (A–Z, 0–9) and periods ('.')"
+msgstr "('.') s والفترات s (أ-ي,0-9)(y)  يمكن أن يحتوي فقط على أحرف أبجدية رقمية"
+
+msgid "Member Requests"
+msgstr "طلبات العضو"
+
+msgid "No Requests"
+msgstr "لا طلبات"
+
+msgid "doesn't have admins"
+msgstr "لا يملك مدراء"
+
+msgid "All Members"
+msgstr "كل الأعضاء"
+
+msgid "Once you delete your group you will no longer can access it again"
+msgstr "عند حذف مجموعتك ، لا يمكنك الوصول إليها مرة أخرى"
+
+msgid "My panels"
+msgstr "مجالسي"
+
+msgid "Create panel"
+msgstr "إنشاء مجلس"
+
+msgid "Share your memories, connect with others, make new friends"
+msgstr "ذكرياتك، والتواصل مع الآخرين، وتكوين صداقات جديدة"
+
+msgid "Enjoy looking back on your memories"
+msgstr "استمتع بالعودة إلى ذكرياتك"
+
+msgid "ON THIS DAY"
+msgstr "في هذا اليوم"
+
+msgid "My Boosted Posts"
+msgstr "مشاركاتي المنشورة"
+
+msgid "Choose the Plan That's Right for You"
+msgstr "اختر الخطة التي تناسبك"
+
+msgid "Check the package from"
+msgstr "تحقق من الحزمة من"
+
+msgid "Here"
+msgstr "هنا"
+
+msgid "Upgrade to Pro"
+msgstr "ترقية الحساب"
+
+msgid "My Boosted Pages"
+msgstr "صفحاتي المدعومة"
+
+msgid "Upgrade"
+msgstr "ترقية"
+
+msgid "Pro Users"
+msgstr "برو المستخدمين"
+
+msgid "Pro Pages"
+msgstr "الصفحات المؤيدة"
+
+msgid "Trending"
+msgstr "الشائع"
+
+msgid "Friend Suggestions"
+msgstr "اقتراحات الأصدقاء"
+
+msgid "Suggested Pages"
+msgstr "الصفحات المقترحة"
+
+msgid "Suggested panels"
+msgstr "المجالس المقترحة"
+
+msgid "Suggested Events"
+msgstr "مناسبات مقترحة"
+
+msgid "Invite Your Friends"
+msgstr "ادع أصدقاءك"
+
+msgid "Contacts"
+msgstr "الاتصال بنا"
+
+msgid "My Information"
+msgstr "معلوماتي"
+
+msgid "Your Information"
+msgstr "معلوماتك"
+
+msgid "User Name"
+msgstr "اسم المستخدم"
+
+msgid "User First Name"
+msgstr "اسم المستخدم الأول"
+
+msgid "User Last Name"
+msgstr "اسم العائلة"
+
+msgid "User Email"
+msgstr "البريد الإلكتروني للمستخدم"
+
+msgid "User Phone"
+msgstr "هاتف المستخدم"
+
+msgid "User Gender"
+msgstr "جنس المستخدم"
+
+msgid "Your Sessions"
+msgstr "جلساتك"
+
+msgid "Active Session"
+msgstr "الجلسة النشطة"
+
+msgid "Your Friends"
+msgstr "أصدقاؤك"
+
+msgid "Your Followings"
+msgstr "متابعاتك"
+
+
+msgid "Your Followers"
+msgstr "متابعوك"
+
+msgid "Your Likes"
+msgstr "تمييزاتك"
+
+msgid "Your Panels" 
+msgstr "مجالسك"
+
+msgid "Your events"
+msgstr "المناسبات الخاصة بك"
+
+msgid "Your posts"
+msgstr "مشاركاتك"
+
+msgid "Add New Product"
+msgstr "إضافة منتج جديد"
+
+msgid "results were found for the search for"
+msgstr "تم العثور على نتائج للبحث عن"
+
+msgid "Promoted Products"
+msgstr "المنتجات الدعائية"
+
+msgid "More"
+msgstr "المزيد"
+
+msgid "Buy"
+msgstr "شراء"
+
+msgid "No products to show"
+msgstr "لا توجد منتجات لعرضها"
+
+msgid "my messages"
+msgstr "مبعوث  رسائلي"              
+
+msgid "Load Older Threads"
+msgstr "تحميل الموضوعات القديمة"
+
+msgid "New Message"
+msgstr "رسالة جديدة"
+
+msgid "No Conversation Selected"
+msgstr "لم يتم اختيار رسالة"
+
+msgid "minutes"
+msgstr "الدقائق"
+
+msgid "Stars"
+msgstr "نجوم"
+
+msgid "Watch"
+msgstr "شاهد"
+
+msgid "No movies to show"
+msgstr "لا توجد أفلام للمشاهدة"
+
+msgid "Your Notifications"
+msgstr "الإشعارات"
+
+msgid "Verified member"
+msgstr "عضو موثق"
+
+msgid "Verified badge"
+msgstr "علامة التوثيق"
+
+msgid "Posts promotion"
+msgstr "ترقية المشاركات"
+
+msgid "Boost up to"
+msgstr "الترويجية"
+
+msgid "Pages promotion"
+msgstr "ترقية الصفحات"
+
+msgid "Buy Now"
+msgstr "شراء الان"
+
+msgid "Upgrade Now"
+msgstr "ترقية الان"
+
+msgid "Unboost"
+msgstr "الغاء الترويج"
+
+msgid "Boost"
+msgstr "ترويج"
+
+msgid "Boost Page"
+msgstr "ترويج الصفحة"
+
+msgid "people like this"
+msgstr "الناس أعجبو بهذا"
+
+msgid "Page Information"
+msgstr "معلومات الصفحة"
+
+msgid "Delete Page"
+msgstr "حذف الصفحة"
+
+msgid "Action Button"
+msgstr "زر التشغيل"
+
+msgid "Website link must start with http:// or https://"
+msgstr "https:// أو http://يجب أن يبدأ رابط موقع الويب بـ"
+
+msgid "Action Button Text"
+msgstr "نص زر الإجراء"
+
+msgid "For example: Subscribe, Get tickets, Preorder now or Shop now"
+msgstr "على سبيل المثال: اشترك ، احصل على تذاكر ، Preorder الآن أو تسوق الآن"
+
+msgid "Action Button Color"
+msgstr "زر عمل الزر"
+
+msgid "Action"
+msgstr "عمل"
+
+msgid "Action Button URL"
+msgstr "عنوان URL الخاص بـ Action"
+
+msgid "Congratulations"
+msgstr "تهانينا"
+
+msgid "This page is verified"
+msgstr "تم التحقق من هذه الصفحة"
+
+msgid "Verification Documents"
+msgstr "وثائق التحقق"
+
+msgid "Your Photo"
+msgstr "صورتك"
+
+msgid "Passport or National ID"
+msgstr "جواز السفر أو الهوية الوطنية"
+
+msgid "Please attach your photo and your Passport or National ID"
+msgstr "يرجى إرفاق صورتك وجواز السفر أو الهوية الوطنية"
+
+msgid "Additional Information"
+msgstr "معلومة إضافية"
+
+msgid "Please share why your account should be verified"
+msgstr "الرجاء مشاركة سبب ضرورة التحقق من حسابك"
+
+msgid "Send Verification Request"
+msgstr "إرسال طلب التحقق"
+
+msgid "Your verification request is still awaiting admin approval"
+msgstr "لا يزال طلب التحقق بانتظار موافقة المشرف"
+
+msgid "Sorry"
+msgstr "معذرة"
+
+msgid "Your verification request has been declined by the admin"
+msgstr "تم رفض طلب التحقق من قبل المشرف"
+
+msgid "Once you delete your page you will no longer can access it again"
+msgstr "بعد حذف صفحتك، لن تتمكن مرة أخرى من الدخول إليها مرة أخرى"
+
+msgid "My Pages"
+msgstr "صفحاتي"
+
+msgid "Create Page"
+msgstr "إنشاء صفحة"
+
+msgid "Sent Requests"
+msgstr "الطلبات المرسلة"
+
+msgid "Distance"
+msgstr "مسافه: بعد"
+
+msgid "KM"
+msgstr "كم"
+
+msgid "Keyword"
+msgstr "كلمة مفتاحية"
+
+msgid "Gender"
+msgstr "الجنس"
+
+msgid "Any"
+msgstr "أياً كان"
+
+msgid "Relationship"
+msgstr "صلة"
+
+msgid "Online Status"
+msgstr "حالة الاتصال"
+
+msgid "Offline"
+msgstr "غير متصل"
+
+msgid "People You May Know"
+msgstr "أعضاء قد تعرفهم"
+
+msgid "No people available for your search"
+msgstr "لا يوجد أشخاص متاحون لبحثك"
+
+msgid "Respond to Your Friend Request"
+msgstr "الرد على طلب صديقك"
+
+msgid "No new requests"
+msgstr "لا يوجد طلبات في الانتظار"
+
+msgid "PRO"
+msgstr "المؤيد"
+
+msgid "Poke"
+msgstr "وكزة"
+
+msgid "Report"
+msgstr "تبليغ"
+
+msgid "Block"
+msgstr "حظر"
+
+msgid "Do you know"
+msgstr "هل تعرف"
+
+msgid "To see what"
+msgstr "لرؤية ما"
+
+msgid "shares with friends"
+msgstr "يشاركه مع الأصدقاء"
+
+msgid "send a friend request"
+msgstr "إرسال طلب صداقة"
+
+msgid "Delete Request"
+msgstr "حذف طلب"
+
+msgid "Profile Completion"
+msgstr "اكتمال الملف الشخصي"
+
+msgid "Add your profile picture"
+msgstr "أضف صورة ملفك الشخصي"
+
+msgid "Add your profile cover"
+msgstr "أضف غطاء ملفك الشخصي"
+
+msgid "Add your biography"
+msgstr "أضف سيرتك الذاتية"
+
+msgid "Add your date of birth" 
+msgstr "أضف تاريخ ميلادك"
+
+msgid "Add your relationship"
+msgstr "أضف روابطك"
+
+msgid "Add your work info"
+msgstr "أضف معلومات عملك"
+
+msgid "Add your location info"
+msgstr "أضف معلومات موقعك"
+
+msgid "Add your education info"
+msgstr "أضف معلوماتك التعليمية"
+
+msgid "Studied"
+msgstr "درس"
+
+msgid "Lives in"
+msgstr "يعيش في"
+
+msgid "Followed by"
+msgstr "متابع بواسطة"
+
+msgid "people"
+msgstr "أشخاص"
+
+msgid "Send a Gift"
+msgstr "إرسال هدية"
+
+msgid "doesn't have friends"
+msgstr "لايوجد أصدقاء"
+
+msgid "doesn't have Participants"
+msgstr "لا يملك مشاركين"
+
+msgid "doesn't have followings"
+msgstr "لا يملك متابعين"
+
+msgid "Reset Password"
+msgstr "تغيير كلمة المرور"
+
+msgid "Enter the email address you signed up with and we'll email you a reset link"
+msgstr "أدخل عنوان البريد الإلكتروني الذي سجلت به وسنرسل إليك رسالة إلكترونية برابط إعادة التعيين"
+
+msgid "Articles"
+msgstr "المقالات"
+
+msgid "No results to show"
+msgstr "لا يوجد نتائج لإظهار"
+
+msgid "My Affiliates"
+msgstr "بلدي المنتسبون"
+
+msgid "My Points"
+msgstr "نقاطي"
+
+msgid "Email Verification Required"
+msgstr "التحقق من البريد الإلكتروني مطلوب"
+
+msgid "Check your email inbox"
+msgstr "تحقق من صندوق بريدك الإلكتروني"
+
+msgid "to complete the verification process"
+msgstr "لإكمال عملية التحقق"
+
+msgid "Resend Verification Email"
+msgstr "إعادة ارسال بريد التحقق"
+
+msgid "Phone Verification Required"
+msgstr "التحقق من الهاتف مطلوب"
+
+msgid "Check your phone SMS"
+msgstr "افحص هاتفك"
+
+msgid "to complete phone verification process"
+msgstr "لإكمال عملية التحقق من الهاتف"
+
+msgid "Enter Code"
+msgstr "ادخل رمزاً"
+
+msgid "Your phone number i.e +12344567890"
+msgstr "رقم هاتفك أي +12344567890"
+
+msgid "insert Current Password"
+msgstr "أدخل كلمة المرور الحالية"
+
+msgid "Your New Password"
+msgstr "كلمة المرور الجديدة" 
+
+msgid "Confirm New Password"
+msgstr "تأكيد كلمة المرور الجديدة"
+
+msgid "Log in with a code from your"
+msgstr "تسجيل الدخول مع رمز من حسابك"
+
+msgid "email"
+msgstr "البريد الإلكتروني"
+
+msgid "phone"
+msgstr "هاتف"
+
+msgid "Google Authenticator App"
+msgstr "مساعدة حساب جوجل"
+
+msgid "as well as a password"
+msgstr "وكذلك كلمة المرور"
+
+msgid "Configuring your authenticator"
+msgstr "تكوين الموثق الخاص بك"
+
+msgid "You need to download Google Authenticator app for"
+msgstr "Google Authenticator app تحتاج إلى تنزيل تطبيق"
+
+msgid "Android"
+msgstr "أندرويد"
+
+msgid "or"
+msgstr "أو"
+
+msgid "IOS"
+msgstr "ios"
+
+msgid "In your app, add a new account using the details below"
+msgstr "في تطبيقك ، أضف حسابًا جديدًا باستخدام التفاصيل أدناه"
+
+msgid "Scanning the QR code"
+msgstr "مسح رمز الاستجابة السريعة"
+
+msgid "Manually by entering this token"
+msgstr "يدويا عن طريق إدخال هذا الرمز المميز"
+
+msgid "Activate your authenticator"
+msgstr "تنشيط الموثق الخاص بك"
+
+msgid "Verification Code"
+msgstr "شيفرة التأكيد"
+
+msgid "Enter the code shown on your app"
+msgstr "أدخل الرمز الظاهر على تطبيقك"
+
+msgid "System Notifications"
+msgstr "إشعارات النظام"
+
+msgid "Sound notification of message"
+msgstr "اشعار صوتي بالرسالة"
+
+msgid "A sound will be played each time you receive a new message on an inactive chat window"
+msgstr "سيتم تشغيل تنبية صوتي في كل مرة تتلقى رسالة جديدة على نافذة دردشة غير نشطة"
+
+msgid "Notifications Sound"
+msgstr "صوت التنبيه"
+
+msgid "A sound will be played each time you receive a new activity notification"
+msgstr "سيتم تشغيل تنبية صوتي في كل مرة تتلقى أي إشعار جديد"
+
+msgid "Email Me When"
+msgstr "قم بإرسال بريد عندما"
+
+msgid "Someone liked my post"
+msgstr "الاعجاب بالمشاركات"
+
+msgid "Someone commented on my post"
+msgstr "علق شخص ما على مشاركتي"
+
+msgid "Someone shared my post"
+msgstr "نشر شخص مشاركتك"
+
+msgid "Someone posted on my timeline"
+msgstr "نشر شخص ما على سجلي الشخصي"
+
+msgid "Someone mentioned me"
+msgstr "ذكرني شخص ما"
+
+msgid "Someone visited my profile"
+msgstr "زيارات الملف الشخصي"
+
+msgid "Someone sent me/accepted my friend requset"
+msgstr "طلبات الصداقة والمتابعات"
+
+msgid "Your account is connected to"
+msgstr "الحساب الخاص بك متصل ب"
+
+msgid "Connect your account to"
+msgstr "ربط حسابك ب"
+
+msgid "Disconnect"
+msgstr "قطع الاتصال"
+
+msgid "Connect"
+msgstr "توصيل"
+
+msgid "Manage"
+msgstr "إدارة"
+
+msgid "Affiliates System"
+msgstr "نظام الشركات التابعة"
+
+msgid "Earn up to"
+msgstr "تكسب ما يصل الى"
+
+msgid "For each user you will refer"
+msgstr "سعر كل مستخدم محال جديد"
+
+msgid "You will be paid when"
+msgstr "سوف تدفع لك عندما"
+
+msgid "new user registered"
+msgstr "مستخدم جديد مسجل"
+
+msgid "From the package price of your refered user"
+msgstr "من سعر الحزمة للمستخدم المشار إليه"
+
+msgid "new user registered & bought a package"
+msgstr "تسجيل مستخدم جديد & اشترِ باقة احترافية "
+
+msgid "Your affiliate link is"
+msgstr "الرابط التابع الخاص بك هو"
+
+msgid "No affiliates"
+msgstr "لا فروع"
+
+msgid "Withdrawal Request"
+msgstr "طلب سحب الحد الأدنى"
+
+msgid "Your Balance"
+msgstr "رصيدك "
+
+msgid "The minimum withdrawal request amount is"
+msgstr "الحد الأدنى لمبلغ طلب السحب هو"
+
+msgid "Make a withdrawal"
+msgstr "جعل الانسحاب"
+
+msgid "Withdrawal History"
+msgstr "تاريخ السحوبات"
+
+msgid "Approved"
+msgstr "وافق"
+
+msgid "Declined"
+msgstr "تم الرفض"
+
+msgid "No withdrawal history"
+msgstr "لا تاريخ الانسحاب"
+
+msgid "Each"
+msgstr "كل"
+
+msgid "points equal"
+msgstr "نقاط متساوية"
+
+msgid "Your daily points limit is"
+msgstr "المستخدمين المجانين اليوميين"
+
+msgid "You have"
+msgstr "تأكد من تمكينك"
+
+msgid "remaining points"
+msgstr "النقاط المتبقية"
+
+msgid "You can withdraw your money"
+msgstr "يمكن للمستخدمين سحب الأموال المكتسبة"
+
+msgid "You can transfer your money to your"
+msgstr "يمكنك نقل المال لك"
+
+msgid "wallet"
+msgstr "المحفظة"
+
+msgid "For creating a new post"
+msgstr "فتح في نافذة جديدة"
+
+msgid "For commenting any post"
+msgstr "نقاش المشاركة"
+
+msgid "For reacting on any post"
+msgstr "الرد النقاش على مشاركة"
+
+msgid "Your Points Balance"
+msgstr "رصيد نقاطك"
+
+msgid "Your Money Balance"
+msgstr "رصيد أموالك"
+
+msgid "Transfers History"
+msgstr "تاريخ السحوبات"
+
+msgid "No transfers history"
+msgstr "لا تاريخ الانسحاب"
+
+msgid "This account is verified"
+msgstr "تم التحقق من هذا الحساب"
+
+msgid "Manage Blocking"
+msgstr "إدارة الحظر"
+
+msgid "Once you block someone, that person can no longer see things you post on your timeline"
+msgstr "عند حظر مستخدم ، لا يمكنه رؤية مشاركاتك"
+
+msgid "No blocked users"
+msgstr "لا يوجد مستخدم محظور"
+
+msgid "You can download all of it at once, or you can select only the types of information you want"
+msgstr "يمكنك تنزيل كل ذلك مرة واحدة"
+
+msgid "Select which information you would like to download"
+msgstr "حدد المعلومات التي تريد تنزيلها"
+
+msgid "download File" 
+msgstr "تنزيل ملف"
+
+msgid "Once you delete your account you will no longer can access it again"
+msgstr "عند حذفك الحساب الخاص بك لايمكن إعادته مرة أخرى"
+
+msgid "Delete My Account"
+msgstr "حذف حسابي"
+
+msgid "This information will let us know more about you"
+msgstr "هل يمكننا معرفة المزيد من المعلومات عنك"
+
+msgid "Welcome"
+msgstr "مرحباً بك"
+
+msgid "First name"
+msgstr "الاسم الأول"
+
+msgid "Last name"
+msgstr "اللقب"
+
+msgid "By creating your account, you agree to our"
+msgstr "عن طريق إنشاء حسابك ، فإنك توافق على"
+
+msgid "Terms"
+msgstr "شروط الخدمة"
+
+msgid "Privacy Policy"
+msgstr "سياسة الخصوصية"
+
+msgid "Step 1"
+msgstr "الخطوة 1"
+
+msgid "Upload your photo"
+msgstr "ارفع صورتك هنا"
+
+msgid "Step 2"
+msgstr "الخطوة 2"
+
+msgid "Update your info"
+msgstr "تحديث معلوماتك"
+
+msgid "Step 3"
+msgstr "الخطوة 3"
+
+msgid "Add Friends"
+msgstr "إضافة الأصدقاء"
+
+msgid "Let's start with your photo"
+msgstr "لنبدأ مع الصورة الخاصة بك"
+
+msgid "Next Step"
+msgstr "الخطوة التالية"
+
+msgid "Share your information with our community"
+msgstr "مشاركة المعلومات الخاصة بك"
+
+msgid "Get latest activities from our popular users"
+msgstr "الحصول على أحدث الأنشطة من المستخدمين شعبية"
+
+msgid "Finish"
+msgstr "الانتهاء والانتقال لصفحتك"
+
+msgid "Sponsored"
+msgstr "رعاية تجارية"
+
+msgid "Add Photos"
+msgstr "أضف صورة جديدة"
+
+msgid "Delete Album"
+msgstr "حذف الألبوم"
+
+msgid "Shared with"
+msgstr "مشتركة مع"
+
+msgid "This album is empty"
+msgstr "هذا الألبوم فارغ"
+
+msgid "Promoted Posts"
+msgstr "ترويج المشاركات"
+
+msgid "Send a New Message"
+msgstr "أرسل رسالة جديدة"
+
+msgid "No messages"
+msgstr "لا توجد رسائل"
+
+msgid "Alert Sound"
+msgstr "صوت التنبيه"
+
+msgid "No notifications"
+msgstr "لا إشعارات"
+
+msgid "See All Results"
+msgstr "عرض كل النتائج"
+
+msgid "Clear"
+msgstr "مسح"
+
+msgid "Recent Searches"
+msgstr "عمليات البحث الأخيرة"
+
+msgid "Advanced Search"
+msgstr "البحث المتقدم"
+
+msgid "Please go to"
+msgstr "الرجاء الانتقال إلى"
+
+msgid "to complete the activation process"
+msgstr "لإكمال عملية التنشيط"
+
+msgid "Please check the SMS on your phone"
+msgstr "يرجى التحقق من الرسائل القصيرة في هاتفك"
+
+msgid "Change Email"
+msgstr "تغيير البريد الإلكتروني"
+
+msgid "Resend SMS"
+msgstr "اعادة إرسال الرسالة"
+
+msgid "Change Phone Number"
+msgstr "تغيير رقم الهاتف"
+
+msgid "The system has been shutted down"
+msgstr "تم إغلاق النظام"
+
+msgid "Turn it on from"
+msgstr "قم بتشغيله من"
+
+msgid "Log Out"
+msgstr "تسجيل الخروج"
+
+msgid "Keyboard Shortcuts"
+msgstr "اختصارات لوحة المفاتيح"
+
+msgid "Day Mode"
+msgstr "الوضع النهاري"
+
+msgid "Night Mode"
+msgstr "الوضع الليلي"
+
+msgid "Register"
+msgstr "التسجيل"
+
+msgid "Not Logged In"
+msgstr "لم تسجل الدخول"
+
+msgid "Please log in to continue"
+msgstr "الرجاء تسجيل الدخول للمتابعة"
+
+msgid "Select Your Language"
+msgstr "اختر لغتك"
+
+msgid "Search for"
+msgstr "نوع البحث"
+
+msgid "Select Your Payment Method"
+msgstr "حدد طريقة الدفع المناسبة لك"
+
+msgid "Credit Card"
+msgstr "بطاقة ائتمان"
+
+msgid "Alipay"
+msgstr "و alipay"
+
+msgid "Bank Transfer"
+msgstr "تحويل مصرفي"
+
+msgid "Wallet Credit"
+msgstr "تجديد رصيد المحفظة"
+
+msgid "Account Number / IBAN"
+msgstr "رقم الحساب المصرفي"
+
+msgid "Account Name"
+msgstr "اسم الحساب المصرفي"
+
+msgid "Routing Code"
+msgstr "رمز التوجيه لحسابك البنكي أو رمز سويفت"
+
+msgid "Bank Receipt"
+msgstr "سيتم عرض هذه الملاحظة للمستخدم أثناء تحميل إيصال التحويل المصرفي الخاص به"
+
+msgid "Please attach your bank receipt"
+msgstr "يرجى إرفاق إيصالك المصرفي"
+
+msgid "Check your email"
+msgstr "تفقد بريدك الإلكتروني"
+
+msgid "We sent you an email with a six-digit confirmation code. Enter it below to continue to reset your password"
+msgstr "أرسلنا لك رسالة بالبريد الإلكتروني مع رمز التأكيد المكون من ستة أرقام. يرجى الإدخال لمواصلة إعادة تعيين كلمة المرور الخاصة بك"
+
+msgid "We sent your code to"
+msgstr "تم إرسال الكود إلى"
+
+msgid "Continue"
+msgstr "استمر"
+
+msgid "Change Your Password"
+msgstr "تغيير كلمة المرور"
+
+msgid "New Password"
+msgstr "كلمة المرور الجديدة"
+
+msgid "Confirm Password"
+msgstr "تأكيد كلمة المرور"
+
+msgid "Two-factor authentication required"
+msgstr "المصادقة الثنائية عن طريق"
+
+msgid "You've asked us to require a 6-digit login code when anyone tries to access your account from a new device or browser"
+msgstr "لقد طلبت رمز تسجيل دخول مكون من 6 أرقام عندما يحاول شخص ما الوصول إلى حسابك من جهاز أو متصفح جديد"
+
+msgid "Enter the 6-digit code that we sent to your"
+msgstr "أدخل الرمز المكون من 6 أرقام الذي أرسلناه إلى حسابك"
+
+msgid "Change Email Address"
+msgstr "تغيير البريد الالكتروني" تغيير البريد الإلكتروني
+
+msgid "Current Email"
+msgstr "الايميل الحالي"
+
+msgid "New Email"
+msgstr "بريد إلكتروني جديد"
+
+msgid "Enter the code from the SMS message"
+msgstr "أدخل الرمز من رسالة SMS"
+
+msgid "Let us know if this mobile number belongs to you. Enter the code in the SMS"
+msgstr "أخبرنا إذا كان رقم الجوال هذا يخصك. أدخل الرمز في الرسالة القصيرة"
+
+msgid "Current Phone"
+msgstr "الهاتف الحالي"
+
+msgid "New Phone"
+msgstr "هاتف جديد"
+
+msgid "For example"
+msgstr "ومثال على ذلك:"
+
+msgid "Our website is made possible by displaying online advertisements to our visitors"
+msgstr "أصبح موقع الويب الخاص بنا ممكنًا عن طريق عرض الإعلانات عبر الإنترنت لزوارنا"
+
+msgid "Please consider supporting us by disabling your ad blocker"
+msgstr "يرجى النظر في دعمنا من خلال تعطيل مانع الإعلانات الخاص بك"
+
+msgid "Scroll to the next post"
+msgstr "استعرض المشاركة التالية"
+
+msgid "Scroll to the previous post"
+msgstr "استعراض المشاركة السابقة"
+
+msgid "Privacy Settings"
+msgstr "إعدادات الخصوصية"
+
+msgid "Turn Off Chat"
+msgstr "الدردشة"
+
+msgid "Turn On Chat"
+msgstr "قم بتفعيل الدردشة"
+
+msgid "Calling"
+msgstr "مكالمة" 
+
+msgid "Connecting"
+msgstr "توصيل"
+
+msgid "Close"
+msgstr "أغلق"
+
+msgid "New Video Call"
+msgstr "مكالمة الفيديو جديدة"
+
+msgid "New Audio Call"
+msgstr "المكالمة الصوتية جديدة"
+
+msgid "Wants to have video call with you"
+msgstr "يريد أن يجري مكالمة فيديو معك"
+
+msgid "Wants to have audio call with you"
+msgstr "يريد أن يجري مكالمة صوتية معك"
+
+msgid "Good Morning"
+msgstr "صباح الخير"
+
+msgid "Good Afternoon"
+msgstr "نهارك طيب"
+
+msgid "Good Evening"
+msgstr "مساء الخير"
+
+msgid "sent you a gift"
+msgstr "ارسل لك طلب صداقة"
+
+msgid "Post Hidden"
+msgstr "مشاركة مخفية"
+
+msgid "This post will no longer appear to you"
+msgstr "هذه المشاركة لم تعد تظهر لك"
+
+msgid "Undo"
+msgstr "تراجع"
+
+msgid "You won't see posts from"
+msgstr "لن ترى المشاركات من"
+
+msgid "in News Feed anymore"
+msgstr "مرة أخرى"
+  
+msgid "Create New Page"
+msgstr "إنشاء صفحة جديدة"
+
+msgid "Create"
+msgstr "أنشئ"
+
+msgid "Create New panel"
+msgstr "مجلس جديد"
+
+msgid "Create New Event"
+msgstr "إضافة مناسبة جديدة"
+
+msgid "Send To"
+msgstr "أرسل إلى"
+
+msgid "Your Affiliates Credit"
+msgstr "لشركات التابعة لك"
+
+msgid "Your Points Credit"
+msgstr "لائتمان الخاصة بك"
+
+msgid "Crop Picture"
+msgstr "قص الصورة"
+
+msgid "Your file is ready to download"
+msgstr "قم بتنزيل معلوماتك"
+
+msgid "Download"
+msgstr "تنزيل"
+
+msgid "Documents"
+msgstr "التحقق"
+
+msgid "Personal Photo"
+msgstr "صورتك"
+
+msgid "Verify"
+msgstr "تحقق"
+
+msgid "Ask something"
+msgstr "استفسر عن .."
+
+msgid "Loading"
+msgstr "جاري التحميل"
+
+msgid "Delete Cover"
+msgstr "حذف الغطاء"
+
+msgid "Delete Picture"
+msgstr "حذف الصورة"
+
+msgid "Delete Conversation"
+msgstr "حذف المحادثة"
+
+msgid "Block User"
+msgstr "حظر العضو"
+
+msgid "Unblock User"
+msgstr "إلغاء الحظر"
+
+msgid "Read more"
+msgstr "اقرأ أكثر"
+
+msgid "Read less"
+msgstr "طي للأعلى"
+
+msgid "Monthly Average"
+msgstr "المتوسط الشهري"
+
+msgid "Translated"
+msgstr "مترجم"
+
+msgid "Are you sure you want to delete this?"
+msgstr "هل أنت متأكد من الحذف؟"
+
+msgid "Are you sure you want to remove your cover photo?"
+msgstr "هل أنت متأكد أنك تريد إزالة صورة الغلاف الخاصة بك؟"
+
+msgid "Are you sure you want to remove your profile picture?"
+msgstr "هل أنت متأكد أنك تريد إزالة صورة ملفك الشخصي؟"
+
+msgid "Are you sure you want to delete this post?"
+msgstr "هل أنت متأكد من رغبتك في حذف المشاركة؟"
+
+msgid "Are you sure you want to delete this comment?"
+msgstr "هل أنت متأكد من حذف النقاش ؟"
+
+msgid "Are you sure you want to delete this conversation?"
+msgstr "هل أنت متأكد من حذف المحادثة؟"
+
+msgid "Are you sure you want to report this?"
+msgstr "هل أنت متأكد أنك تريد الإبلاغ عن هذا المستخدم؟"
+
+msgid "Are you sure you want to block this user?"
+msgstr "هل أنت متأكد أنك تريد حظر هذا المستخدم؟"
+
+msgid "Are you sure you want to unblock this user?"
+msgstr "هل أنت متأكد أنك تريد إلغاء حظر هذا المستخدم؟"
+
+msgid "Are you sure you want to delete your account?"
+msgstr "هل أنت متأكد أنك تريد حذف حسابك؟"
+
+msgid "Are you sure you want to verify this request?"
+msgstr "هل أنت متأكد من أنك تريد التحقق من هذا الطلب؟"
+
+msgid "Are you sure you want to decline this request?"
+msgstr "هل أنت متأكد من رغبتك في رفض هذا الطلب؟"
+
+msgid "Are you sure you want to approve this request?"
+msgstr "هل أنت متأكد من أنك تريد الموافقة على هذا الطلب؟"
+
+msgid "Are you sure you want to do this?"
+msgstr "هل أنت متأكد من أنك تريد أن تفعل هذا؟"
+
+msgid "There is something that went wrong!"
+msgstr "هناك خطأ ما حدث!"
+
+msgid "There is no more data to show"
+msgstr "لا يوجد نتائج لإظهارها"
+
+msgid "This website uses cookies to ensure you get the best experience on our website"
+msgstr "يستخدم هذا الموقع ملفات تعريف الارتباط لضمان حصولك على أفضل تجربة"
+
+msgid "Got It!"
+msgstr "فهمتك!"
+
+msgid "Learn More"
+msgstr "اعرف أكثر"
+
+msgid "No result found"
+msgstr "لا توجد نتائج"
+
+msgid "You haved poked"
+msgstr "تم لفت انتباهك"
+
+msgid "Touch to unmute"
+msgstr "اضغط لإلغاء كتم الصوت"
+
+msgid "Press space to see next"
+msgstr "اضغط مسافة لمشاهدة التالي"
+
+msgid "Visit link"
+msgstr "زيارة الرابط"
+
+msgid "hour ago"
+msgstr "منذ ساعة"
+
+msgid "hours ago"
+msgstr "منذ ساعات"
+
+msgid "minute ago"
+msgstr "منذ دقيقة"
+
+msgid "minutes ago"
+msgstr "منذ دقائق "
+
+msgid "from now"
+msgstr "من الان"
+
+msgid "seconds ago"
+msgstr "منذ ثواني"
+
+msgid "yesterday"
+msgstr "أمس"
+
+msgid "tomorrow"
+msgstr "غدا"
+
+msgid "days ago"
+msgstr "منذ أيام"
+
+msgid "Nothing selected"
+msgstr "لم يتم اختيار"
+
+msgid "Ringing"
+msgstr "رنين"
+
+msgid "is Offline"
+msgstr "غير متصل"
+
+msgid "is Busy"
+msgstr "مشغول"
+
+msgid "No Answer"
+msgstr "لا إجابة"
+
+msgid "You can not connect to this user"
+msgstr "لا يمكنك الاتصال بهذا المستخدم"
+
+msgid "You have an active call already"
+msgstr "لديك مكالمة نشطة بالفعل"
+
+msgid "The recipient declined the call"
+msgstr "رفض المستلم المكالمة"
+
+msgid "Connection has been lost"
+msgstr "تم فقد الاتصال"
+
+msgid "Cover Photos"
+msgstr "صور الغلاف"
+
+msgid "Profile Pictures"
+msgstr "الصور الرمزية"
+
+msgid "Timeline Photos"
+msgstr "صور جدول زمني"
+
+msgstr "بسم الله .. @ #"
+
+msgid "Write a comment"
+msgstr "اكتب مناقشة"
+
+msgid "Shared with: Public"
+msgstr "مشترك مع: العامة"
+
+msgid "Shared with: Friends"
+msgstr "شاركة مع أصدقائك"
+
+msgid "Shared with: Only Me"
+msgstr "المشاركة معي فقط"
+
+msgid "Write a message"
+msgstr "اكتب رسالة"
+
+msgid "Add an option"
+msgstr "إضافة خيار"
+
+msgid "Album title"
+msgstr "عنوان الألبوم"
+
+msgid "Where are you?"
+msgstr "أين أنت ؟"
+
+msgid "Search for products"
+msgstr " المنتجات"
+
+msgid "Promoted"
+msgstr "
+
+msgid "Search for user name or email"
+msgstr "البحث عن اسم المستخدم أو البريد الإلكتروني"
+
+msgid "Anyone can see the panel, its members and their posts"
+msgstr "يمكن لأي شخص رؤية المجالس وأعضائها ومشاركاتهم"
+
+msgid "Only members can see posts"
+msgstr "يمكن للأعضاء فقط رؤية المشاركات"
+
+msgid "Only members can find the panel and see posts"
+msgstr "يمكن للأعضاء فقط العثور على المجالس ومشاهدة المشاركات"
+
+msgid "Anyone can see the event, its users and posts"
+msgstr "يمكن لأي شخص مشاهدة المناسبة والأعضاء والمشاركات"
+
+msgid "Only event users can see posts"
+msgstr "يمكن للأعضاء فقط مشاهدة المشاركات"
+
+msgid "Only invited users and event users can find the event"
+msgstr "يمكن فقط للأعضاء المدعوين العثور على المناسبة "
+
+msgid "Appears on the right panel of home page"
+msgstr "يظهر على اللوحة اليمنى للصفحة الرئيسية"
+
+msgid "Appears on the right panel of search page"
+msgstr "يظهر على اللوحة اليمنى لصفحة البحث"
+
+msgid "Appears on the right panel of discover people page"
+msgstr "يظهر على اللوحة اليمنى لاكتشاف صفحة الأعضاء"
+
+msgid "Appears on the right panel of notifications page"
+msgstr "يظهر على اللوحة اليمنى لصفحة الإشعارات"
+
+msgid "Appears on the right panel of post page"
+msgstr "يظهر على اللوحة اليمنى لصفحة ما بعد النشر"
+
+msgid "Appears on the right panel of photo page"
+msgstr "يظهر على  اللوحة اليمنى لصفحة الصورة"
+
+msgid "Appears on the right panel of directory"
+msgstr "يظهر على  اللوحة اليمنى من المستكشف"
+
+msgid "Appears on the top of products list"
+msgstr "يظهر على  رأس قائمة المنتجات"
+
+msgid "Appears after"
+msgstr "يظهر بعد"
+
+msgid "posts are loaded, between the posts"
+msgstr "يتم تحميل المشاركات ، بين المشاركات"
+
+msgid "Appears on the sidebar on article page"
+msgstr "يظهر على الشريط الجانبي في صفحة المقالة"
+
+msgid "Appears on all pages right after the header"
+msgstr "يظهر على جميع الصفحات بعد رأس الصفحة مباشرةً"
+
+msgid "Appears on all pages right before the footer"
+msgstr "يظهر على جميع الصفحات قبل التذييل مباشرةً"
+
+msgid "Pinned Post"
+msgstr "الوظائف المضافة"
+
+msgid "Recent Updates"
+msgstr "التحديثات الأخيرة"
+
+msgid "Text"
+msgstr "النص"
+
+msgid "Links"
+msgstr "الروابط"
+
+msgid "Media"
+msgstr "وسائل الإعلام"
+
+msgid "Maps"
+msgstr "الخرائط"
+
+msgid "Products"
+msgstr "منتجات"
+
+msgid "Audios"
+msgstr "صوتيات"
+
+msgid "Add New Article"
+msgstr "مقالة جديدة"
+
+msgid "Video uploaded successfully"
+msgstr "الفيديوهات التي تم تحميلها بنجاح"
+
+msgid "Custom Video Thumbnail"
+msgstr "تخصيص صورة مصغرة للفيديو"
+
+msgid "Audio uploaded successfully"
+msgstr "مقاطع صوتية تم تحميلها بنجاح"
+
+msgid "File uploaded successfully"
+msgstr "الملفات التي تم تحميلها بنجاح"
+
+msgid "Create Album"
+msgstr "إنشاء ألبوم"
+
+msgid "Sell Something"
+msgstr "اضافة منتج"
+
+msgid "Write Article"
+msgstr "اكتب موضوعًا"
+
+msgid "Create Poll"
+msgstr "إنشاء استطلاع"
+
+msgid "Upload Video"
+msgstr "تحميل فيديو" 
+
+msgid "Upload Audio"
+msgstr "تحميل صوت"
+
+msgid "Upload File"
+msgstr "تحميل ملف"
+
+msgid "favorites"
+msgstr "المفضلة"
+
+msgid "Advertising"
+msgstr "أسعار الإعلانات"
+
+msgid "explore"
+msgstr "استكشف"
+
+msgid "Remember me"
+msgstr "تذكرني"
+
+msgid "Forgotten password?"
+msgstr "هل نسيت كلمة السر ؟"
+
+msgid "login with"
+msgstr "الدخول بواسطة"
+
+msgid "Not registered?"
+msgstr "غير مسجل؟"
+
+msgid "Create an account"
+msgstr "إنشاء حساب"
+
+msgid "register with"
+msgstr "تسجيل عبر"
+
+msgid "Have an account?"
+msgstr "هل لديك حساب؟"
+
+msgid "Login Now"
+msgstr "سجل الدخول الآن"
+
+msgid "Select"
+msgstr "تحديد"
+
+msgid "Commenting has been turned off for this post"
+msgstr "تم إيقاف النقاش لهذه المشاركة"
+
+msgid "Edit Comment"
+msgstr "تحرير النقاش"
+
+msgid "Delete Comment"
+msgstr "حذف النقاش"
+
+msgid "View previous replies"
+msgstr "عرض الردود السابقة"
+
+msgid "photo"
+msgstr "صورة"
+
+msgid "Played"
+msgstr "لعب"
+
+msgid "Seen by"
+msgstr "شوهد لآخر مرة"
+
+//stopped here10/11/2019
+
+msgid "Mark as Sold"
+msgstr "تم بيعة"
+
+msgid "Mark as Available"
+msgstr "عرض في المتجر"
+
+msgid "Unsave Post"
+msgstr "إلغاء حفظ المشاركة"
+
+msgid "Save Post"
+msgstr "حفظ المشاركة"
+
+msgid "Unboost Post"
+msgstr ""الغاء الترويج"
+
+msgid "Boost Post"
+msgstr "ترويج"
+
+msgid "Unpin Post"
+msgstr "إلغاء تثبيت  المشاركة"
+
+msgid "Pin Post"
+msgstr "تثبيت"
+
+msgid "Edit Post"
+msgstr "تعديل"
+
+msgid "Delete Post"
+msgstr "حذف"
+
+msgid "Turn on Commenting"
+msgstr "تمكين المناقشات"
+
+msgid "Turn off Commenting"
+msgstr "إيقاف المناقشات"
+
+msgid "Unfollow"
+msgstr "إلغاء المتابَعة"
+
+msgid "Stop seeing posts but stay friends"
+msgstr "التوقف عن رؤية المشاركات مع بقاء الصداقة"
+
+msgid "Hide this post"
+msgstr "إخفاء"
+
+msgid "See fewer posts like this"
+msgstr "مشاهدة القليل مثل هذا ال"
+
+msgid "Report post"
+msgstr "تبليغ"
+
+msgid "Open post in new tab"
+msgstr "فتح في نافذة جديدة"
+
+msgid "shared"
+msgstr "شارك"
+
+msgid "'s"
+msgstr " "
+
+msgid "video"
+msgstr "فيديو"
+
+msgid "link"
+msgstr "رابط"
+
+msgid "poll"
+msgstr "تصويت"
+
+msgid "album"
+msgstr "ألبوم"
+
+msgid "audio"
+msgstr "صوتي"
+
+msgid "file"
+msgstr "الملف"
+
+msgid "shared a link"
+msgstr "شارك رابط"
+
+msgid "added"
+msgstr "اضاف"
+
+msgid "photos to the album"
+msgstr "صور للألبوم"
+
+msgid "created a poll"
+msgstr "إنشاء استطلاع"
+
+msgid "added new product for sale"
+msgstr "اضاف منتج جديد للبيع"
+
+msgid "added new article"
+msgstr "إضافة مادة جديدة"
+
+msgid "added a video"
+msgstr "إضافة ملف فيديو"
+
+msgid "added an audio"
+msgstr "إضافة صوت"
+
+msgid "added a file"
+msgstr "إضافة ملف"
+
+msgid "added a photo"
+msgstr "إضافة صورة"
+
+msgid "updated the profile picture"
+msgstr "تحديث صورة الملف الشخصي"
+
+msgid "updated the cover photo"
+msgstr "تحديث صورة الغلاف"
+
+msgid "updated page picture"
+msgstr "تحديث الصورة العامة لصفحة"
+
+msgid "updated cover photo"
+msgstr "قام بتحديث صورة الغلاف"
+
+msgid "updated panel picture"
+msgstr "تحديث الصورة العامة  لمجلس"
+
+msgid "updated panel cover"
+msgstr "قام بتحديث صورة الغلاف  للمجلس"
+
+msgid "updated event cover"
+msgstr "حدث غلاف المناسبة"
+
+msgid "is"
+msgstr "هو"
+
+msgid "feeling_action"
+msgstr "شعور القيمة"
+
+msgid "feeling_value"
+msgstr "ue"
+
+msgid "Translate"
+msgstr "ترجمه"
+
+msgid "Your browser does not support HTML5 audio"
+msgstr "الصوتHTML5 المتصفح الخاص بك لا يدعم "
+
+msgid "File Type"
+msgstr "نوع الملف"
+
+msgid "Show Attachments"
+msgstr "إظهار المرفقات"
+
+msgid "In stock"
+msgstr "في المخزن"
+
+msgid "SOLD"
+msgstr "البيع"
+
+msgid "Contact Seller"
+msgstr "إتصل بالبائع"
+
+msgid "View previous comments"
+msgstr "عرض المناقشات السابقة"
+
+msgid "Please log in to like, share and comment!"
+msgstr "الرجاء تسجيل الدخول للإعجاب والمشاركة والمناقشة"
+
+msgid "Shares"
+msgstr "نشر"
+
+msgid "Add"
+msgstr "إضافة"
+
+msgid "Unblock"
+msgstr "رفع الحظر"
+
+msgid "Invite"
+msgstr "دعوة "
+
+msgid "Remove"
+msgstr "حذف"
+
+msgid "Remove Admin"
+msgstr "إزالة مسؤول"
+
+msgid "Make Admin"
+msgstr "إضافة مسؤول"
+
+msgid "Approve"
+msgstr "يوافق"
+
+msgid "The file type is not valid image"
+msgstr "نوع الملف ليس صورة صالحة "
+
+msgid "Displaying"
+msgstr "عرض"
+
+msgid "of"
+msgstr "من"
+
+
+msgid "Prev"
+msgstr "السابق"
+
+msgid "Next"
+msgstr "الخطوة التالية"
+
+msgid "You have already blocked this user before!"
+msgstr "لقد منعت حظرت بالفعل هذا المستخدم من قبل!"
+
+msgid "Maximum Limit Reached"
+msgstr "الحد الأقصى للوصول"
+
+msgid "Your have reached the maximum limit of Friends ("
+msgstr "لقد بلغت الحد الأقصى المسموح به من الأصدقاء ("
+
+msgid "This user has reached the maximum limit of Friends ("
+msgstr "هذا المستخدم بلغ الحد الأقصى المسموح به من الأصدقاء ("
+
+msgid "You can't poke this user"
+msgstr "لا يمكنك لفت انتباه هذا المستخدم"
+
+msgid "You have already poked this user before!"
+msgstr "لقد قمت بلفت انتباه هذا المستخدم من قبل!"
+
+msgid "You reached the maximum number of boosted pages! Upgrade your package to get more"
+msgstr "لقد وصلت إلى الحد الأقصى لعدد الصفحات المعززة! يرجى ترقية الحزمة الخاصة بك للحصول على أكثر من ذلك"
+
+msgid "You can not remove page super admin"
+msgstr "لا يمكنك إزالة المشرف المتميز للصفحة"
+
+msgid "You can not remove group super admin"
+msgstr "لا يمكنك إزالة المشرف المتميز للمجموعة"
+
+msgid "You can not delete admin/morderator accounts"
+msgstr "لا يمكنك حذف حسابات المشرف/المدير"
+
+msgid "sent you a friend request"
+msgstr "أرسل لك طلب صداقة"
+
+msgid "accepted your friend request"
+msgstr "قام بقبول طلب الصداقة"
+
+msgid "now is following you"
+msgstr "قام بمتابعتك"
+
+msgid "poked you"
+msgstr "لفت انتباهك"
+
+msgid "Sent you a gift"
+msgstr "أرسل لك هدية"
+
+msgid "reacted to your post"
+msgstr "كان له رد فعل على  منشورك"
+
+msgid "reacted to your photo"
+msgstr "كان له رد فعل على صورتك"
+
+msgid "reacted to your comment"
+msgstr "كان له رد فعل على مناقشتك"
+
+msgid "reacted to your reply"
+msgstr "كان له رد فعل على ردك"
+
+msgid "commented on your post"
+msgstr "علق على مشاركتك"
+
+msgid "commented on your photo"
+msgstr "علق على الصور الخاصة بك"
+
+msgid "replied to your comment"
+msgstr "رد على مناقشتك"
+
+msgid "shared your post"
+msgstr "عمل مشاركة لمشاركتك"
+
+msgid "voted on your poll"
+msgstr "الأعضاء الذين صوتوا لهذا الخيار"
+
+msgid "mentioned you in a post"
+msgstr "أشار إليك"
+
+msgid "mentioned you in a comment"
+msgstr "أشار إليك في مناقشة"
+
+msgid "mentioned you in a reply"
+msgstr "أشار إليك في الرد"
+
+msgid "visited your profile"
+msgstr "زار ملفك الشخصي"
+
+msgid "posted on your wall"
+msgstr "نشر في الحائط السجل الخاص بك"
+
+msgid "invite you to like a page"
+msgstr "دعاك للإعجاب بصفحة"
+
+msgid "added you as admin to"
+msgstr "أضافك كمشرف على"
+
+msgid "page"
+msgstr "صفحة"
+
+msgid "asked to join your Panel"
+msgstr "طلب الانضمام إلى مجلسك"
+
+msgid "added you to"
+msgstr "أضافك إلى"
+
+msgid "Panel"
+msgstr "مجلس"
+
+msgid "accepted your request to join"
+msgstr "قبل طلبك للانضمام"
+
+msgid "invite you to join an event"
+msgstr "يدعوك للانضمام إلى حدث مناسبة"
+
+msgid "replied to your thread"
+msgstr "رد على التسلسل الخاص بك"
+
+msgid "sent you"
+msgstr "أرسل لك"
+
+msgid "New notification from"
+msgstr "إشعار جديد من"
+
+msgid "Hi"
+msgstr "مرحبا"
+
+msgid "Team"
+msgstr "الفريق"
+
+msgid "more"
+msgstr "أكثر"
+
+msgid "You are not authorized to view this"
+msgstr "غير مسموح لك عرض هذه"
+
+msgid "You are not authorized to do this"
+msgstr "غير مصرح لك أن تفعل هذا"
+
+msgid "You aren't allowed to message"
+msgstr "غير مسموح لك بالرسالة"
+
+msgid "This feature has been disabled by the admin"
+msgstr "تم تعطيل هذه الميزة بواسطة مسؤول النظام"
+
+msgid "You can't send a gift to this user"
+msgstr "لايمكنك ارسال هدية لهذا العضو"
+
+msgid "You have reached the maximum limit of posts/hour, please try again later"
+msgstr "لقد وصلت إلى الحد الأقصى للمنشورات / ساعة ، يرجى إعادة المحاولة لاحقًا"
+
+msgid "Text Length Limit Reached"
+msgstr "الحد الأقصى المسموح به للنص " 
+
+msgid "Characters"
+msgstr "حروف"
+
+msgid "Your message characters length is over the allowed limit ("
+msgstr "حروف الرسالة أكثر من المسموح به"
+
+msgid "You have reached the maximum limit of comments/hour, please try again later"
+msgstr "لقد بلغت الحد الأقصى للتعليقات للاستفسارات / ساعة ، يرجى إعادة المحاولة لاحقًا"
+
+msgid "Comments disabled for this post"
+msgstr "تم تعطيل المناقشات  لهذه المشاركة"
+
+msgid "This photo can't be deleted"
+msgstr "لا يمكن حذف هذه الصورة"
+
+msgid "This album can't be deleted"
+msgstr "لا يمكن حذف هذا الألبوم"
+
+msgid "You must fill in all of the fields"
+msgstr "يجب ملء كافة الحقول"
+
+msgid "You reached the maximum number of boosted posts! Upgrade your package to get more"
+msgstr "لقد وصلت إلى الحد الأقصى لعدد المشاركات المعززة! ترقية الحزمة الخاصة بك للحصول على أكثر من ذلك"
+
+msgid "You must enter a title for your article"
+msgstr "يجب إدخال عنوان لمقالتك"
+
+msgid "Article title must be at least 3 characters long. Please try another"
+msgstr "يجب أن  يكون اسمك على الأقل 3 أحرف. الرجاء محاولة أخرى"
+
+msgid "You must enter some text for your article"
+msgstr "يجب عليك إدخال بعض النص لمقالتك"
+
+msgid "You must select valid category for your article"
+msgstr "يجب عليك تحديد فئة صالحة لمقالك"
+
+msgid "You must enter a title for your page"
+msgstr "يجب إدخال عنوان لصفحتك"
+
+msgid "Page title must be at least 3 characters long. Please try another"
+msgstr "يجب أن يكون عنوان الصفحة 3 أحرف على الأقل. يرجى المحاولة مرة أخرى"
+
+msgid "You must enter a username for your page"
+msgstr "يجب إدخال اسم مستخدم لصفحتك"
+
+msgid "Please enter a valid username (a-z0-9_.) with minimum 4 characters long"
+msgstr " يجب أن يكون اسم المستخدم باللغة الإنجليزية وأن لا يقل عن 4 حروف"
+
+msgid "You can't use"
+msgstr "لا يمكنك استخدامها"
+
+msgid "as username"
+msgstr "كاسم مستخدم"
+
+msgid "Sorry, it looks like this username is use"
+msgstr "عذرا، يبدو أن المعرف الذي اخترته مستخدم "
+
+msgid "belongs to an existing page"
+msgstr "ينتمي إلى صفحة موجودة"
+
+msgid "You must select valid category for your page"
+msgstr "يجب عليك تحديد فئة صالحة للصفحة الخاصة بك"
+
+msgid "Please enter a valid website URL"
+msgstr "صالح لموقع الويب URL يرجى إدخال عنوان"
+
+msgid "Please select a valid action button color"
+msgstr "يرجى تحديد لون زر إجراء"
+
+msgid "Please enter a valid action button URL"
+msgstr "صحيح لزر الإجراء URL الرجاء إدخال عنوان"
+
+msgid "Please enter a valid Facebook Profile URL"
+msgstr "Facebook الرجاء إدخال عنوان رابط  صالح لملف تعريف"
+
+msgid "Please enter a valid Twitter Profile URL"
+msgstr "Twitter الرجاء إدخال عنوان رابط  صالح لملف تعريف"
+
+msgid "Please enter a valid Google+ Profile URL"
+msgstr "الرجاء إدخال عنوان رابط  صالح لملف تعريف جوجل بلس"
+
+msgid "Please enter a valid YouTube Profile URL"
+msgstr "YouTube الرجاء إدخال عنوان رابط  صالح لملف تعريف"
+
+msgid "Please enter a valid Instagram Profile URL"
+msgstr "Instagram الرجاء إدخال عنوان رابط  صالح لملف تعريف"
+
+msgid "Please enter a valid Linkedin Profile URL"
+msgstr "Linkedin الرجاء إدخال عنوان رابط  صالح لملف تعريف"
+
+msgid "Please enter a valid Vkontakte Profile URL"
+msgstr "Vkontakte الرجاء إدخال عنوان رابط  صالح لملف تعريف"
+
+msgid "You must enter a name for your panel" 
+msgstr "يجب إدخال اسم مستخدم  لمجلسك"
+
+msgid "Panel name must be at least 3 characters long. Please try another"
+msgstr "يجب أن يكون اسم المجلس 3 أحرف على الأقل. يرجى المحاولة مرة أخرى"
+
+msgid "You must enter a web address for your panel"
+msgstr "يجب إدخال عنوان ويب لمجلسك"
+
+msgid "Please enter a valid web address (a-z0-9_.) with minimum 3 characters long"
+msgstr "مع 3 أحرف كحد أدنى (a-z0-9_.) الرجاء إدخال عنوان ويب صالح"
+
+msgid "as web address"
+msgstr "كعنوان الويب"
+
+msgid "Sorry, it looks like this web address  is used "
+msgstr "عذرًا ، يبدو أنه عنوان الويب هذا مستخدم"
+
+msgid "belongs to an existing panel"
+msgstr "ينتمي إلى مجلس موجود"
+
+msgid "You must select valid category for your panel"
+msgstr "يجب عليك تحديد فئة مجلسك"
+
+msgid "You must select a valid privacy for your group"
+msgstr "يجب عليك تحديد خصوصية مجلسك"
+
+msgid "You must enter a name for your event"
+msgstr "يجب عليك إدخال اسم للمناسبة الخاصة بك"
+
+msgid "Event name must be at least 3 characters long. Please try another"
+msgstr "يجب أن يكون اسم للحدث المناسبة 3 أحرف على الأقل. يرجى المحاولة مرة أخرى"
+
+msgid "You have to enter the event start date"
+msgstr "يجب عليك إدخال تاريخ بدء المناسبة"
+
+msgid "You have to enter the event end date"
+msgstr "يجب عليك إدخال تاريخ انتهاء المناسبة"
+
+msgid "Event end date must be after the start date"
+msgstr "يجب أن يكون تاريخ نهاية المناسبة بعد تاريخ البدء"
+
+msgid "You must select a valid privacy for your event"
+msgstr "يجب عليك تحديد خصوصية المناسبة"
+
+msgid "You must select valid category for your event"
+msgstr "يجب عليك تحديد فئة المناسبة"
+
+msgid "You can't add a thread to a main section"
+msgstr "لا يمكنك إضافة سلسلة رسائل إلى قسم رئيسي"
+
+msgid "You must enter a title for your thread"
+msgstr "يجب عليك إدخال عنوان  للتسلسل الخاص بك"
+
+msgid "Thread title must be at least 3 characters long. Please try another"
+msgstr "يجب أن يكون عنوان  التسلسل 3 أحرف على الأقل. يرجى تجربة أخرى"
+
+msgid "You must enter some text for your thread"
+msgstr "يجب عليك إدخال بعض النص لمسلسلك"
+
+msgid "You must enter some text for your reply"
+msgstr "يجب عليك إدخال بعض النص لردك"
+
+msgid "You have already reported this before!"
+msgstr "لقد قمت بالفعل بالتبليغ عن هذا!"
+
+msgid "You must enter"
+msgstr "يجب عليك إدخال"
+
+msgid "You must select"
+msgstr "يجب تحديد"
+
+msgid "The maximum value for"
+msgstr "أقصى قيمة لـ"
+
+msgid "You have to enter the campaign title"
+msgstr "يجب عليك إدخال عنوان الحملة"
+
+msgid "You have to enter the campaign start date"
+msgstr "يجب عليك إدخال تاريخ بدء الحملة"
+
+msgid "You have to enter the campaign end date"
+msgstr "يجب عليك إدخال تاريخ انتهاء الحملة"
+
+msgid "Campaign end date must be after the start date"
+msgstr "يجب أن يكون تاريخ انتهاء الحملة بعد تاريخ البدء"
+
+msgid "Campaign end date must be after today datetime"
+msgstr "يجب أن يكون تاريخ انتهاء الحملة بعد اليوم والوقت"
+
+msgid "You must enter valid budget"
+msgstr "يجب عليك إدخال ميزانية صالحة"
+
+msgid "The minimum budget must be"
+msgstr "يجب أن يكون الحد الأدنى للميزانية"
+
+msgid "Replenish wallet credit"
+msgstr "تجديد رصيد المحفظة"
+
+msgid "You have to select a valid bidding"
+msgstr "يجب عليك تحديد عرض أسعار صالح"
+
+msgid "You have to select a valid gender"
+msgstr "يجب عليك تحديد الجنس"
+
+msgid "You have to select a valid relationship"
+msgstr "يجب عليك تحديد العلاقة"
+
+msgid "You have to enter a valid URL for your ads"
+msgstr "صالح لإعلاناتك URL يجب عليك إدخال عنوان"
+
+msgid "You have to select one for your pages for your ads"
+msgstr "يجب عليك اختيار واحد لصفحاتك الخاصة بإعلاناتك"
+
+msgid "You have to select one for your groups for your ads"
+msgstr "يجب عليك اختيار واحد لمجالسك لإعلاناتك"
+
+msgid "You have to select one for your events for your ads"
+msgstr "يجب عليك اختيار واحد للأحداث الخاصة بك لإعلاناتك"
+
+msgid "You have to select a valid ads type"
+msgstr "يجب عليك تحديد نوع إعلانات صالح"
+
+msgid "You have to select a valid ads placement"
+msgstr "يجب عليك تحديد موضع إعلانات صالح"
+
+msgid "You have to upload an image for your ads"
+msgstr "يجب عليك تحميل صورة لإعلاناتك"
+
+msgid "The campaign total spend reached the campaign budget already, increase the campaign budget to resume the campaign"
+msgstr "بلغ إجمالي الإنفاق للحملة ميزانية الحملة بالفعل ، مما أدى إلى زيادة ميزانية الحملة لاستئناف الحملة"
+
+msgid "The remaining spend is larger than current wallet credit"
+msgstr "إنفاق إعادة الاستثمار أكبر من رصيد المحفظة الحالي"
+
+msgid "The cost per click is larger than your campaign remaining spend"
+msgstr "تكلفة النقرة أكبر من نفقات إعادة استثمار حملتك"
+
+msgid "increase the campaign budget to resume the campaign"
+msgstr "زيادة ميزانية الحملة لاستئناف الحملة"
+
+msgid "The cost per view is larger than your campaign remaining spend"
+msgstr "تكلفة المشاهدة أكبر من نفقات إعادة استثمار حملتك"
+
+msgid "You must enter valid amount of money"
+msgstr "يجب عليك إدخال مبلغ صالح من المال"
+
+msgid "You must search for a user to send money to"
+msgstr "يجب البحث عن مستخدم لإرسال الأموال إليه"
+
+msgid "You can't send money to yourself!"
+msgstr "لا يمكنك إرسال الأموال لنفسك!"
+
+msgid "You can't send money to this user!"
+msgstr "لا يمكنك إرسال الأموال إلى هذا المستخدم!"
+
+msgid "Your current wallet balance is"
+msgstr "رصيد المحفظة الحالي هو"
+
+msgid "Recharge your wallet to continue"
+msgstr "إعادة شحن محفظتك للمتابعة"
+
+msgid "The amount is larger than your current affiliates balance"
+msgstr "المبلغ أكبر من رصيد الشركات التابعة الحالية"
+
+msgid "The amount is larger than your current points balance"
+msgstr "المبلغ أكبر من رصيد نقاطك الحالي"
+
+msgid "Subscribed"
+msgstr "مشترك"
+
+msgid "You already subscribed to this package, Please select different package"
+msgstr "أنت مشترك بالفعل في هذه الحزمة ، يرجى تحديد حزمة مختلفة"
+
+msgid "There is no enough credit in your wallet to buy this"
+msgstr "لا يوجد رصيد كاف في محفظتك لشراء هذا"
+
+msgid "Sorry, it looks like"
+msgstr "عذرا، يبدو أن هذا الاسم"
+
+msgid "belongs to an existing account"
+msgstr "ينتمي إلى حساب موجود"
+
+msgid "You must enter first name"
+msgstr "يجب إدخال الاسم الأول"
+
+msgid "First name contains invalid characters"
+msgstr "الاسم يحتوي على أحرف غير صالحة"
+
+msgid "First name must be at least 4 characters long. Please try another"
+msgstr "يجب أن يتكون الاسم الأول من 4 أحرف على الأقل. يرجى المحاولة مرة أخرى"
+
+msgid "You must enter last name"
+msgstr "يجب عليك إدخال الاسم الأخير"
+
+msgid "Last name contains invalid characters"
+msgstr "يحتوي الاسم الأخير على أحرف غير صالحة"
+
+msgid "Last name must be at least 4 characters long. Please try another"
+msgstr "يجب ألا يقل الاسم الأخير عن 4 أحرف. يرجى المحاولة مرة أخرى"
+
+msgid "Please select a valid gender"
+msgstr "يرجى تحديد جنس"
+
+msgid "You must select valid country"
+msgstr "يجب عليك اختيار بلد"
+
+msgid "Please select a valid birth month"
+msgstr "الرجاء تحديد شهر ميلاد"
+
+msgid "Please select a valid birth day"
+msgstr "الرجاء تحديد يوم ولادة"
+
+msgid "Please select a valid birth year"
+msgstr "الرجاء تحديد سنة ميلاد"
+
+msgid "Please select a valid relationship"
+msgstr "يرجى تحديد علاقة"
+
+msgid "Please enter a valid website"
+msgstr "الرجاء إدخال موقع ويب صالح"
+
+msgid "Please enter a valid work website"
+msgstr "يرجى إدخال موقع ويب صالح للعمل"
+
+msgid "Your current password is incorrect"
+msgstr "كلمة المرور الحالية غير صحيحة"
+
+msgid "Your passwords do not match"
+msgstr "كلمات المرور غير متطابقة"
+
+msgid "Password must be at least 6 characters long. Please try another"
+msgstr "الرقم السري يجب الا يقل عن 6 أحرف على الأقل. يرجى المحاولة مرة أخرى"
+
+msgid "Two-Factor Authentication can't be enabled till you verify your email address"
+msgstr "لا يمكن تمكين المصادقة الثنائية حتى تتحقق من عنوان بريدك الإلكتروني"
+
+msgid "Two-Factor Authentication can't be enabled till you enter your phone number"
+msgstr "لا يمكن تمكين المصادقة الثنائية حتى تقوم بإدخال رقم هاتفك"
+
+msgid "Two-Factor Authentication can't be enabled till you verify your phone number"
+msgstr "لا يمكن تمكين المصادقة الثنائية حتى تتحقق من رقم هاتفك"
+
+msgid "Invalid code, Try again or try to scan your QR code again"
+msgstr "رمز غير صالح ، حاول مرة أخرى أو حاول مسح رمز الاستجابة السريعة مرة أخرى"
+
+msgid "The invitation code you entered is invalid or expired"
+msgstr "رمز الدعوة الذي أدخلته غير صالح أو منتهي الصلاحية"
+
+msgid "Please enter a valid email address"
+msgstr "يرجى إدخال عنوان بريد إلكتروني صحيح"
+
+msgid "Please enter a valid phone number"
+msgstr "يرجى إدخال رقم هاتف صالح"
+
+msgid "Your password must be at least 6 characters long. Please try another"
+msgstr "يجب أن تكون كلمة المرور على الأقل 6 أحرف. يرجى المحاولة مرة  أخرى"
+
+msgid "Your first name contains invalid characters"
+msgstr "يحتوي اسمك الأول على أحرف غير صالحة"
+
+msgid "Your first name must be at least 3 characters long. Please try another"
+msgstr "يجب أن يكون اسمك الأول 3 أحرف على الأقل. يرجى تجربة أخرى"
+
+msgid "Your last name contains invalid characters"
+msgstr "اسمك الأخير يحتوي على أحرف غير صالحة"
+
+msgid "Your last name must be at least 3 characters long. Please try another"
+msgstr "يجب أن يكون اسم العائلة 3 أحرف على الأقل. يرجى تجربة أخرى"
+
+msgid "Sorry, You must be"
+msgstr "عذرا، يجب أن"
+
+msgid "years old to register"
+msgstr "سنوات من العمر للتسجيل"
+
+msgid "The security check is incorrect. Please try again"
+msgstr "التحقق من الأمن غير صحيحة. الرجاء المحاولة مرة أخرى"
+
+msgid "You must read and agree to our terms and privacy policy"
+msgstr "يجب أن تقرأ وتوافق على شروطنا وسياسة الخصوصية"
+
+msgid "Just one more step to get started on"
+msgstr "خطوة واحدة فقط للبدء في"
+
+msgid "To complete the activation process, please follow this link:"
+msgstr "لإكمال عملية التسجيل، يرجى اتباع هذا الرابط:"
+
+msgid "Activation email could not be sent"
+msgstr "لا يمكن إرسال رسالة التفعيل الإلكترونية"
+
+msgid "But you can login now"
+msgstr "تم تغيير كلمة المرور الخاصة بك يمكنك تسجيل الدخول الآن"
+
+msgid "Activation Code"
+msgstr "رمز التفعيل"
+
+msgid "Activation SMS could not be sent"
+msgstr "لا يمكن إرسال رسالة التنشيط"
+
+msgid "The email you entered does not belong to any account"
+msgstr "البريد الإلكتروني الذي أدخلته لا ينتمي إلى أي حساب"
+
+msgid "Please enter a valid email address or username"
+msgstr "يرجى إدخال عنوان بريد إلكتروني أو اسم مستخدم صالح"
+
+msgid "The username you entered does not belong to any account"
+msgstr "اسم المستخدم الذي قمت بإدخاله لا تنتمي إلى أي حساب"
+
+msgid "Please re-enter your password"
+msgstr "الرجاء إعادة إدخال كلمة المرور"
+
+msgid "The password you entered is incorrect"
+msgstr "كلمة المرور التي أدخلتها غير صحيحة"
+
+msgid "If you forgot your password?"
+msgstr "إذا كنت قد نسيت كلمة المرور الخاصة بك؟"
+
+msgid "Request a new one"
+msgstr "أطلب كلمة مرور جديدة"
+
+msgid "Two-Factor Authentication Token"
+msgstr "توثيق ذو عاملين"
+
+msgid "To complete the sign-in process, please use the following 6-digit key:"
+msgstr "لإكمال عملية تسجيل الدخول ، يرجى استخدام المفتاح المكون من 6 أرقام:"
+
+msgid "Two-factor authentication key"
+msgstr "مفتاح المصادقة الثنائية"
+
+msgid "Two-factor authentication email could not be sent"
+msgstr "لا يمكن إرسال بريد إلكتروني للمصادقة الثنائية"
+
+msgid "Two-factor authentication SMS could not be sent"
+msgstr "لا يمكن إرسال رسالة المصادقة ثنائية العامل"
+
+msgid "Google Authenticator app"
+msgstr "مساعدة حساب جوجل"
+
+msgid "You have reached the maximum number of account for your IP"
+msgstr "لقد وصلت إلى الحد الأقصى لعدد من الحساب للملكية الفكرية الخاصة بك"
+
+msgid "Invalid code, please try again"
+msgstr "الرمز غير صحيح"
+
+msgid "You must enter valid number for how many users you want to generate"
+msgstr "يجب إدخال رقم صالح لعدد المستخدمين الذين ترغب في إنشائهم"
+
+msgid "The maximum number of generated users is 1000 per request"
+msgstr "الحد الأقصى لعدد المستخدمين الذين تم إنشاؤها هو 1000 لكل طلب"
+
+msgid "Backup failed!"
+msgstr "فشل النسخ الاحتياطي!"
+
+msgid "Please enable the invitations system first to get new invitation code"
+msgstr "يرجى تمكين نظام الدعوات أولاً للحصول على رمز دعوة جديد"
+
+msgid "This invitation code is expired"
+msgstr "رمز الدعوة هذا منتهي الصلاحية"
+
+msgid "Invitation to join"
+msgstr "دعوة للانضمام"
+
+msgid "We happy to invite you to our website"
+msgstr "يسعدنا أن ندعوك إلى موقعنا"
+
+msgid "To complete the registration process, please follow this link:"
+msgstr "لإكمال عملية التسجيل ، يرجى اتباع هذا الرابط:"
+
+msgid "Your invitation code"
+msgstr "رمز الدعوة الخاص بك"
+
+msgid "Invitation email could not be sent"
+msgstr "البريد الإلكتروني دعوة لا يمكن إرسالها"
+
+msgid "You already invited this email before"
+msgstr "لقد قمت بالفعل بالتبليغ عن هذا!"
+
+msgid "You have reached the maximum number of invitations per day"
+msgstr "لقد وصلت إلى الحد الأقصى لعدد الدعوات في اليوم"
+
+msgid "Invite you to join"
+msgstr "يدعوك للانضمام إلى حدث"
+
+msgid "Your friend"
+msgstr "صديقك"
+
+msgid "invite you to our website"
+msgstr "ادعوك الى موقعنا"
+
+msgid "doesn't belong to any account"
+msgstr "لا ينتمي إلى أي حساب"
+
+msgid "Forget password activation key!"
+msgstr "نسيان كلمة مرور مفتاح التنشيط!"
+
+msgid "To complete the reset password process, please copy this token:"
+msgstr "لإكمال عملية إعادة تعيين كلمة المرور، الرجاء نسخ هذا الرمز المميز:"
+
+msgid "Token:"
+msgstr "مفتاح رمزي:"
+
+msgid "Activation key email could not be sent!"
+msgstr "لا يمكن إرسال رسالة التفعيل الإلكترونية!"
+
+msgid "Invalid email, please try again"
+msgstr "البريد الإلكتروني غير صالح، الرجاء المحاولة مرة أخرى"
+
+msgid "Your passwords do not match. Please try another"
+msgstr "لا تتطابق كلمات المرور الخاصة بك. الرجاء محاولة أخرى"
+
+msgid "Your phone already verified"
+msgstr "تم التحقق من الهاتف"
+
+msgid "Your session hash has been broken, Please contact Sngine's support!"
+msgstr "تم كسر تجزئة جلسة العمل الخاصة بك، يرجى الاتصال بفريق الدعم من قائمة الاتصال في الأسفل !"
+
+msgid "Database Error"
+msgstr "خطأ في قاعدة البيانات"
+
+msgid "An error occurred while writing to database. Please try again later"
+msgstr "حدث خطأ أثناء الكتابة إلى قاعدة البيانات. الرجاء المحاولة مرة أخرى لاحقاً"
+
+msgid "404 Not Found"
+msgstr "خطأ 404 لم يتم ايجاد المطلوب"
+
+msgid "The requested URL was not found on this server. That's all we know"
+msgstr "المطلوب على هذا الملقم. وهذا هو كل ما نعرفه URL لم يتم العثور على عنوان"
+
+msgid "There is some thing went wrong"
+msgstr "نعتذر يوجد خطأ"
+
+msgid "Test SMTP Connection on"
+msgstr "على SMTP اختبار اتصال"
+
+msgid "This is a test email"
+msgstr "هذا هو اختبار البريد الإلكتروني"
+
+msgid "Test email could not be sent. Please check your settings"
+msgstr "اختبار البريد الإلكتروني لا يمكن إرسالها. يرجى التحقق من الإعدادات الخاصة بك"
+
+msgid "Test SMS from"
+msgstr "من SMS اختبار"
+
+msgid "Test SMS could not be sent. Please check your settings"
+msgstr "يرجى التحقق من الإعدادات الخاصة بك SMS لا يمكن إرسال اختبار"
+
+msgid "There is no buckets in your account"
+msgstr "لا يوجد دلاء في حسابك"
+
+msgid "There is no bucket with this name in your account"
+msgstr "لا يوجد دلو يحمل هذا الاسم في حسابك"
+
+msgid "Pro Package"
+msgstr "حزمة برو"
+
+msgid "Pay For"
+msgstr "دفع ل"
+
+msgid "Before you can interact with other users, you need to confirm your email address"
+msgstr "قبل أن تتمكن من التفاعل مع المستخدمين الآخرين، تحتاج إلى تأكيد عنوان البريد الإلكتروني الخاص بك"
+
+msgid "You must sign in to see this page"
+msgstr "يجب تسجيل الدخول لمشاهدة هذه الصفحة"
+
+msgid "Sign in"
+msgstr "تسجيل الدخول"
+
+msgid "Feeling"
+msgstr "شعور"
+
+msgid "How are you feeling?"
+msgstr "كيف تشعر؟"
+
+msgid "Listening To"
+msgstr "الاستماع"
+
+msgid "What are you listening to?"
+msgstr "الى ماذا تستمع؟"
+
+msgid "Watching"
+msgstr "مشاهدة"
+
+msgid "What are you watching?"
+msgstr "ماذا تشاهد؟"
+
+msgid "Playing"
+msgstr "اللعب"
+
+msgid "What are you playing?"
+msgstr "ماذا تلعب؟"
+
+msgid "Eating"
+msgstr "الطعام"
+
+msgid "What are you eating?"
+msgstr "ماذا تأكل؟"
+
+msgid "Drinking"
+msgstr "الشراب"
+
+msgid "What are you drinking?"
+msgstr "ماذا تشرب؟"
+
+msgid "Traveling To"
+msgstr "السفر"
+
+msgid "Where are you going?"
+msgstr "إلى أين تذهب؟"
+
+msgid "Reading"
+msgstr "قراءة"
+
+msgid "What are you reading?"
+msgstr "ماذا تقرأ؟"
+
+msgid "Attending"
+msgstr "حضور"
+
+msgid "What are you attending?"
+msgstr "ماذا تحضر؟"
+
+msgid "Celebrating"
+msgstr "الاحتفال"
+
+msgid "What are you celebrating?"
+msgstr "بماذا تحتفل؟"
+
+msgid "Looking For"
+msgstr "البحث"
+
+msgid "What are you looking for?"
+msgstr "عم تبحث؟"
+
+msgid "Happy"
+msgstr "سعيد"
+
+msgid "Loved"
+msgstr "حب"
+
+msgid "Satisfied"
+msgstr "مقتنع"
+
+msgid "Strong"
+msgstr "قوي"
+
+msgid "Sad"
+msgstr "حزين"
+
+msgid "Crazy"
+msgstr "مجنون"
+
+msgid "Tired"
+msgstr "متعب"
+
+msgid "Sleepy"
+msgstr "نعسان"
+
+msgid "Confused"
+msgstr "مشوش"
+
+msgid "Worried"
+msgstr "قلق"
+
+msgid "Angry"
+msgstr "غاضب"
+
+msgid "Annoyed"
+msgstr "منزعج"
+
+msgid "Shocked"
+msgstr "مصدوم"
+
+msgid "Down"
+msgstr "أسفل"
+
+msgid "Confounded"
+msgstr "مرتبك"
+
+msgid "like"
+msgstr "تمييز"
+
+msgid "love"
+msgstr "حب"
+
+msgid "haha"
+msgstr "هاها"
+
+msgid "yay"
+msgstr "ياي"
+
+msgid "wow"
+msgstr "واو"
+
+msgid "sad"
+msgstr "حزين"
+
+msgid "angry"
+msgstr "غاضب"
+
+msgid "Ads info have been updated"
+msgstr "تم تحديث معلومات الإعلانات"
+
+msgid "You have to enter the announcement name"
+msgstr "يجب عليك إدخال اسم الإعلان"
+
+msgid "You have to enter the announcement HTML code"
+msgstr "HTML يجب عليك إدخال الإعلان عن التعليمات البرمجية ل"
+
+msgid "You have to enter the announcement start date"
+msgstr "يجب عليك إدخال تاريخ بدء الإعلان"
+
+msgid "You have to enter the announcement end date"
+msgstr "يجب عليك إدخال تاريخ انتهاء الإعلان"
+
+msgid "End Date must be after the Start Date"
+msgstr "وقت النهاية يجب أن يكون بعد وقت البدء"
+
+msgid "Announcement info have been updated"
+msgstr "تم تحديث معلومات الإعلان"
+
+msgid "Category info have been updated"
+msgstr "تم تحديث معلومات الفئة"
+
+msgid "Language info have been updated"
+msgstr "تم تحديث معلومات اللغة"
+
+msgid "You have to select a valid field for value"
+msgstr "يجب عليك تحديد حقل صالح للقيمة"
+
+msgid "You have to enter the field label"
+msgstr "يجب عليك إدخال تسمية الحقل"
+
+msgid "You have to select a valid type"
+msgstr "يجب عليك تحديد نوع صالح"
+
+msgid "You have to enter the select options"
+msgstr "يجب عليك إدخال خيارات التحديد"
+
+msgid "You have to select a valid place"
+msgstr "يجب عليك تحديد مكان صالح"
+
+msgid "You have to enter valid field length"
+msgstr "يجب عليك إدخال طول حقل صالح"
+
+msgid "The field minimum length is 1 and maximum 1000 characters"
+msgstr "الحد الأدنى لطول الحقل هو 1 و 1000 حرف كحد أقصى"
+
+msgid "You have to enter valid field order"
+msgstr "يجب عليك إدخال أمر حقل صالح"
+
+msgid "Field info have been updated"
+msgstr "تم تحديث المعلومات الميدانية"
+
+msgid "This is your only default theme you need to mark other theme as default before change/delete this one"
+msgstr "هذا هو السمة الافتراضية الوحيدة التي تحتاجها لوضع علامة على السمة الأخرى كإعداد افتراضي قبل تغيير / حذف هذا السمة"
+
+msgid "Emoji info have been updated"
+msgstr "تم تحديث معلومات الرموز التعبيرية"
+
+msgid "Event info have been updated"
+msgstr "تم تحديث معلومات الحدث"
+
+msgid "Forums settings have been updated"
+msgstr "تم تحديث إعدادات المنتديات"
+
+msgid "You can not set the forum as a section to itself"
+msgstr "لا يمكنك تعيين المنتدى كقسم لنفسه"
+
+msgid "Forum info have been updated"
+msgstr "تم تحديث معلومات المنتدى"
+
+msgid "You must upload gift image"
+msgstr "يجب عليك تحميل صورة الهدية "
+
+msgid "gift info have been updated"
+msgstr "تم تحديث معلومات الهدية"
+
+msgid "Panel info have been updated"
+msgstr "تم تحديث معلومات المجلس"
+
+msgid "Your invitation email has been sent"
+msgstr "تم إرسال بريد الدعوات الخاص بك"
+
+msgid "You have to select a valid source for the movie"
+msgstr "يجب عليك تحديد مصدر صالح للفيلم"
+
+msgid "You have to enter title for the movie"
+msgstr "يجب عليك إدخال عنوان للفيلم الحملة"
+
+msgid "Please enter a valid imdb link"
+msgstr "صالح imdb الرجاء إدخال رابط"
+
+msgid "You have to select genre for the movie"
+msgstr "يجب عليك تحديد مصدر صالح للفيلم"
+
+msgid "Movie info have been updated"
+msgstr "تم تحديث معلومات الإعلانات"
+
+msgid "Genre info have been updated"
+msgstr "تم تحديث معلومات الجنس"
+
+msgid "You must enter the email subject"
+msgstr "يجب عليك إدخال موضوع البريد الإلكتروني"
+
+msgid "You must enter the message subject"
+msgstr "يجب عليك إدخال موضوع الرسالة"
+
+msgid "Email could not be sent"
+msgstr "تعذر إرسال البريد الإلكتروني"
+
+msgid "Email has been sent successfully"
+msgstr "تم إرسال البريد الإلكتروني بنجاح"
+
+msgid "You must enter the notification url"
+msgstr "يجب عليك إدخال رابط الإشعار"
+
+msgid "You must enter the notification message"
+msgstr "يجب عليك إدخال رسالة الإشعار"
+
+msgid "Notification has been sent successfully"
+msgstr "تم إرسال الإشعار بنجاح"
+
+msgid "You have to enter the package name"
+msgstr "يجب عليك إدخال اسم الحزمة"
+
+msgid "You have to enter valid package price"
+msgstr "يجب عليك إدخال سعر حزمة صالح"
+
+msgid "You have to enter valid period number"
+msgstr ""يجب عليك إدخال رقم فترة صالح"
+
+msgid "You have to enter valid boost posts number"
+msgstr "يجب عليك إدخال رقم مشاركات تعزيز صحيح"
+
+msgid "You have to enter valid boost pages number"
+msgstr "يجب عليك إدخال رقم صفحات دفعة صالح"
+
+msgid "Package info have been updated"
+msgstr "تم تحديث معلومات الحزمة"
+
+msgid "Page info have been updated"
+msgstr "تم تحديث معلومات الصفحة"
+
+msgid "You must enable one method at least, either payments withdrawal requests or wallet transfer"
+msgstr "يجب تمكين طريقة واحدة على الأقل ، إما طلبات سحب المدفوعات أو تحويل المحفظة"
+
+msgid "System settings have been updated"
+msgstr "تم تحديث إعدادات النظام"
+
+msgid "Please enter a valid URL to your page"
+msgstr "صالحاً للصفحة الخاصة بك URL الرجاء إدخال عنوان"
+
+msgid "belongs to an existing static page"
+msgstr "ينتمي إلى صفحة ثابتة موجودة"
+
+msgid "Static page info have been updated"
+msgstr "تم تحديث معلومات الصفحة"
+
+msgid "You must upload sticker image"
+msgstr "يجب عليك تحميل صورة لاصقة"
+
+msgid "Sticker info have been updated"
+msgstr "تم تحديث معلومات الملصق"
+
+msgid "Test email has been sent to"
+msgstr "تم إرسال البريد الإلكتروني التجريبي إلى"
+
+msgid "Test SMS has been sent to"
+msgstr "إلى SMS تم إرسال اختبار"
+
+msgid "Connection established Successfully!"
+msgstr "تم تأسيس الاتصال بنجاح!"
+
+msgid "All expired subscribers and their boosted posts and pages removed"
+msgstr "تمت إزالة جميع المشتركين المنتهية صلاحيتهم والمشاركات والصفحات المعززة"
+
+msgid "Theme info have been updated"
+msgstr "تم تحديث معلومات الثيمات"
+
+msgid "fake users accounts generated successfully"
+msgstr "حسابات المستخدمين وهمية ولدت بنجاح"
+
+msgid "Auto-connect settings have been updated"
+msgstr "تم تحديث إعدادات الدخول التلقائي"
+
+msgid "Garbage collector removed"
+msgstr "تم تفريغ سلة المحذوفات"
+
+msgid "rows from the database"
+msgstr "خطوط قاعدة البيانات"
+
+msgid "New backup has been generated"
+msgstr "تم إنشاء نسخة احتياطية جديدة"
+
+msgid "This account not exist"
+msgstr "هذا الحساب غير موجود"
+
+msgid "You can not change the group of this user"
+msgstr "لا يمكنك تغيير المجموعة لهذا المستخدم"
+
+msgid "User info have been updated"
+msgstr "تم تحديث معلومات المستخدم"
+
+msgid "You must enter valid amount of points"
+msgstr "يجب عليك إدخال مبلغ صالح من المال"
+
+msgid "Widget info have been updated"
+msgstr "تم تحديث معلومات القطع"
+
+msgid "Campaign settings have been updated"
+msgstr "تم تحديث إعدادات الحملة"
+
+msgid "Another email has been sent"
+msgstr "تم إرسال بريد إلكتروني لتفعيل آخر"
+
+msgid "Please click on the link in that email message to complete the verification process"
+msgstr "الرجاء النقر فوق الارتباط الموجود في رسالة البريد الإلكتروني هذه لإكمال عملية التحقق"
+
+msgid "Your account already activated!"
+msgstr "الحساب الخاص بك نشط"
+
+msgid "Your email has been changed"
+msgstr "تم تغيير البريد الإلكتروني الخاص بك"
+
+msgid "Please click on the link in that email to complete the verification process"
+msgstr "الرجاء النقر على الرابط الذي قمنا بإرساله على بريدك الإلكتروني لتفعيل الحساب"
+
+msgid "Another SMS has been sent"
+msgstr "تم إرسال رسالة قصيرة أخرى"
+
+msgid "Please check your phone and copy the verification code to complete the verification process"
+msgstr "يرجى التحقق من هاتفك ونسخ رمز التحقق لإكمال عملية التحقق"
+
+msgid "Your phone has been changed"
+msgstr "تم تغيير رقم هاتفك"
+
+msgid "Your email could not be sent. Please try again later"
+msgstr "لم يتم إرسال البريد الإلكتروني، الرجاء المحاولة مرة أخرى"
+
+msgid "Your message has been sent! Thanks a lot and will be back to you soon"
+msgstr "تم إرسال رسالتك! شكرا جزيلاً سنعود إليك قريباً عبر بريدك الإلكتروني المدون في الرسالة"
+
+msgid "Done"
+msgstr "تمّ"
+
+msgid "Your password has been changed you can login now"
+msgstr "تم تغيير كلمة المرور الخاصة بك يمكنك تسجيل الدخول الآن"
+
+msgid "Registration is closed right now"
+msgstr "التسجيل مغلق الآن"
+
+msgid "Thanks"
+msgstr "شكرا"
+
+msgid "Your report has been submitted"
+msgstr "تم استلام البلاغ"
+
+msgid "Not Allowed"
+msgstr "غير مسموح"
+
+msgid "This feature has been disabled"
+msgstr "تم تعطيل هذه الميزة"
+
+msgid "Upload Error"
+msgstr " خطأ في التحميل"
+
+msgid "Something wrong with upload! Is 'upload max filesize' set correctly?"
+msgstr "خطأ في التحميل! يرجى تعيين قياسات تحميل الملف  بشكل صحيح؟"
+
+msgid "The file size is so big"
+msgstr "حجم الملف كبير جداً"
+
+msgid "Sorry, can not upload the file"
+msgstr "عذرا، فشلت عملية رفع الملف"
+
+msgid "Photo Too Small"
+msgstr "الصورة صغيرة جدا"
+
+msgid "Please choose an image that's at least 150 pixels wide and at least 150 pixels tall"
+msgstr "يرجى اختيار صورة لا تقل عن 150 بكسل وعرضها 150 بكسل على الأقل"
+
+msgid "Please choose an image that's at least 1108 pixels wide and at least 360 pixels tall"
+msgstr "يرجى اختيار صورة بعرض 940 بكسل على الأقل وبطول لا يقل عن 300 بكسل"
+
+msgid "The file type is not valid or not supported"
+msgstr "نوع الملف غير صالح أو غير معتمد"
+
+msgid "Your request has been successfully sent, we will notify you once it's approved"
+msgstr "تم إرسال طلبك بنجاح ، وسنوافق عليه"
+
+msgid "Please add your product name"
+msgstr "يرجى إضافة اسم المنتج الخاص بك"
+
+msgid "Please add your product price"
+msgstr "الرجاء إضافة سعر المنتج الخاص بك"
+
+msgid "Please add valid product price (0 for free or more)"
+msgstr "الرجاء إضافة سعر منتج صالح (0 مجانًا أو أكثر)"
+
+msgid "Please select valid product category"
+msgstr "يرجى اختيار فئة المنتج صالحة"
+
+msgid "Please select valid product status"
+msgstr "يرجى اختيار حالة المنتج صالحة"
+
+msgid "Poll option too long"
+msgstr "خيار التصويت طويل جدا"
+
+msgid "The poll option you provided is too long. Please try again"
+msgstr "خيار الاستطلاع الذي قدمته طويل جدًا. حاول مرة أخرى"
+
+msgid "Poll Option Already Added"
+msgstr "خيار التصويت أضيف بالفعل"
+
+msgid "This option was already added to the poll"
+msgstr "تمت إضافة هذا الخيار بالفعل إلى الاستطلاع"
+
+msgid "Poll Text Needed"
+msgstr "نص الاستطلاع مطلوب"
+
+msgid "Ask a question so people know what your poll is about"
+msgstr "اطرح سؤالًا حتى يعرف الناس ما الذي يدور حوله استطلاع الرأي"
+
+msgid "Product Name Needed"
+msgstr "اسم المنتج مطلوب"
+
+msgid "Add a name so people know what you are selling"
+msgstr "أضف اسمًا حتى يعرف الناس ما تقوم ببيعه"
+
+msgid "Product Price Needed"
+msgstr "سعر المنتج مطلوب"
+
+msgid "Please add valid product price"
+msgstr "الرجاء إضافة سعر منتج صالح"
+
+msgid "Product Category Needed"
+msgstr "فئة المنتج المطلوبة"
+
+msgid "Please add valid product category"
+msgstr "الرجاء إضافة فئة منتج صالحة"
+
+msgid "This has been shared Successfully"
+msgstr "تمت مشاركة هذا بنجاح"
+
+msgid "You have to select a gift to send"
+msgstr "يجب عليك اختيار هدية لإرسالها"
+
+msgid "Your gift has been sent successfully"
+msgstr "تم إرسال هديتك بنجاح"
+
+msgid "Your account settings has been updated"
+msgstr "تم تحديث حسابك"
+
+msgid "Your profile info has been updated"
+msgstr "تم تحديث معلومات ملفك الشخصي"
+
+msgid "Your profile info have been updated"
+msgstr "تم تحديث معلومات ملفك الشخصي"
+
+msgid "Your password has been updated"
+msgstr "تم تحديث كلمة مرورك"
+
+msgid "Your two-factor authentication settings have been updated"
+msgstr "تم تحديث إعدادات المصادقة ثنائية العوامل الخاصة بك"
+
+msgid "Your privacy settings have been updated"
+msgstr "تم تحديث إعدادات الخصوصية الخاصة بك"
+
+msgid "Your email notifications settings have been updated"
+msgstr "تم تحديث إعدادات إشعارات البريد الإلكتروني"
+
+msgid "Your info has been updated"
+msgstr "تم تحديث معلوماتك"
+
+msgid "You have pending verification request already!"
+msgstr "لديك طلب تحقق معلق بالفعل!"
+
+msgid "You have to enter valid amount"
+msgstr "يجب عليك إدخال مبلغ صالح"
+
+msgid "Please select a valid payment method"
+msgstr "يرجى تحديد طريقة دفع صالحة"
+
+msgid "Your balance is less than the minimum withdrawal request amount"
+msgstr "رصيدك أقل من الحد الأدنى لمبلغ طلب السحب"
+
+msgid "Your balance is less than the requested amount"
+msgstr "رصيدك أقل من المبلغ المطلوب"
+
+msgid "Your withdrawal request has been sent"
+msgstr "تم إرسال طلب السحب الخاص بك"
+
+msgid "To aaynet"
+msgstr "في شبكة آي نت"
+
+msgid "aaynet"
+msgstr "شبكة آي نت"
+
+
+msgid "Post copied"
+msgstr "تم نسخ المشاركة"
+
+msgid "Create your group"
+msgstr "انشئ مجلسك"
+
+msgid "Sub-groups"
+msgstr "مجالس فرعية"
+
+ msgid "Afghanistan"
+ msgstr "أفغانستان"
+ 
+ msgid "Albania"
+ msgstr "ألبانيا"
+ 
+ msgid "Algeria"
+  msgstr "الجزائر"
+ 
+ 
+ msgid "American Samoa"
+  msgstr "ساموا الأمريكية"
+ 
+ msgid "Andorra"
+  msgstr "أندورا"
+ 
+ msgid "Angola"
+  msgstr "أنغولا"
+ 
+ msgid "Anguilla"
+  msgstr "أنغيلا"
+ 
+ msgid "Antarctica"
+  msgstr "القارة القطبية الجنوبية"
+ 
+ msgid "Antigua and Barbuda"
+  msgstr "أنتيغوا وبربودا"
+ 
+ msgid "Argentina"
+  msgstr "الأرجنتين"
+ 
+ msgid "Armenia"
+  msgstr "أرمينيا"
+ 
+ msgid "Aruba"
+  msgstr "أروبا"
+ 
+ msgid "Australia"
+  msgstr "أستراليا"
+ 
+ msgid "Austria"
+  msgstr "النمسا"
+ 
+ msgid "Azerbaijan"
+  msgstr "أذربيجان"
+ 
+ msgid "Bahamas"
+  msgstr "الباهاما"
+ 
+ msgid "Bahrain"
+  msgstr "البحرين"
+ 
+ msgid "Bangladesh"
+  msgstr "بنغلاديش"
+ 
+ msgid "Barbados"
+  msgstr "بربادوس"
+ 
+ msgid "Belarus"
+  msgstr "روسيا البيضاء"
+ 
+ msgid "Belgium"
+  msgstr "بلجيكا"
+ 
+ msgid "Belize"
+  msgstr "بليز"
+ 
+ msgid "Benin"
+  msgstr "بنين"
+ 
+ msgid "Bermuda"
+  msgstr "برمودا"
+ 
+ msgid "Bhutan"
+  msgstr "بوتان"
+ 
+ msgid "Bolivia"
+  msgstr "بوليفيا"
+ 
+ msgid "Bosnia and Herzegovina"
+  msgstr "البوسنة والهرسك"
+ 
+ msgid "Botswana"
+  msgstr "بوتسوانا"
+ 
+ msgid "Bouvet Island"
+  msgstr "جزيرة بوفيت"
+ 
+ msgid "Brazil"
+  msgstr "البرازيل"
+ 
+ msgid "British Indian Ocean Territory"
+  msgstr "إقليم المحيط البريطاني الهندي"
+ 
+ msgid "Brunei Darussalam"
+  msgstr "بروناي دار السلام"
+ 
+ msgid "Bulgaria"
+  msgstr "بلغاريا"
+ 
+ msgid "Burkina Faso"
+  msgstr "بوركينا فاسو"
+ 
+ msgid "Burundi"
+  msgstr "بوروندي"
+ 
+ msgid "Cambodia"
+  msgstr "كمبوديا"
+ 
+ msgid "Cameroon"
+  msgstr "الكاميرون"
+ 
+ msgid "Canada"
+  msgstr "كندا"
+ 
+ msgid "Cape Verde"
+  msgstr "الرأس الأخضر"
+ 
+ msgid "Cayman Islands"
+  msgstr "جزر كايمان"
+ 
+msgid "Central African Republic"
+msgstr "جمهورية افريقيا الوسطى"
+
+ msgid "Chad"
+  msgstr "تشاد"
+
+ msgid "Chile"
+ msgstr "تشيلي"
+ 
+ msgid "China"
+  msgstr "الصين"
+ 
+ msgid "Christmas Island"
+  msgstr "جزيرة الكريسماس"
+ 
+ msgid "Cocos (Keeling) Islands"
+  msgstr "جزر كوكوس (كيلينغ)"
+ 
+ msgid "Colombia"
+  msgstr "كولومبيا"
+ 
+ msgid "Comoros"
+  msgstr "جزر القمر"
+ 
+ msgid "Congo"
+  msgstr "الكونغو"
+ 
+ msgid "Cook Islands"
+  msgstr "جزر كوك"
+ 
+ msgid "Costa Rica"
+  msgstr "كوستا ريكا"
+ 
+ msgid "Croatia (Hrvatska)"
+  msgstr "كرواتيا "
+ 
+ msgid "Cuba"
+  msgstr "كوبا"
+ 
+ msgid "Cyprus"
+  msgstr "قبرص"
+ 
+ msgid "Czech Republic"
+  msgstr "جمهورية التشيك"
+ 
+ msgid "Denmark"
+  msgstr "الدنمارك"
+ 
+ msgid "Djibouti"
+  msgstr "جيبوتي"
+ 
+ msgid "Dominica"
+  msgstr "دومينيكا"
+ 
+ msgid "Dominican Republic"
+  msgstr "جمهورية الدومنيكان"
+ 
+ msgid "East Timor"
+  msgstr "تيمور الشرقية"
+ 
+ msgid "Ecuador"
+  msgstr "الإكوادور"
+ 
+ msgid "Egypt"
+  msgstr "مصر"
+ 
+ msgid "El Salvador"
+  msgstr "السلفادور"
+ 
+ msgid "Equatorial Guinea"
+  msgstr "غينيا الإستوائية"
+ 
+ msgid "Eritrea"
+  msgstr "إريتريا"
+ 
+ msgid "Estonia"
+  msgstr "استونيا"
+ 
+ msgid "Ethiopia"
+  msgstr "أثيوبيا"
+ 
+ msgid "Falkland Islands (Malvinas)'),"
+ msgstr "جزر فوكلاند (مالفيناس) ') ،"
+ 
+ msgid "Faroe Islands"
+  msgstr "جزر فاروس"
+ 
+ msgid "Fiji"
+  msgstr "فيجي"
+ 
+ msgid "Finland"
+  msgstr "فنلندا"
+ 
+ msgid "France"
+  msgstr "فرنسا"
+ 
+ msgid "France, Metropolitan"
+  msgstr "فرنسا ، العاصمة"
+ 
+ msgid "French Guiana"
+  msgstr "غيانا الفرنسية"
+ 
+ msgid "French Polynesia"
+  msgstr "بولينيزيا الفرنسية"
+ 
+ msgid "French Southern Territories"
+  msgstr "المناطق الجنوبية لفرنسا"
+ 
+ msgid "Gabon"
+  msgstr "الغابون"
+ 
+ msgid "Gambia"
+  msgstr "غامبيا"
+ 
+ msgid "Georgia"
+  msgstr "جورجيا"
+ 
+ msgid "Germany"
+  msgstr "ألمانيا"
+ 
+ msgid "Ghana"
+  msgstr "غانا"
+ 
+ msgid "Gibraltar"
+  msgstr "جبل طارق"
+ 
+ msgid "Guernsey"
+  msgstr "غيرنسي"
+ 
+ msgid "Greece"
+  msgstr "اليونان"
+ 
+ msgid "Greenland"
+  msgstr "الأرض الخضراء"
+ 
+ msgid "Grenada"
+  msgstr "غرينادا"
+ 
+ msgid "Guadeloupe"
+  msgstr "جوادلوب"
+ 
+ msgid "Guam"
+  msgstr "غوام"
+ 
+ msgid "Guatemala"
+  msgstr "غواتيمالا"
+ 
+ msgid "Guinea"
+  msgstr "غينيا"
+ 
+ msgid "Guinea-Bissau"
+  msgstr "غينيا بيساو"
+ 
+ msgid "Guyana"
+  msgstr "غيانا"
+ 
+ msgid "Haiti"
+  msgstr "هايتي"
+ 
+ msgid "Heard and Mc Donald Islands"
+  msgstr "جزر هيرد وماكدونالد"
+ 
+ msgid "Honduras"
+  msgstr "هندوراس"
+ 
+ msgid "Hong Kong"
+  msgstr "هونج كونج"
+ 
+ msgid "Hungary"
+  msgstr "هنغاريا"
+ 
+ msgid "Iceland"
+  msgstr "أيسلندا"
+ 
+ msgid "India"
+  msgstr "الهند"
+ 
+ msgid "Isle of Man"
+  msgstr "جزيرة آيل أوف مان"
+ 
+ msgid "Indonesia"
+  msgstr "إندونيسيا"
+ 
+ msgid "Iran (Islamic Republic of)')"
+  msgstr "جمهورية إيران الإسلامية)"
+ 
+ msgid "Iraq"
+  msgstr "العراق"
+ 
+ msgid "Ireland"
+  msgstr "أيرلندا"
+ 
+ msgid "Israel"
+  msgstr "إسرائيل"
+ 
+ msgid "Italy"
+  msgstr "إيطاليا"
+ 
+ msgid "Ivory Coast"
+  msgstr "ساحل العاج"
+ 
+ msgid "Jersey"
+  msgstr "جيرسي"
+ 
+ msgid "Jamaica"
+  msgstr "جامايكا"
+ 
+ msgid "Japan"
+  msgstr "اليابان"
+ 
+ msgid "Jordan"
+  msgstr "الأردن"
+ 
+ msgid "Kazakhstan"
+  msgstr "كازاخستان"
+ 
+ msgid "Kenya"
+  msgstr "كينيا"
+ 
+ msgid "Kiribati"
+  msgstr "كيريباس"
+ 
+ msgid "Korea, Democratic People\'s Republic of"
+  msgstr "كوريا، الجمهورية الشعبية الديمقراطية"
+ 
+ msgid "Korea, Republic of"
+  msgstr "جمهورية كوريا"
+ 
+ msgid "Kosovo"
+  msgstr "كوسوفو"
+ 
+ msgid "Kuwait"
+  msgstr "الكويت"
+ 
+ msgid "Kyrgyzstan"
+  msgstr "قرغيزستان"
+ 
+ msgid "Lao People\'s Democratic Republic"
+  msgstr "جمهورية لاو الديمقراطية الشعبية"
+ 
+ msgid "Latvia"
+  msgstr "لاتفيا"
+ 
+ msgid "Lebanon"
+  msgstr "لبنان"
+ 
+ msgid "Lesotho"
+  msgstr "ليسوتو"
+ 
+ msgid "Liberia"
+  msgstr "ليبيريا"
+ 
+ msgid "Libyan Arab Jamahiriya"
+  msgstr "الجماهيرية العربية الليبية"
+ 
+ msgid "Liechtenstein"
+  msgstr "ليختنشتاين"
+ 
+ msgid "Lithuania"
+  msgstr "ليتوانيا"
+ 
+ msgid "Luxembourg"
+  msgstr "لوكسمبورغ"
+ 
+ msgid "Macau"
+  msgstr "ماكاو"
+ 
+ msgid "Macedonia"
+  msgstr "مقدونيا"
+ 
+ msgid "Madagascar"
+  msgstr "مدغشقر"
+ 
+ msgid "Malawi"
+  msgstr "مالاوي"
+ 
+ msgid "Malaysia"
+  msgstr "ماليزيا"
+ 
+ msgid "Maldives"
+  msgstr "جزر المالديف"
+ 
+ msgid "Mali"
+  msgstr "مالي"
+ 
+ msgid "Malta"
+  msgstr "مالطا"
+ 
+ msgid "Marshall Islands"
+  msgstr "جزر مارشال"
+ 
+ msgid "Martinique"
+  msgstr "مارتينيك"
+ 
+ msgid "Mauritania"
+  msgstr "موريتانيا"
+ 
+ msgid "Mauritius"
+  msgstr "موريشيوس"
+ 
+ msgid "Mayotte"
+  msgstr "مايوت"
+ 
+ msgid "Mexico"
+  msgstr "المكسيك"
+ 
+ msgid "Micronesia, Federated States of"
+  msgstr "ولايات ميكرونيزيا الموحدة"
+ 
+ msgid "Moldova, Republic of"
+  msgstr "جمهورية مولدوفا"
+ 
+ msgid "Monaco"
+  msgstr "موناكو"
+ 
+ msgid "Mongolia"
+  msgstr "منغوليا"
+ 
+ msgid "Montenegro"
+  msgstr "الجبل الأسود"
+ 
+ msgid "Montserrat"
+  msgstr "مونتسيرات"
+ 
+ msgid "Morocco"
+  msgstr "المغرب"
+ 
+ msgid "Mozambique"
+  msgstr "موزمبيق"
+ 
+ msgid "Myanmar"
+  msgstr "ميانمار"
+ 
+ msgid "Namibia"
+  msgstr "ناميبيا"
+ 
+ msgid "Nauru"
+  msgstr "ناورو"
+ 
+ msgid "Nepal"
+  msgstr "نيبال"
+ 
+ msgid "Netherlands"
+  msgstr "هولندا"
+ 
+ msgid "Netherlands Antilles"
+  msgstr "جزر الأنتيل الهولندية"
+ 
+ msgid "New Caledonia"
+  msgstr "كاليدونيا الجديدة"
+ 
+ msgid "New Zealand"
+  msgstr "نيوزيلاندا"
+ 
+ msgid "Nicaragua"
+  msgstr "نيكاراغوا"
+ 
+ msgid "Niger"
+  msgstr "النيجر"
+ 
+ msgid "Nigeria"
+  msgstr "نيجيريا"
+ 
+ msgid "Niue"
+  msgstr "نيوي"
+ 
+ msgid "Norfolk Island"
+  msgstr "جزيرة نورفولك"
+ 
+ msgid "Northern Mariana Islands"
+  msgstr "جزر مريانا الشمالية"
+ 
+ msgid "Norway"
+  msgstr "النرويج"
+ 
+ msgid "Oman"
+  msgstr "سلطنة عمان"
+ 
+ msgid "Pakistan"
+  msgstr "باكستان"
+ 
+ msgid "Palau"
+  msgstr "بالاو"
+ 
+ msgid "Palestine"
+  msgstr "فلسطين"
+ 
+ msgid "Panama"
+  msgstr "بناما"
+ 
+ msgid "Papua New Guinea"
+  msgstr "بابوا غينيا الجديدة"
+ 
+ msgid "Paraguay"
+  msgstr "باراغواي"
+ 
+ msgid "Peru"
+  msgstr "بيرو"
+ 
+ msgid "Philippines"
+  msgstr "الفلبين"
+ 
+ msgid "Pitcairn"
+  msgstr "بيتكيرن"
+ 
+ msgid "Poland"
+  msgstr "بولندا"
+ 
+ msgid "Portugal"
+  msgstr "البرتغال"
+ 
+ msgid "Puerto Rico"
+  msgstr "بورتوريكو"
+ 
+ msgid "Qatar"
+  msgstr "دولة قطر"
+ 
+ msgid "Reunion"
+  msgstr "جمع شمل"
+ 
+ msgid "Romania"
+  msgstr "رومانيا"
+ 
+ msgid "Russian Federation"
+  msgstr "الاتحاد الروسي"
+ 
+ msgid "Rwanda"
+  msgstr "رواندا"
+ 
+ msgid "Saint Kitts and Nevis"
+  msgstr "سانت كيتس ونيفيس"
+ 
+ msgid "Saint Lucia"
+  msgstr "القديسة لوسيا"
+ 
+ msgid "Saint Vincent and the Grenadines"
+  msgstr "سانت فنسنت وجزر غرينادين"
+ 
+ msgid "Samoa"
+  msgstr "ساموا"
+ 
+ msgid "San Marino"
+  msgstr "سان مارينو"
+ 
+ msgid "Sao Tome and Principe"
+  msgstr "ساو تومي وبرينسيبي"
+ 
+ msgid "Saudi Arabia"
+  msgstr "المملكة العربية السعودية"
+ 
+ msgid "Senegal"
+  msgstr "السنغال"
+ 
+ msgid "Serbia"
+  msgstr "صربيا"
+ 
+ msgid "Seychelles"
+  msgstr "سيشيل"
+ 
+ msgid "Sierra Leone"
+  msgstr "سيرا ليون"
+ 
+ msgid "Singapore"
+  msgstr "سنغافورة"
+ 
+ msgid "Slovakia"
+  msgstr "سلوفاكيا"
+ 
+ msgid "Slovenia"
+  msgstr "سلوفينيا"
+ 
+ msgid "Solomon Islands"
+  msgstr "جزر سليمان"
+ 
+ msgid "Somalia"
+  msgstr "الصومال"
+ 
+ msgid "South Africa"
+  msgstr "جنوب أفريقيا"
+ 
+ msgid "South Georgia South Sandwich Islands"
+  msgstr "جورجيا الجنوبية جزر ساندويتش الجنوبية"
+ 
+ msgid "Spain"
+  msgstr "إسبانيا"
+ 
+ msgid "Sri Lanka"
+  msgstr "سيريلانكا"
+ 
+ msgid "St. Helena"
+  msgstr "سانت هيلانة"
+ 
+ msgid "St. Pierre and Miquelon"
+  msgstr "سانت بيير وميكلون"
+ 
+ msgid "Sudan"
+  msgstr "السودان"
+ 
+ msgid "Suriname"
+  msgstr "سورينام"
+ 
+ msgid "Svalbard and Jan Mayen Islands"
+  msgstr "جزر سفالبارد وجان ماين"
+ 
+ msgid "Swaziland"
+  msgstr "سوازيلاند"
+ 
+ msgid "Sweden"
+  msgstr "السويد"
+ 
+ msgid "Switzerland"
+  msgstr "سويسرا"
+ 
+ msgid "Syrian Arab Republic"
+  msgstr "الجمهورية العربية السورية"
+ 
+ msgid "Taiwan"
+  msgstr "تايوان"
+ 
+ msgid "Tajikistan"
+  msgstr "طاجيكستان"
+ 
+ msgid "Tanzania, United Republic of"
+  msgstr "جمهورية تنزانيا المتحدة"
+ 
+ msgid "Thailand"
+  msgstr "تايلاند"
+ 
+ msgid "Togo"
+  msgstr "توجو"
+ 
+ msgid "Tokelau"
+  msgstr "توكيلاو"
+ 
+ msgid "Tonga"
+  msgstr "تونغا"
+ 
+ msgid "Trinidad and Tobago"
+  msgstr "ترينداد وتوباغو"
+ 
+ msgid "Tunisia"
+  msgstr "تونس"
+ 
+ msgid "Turkey"
+  msgstr "تركية"
+ 
+ msgid "Turkmenistan"
+  msgstr "تركمانستان"
+ 
+ msgid "Turks and Caicos Islands"
+  msgstr "جزر تركس وكايكوس"
+ 
+ msgid "Tuvalu"
+  msgstr "توفالو"
+ 
+ msgid "Uganda"
+  msgstr "أوغندا"
+ 
+ msgid "Ukraine"
+  msgstr "أوكرانيا"
+ 
+ msgid "United Arab Emirates"
+  msgstr "الإمارات العربية المتحدة"
+ 
+ msgid "United Kingdom"
+  msgstr "المملكة المتحدة"
+ 
+ msgid "United States"
+  msgstr "الولايات المتحدة الأمريكية"
+ 
+ msgid "United States minor outlying islands"
+  msgstr "جزر الولايات المتحدة البعيدة الصغرى"
+ 
+ msgid "Uruguay"
+  msgstr "أوروغواي"
+ 
+ msgid "Uzbekistan"
+  msgstr "أوزبكستان"
+ 
+ msgid "Vanuatu"
+  msgstr "فانواتو"
+ 
+ msgid "Vatican City State"
+  msgstr "دولة الفاتيكان"
+ 
+ msgid "Venezuela"
+  msgstr "فنزويلا"
+ 
+ msgid "Vietnam"
+  msgstr "فيتنام"
+ 
+ msgid "Virgin Islands (British)')"
+  msgstr "جزر العذراء البريطانية)')،"
+ 
+ msgid "Virgin Islands (U.S.)')"
+  msgstr "جزر فيرجن (الولايات المتحدة) ') ،"
+ 
+ msgid "Wallis and Futuna Islands"
+  msgstr "جزر واليس وفوتونا"
+ 
+ msgid "Western Sahara"
+  msgstr "الصحراء الغربية"
+ 
+ msgid "Yemen"
+  msgstr "اليمن"
+ 
+ msgid "Zaire"
+  msgstr "زائير"
+ 
+ msgid "Zambia"
+  msgstr "زامبيا"
+ 
+ msgid "Zimbabwe"
+  msgstr "زيمبابوي" 
+
+
+ msgid "Welcome To Aaynet"
+msgstr "مرحبا بك في آي نت"
+ 
+ msgid "Sign in (sign up / sign up) to learn about the most important benefits offered by the network."
+msgstr "قم بتسجيل ( الدخول/الإشتراك) للتعرف على أهم 
+المزايا التي تقدمها الشبكة."
+
+
+msgid "Learn about the benefits of joining aaynet."
+msgstr "تعرف على مزايا الانضمام إلى آي نت"
+
+
+msgid "Visitor"
+msgstr "زائر"
+
+msgid "welcome to Quran Society"
+msgstr "أهلا وسهلا بك في مجتمع القرآن"
+
+
+
+msgid "IntellectualPropertyAr"
+msgstr "الملكية الفكرية"
+
+msgid "Learn about the benefits of joining aaynet"
+msgstr "تعرف على مزايا الانضمام إلى آي نت"
+
+msgid "Join the Qur'an community"
+msgstr "انضم الآن إلى مجتمع القرآن"
+
+msgid "Scholars and Skilled Specialists"
+msgstr "علماء و مهرة متخصصون"
+
+msgid "Specialit Panels"
+msgstr "مجالس متخصصة"
+
+msgid "write morning vibes"
+msgstr "اكتب ردود فعل إيجابية في الصباح"
+
+msgid "write Afternoon vibes"
+msgstr "اكتب ردود فعل إيجابية بعد الظهر"
+
+
+msgid "write Evening vibes"
+msgstr "اكتب ردود فعل إيجابية في المساء"
+
+msgid "DayTimeMessages info have been updated"
+msgstr "تم تحديث معلومات رسائل اليوم"
+
+msgid "Your withdrawal request has been sent"
+msgstr "تم إرسال طلب السحب الخاص بك"
+
+msgid "Specialized councils"
+msgstr "مجالس متخصصة"
+
+msgid "Daily sessions"
+msgstr "جلسات يومية"
+
+msgid "Quran Society"
+msgstr "مجتمع القرآن"
+
+msgid "Join now the world of the Quranic Net"
+msgstr "إنضم الآن إلى عالم آي نت القرآني"
+
+msgid "Sign In"
+msgstr "دخول"
+
+msgid "Welcome To Aaynet"
+msgstr "مرحبا بك في آي نت"
+
+msgid "Sign in (sign up / sign up) to learn about the most important benefits offered by the network."
+msgstr "قم بتسجيل ( الدخول/الإشتراك) للتعرف على أهم المزايا التي تقدمها الشبكة."
+
+msgid "Night Mode"
+msgstr الوضع الليلي"
+
+
+msgid "About_Ar"
+msgstr "حول"
+
+msgid "terms_Ar"
+msgstr "شروط الخدمة"
+
+msgid "privacy_Ar"
+msgstr "سياسة الخصوصية"
+
+msgid "Volunteers"
+msgstr "متطوعون"
+
+msgid "Careers"
+msgstr "وظائف"
+
+msgid "Sponsored by :<br>His Royal Highness Prince Meteb Bin Abdulaziz Al Saud and his sons"
+msgstr "  هذه الشبكة بدعم من:<br>
+صاحب السمو الملكي الأمير / متعب بن عبدالعزيز آل سعود، وأولاده البررة، كتب الله أجرهم"
+
+
+
+msgid "Select background"
+msgstr "اختر الخلفية"
+
+msgid "Careers"
+msgstr "وظائف"
+
+msgid "Very long text"
+msgstr "عذراً هذا النص طويل جدا"
+
+msgid "Visitor"
+msgstr "زائر"
+
+msgid "welcome to Quran Society"
+msgstr "أهلا وسهلا بك في مجتمع القرآن"
+
+
+
+msgid "IntellectualPropertyAr"
+msgstr "الملكية الفكرية"
+
+msgid "Learn about the benefits of joining aaynet"
+msgstr "تعرف على مزايا الانضمام إلى آي نت"
+
+msgid "Join the Qur'an community"
+msgstr "انضم الآن إلى مجتمع القرآن"
+
+msgid "Scholars and Skilled Specialists"
+msgstr "علماء و مهرة متخصصون"
+
+msgid "Add your birthdate"
+msgstr "أضف تاريخ ميلادك"
+
+msgid "Comments"
+msgstr "المناقشات" 
+
+msgid "Participants Suggestions"
+msgstr "اقتراحات مشاركون"
+
+
+#: First Group
+msgid "The Glorious Qur'an"
+msgstr "النص القرآني:"
+
+msgid "Tajwid"
+msgstr "تجويد"
+
+msgid "Qira'at (Modes of Qur’anic Reading)"
+msgstr "قراءات"
+
+msgid "Qur'an Albums"
+msgstr "مصاحف مرتلة"
+
+
+#: second Group
+msgid "Tafsir and Qur'anic Sciences"
+msgstr "تفسير وعلوم القرآن:"
+
+msgid "Tafsir (Exegesis)"
+msgstr "تفسير"
+
+
+msgid "Qur'anic Sciences"
+msgstr "علوم القرآن"
+
+
+
+#: third Group
+msgid "Different Languages"
+msgstr "لغات:"
+
+msgid "Qur'an Translations"
+msgstr "ترجمات معاني القرآن"
+
+msgid "Sign Language"
+msgstr "لغة الإشارة"
+
+msgid "Braille"
+msgstr "لغة برايل"
+
+
+
+
+
+#: forth group
+msgid "Media"
+msgstr "إعلام:"
+
+
+msgid "Movie Making"
+msgstr "توثيق"
+
+msgid "Competitions"
+msgstr "مسابقات"
+
+msgid "Events "
+msgstr "فعاليات"
+
+msgid "Eminent Persons"
+msgstr "أعلام"
+
+
+#: fifth group
+msgid "Skills"
+msgstr "مهارات:"
+
+msgid "Calligraphy"
+msgstr "خط"
+
+msgid "Ornamentation"
+msgstr "زخرفة"
+
+msgid "Designing"
+msgstr "تصميم"
+
+msgid "Montage (Film editing)"
+msgstr "مونتاج"
+
+
+
+#: sixth group
+msgid "Technology"
+msgstr "تقنية:"
+
+msgid "Programs, Applications"
+msgstr "برامج - تطبيقات"
+
+msgid "Programming"
+msgstr "برمجة"
+
+msgid "Technology Products"
+msgstr "منتجات تقنية"
+
+msgid "What is on your mind? #Hashtag.. @Mention.. Link.."
+msgstr "ماذا يخطر في بالك؟"
+
+msgid "Who can see your"
+msgstr "من يمكن ان يرى"
+
+msgid "copy"
+msgstr "نسخ"
+
+msgid "Please wait until finishing upload"
+msgstr "يرجى الانتظار حتى الانتهاء من التحميل"
+
+msgid "Message"
+msgstr "!رسالة"
+

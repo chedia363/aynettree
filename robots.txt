@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /content/languages
+Disallow: /includes/ajax
+Disallow: /includes/libs
+
+User-agent: Googlebot smartphone
+Disallow:
