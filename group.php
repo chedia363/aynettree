@@ -215,7 +215,7 @@ try {
 				case 'delete':
 					/* check if the viewer not the super admin */
 					if($user->_data['user_id'] != $group['group_admin']) {
-						// _error(404);
+						// _error(404)
 						modal("MESSAGE", __("Message"), __("you are not the super admin"));
 					}
 					break;

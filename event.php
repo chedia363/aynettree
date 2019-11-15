@@ -39,7 +39,7 @@ try {
 	if($event['event_privacy'] == "secret") {
 		if(!$event['i_joined'] && !$event['i_admin']) {
 			if($user->_data['user_group'] != '1') {
-				// _error(404);
+				// _error(404)
 				modal("MESSAGE", __("Message"), __("you don't have permisson to this!"));
 
 			}
@@ -131,7 +131,7 @@ try {
 		case 'invites':
 			/* check if the viewer is a event member */
 			if(!$event['i_joined']) {
-				// _error(404);
+				// _error(404)
 				modal("MESSAGE", __("sorry"), __("you must be joined first"));
 			}
 			/* get invites */

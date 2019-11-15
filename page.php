@@ -16,7 +16,8 @@ if(!$system['system_public']) {
 
 // check username
 if(is_empty($_GET['username']) || !valid_username($_GET['username'])) {
-	_error(404);
+	// _error(404);
+	modal("MESSAGE", __("Message"), __("Check your username"));
 }
 
 try {
@@ -98,7 +99,8 @@ try {
 		case 'invites':
 			/* check if the viewer is a page member */
 			if(!$spage['i_like']) {
-				_error(404);
+				// _error(404);
+				modal("MESSAGE", __("Message"), __("you are not member in this page"));
 			}
 			/* get invites */
 			$spage['invites'] = $user->get_page_invites($spage['page_id']);
@@ -107,7 +109,8 @@ try {
 		case 'settings':
 			/* check if the viewer is the admin */
 			if(!$spage['i_admin']) {
-				_error(404);
+				// _error(404);
+			    modal("MESSAGE", __("Message"), __("you are not the admin"));
 			}
 
 			/* get sub_view content */
@@ -172,7 +175,8 @@ try {
 				case 'delete':
 					/* check if the viewer not the super admin */
 					if($user->_data['user_id'] != $spage['page_admin']) {
-						_error(404);
+						// _error(404)
+						modal("MESSAGE", __("Message"), __("you are not the super admin"));
 					}
 					break;
 				

@@ -16,7 +16,8 @@ if(!$system['system_public']) {
 
 // valid inputs
 if(!isset($_GET['photo_id']) || !is_numeric($_GET['photo_id'])) {
-	_error(404);
+	// _error(404);
+	modal("MESSAGE", __("Message"), __("Type not valid or photo doesn't exist"));
 }
 
 try {
@@ -24,7 +25,8 @@ try {
 	// get photo
 	$photo = $user->get_photo($_GET['photo_id'], true);
 	if(!$photo) {
-		_error(404);
+		// _error(404)
+		modal("MESSAGE", __("Message"), __("Photo doesn't exist"));
 	}
 	/* assign variables */
 	$smarty->assign('photo', $photo);

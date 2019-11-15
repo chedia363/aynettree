@@ -167,7 +167,8 @@ try {
 
 		case 'linked':
 			if(!$system['social_login_enabled']) {
-				_error(404);
+				// _error(404);
+				modal("MESSAGE", __("Message"), __("Social login must be enabled"));
 			}
 			if(!$system['facebook_login_enabled'] && !$system['twitter_login_enabled'] && !$system['google_login_enabled'] && !$system['instagram_login_enabled'] && !$system['linkedin_login_enabled'] && !$system['vkontakte_login_enabled']) {
                 _error(404);
@@ -178,7 +179,8 @@ try {
 
 		case 'membership':
 			if(!$system['packages_enabled']) {
-				_error(404);
+				// _error(404);
+				modal("MESSAGE", __("Message"), __("Packages must be enabled"));
 			}
 			// page header
 			page_header(__("Settings")." &rsaquo; ".__("Membership"));
@@ -209,7 +211,8 @@ try {
 
 		case 'affiliates':
 			if(!$system['affiliates_enabled']) {
-				_error(404);
+				// _error(404);
+				modal("MESSAGE", __("Message"), __("Affiliates must be enabled"));
 			}
 
 			// get content
@@ -244,7 +247,8 @@ try {
 
 		case 'points':
 			if(!$system['points_enabled']) {
-				_error(404);
+				// _error(404);
+				modal("MESSAGE", __("Message"), __("Points must be enabled"));
 			}
 
 			// get content
@@ -277,7 +281,8 @@ try {
 
 		case 'bank':
 			if(!$system['bank_transfers_enabled']) {
-				_error(404);
+				// _error(404);
+				modal("MESSAGE", __("Message"), __("Bank transfers must be enabled"));
 			}
 
 			// page header
@@ -343,7 +348,8 @@ try {
 
 		case 'information':
 			if(!$system['download_info_enabled']) {
-				_error(404);
+				// _error(404);
+				modal("MESSAGE", __("Message"), __("Download infos must be enabled"));
 			}
 			// page header
 			page_header(__("Settings")." &rsaquo; ".__("Download Your Information"));
@@ -351,7 +357,8 @@ try {
 
 		case 'download':
 			if(!$system['download_info_enabled']) {
-				_error(404);
+				// _error(404);
+				modal("MESSAGE", __("Message"), __("Download infos must be enabled"));
 			}
 			// download user information
 			$user->download_user_information();
@@ -359,9 +366,11 @@ try {
 
 		case 'delete':
 			if(!$system['delete_accounts_enabled']) {
-				_error(404);
+				// _error(404)
+				modal("MESSAGE", __("Message"), __("Delete account must be enabled"));
 			}
 			// page header
+			
 			page_header(__("Settings")." &rsaquo; ".__("Delete Account"));
 			break;
 

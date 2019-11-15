@@ -76,7 +76,7 @@ try {
 			case 'discover':
 				// check if discover posts enabled
 				if(!$system['discover_posts_enabled']) {
-					// _error(404);
+					// _error(404)
 					modal("MESSAGE", __("Message"), __("Discover posts must be enabled"));
 				}
 

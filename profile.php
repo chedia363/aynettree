@@ -34,8 +34,9 @@ if(!$system['system_public']) {
 
 if(is_empty($_GET['username']) || !valid_username($_GET['username'])) {
 
-	_error(404);
-
+	// _error(404);
+	modal("MESSAGE", __("Message"), __("Check your username"));
+	
 }
 
 
@@ -400,7 +401,8 @@ try {
 
 			if(!$album || $album['in_group'] || $album['user_type'] == "page" || ($album['user_type'] == "user" && $album['user_id'] != $profile['user_id'])) {
 
-				_error(404);
+				// _error(404)
+				modal("MESSAGE", __("Message"), __("Check the existence of this album"));
 
 			}
 

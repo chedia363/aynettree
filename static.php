@@ -11,7 +11,8 @@ require('bootstrap.php');
 
 // valid inputs
 if(!isset($_GET['url'])) {
-	_error(404);
+	// _error(404)
+	modal("MESSAGE", __("Message"), __("Url not valid, try again please"));
 }
 
 try {

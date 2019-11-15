@@ -16,7 +16,7 @@ if(!$system['system_public']) {
 
 // forums enabled
 if(!$system['forums_enabled']) {
-	// _error(404);
+	// _error(404)
 	modal("MESSAGE", __("Message"), __("Forum must be enabled"));
 }
 

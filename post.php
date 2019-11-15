@@ -16,7 +16,8 @@ if(!$system['system_public']) {
 
 // valid inputs
 if(!isset($_GET['post_id']) || !is_numeric($_GET['post_id'])) {
-	_error(404);
+	// _error(404)
+	modal("MESSAGE", __("Message"), __("Type not valid or photo doesn't exist"));
 }
 
 try {

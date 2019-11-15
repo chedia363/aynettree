@@ -37,7 +37,8 @@ switch ($_GET['do']) {
 
 		// check if register enabled
 		if(!$system['registration_enabled'] && !$system['invitation_enabled']) {
-			_error(404);
+			// _error(404)
+			modal("MESSAGE", __("Message"), __("Registration must be enabled"));
 		}
 
 		// page header

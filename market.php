@@ -16,7 +16,8 @@ if(!$system['system_public']) {
 
 // market enabled
 if(!$system['market_enabled']) {
-	_error(404);
+	// _error(404)
+	modal("MESSAGE", __("Message"), __("Market must be enabled"));
 }
 
 // page header

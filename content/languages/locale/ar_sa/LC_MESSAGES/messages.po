@@ -7494,9 +7494,139 @@ msgstr "من يمكن ان يرى"
 msgid "copy"
 msgstr "نسخ"
 
+#: Modals errors
+
 msgid "Please wait until finishing upload"
 msgstr "يرجى الانتظار حتى الانتهاء من التحميل"
 
 msgid "Message"
 msgstr "!رسالة"
+
+msgid "Photos number should be between 1 and 12 photos"
+msgstr "يجب أن يتراوح عدد الصور بين 1 و 12 صورة"
+
+msgid "blog must be enabled"
+msgstr "يجب تمكين المدونة من قبل الأدمن"
+
+msgid "Article doesn't exist"
+msgstr "المادة غير موجودة"
+
+
+msgid "Contact must be enabled"
+msgstr "يجب تمكين الاتصال من قبل الأدمن"
+
+
+msgid "Directory must be enabled"
+msgstr "يجب تمكين الدليل من قبل الأدمن"
+
+
+msgid "you don't have permisson to this!"
+msgstr "!ليس لديك إذن بهذا"
+
+
+msgid "Album not found!"
+msgstr "!الألبوم غير موجود"
+
+msgid "sorry"
+msgstr "عفواً"
+
+msgid "you must be joined first"
+msgstr "يجب أن تنضم أولا"
+
+msgid "you are not the admin"
+msgstr "أنت لست المشرف"
+
+
+msgid "you are not member in this event"
+msgstr "أنت لست عضوًا في هذا الحدث"
+
+
+msgid "Forum must be enabled"
+msgstr "يجب تفعيل المنتدى"
+
+
+msgid "This Forum doesn't exist"
+msgstr "هذا المنتدى غير موجود"
+
+
+msgid "Check your username"
+msgstr "تحقق من اسم المستخدم الخاص بك"
+
+
+msgid "you are not member in this group"
+msgstr "أنت لست عضوًا في هذا المجلس"
+
+
+msgid "you are not the super admin"
+msgstr "أنت لست الأدمن الرئيسي"
+
+
+msgid "User doesn't exist"
+msgstr "هذا المستخدم غير موجود"
+
+
+msgid "Popular posts must be enabled"
+msgstr "يجب تفعيل المشاركات المشهورة"
+
+
+msgid "Discover posts must be enabled"
+msgstr "يجب تفعيل إكتشاف المشاركات"
+
+
+msgid "Market must be enabled"
+msgstr "يجب تفعيل المتجر"
+
+
+msgid "you are not member in this page"
+msgstr "أنت لست عضوًا في هذه الصفحة"
+
+
+msgid "Type not valid or photo doesn't exist"
+msgstr "تثبت من إدخالك صورة صالحة"
+
+
+msgid "Photo doesn't exist"
+msgstr "الصورة غير موجودة"
+
+
+msgid "Check the existence of this album"
+msgstr "تحقق من وجود هذا الألبوم"
+
+
+msgid "Social login must be enabled"
+msgstr "يجب تفعيل الدخول بواسطة المواقع الاجتماعيةأولاً"
+
+
+msgid "Packages must be enabled"
+msgstr "يجب تفعيل الباقات أولاً"
+
+
+msgid "Affiliates must be enabled"
+msgstr "يجب تفعيل نظام الإحالات أولاً"
+
+
+msgid "Points must be enabled"
+msgstr "يجب تفعيل نظام النقاط أولاً"
+
+
+msgid "Bank transfers must be enabled"
+msgstr "يجب تفعيل التحويلات المصرفية أولاً"
+
+
+msgid "Download infos must be enabled"
+msgstr "يجب تفعيل تنزيل معلومات الحسابات من صفحة الإعدادات أولاً"
+
+
+msgid "Delete account must be enabled"
+msgstr "يجب تفعيل حذف الحساب أولاً"
+
+
+msgid "Registration must be enabled"
+msgstr "يجب تفعيل التسجيل أولاً"
+
+
+msgid "Url not valid, try again please"
+msgstr "هذا الرابط غير صالح ، حاول مرة أخرى من فضلك"
+ 
+
 

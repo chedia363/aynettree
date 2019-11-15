@@ -11,7 +11,7 @@ require('bootstrap.php');
 
 // user access
 if(!$system['directory_enabled']) {
-	// _error(404);
+	// _error(404)
 	modal("MESSAGE", __("Message"), __("Directory must be enabled"));
 
 }
