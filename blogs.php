@@ -16,7 +16,7 @@ if(!$system['system_public']) {
 
 // check if blogs enabled
 if(!$system['blogs_enabled']) {
-	// _error(404)
+	// _error(404);
 	modal("MESSAGE", __("Message"), __("Blog must be enabled"));
 }
 
