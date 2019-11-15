@@ -221,9 +221,9 @@ if(isset($_POST['photos'])) {
 	foreach($_POST['photos'] as $photo) {
 		$photos[] = $photo;
 
-		if(is_empty($photo)) {
-		 modal("MESSAGE", __("Message"), __("Please wait until finishing upload"));
-	    }
+		// if(is_empty($photo)) {
+		//  modal("MESSAGE", __("Message"), __("Please wait until finishing upload"));
+	    // }
 	}
 	//photos number do not exceed  12photos in the post
 	if(count($photos) > 12) {

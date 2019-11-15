@@ -7,4 +7,4 @@
     define("DEBUGGING", false);
     define("DEFAULT_LOCALE", "en_us");
     define("LICENCE_KEY", "");
-    ?>
+?>
