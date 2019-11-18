@@ -169,6 +169,15 @@
                     {__("Panels")}
                 </a>
             </li>
+
+           <!-- <li {if $page== "Stories"}class="active"{/if}>
+                <a href="{$system['system_url']}/Stories">
+                    <img src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/group.svg">
+                    {__("Stories")}
+                </a>
+            </li> -->
+
+            
             {if $system['events_enabled']}
             <li {if $page== "events"}class="active"{/if}>
                 <a href="{$system['system_url']}/events">

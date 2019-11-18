@@ -236,6 +236,105 @@ try {
 			}
 			break;
 
+       case 'Stories':
+			// get content
+			switch ($_GET['sub_view']) {
+				case '':
+					// page header
+					page_header(__("Admin")." &rsaquo; ".__("stories"));
+
+
+
+                  // get stories
+                  $rows = $user->get_stories();
+                  					
+                  // assign variables
+                  $smarty->assign('rows', $rows);
+                  break;
+
+
+
+					// get data
+					// $authors[] = $this->_data['user_id'];
+					// $friends_list = implode(',',$authors);
+					// $get_rows = $db->query("SELECT * FROM stories") or _error("SQL_ERROR");
+					// if($get_rows->num_rows > 0) {
+					// 	while($row = $get_rows->fetch_assoc()) {
+					// 		$rows[] = $row;
+					// 	}
+					// }
+
+
+
+					// $stories = [];
+					// /* get stories */
+				
+					// /* add viewer to this list */
+					// $authors[] = $this->_data['user_id'];
+					// $friends_list = implode(',',$authors);
+					// $get_stories = $db->query("SELECT stories.*, users.user_id, users.user_name, users.user_firstname, users.user_lastname, users.user_gender, users.user_picture FROM stories INNER JOIN users ON stories.user_id = users.user_id WHERE time>=DATE_SUB(NOW(), INTERVAL 1 DAY) AND stories.user_id IN ($friends_list) ORDER BY stories.story_id DESC") or _error("SQL_ERROR_THROWEN");
+					// if($get_stories->num_rows > 0) {
+					// 	while($_story = $get_stories->fetch_assoc()) {
+					// 		$story['id'] = $_story['story_id'];
+					// 		$story['photo'] = get_picture($_story['user_picture'], $_story['user_gender']);
+					// 		$story['name'] = $_story['user_firstname']." ".$_story['user_lastname'];
+					// 		$story['lastUpdated'] = strtotime($_story['time']);
+					// 		$story['items'] = [];
+					// 		/* get story media items */
+					// 		$get_rows = $db->query(sprintf("SELECT * FROM stories_media WHERE story_id = %s", secure($_story['story_id'], 'int') )) or _error("SQL_ERROR_THROWEN");
+					// 		while($media_item = $get_rows->fetch_assoc()) {
+					// 			$story_item['id'] = $media_item['media_id'];
+					// 			$story_item['type'] = ($media_item['is_photo'])? 'photo' : 'video';
+					// 			$story_item['src'] = $system['system_uploads'].'/'.$media_item['source'];
+					// 			$story_item['link'] = '#';
+					// 			$story_item['linkText'] = $media_item['text'];
+					// 			$story_item['time'] = strtotime($media_item['time']);
+					// 			$story['items'][] = $story_item;
+					// 		}
+					// 		$stories[] = $story;
+					// 	}
+					// }
+
+
+
+
+
+					
+					// assign variables
+					// $smarty->assign('rows', $rows);
+					// break;
+
+				case 'edit':
+					// valid inputs
+					if(!isset($_GET['id']) || !is_numeric($_GET['id'])) {
+						_error(404);
+					}
+					
+					// get data
+					$get_data = $db->query(sprintf("SELECT * FROM system_themes WHERE theme_id = %s", secure($_GET['id'], 'int') )) or _error("SQL_ERROR");
+					if($get_data->num_rows == 0) {
+						_error(404);
+					}
+					$data = $get_data->fetch_assoc();
+					
+					// assign variables
+					$smarty->assign('data', $data);
+					
+					// page header
+					page_header(__("Admin")." &rsaquo; ".__("Themes")." &rsaquo; ".$data['name']);
+					break;
+
+				case 'add':
+					// page header
+					page_header(__("Admin")." &rsaquo; ".__("Themes")." &rsaquo; ".__("Add New"));
+					break;
+				
+				default:
+					_error(404);
+					break;
+			}
+			break;
+			
 		case 'design':
 			// page header
 			page_header(__("Admin")." &rsaquo; ".__("Design"));

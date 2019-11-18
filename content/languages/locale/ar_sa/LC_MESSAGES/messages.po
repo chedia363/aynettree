@@ -1375,7 +1375,7 @@ msgid "Pages"
 msgstr "صفحات"
 
 msgid "Verified"
-msgstr "موثوق"
+msgstr "متخصص"
 
 msgid "Page ID"
 msgstr "معرف الصفحة"
@@ -2751,6 +2751,11 @@ msgstr "آخر تسجيل دخول"
 
 msgid "Specialists"
 msgstr "متخصصون"
+
+
+msgid "Specialist"
+msgstr "متخصص"
+
 
 msgid "Account"
 msgstr "حساب"
@@ -6521,7 +6526,7 @@ msgid "Create your group"
 msgstr "انشئ مجلسك"
 
 msgid "Sub-groups"
-msgstr "مجالس فرعية"
+msgstr "مجالس متخصصة"
 
  msgid "Afghanistan"
  msgstr "أفغانستان"
@@ -7637,3 +7642,6 @@ msgstr "هذا الرابط غير صالح ، حاول مرة أخرى من ف�
 msgid "Photos or Videos doesn't exist"
 msgstr "الصورة أو الفيديو غير موجودين! الرجاء التثبت"
 
+
+msgid "you must enter a message for this story"
+msgstr "يجب عليك إدخال رسالة لهذه القصة"

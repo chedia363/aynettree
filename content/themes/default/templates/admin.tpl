@@ -96,7 +96,13 @@
                             </a>
                         </li>
                         <!-- Themes -->
-
+                       <!-- Themes -->
+                        <li {if $view == "Stories"}class="active"{/if}>
+                            <a href="{$system['system_url']}/admincp/Stories">
+                                <i class="fa fa-desktop fa-fw mr10" style="color: #3F51B5"></i>{__("Stories")}
+                            </a>
+                        </li>
+                        <!-- Themes -->
                         <!-- Design -->
                         <li {if $view == "design"}class="active"{/if}>
                             <a href="{$system['system_url']}/admincp/design">

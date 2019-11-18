@@ -310,7 +310,7 @@
                              
                             {else}
                                 <p class="text-center text-muted">
-                                    {__("No groups to show")}
+                                    {__("No Panels to show")}
                                 </p>
                             {/if}
                 </div>
@@ -449,7 +449,7 @@
                                    
                                 {else}
                                     <p class="text-center text-muted mt10">
-                                        {__("No groups to show")}
+                                        {__("No Panels to show")}
                                     </p>
                                 {/if}
                             </div>

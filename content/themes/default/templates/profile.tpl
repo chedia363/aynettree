@@ -1224,12 +1224,12 @@
                                         {/if}
                                     {else}
                                         <p class="text-center text-muted mt10">
-                                            {__("No groups to show")}
+                                            {__("No Panels to show")}
                                         </p>
                                     {/if}
                                 {else}
                                     <p class="text-center text-muted mt10">
-                                        {__("No groups to show")}
+                                        {__("No Panels to show")}
                                     </p>
                                 {/if}
                             </div>

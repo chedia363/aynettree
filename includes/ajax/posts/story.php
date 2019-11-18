@@ -54,10 +54,7 @@ try {
 			if(isset($_POST['videos'])) {
 				$_POST['videos'] = _json_decode($_POST['videos']);
 
-				// if(is_empty($_POST['videos']->source)) {
-				// 	modal("MESSAGE", __("Message"), __("Please wait until finishing upload"));
-				// }
-			
+					
 				if(is_object($_POST['videos'])) {
 					/* filter the videos */
 					foreach($_POST['videos'] as $video) {
