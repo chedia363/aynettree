@@ -11,7 +11,7 @@
     <div class="circle-3"></div>
     <div class="inner">
         <h2>{__("welcome to Quran Society")}</h2>
-        <p>{__("Discover new people, create new connections and make new friends")}</p>
+        <p>{__("Discover new users’create new connections and make new friends")}</p>
     
     </div>
 </div>

@@ -9,7 +9,7 @@
     <div class="circle-3"></div>
     <div class="inner">
         <h2>{__("Search")}</h2>
-        <p>{__("Discover new people, create new connections and make new friends")}</p>
+        <p>{__("Discover new users’create new connections and make new friends")}</p>
     </div>
 </div>
 <!-- page header -->
@@ -34,7 +34,7 @@
                     <form class="js_search-form">
                         <div class="form-group mb0">
                             <div class="input-group">
-                                <input type="text" class="form-control" name="query" placeholder='{__("Search for people, pages and #hashtags")}' {if $query}value="{$query}"{/if} >
+                                <input type="text" class="form-control" name="query" placeholder='{__("Search for users, pages and #hashtags")}' {if $query}value="{$query}"{/if} >
                                 <div class="input-group-append">
                                     <button type="submit" name="submit" class="btn btn-danger plr30"><i class="fas fa-search mr10"></i>{__("Search")}</button>
                                 </div>

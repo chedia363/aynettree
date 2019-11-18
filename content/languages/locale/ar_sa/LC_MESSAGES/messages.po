@@ -3457,6 +3457,10 @@ msgstr "اتصل بنا وسيتم الرد عليك قريبًا"
 msgid "Discover new users’create new connections and make new friends"
 msgstr "اكتشاف أعضاء جدد وإنشاء اتصالات جديدة وصداقات جديدة"
 
+msgid "Search for users, pages and #hashtags"
+msgstr "ابحث عن أعضاء  وصفحات و#هاشتاج"
+
+
 msgid "News Feed"
 msgstr "آخر الأحداث"
 
