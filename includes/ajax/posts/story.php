@@ -53,6 +53,11 @@ try {
 			$videos = array();
 			if(isset($_POST['videos'])) {
 				$_POST['videos'] = _json_decode($_POST['videos']);
+
+				// if(is_empty($_POST['videos']->source)) {
+				// 	modal("MESSAGE", __("Message"), __("Please wait until finishing upload"));
+				// }
+			
 				if(is_object($_POST['videos'])) {
 					/* filter the videos */
 					foreach($_POST['videos'] as $video) {
@@ -61,7 +66,8 @@ try {
 				}
 			}
 			if(count($photos) == 0 && count($videos) == 0) {
-				_error(400);
+				// _error(400);
+				modal("MESSAGE", __("Message"), __("Please wait until finishing upload"));
 			}
 			$user->post_story(str_replace('"','`',$_POST['message']), $photos, $videos);
 			$return['callback'] = "window.location.reload();";
