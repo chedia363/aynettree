@@ -3371,6 +3371,44 @@ class User {
     }
 
 
+        /**
+     * get_currencies
+     * 
+     * @return array
+     */
+    public function get_storiees() {
+        global $db, $system, $smarty;
+        $stories = [];
+        /* get stories */
+        $authors = $this->_data['followings_ids'];
+        /* add viewer to this list */
+        $authors[] = $this->_data['user_id'];
+        $friends_list = implode(',',$authors);
+        $get_stories1 = $db->query("SELECT stories.*, users.user_id, users.user_name, users.user_firstname, users.user_lastname, users.user_gender, users.user_picture FROM stories INNER JOIN users ON stories.user_id = users.user_id WHERE time>=DATE_SUB(NOW(), INTERVAL 1 DAY) AND stories.user_id IN ($friends_list) ORDER BY stories.story_id DESC") or _error("SQL_ERROR_THROWEN");
+        if($get_stories1->num_rows > 0) {
+            while($_story = $get_stories1->fetch_assoc()) {
+                $story['id'] = $_story['story_id'];
+                $story['photo'] = get_picture($_story['user_picture'], $_story['user_gender']);
+                $story['name'] = $_story['user_firstname']." ".$_story['user_lastname'];
+                $story['lastUpdated'] = strtotime($_story['time']);
+                $story['items'] = [];
+                /* get story media items */
+                $get_stories = $db->query(sprintf("SELECT * FROM stories_media WHERE story_id = %s", secure($_story['story_id'], 'int') )) or _error("SQL_ERROR_THROWEN");
+                while($media_item = $get_stories->fetch_assoc()) {
+                    $stories[] = $media_item;
+                }
+              
+            }
+        }
+        // if($get_stories->num_rows > 0) {
+        //     while($currency = $get_stories->fetch_assoc()) {
+        //         $stories[] = $currency;
+        //     }
+        // }
+        return $stories;
+    }
+
+
     /**
      * post_story
      * 
