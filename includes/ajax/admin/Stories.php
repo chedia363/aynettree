@@ -18,7 +18,7 @@ if(!$user->_logged_in || !$user->_is_admin) {
 	modal("MESSAGE", __("System Message"), __("You don't have the right permission to access this"));
 }
 
-// edit currencies
+// edit stories
 try {
 
 	switch ($_GET['do']) {

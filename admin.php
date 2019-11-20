@@ -245,7 +245,7 @@ try {
 						page_header(__("Admin")." &rsaquo; ".__("stories"));
 
 						// get data
-						$rows = $user->get_storiees();
+						$rows = $user->get_storieesAdmn();
 						
 						// assign variables
 						$smarty->assign('rows', $rows);
@@ -254,31 +254,31 @@ try {
 
 
 
-				case 'edit':
-						// valid inputs
-						if(!isset($_GET['id']) || !is_numeric($_GET['id'])) {
-							_error(404);
-						}
+				// case 'edit':
+				// 		// valid inputs
+				// 		if(!isset($_GET['id']) || !is_numeric($_GET['id'])) {
+				// 			_error(404);
+				// 		}
 						
-						// get data
-						$get_data = $db->query(sprintf("SELECT * FROM stories_media WHERE media_id = %s", secure($_GET['id'], 'int') )) or _error("SQL_ERROR");
-						if($get_data->num_rows == 0) {
-							_error(404);
-						}
-						$data = $get_data->fetch_assoc();
+				// 		// get data
+				// 		$get_data = $db->query(sprintf("SELECT * FROM stories_media WHERE media_id = %s", secure($_GET['id'], 'int') )) or _error("SQL_ERROR");
+				// 		if($get_data->num_rows == 0) {
+				// 			_error(404);
+				// 		}
+				// 		$data = $get_data->fetch_assoc();
 						
-						// assign variables
-						$smarty->assign('data', $data);
+				// 		// assign variables
+				// 		$smarty->assign('data', $data);
 						
-						// page header
-						page_header(__("Admin")." &rsaquo; ".__("stories")." &rsaquo; ".$data['media_id']);
-						break;
+				// 		// page header
+				// 		page_header(__("Admin")." &rsaquo; ".__("stories")." &rsaquo; ".$data['media_id']);
+				// 		break;
 	
-				case 'add':
-					// page header
-					page_header(__("Admin")." &rsaquo; ".__("stories")." &rsaquo; ".__("Add New"));
+				// case 'add':
+				// 	// page header
+				// 	page_header(__("Admin")." &rsaquo; ".__("stories")." &rsaquo; ".__("Add New"));
 				    
-				break;
+				// break;
 						
 
 				

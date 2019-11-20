@@ -170,12 +170,12 @@
                 </a>
             </li>
 
-           <!-- <li {if $page== "Stories"}class="active"{/if}>
-                <a href="{$system['system_url']}/Stories">
+           <li {if $page== "Stories"}class="active"{/if}>
+                <a href="{$system['system_url']}/admincp/Stories">
                     <img src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/group.svg">
                     {__("Stories")}
                 </a>
-            </li> -->
+            </li> 
 
             
             {if $system['events_enabled']}
