@@ -21,28 +21,52 @@
                         </tr>
                     </thead>
                     <tbody>
+                   
                         {foreach $rows as $row}
+                  {var_dump($row)}
                             <tr>
-                                <td>{$row['name']}</td>
-                                {if $row['source']=="photos/1.png"}
+                         <!--  <td>{$row['name']} </td>
+                              <td>{$row['items']['src']} </td>
+                          <td>{$row['time']}</td> -->
+                                    {foreach $row as $roww} 
+                                  
+                                      <!--  {var_dump($row['items'])}
+        <td><img class="tbl-imageStry1" src="{$system['system_uploads']}/{$roww['source']}"></td> -->
+                                    {foreach $roww as $chedia}
+
+
+                                      <tr>
+                                <td>{$chedia['namee']}</td>
+                                {if $chedia['src']=="photos/1.png"}
                                 <td>{__("No Image or Video")}</td>
                                 {else}
-                                <td><img class="tbl-imageStry1" src="{$system['system_uploads']}/{$row['source']}"></td>
+                                <td><img class="tbl-imageStry1" src="{$chedia['src']}"></td>
                                 {/if}
-                                {if $row['text']==""}
+                                {if $chedia['linkText']==""}
                                 <td>{__("No Message for this story")}</td>
                                 {else}
-                                <td>{$row['text']}</td>
+                                <td>{$chedia['linkText']}</td>
                                 {/if}
                                 
-                                <td>{$row['time']}</td>
-                              
-                                <td>
+                                <td>{$chedia['time']}</td>
+
+                                 <td>
                                     
-                                    <button data-toggle="tooltip" data-placement="top" title='{__("Delete")}' class="btn btn-sm btn-icon btn-rounded btn-danger js_admin-deleter" data-handle="Stories" data-id="{$row['media_id']}">
+                                    <button data-toggle="tooltip" data-placement="top" title='{__("Delete")}' class="btn btn-sm btn-icon btn-rounded btn-danger js_admin-deleter" data-handle="Stories" data-id="{$chedia['media_id']}">
                                         <i class="fa fa-trash-alt"></i>
                                     </button>
                                 </td>
+ 
+                                  {/foreach}
+                                    
+
+
+
+                                     
+                                    {/foreach}
+ 
+                              
+                               
                             </tr>
                         {/foreach}
                     </tbody>

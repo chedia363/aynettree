@@ -170,10 +170,16 @@
                 </a>
             </li>
 
-           <li {if $page== "Stories"}class="active"{/if}>
-                <a href="{$system['system_url']}/admincp/Stories">
+            <li {if $page== "stories"}class="active"{/if}>
+                <a href="{$system['system_url']}/stories.php">
                     <img src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/group.svg">
                     {__("Stories")}
+                </a>
+            </li> 
+    <li {if $page== "stories1"}class="active"{/if}>
+                <a href="{$system['system_url']}/stories1.php">
+                    <img src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/group.svg">
+                    {__("Stories1")}
                 </a>
             </li> 
 
