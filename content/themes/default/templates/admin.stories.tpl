@@ -21,17 +21,64 @@
                         </tr>
                     </thead>
                     <tbody>
+
+
+                    {foreach $rows as $row}
+                            <tr>
+                                <td>{$row['name']}</td>
+                                {if $row['source']=="photos/1.png"}
+                                <td>{__("No Image or Video")}</td>
+                                {else}
+                                <td><img class="tbl-imageStry1" src="{$system['system_uploads']}/{$row['source']}"></td>
+                                {/if}
+                                {if $row['text']==""}
+                                <td>{__("No Message for this story")}</td>
+                                {else}
+                                <td>{$row['text']}</td>
+                                {/if}
+                                
+                                <td>{$row['time']}</td>
+                              
+                                <td>
+                                  
+
+                                                            
+                                    
+                                    <button data-toggle="tooltip" data-placement="top" title='{__("Delete")}' class="btn btn-sm btn-icon btn-rounded btn-danger js_admin-deleter" data-handle="Stories" data-id="{$row['media_id']}">
+                                        <i class="fa fa-trash-alt"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                        {/foreach}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                    
-                        {foreach $rows as $row}
+                      <!--     {foreach $rows as $row}
                   {var_dump($row)}
                             <tr>
-                         <!--  <td>{$row['name']} </td>
+                        <td>{$row['name']} </td>
                               <td>{$row['items']['src']} </td>
-                          <td>{$row['time']}</td> -->
+                          <td>{$row['time']}</td> 
                                     {foreach $row as $roww} 
                                   
-                                      <!--  {var_dump($row['items'])}
-        <td><img class="tbl-imageStry1" src="{$system['system_uploads']}/{$roww['source']}"></td> -->
+                                    {var_dump($row['items'])}
+        <td><img class="tbl-imageStry1" src="{$system['system_uploads']}/{$roww['source']}"></td>
                                     {foreach $roww as $chedia}
 
 
@@ -68,7 +115,7 @@
                               
                                
                             </tr>
-                        {/foreach}
+                        {/foreach} -->
                     </tbody>
                 </table>
             </div>
