@@ -17,7 +17,7 @@
 
 <div class="card">
     <div class="card-header with-icon">
-    
+      <i class="fa fa-money-bill-alt mr10"></i>{__("My Stories")}
         {if $view == "edit"}
             <div class="float-right">
                 <a href="{$system['system_url']}/stories1.php" class="btn btn-sm btn-light">
@@ -35,10 +35,10 @@
                 <table class="table table-striped table-bordered table-hover js_dataTable">
                     <thead>
                         <tr>
-                            <th>{__("ID Story")}</th>
+                        
                        
-                            <th>{__("Source")}</th>
-                            <th>{__("text")}</th>
+                            <th>{__("story Image")}</th>
+                            <th>{__("story Message")}</th>
                             <th>{__("Time")}</th>
                             <th>{__("Actions")}</th>
                         </tr>
@@ -46,7 +46,7 @@
                     <tbody>
                         {foreach $rows as $row}
                             <tr>
-                                <td>{$row['name']}</td>
+                               
                                 {if $row['source']=="photos/1.png"}
                                 <td>{__("No Image or Video")}</td>
                                 {else}
@@ -84,83 +84,7 @@
 
    {elseif $view == "edit"}
 
-        <form class="js_ajax-forms " data-url="admin/Stories.php?do=edit&id={$data['media_id']}">
-            <div class="card-body">
-                             
-                  
-
-
-               <div class="form-group form-row">
-               
-                    <label class="col-md-3 form-control-label">
-                        {__("Source")}
-                    </label>
-                    <div class="col-md-9">
-                        {if $data['source'] == ''}
-                            <div class="x-image">
-                                <button type="button" class="close x-hidden js_x-image-remover" title='{__("Remove")}'>
-                                    <span>×</span>
-                                </button>
-                                <div class="x-image-loader">
-                                    <div class="progress x-progress">
-                                        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                                <i class="fa fa-camera fa-lg js_x-uploader" data-handle="x-image"></i>
-                                <input type="hidden" class="js_x-image-input" name="source" value="">
-                            </div>
-                        {else}
-                            <div class="x-image" style="background-image: url('{$system['system_uploads']}/{$data['source']}')">
-                                <button type="button" class="close js_x-image-remover" title='{__("Remove")}'>
-                                    <span>×</span>
-                                </button>
-                                <div class="x-image-loader">
-                                    <div class="progress x-progress">
-                                        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                                <i class="fa fa-camera fa-lg js_x-uploader" data-handle="x-image"></i>
-                                <input type="hidden" class="js_x-image-input" name="source" value="{$data['source']}">
-                            </div>
-                        {/if}
-                    </div>
-                </div>
-
-
-
-
-
-
-
-
-
-                    
-              
-              <div class="form-group form-row">
-                    <label class="col-md-3 form-control-label">
-                        {__("Story Name")}
-                    </label>
-                    <div class="col-md-9">
-                        <input class="form-control" name="text" value="{$data['text']}">
-                       
-                    </div>
-                </div>
-
-                <!-- success -->
-                <div class="alert alert-success mb0 x-hidden"></div>
-                <!-- success -->
-
-                <!-- error -->
-                <div class="alert alert-danger mb0 x-hidden"></div>
-                <!-- error -->
-            </div>
-            <div class="card-footer text-right">
-                <button type="submit" class="btn btn-primary">{__("Save Changes")}</button>
-            </div>
-        </form>
-
-    
-
+       
 
 
     {/if}

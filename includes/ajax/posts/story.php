@@ -38,6 +38,7 @@ try {
 				modal("MESSAGE", __("Error"), __("Very long text"));	
 				
 			}
+
 			/* filter photos */
 			$photos = array();
 			if(isset($_POST['photos'])) {
@@ -66,6 +67,15 @@ try {
 				// _error(400);
 				modal("MESSAGE", __("Message"), __("Please wait until finishing upload"));
 			}
+
+		
+			// $radioVal = $_POST["color"];
+
+			// if($radioVal == "2")
+			// {
+			// 	modal("MESSAGE", __("Message"), __("You chose the second value"));
+		
+			// }
 			$user->post_story(str_replace('"','`',$_POST['message']), $photos, $videos);
 			$return['callback'] = "window.location.reload();";
 			break;

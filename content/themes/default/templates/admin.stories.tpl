@@ -12,10 +12,11 @@
                 <table class="table table-striped table-bordered table-hover js_dataTable">
                     <thead>
                         <tr>
+                            
+                            <!-- <th>{__("story_id")}</th> -->
                             <th>{__("Username")}</th>
-                       
-                            <th>{__("Source")}</th>
-                            <th>{__("text")}</th>
+                            <th>{__("story Image")}</th>
+                            <th>{__("story Message")}</th>
                             <th>{__("Time")}</th>
                             <th>{__("Actions")}</th>
                         </tr>
@@ -25,6 +26,7 @@
 
                     {foreach $rows as $row}
                             <tr>
+                               <!--  <td>{$row['story_id']}</td> -->
                                 <td>{$row['name']}</td>
                                 {if $row['source']=="photos/1.png"}
                                 <td>{__("No Image or Video")}</td>
