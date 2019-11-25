@@ -3645,13 +3645,13 @@ msgid "Join"
 msgstr "انضم إلينا"
 
 msgid "Public Group"
-msgstr "المجموعة العامة"
+msgstr "المجلس العام"
 
 msgid "Closed Group"
-msgstr "مجموعة مغلقة"
+msgstr "مجلس مغلق"
 
 msgid "Secret Group"
-msgstr "المجموعة السرية"
+msgstr "مجلس سري"
 
 msgid "members"
 msgstr "اعضاء"

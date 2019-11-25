@@ -11,24 +11,24 @@
                 <div class="modal-body">
                     <div class="form-group">
                         <label class="form-control-label" for="title">{__("Name Your Group")}</label>
-                        <input type="text" class="form-control" name="title" id="title" value="{$user->_data['user_firstname']} {$user->_data['user_lastname']}" readonly>
+                        <input readonly type="text" class="form-control" name="title" id="title" value="{$user->_data['user_firstname']} {$user->_data['user_lastname']}" >
                     </div>
-                    <div class="form-group">
+                    <div class="form-group d-none">
                         <label class="form-control-label" for="username">{__("Web Address")}</label>
                         <div class="input-group">
                             <div class="input-group-prepend">
                                 <span class="input-group-text d-none d-sm-block">{$system['system_url']}/groups/</span>
                             </div>
-                            <input type="text" class="form-control" name="username" id="username">
+                            <input readonly type="text" class="form-control" name="username" id="username" value="{$user->_data['user_name']}gr{$group["group_category"]}">
                         </div>
                         <span class="form-text">
                             {__("Can only contain alphanumeric characters (A–Z, 0–9) and periods ('.')")}
                         </span>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group form-group d-none">
                         <label class="form-control-label" for="privacy">{__("Select Privacy")}</label>
                         <select class="form-control selectpicker" name="privacy">
-                            <option value="public" data-content="<div class='option'><div class='icon'><i class='fa fa-globe fa-2x'></i></div><div class='text'><b>{__("Public Group")}</b><br>{__("Anyone can see the panel, its members and their posts")}.
+                            <option value="public" data-content="<div class='option'><div class='icon'><i class='fa fa-globe fa-2x'></i></div><div class='text'><b>{__("Public Group")}</b><br>{__("Anyone can see the group, its members and their posts")}.
                             </div></div>">{__("Public Group")}</option>
                             <option value="closed" data-content="<div class='option'><div class='icon'><i class='fa fa-unlock-alt fa-2x'></i></div><div class='text'><b>{__("Closed Group")}</b><br>{__("Only members can see posts")}.
                             </div></div>">{__("Closed Group")}</option>
@@ -149,10 +149,10 @@
         <ul>
             {foreach $system['languages'] as $language}
                 <li style="width: 18.7%; display: inline-block; text-align: center; margin: 30px 2px 5px;">
-                    <a style="display: table; text-decoration: none; font-weight: 700; font-size: 13px; width: 100%;" href="?lang={$language['code']}">
+                    <a style="display: table; text-decoration: none; font-weight: 700; font-size: 13px; width: 100%;" {if $language['code'] =='ar_sa'}href="?lang={$language['code']}"{/if}>
                         {$language['title']}
                         <div style="display: table-caption; width: 50px; height: 50px; background: 0 0; margin: 0 auto 8px; box-shadow: 0 1px 3px rgba(0,0,0,.24); border-radius: 50%; transition: all .2s ease-in-out;">
-                            <img width="50" src="{$language['flag']}">
+                            <img width="60" src="{$language['flag']}">
                         </div>
                     </a>
                 </li>
@@ -167,7 +167,7 @@
 <script id="search-for" type="text/template">
     <div class="ptb10 plr10">
         <a href="{$system['system_url']}/search/{literal}{{#hashtag}}hashtag/{{/hashtag}}{/literal}{literal}{{query}}{/literal}">
-            <i class="fa fa-search pr5"></i> {__("Search for")} {literal}{{#hashtag}}#{{/hashtag}}{/literal}{literal}{{query}}{/literal}
+            <img class="iconsearch" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/search.png">  {__("Search for")} {literal}{{#hashtag}}#{{/hashtag}}{/literal}{literal}{{query}}{/literal}
         </a>
     </div>
 </script>

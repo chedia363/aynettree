@@ -105,6 +105,8 @@
                 <!-- profile-name -->
 
                 <!-- profile-buttons -->
+                {if $group["group_id"] > 19 && !$group['i_admin']} 
+                
                 <div class="profile-buttons-wrapper">
                     {if $group['i_joined'] == "approved"}
                         <button type="button" class="btn btn-sm btn-success btn-delete js_leave-group" data-id="{$group['group_id']}" data-privacy="{$group['group_privacy']}">
@@ -121,10 +123,12 @@
                     {/if}
                     {if !$group['i_admin']}
                         <button type="button" class="btn btn-icon btn-rounded btn-light js_report ml5" data-handle="group" data-id="{$group['group_id']}">
-                            <i class="fa fa-flag fa-fw"></i>
+                        <img class="iconscommt" src="{$system['system_url']}/content/themes/default/images/icons/flagvert.svg">
+                        
                         </button>
                     {/if}
                 </div>
+                {/if}
                 <!-- profile-buttons -->
 
                 <!-- profile-tabs -->
@@ -139,23 +143,23 @@
                         {else}
                             <li>
                                 <a href="{$system['system_url']}/groups/{$group['group_name']}" {if $view == ""}class="active"{/if}>
-                                    <i class="fa fa-newspaper fa-fw mr5"></i>{__("Timeline")}
+                                   <img class="iconstable" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/article.svg" class="mr5"> {__("Timeline")}
                                 </a>
                             </li>
                             <li>
                                 <a href="{$system['system_url']}/groups/{$group['group_name']}/photos" {if $view == "photos" || $view == "albums" || $view == "album"}class="active"{/if}>
-                                    <i class="fa fa-images fa-fw mr5"></i>{__("Photos")}
+                                                                     <img class="iconsimgtab" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/image.svg" class="mr5"> {__("Photos")}
                                 </a>
                             </li>
                             <li>
                                 <a href="{$system['system_url']}/groups/{$group['group_name']}/videos" {if $view == "videos"}class="active"{/if}>
-                                    <i class="fa fa-video fa-fw mr5"></i>{__("Videos")}
+                                   <img class="iconstable mr5" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/video.svg">{__("Videos")}
                                 </a>
                             </li>
                             {if !$group['i_admin']}
                                 <li>
                                     <a href="{$system['system_url']}/groups/{$group['group_name']}/members" {if $view == "members" || $view == "invites"}class="active"{/if}>
-                                        <i class="fa fa-users fa-fw mr5"></i>{__("Members")}
+                                        <img class="iconstable mr5" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/group.svg"> {__("Members")}
                                     </a>
                                 </li>
                             {else}
@@ -273,27 +277,25 @@
                         
                         {if $user->_logged_in && $user->_data['user_group'] < 3 && $system['groups_enabled'] && $group["group_id"] < 20}
                         <div class="card">
-                    <div class="mt10 float-right">
+                        <div class="card-body">
+                    <div class="mt10 text-center text-muted ">
                         <button class="btn btn-sm btn-success d-none d-lg-block" data-toggle="modal" data-url="#create-group-in">
                             <i class="fa fa-plus-circle mr5"></i>{__("Create your group")}
                         </button>
-                        <button class="btn btn-sm btn-icon btn-success d-block d-lg-none" data-toggle="modal" data-url="#create-group-in">
-                            <i class="fa fa-plus-circle"></i>
-                        </button>
-                       
+                    </div>
                     </div>
                     </div>
                            {/if} 
                            {if $group["group_id"] < 20}   
                            <div class="card">
-                           <div class="card-header bg-transparent"> <i class="fa fa-users mr5"></i> <strong><a href="{$system['system_url']}/groups/{$group['group_name']}/Subgroups">{__("Sub-groups")}</a></strong><span class="badge badge-pill badge-info ml5">{count($rows)}</span> </div>
-                    {if count($rows) > 0 }
+                           <div class="card-header bg-transparent"> <i class="fa fa-users mr5"></i> <strong><a href="{$system['system_url']}/groups/{$group['group_name']}/Subgroups">{__("Sub-groups")}</a></strong><span class="badge badge-pill badge-info ml5">{count($rows)-1}</span> </div>
+                    {if count($rows) > 1 }
                     <div class="card-body ptb10 plr10">
                                     <div class="row no-gutters">
-                                    {foreach $rows as $_group }
-
+                                    {foreach $rows as $_group}
+                                    {if $group["group_id"] != $_group["group_id"] && $x < 6 }  
                                   
-                                    <div class="col-3 col-lg-4">
+                                    <div {$x++} class="col-3 col-lg-4">
                                                 <div class="circled-user-box">
                                                     <a class="user-box" href="{$system['system_url']}/groups/{$_group['group_name']}">
                                                         <img alt="{$_group['group_title']}" src="{$_group['group_picture']}" />
@@ -303,7 +305,7 @@
                                                     </a>
                                                 </div>
                                   </div>
-            
+                                    {/if}
                                     {/foreach}
                                 </div>
                                 </div>
@@ -364,7 +366,7 @@
                         <!-- group requests -->
 
                         <!-- publisher -->
-                        {if $user->_logged_in && $group['i_joined'] == "approved" && $user->_data['user_group'] < 3}
+                        {if $user->_logged_in && $group['i_admin']}
                             {include file='_publisher.tpl' _handle="group" _id=$group['group_id']}
                         {/if}
                         <!-- publisher -->
@@ -435,13 +437,12 @@
                                 <!-- panel title -->
                             </div>
                             <div class="card-body">
-                            {if count($rows) > 0 }
+                            {if count($rows) > 1 }
                                         <ul class="row">
-                                        {foreach $rows as $_group }
-                                   
+                                {foreach $rows as $_group }
+                                {if $group["group_id"] != $_group["group_id"]}  
                                    {include file='__feeds_group.tpl' _tpl="box"}
-                              
-                             
+                             {/if}
                                {/foreach}
                                         </ul>
 
@@ -723,15 +724,15 @@
                                     <div class="card-body">
                                         <div class="form-group">
                                             <label class="form-control-label" for="title">{__("Name Your Group")}</label>
-                                            <input type="text" class="form-control" name="title" id="title" placeholder='{__("Name of your group")}' value="{$group['group_title']}">
+                                            <input readonly type="text" class="form-control" name="title" id="title" placeholder='{__("Name of your group")}' value="{$group['group_title']}">
                                         </div>
-                                        <div class="form-group">
+                                        <div class="form-group d-none">
                                             <label class="form-control-label" for="username">{__("Web Address")}</label>
                                             <div class="input-group">
                                                 <div class="input-group-prepend">
                                                     <span class="input-group-text d-none d-sm-block">{$system['system_url']}/groups/</span>
                                                 </div>
-                                                <input type="text" class="form-control" name="username" id="username" value="{$group['group_name']}">
+                                                <input readonly type="text" class="form-control" name="username" id="username" value="{$group['group_name']}">
                                             </div>
                                             <span class="form-text">
                                                 {__("Can only contain alphanumeric characters (A–Z, 0–9) and periods ('.')")}
@@ -748,7 +749,7 @@
                                                 </div></div>">{__("Secret Group")}</option>
                                             </select>
                                         </div>
-                                        <div class="form-group">
+                                        <div class="form-group d-none ">
                                             <label class="form-control-label" for="title">{__("Category")}</label>
                                             <select class="form-control" name="category" id="category">
                                                 {foreach $categories as $category}
@@ -865,7 +866,7 @@
                                 </div>
                             {elseif $sub_view == "delete"}
                                 <div class="card-header with-icon">
-                                    <i class="fa fa-trash mr10"></i>{__("Delete Group")}
+                                    <i class="fa fa-trash mr10"></i>{__("Delete Event")}
                                 </div>
                                 <div class="card-body">
                                     <div class="alert alert-warning">

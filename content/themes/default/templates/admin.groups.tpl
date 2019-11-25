@@ -40,7 +40,7 @@
                     <thead>
                         <tr>
                             <th>{__("ID")}</th>
-                            <th>{__("Group")}</th>
+                            <th>{__("Panel")}</th>
                             <th>{__("Admin")}</th>
                             <th>{__("Privacy")}</th>
                             <th>{__("Members")}</th>
