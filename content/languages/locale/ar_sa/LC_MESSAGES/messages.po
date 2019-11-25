@@ -70,7 +70,7 @@ msgid "Users"
 msgstr "المستخدمون"
 
 msgid "Admins"
-msgstr "مسؤولو النظام"
+msgstr "مسؤولو المجلس"
 
 msgid "Moderators"
 msgstr "المشرفون"
@@ -1003,7 +1003,7 @@ msgid "Invited"
 msgstr "مدعو إليها"
 
 msgid "Public"
-msgstr "عام"
+msgstr "المجلس العام"
 
 msgid "Closed"
 msgstr "مغلقة"
@@ -1087,10 +1087,10 @@ msgid "Group ID"
 msgstr "معرف المجموعة"
 
 msgid "Group Settings"
-msgstr "إعدادات المجموعة"
+msgstr "إعدادات المجلس"
 
 msgid "Name Your Group"
-msgstr "اسم المجموعة"
+msgstr "إسم المجلس"
 
 msgid "Web Address"
 msgstr "الرابط"
@@ -3672,7 +3672,7 @@ msgid "Join Requests"
 msgstr "الانضمام إلى الطلبات"
 
 msgid "Delete Group"
-msgstr "حذف المجموعة"
+msgstr "حذف المجلس"
 
 msgid "Can only contain alphanumeric characters (A–Z, 0–9) and periods ('.')"
 msgstr "('.') s والفترات s (أ-ي,0-9)(y)  يمكن أن يحتوي فقط على أحرف أبجدية رقمية"
@@ -4890,7 +4890,7 @@ msgid "Search for products"
 msgstr " المنتجات"
 
 msgid "Promoted"
-msgstr "
+msgstr ""
 
 msgid "Search for user name or email"
 msgstr "البحث عن اسم المستخدم أو البريد الإلكتروني"

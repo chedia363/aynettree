@@ -740,11 +740,11 @@
                                         <div class="form-group">
                                             <label class="form-control-label" for="privacy">{__("Select Privacy")}</label>
                                             <select class="form-control selectpicker" name="privacy">
-                                                <option {if $group['group_privacy'] == "public"}selected{/if} value="public" data-content="<div class='option'><div class='icon'><i class='fa fa-globe fa-2x'></i></div><div class='text'><b>{__("Public Group")}</b><br>{__("Anyone can see the group, its members and their posts")}.
+                                                <option {if $group['group_privacy'] == "public"}selected{/if} value="public" data-content="<div class='option'><div class='icon'><i class='fa fa-globe fa-2x'></i></div><div class='text'><b>{__("Public Group")}</b><br>{__("Anyone can see the panel, its members and their posts")}.
                                                 </div></div>">{__("Public Group")}</option>
                                                 <option {if $group['group_privacy'] == "closed"}selected{/if} value="closed" data-content="<div class='option'><div class='icon'><i class='fa fa-unlock-alt fa-2x'></i></div><div class='text'><b>{__("Closed Group")}</b><br>{__("Only members can see posts")}.
                                                 </div></div>">{__("Closed Group")}</option>
-                                                <option {if $group['group_privacy'] == "secret"}selected{/if} value="secret" data-content="<div class='option'><div class='icon'><i class='fa fa-lock fa-2x'></i></div><div class='text'><b>{__("Secret Group")}</b><br>{__("Only members can find the group and see posts")}.
+                                                <option {if $group['group_privacy'] == "secret"}selected{/if} value="secret" data-content="<div class='option'><div class='icon'><i class='fa fa-lock fa-2x'></i></div><div class='text'><b>{__("Secret Group")}</b><br>{__("Only members can find the panel and see posts")}.
                                                 </div></div>">{__("Secret Group")}</option>
                                             </select>
                                         </div>
@@ -865,7 +865,7 @@
                                 </div>
                             {elseif $sub_view == "delete"}
                                 <div class="card-header with-icon">
-                                    <i class="fa fa-trash mr10"></i>{__("Delete Event")}
+                                    <i class="fa fa-trash mr10"></i>{__("Delete Group")}
                                 </div>
                                 <div class="card-body">
                                     <div class="alert alert-warning">

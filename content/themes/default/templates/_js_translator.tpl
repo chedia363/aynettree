@@ -85,9 +85,9 @@
 {__("Phone number (eg. +905...)")}
 {__("Promoted")}
 {__("Search for user name or email")}
-{__("Anyone can see the group, its members and their posts")}
+{__("Anyone can see the panel, its members and their posts")}
 {__("Only members can see posts")}
-{__("Only members can find the group and see posts")}
+{__("Only members can find the panel and see posts")}
 {__("Anyone can see the event, its users and posts")}
 {__("Only event users can see posts")}
 {__("Only invited users and event users can find the event")}

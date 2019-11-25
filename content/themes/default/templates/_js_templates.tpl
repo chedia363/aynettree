@@ -28,11 +28,11 @@
                     <div class="form-group">
                         <label class="form-control-label" for="privacy">{__("Select Privacy")}</label>
                         <select class="form-control selectpicker" name="privacy">
-                            <option value="public" data-content="<div class='option'><div class='icon'><i class='fa fa-globe fa-2x'></i></div><div class='text'><b>{__("Public Group")}</b><br>{__("Anyone can see the group, its members and their posts")}.
+                            <option value="public" data-content="<div class='option'><div class='icon'><i class='fa fa-globe fa-2x'></i></div><div class='text'><b>{__("Public Group")}</b><br>{__("Anyone can see the panel, its members and their posts")}.
                             </div></div>">{__("Public Group")}</option>
                             <option value="closed" data-content="<div class='option'><div class='icon'><i class='fa fa-unlock-alt fa-2x'></i></div><div class='text'><b>{__("Closed Group")}</b><br>{__("Only members can see posts")}.
                             </div></div>">{__("Closed Group")}</option>
-                            <option value="secret" data-content="<div class='option'><div class='icon'><i class='fa fa-lock fa-2x'></i></div><div class='text'><b>{__("Secret Group")}</b><br>{__("Only members can find the group and see posts")}.
+                            <option value="secret" data-content="<div class='option'><div class='icon'><i class='fa fa-lock fa-2x'></i></div><div class='text'><b>{__("Secret Group")}</b><br>{__("Only members can find the panel and see posts")}.
                             </div></div>">{__("Secret Group")}</option>
                         </select>
                     </div>
@@ -1327,11 +1327,11 @@
                     <div class="form-group">
                         <label class="form-control-label" for="privacy">{__("Select Privacy")}</label>
                         <select class="form-control selectpicker" name="privacy">
-                            <option value="public" data-content="<div class='option'><div class='icon'><i class='fa fa-globe fa-2x'></i></div><div class='text'><b>{__("Public Group")}</b><br>{__("Anyone can see the group, its members and their posts")}.
+                            <option value="public" data-content="<div class='option'><div class='icon'><i class='fa fa-globe fa-2x'></i></div><div class='text'><b>{__("Public Group")}</b><br>{__("Anyone can see the panel, its members and their posts")}.
                             </div></div>">{__("Public Group")}</option>
                             <option value="closed" data-content="<div class='option'><div class='icon'><i class='fa fa-unlock-alt fa-2x'></i></div><div class='text'><b>{__("Closed Group")}</b><br>{__("Only members can see posts")}.
                             </div></div>">{__("Closed Group")}</option>
-                            <option value="secret" data-content="<div class='option'><div class='icon'><i class='fa fa-lock fa-2x'></i></div><div class='text'><b>{__("Secret Group")}</b><br>{__("Only members can find the group and see posts")}.
+                            <option value="secret" data-content="<div class='option'><div class='icon'><i class='fa fa-lock fa-2x'></i></div><div class='text'><b>{__("Secret Group")}</b><br>{__("Only members can find the panel and see posts")}.
                             </div></div>">{__("Secret Group")}</option>
                         </select>
                     </div>

@@ -182,11 +182,11 @@
                             </label>
                             <div class="col-md-9">
                                 <select class="form-control selectpicker" name="privacy">
-                                    <option {if $data['group_privacy'] == "public"}selected{/if} value="public" data-content="<div class='option'><div class='icon'><i class='fa fa-globe fa-lg'></i></div><div class='text'><b>{__("Public Group")}</b><br>{__("Anyone can see the group, its members and their posts")}.
+                                    <option {if $data['group_privacy'] == "public"}selected{/if} value="public" data-content="<div class='option'><div class='icon'><i class='fa fa-globe fa-lg'></i></div><div class='text'><b>{__("Public Group")}</b><br>{__("Anyone can see the panel, its members and their posts")}.
                                     </div></div>">{__("Public Group")}</option>
                                     <option {if $data['group_privacy'] == "closed"}selected{/if} value="closed" data-content="<div class='option'><div class='icon'><i class='fa fa-unlock-alt fa-lg'></i></div><div class='text'><b>{__("Closed Group")}</b><br>{__("Only members can see posts")}.
                                     </div></div>">{__("Closed Group")}</option>
-                                    <option {if $data['group_privacy'] == "secret"}selected{/if} value="secret" data-content="<div class='option'><div class='icon'><i class='fa fa-lock fa-lg'></i></div><div class='text'><b>{__("Secret Group")}</b><br>{__("Only members can find the group and see posts")}.
+                                    <option {if $data['group_privacy'] == "secret"}selected{/if} value="secret" data-content="<div class='option'><div class='icon'><i class='fa fa-lock fa-lg'></i></div><div class='text'><b>{__("Secret Group")}</b><br>{__("Only members can find the panel and see posts")}.
                                     </div></div>">{__("Secret Group")}</option>
                                 </select>
                             </div>
