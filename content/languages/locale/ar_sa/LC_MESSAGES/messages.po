@@ -3648,7 +3648,7 @@ msgid "Public Group"
 msgstr "المجلس العام"
 
 msgid "Closed Group"
-msgstr "مجلس مغلق"
+msgstr "المجلس الخاص"
 
 msgid "Secret Group"
 msgstr "مجلس سري"

@@ -745,8 +745,8 @@
                                                 </div></div>">{__("Public Group")}</option>
                                                 <option {if $group['group_privacy'] == "closed"}selected{/if} value="closed" data-content="<div class='option'><div class='icon'><i class='fa fa-unlock-alt fa-2x'></i></div><div class='text'><b>{__("Closed Group")}</b><br>{__("Only members can see posts")}.
                                                 </div></div>">{__("Closed Group")}</option>
-                                                <option {if $group['group_privacy'] == "secret"}selected{/if} value="secret" data-content="<div class='option'><div class='icon'><i class='fa fa-lock fa-2x'></i></div><div class='text'><b>{__("Secret Group")}</b><br>{__("Only members can find the panel and see posts")}.
-                                                </div></div>">{__("Secret Group")}</option>
+                                                <!-- <option {if $group['group_privacy'] == "secret"}selected{/if} value="secret" data-content="<div class='option'><div class='icon'><i class='fa fa-lock fa-2x'></i></div><div class='text'><b>{__("Secret Group")}</b><br>{__("Only members can find the panel and see posts")}.
+                                                </div></div>">{__("Secret Group")}</option> -->
                                             </select>
                                         </div>
                                         <div class="form-group d-none ">
