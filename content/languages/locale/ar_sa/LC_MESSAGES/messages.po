@@ -3671,7 +3671,7 @@ msgstr "لا يملك أعضاء"
 msgid "Join Requests"
 msgstr "الانضمام إلى الطلبات"
 
-msgid "Delete Group"
+msgid "Delete Panel"
 msgstr "حذف المجلس"
 
 msgid "Can only contain alphanumeric characters (A–Z, 0–9) and periods ('.')"
@@ -3690,7 +3690,7 @@ msgid "All Members"
 msgstr "كل الأعضاء"
 
 msgid "Once you delete your group you will no longer can access it again"
-msgstr "عند حذف مجموعتك ، لا يمكنك الوصول إليها مرة أخرى"
+msgstr "عند حذف مجلسك، لا يمكنك الوصول إليه مرة أخرى"
 
 msgid "My panels"
 msgstr "مجالسي"

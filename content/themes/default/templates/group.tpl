@@ -706,7 +706,7 @@
                                     </li>
                                     {if $user->_data['user_id'] == $group['group_admin']}
                                         <li {if $sub_view == "delete"}class="active"{/if}>
-                                            <a href="{$system['system_url']}/groups/{$group['group_name']}/settings/delete"><i class="fa fa-trash fa-fw mr5"></i>{__("Delete Group")}</a>
+                                            <a href="{$system['system_url']}/groups/{$group['group_name']}/settings/delete"><i class="fa fa-trash fa-fw mr5"></i>{__("Delete Panel")}</a>
                                         </li>
                                     {/if}
                                 </ul>
@@ -866,7 +866,7 @@
                                 </div>
                             {elseif $sub_view == "delete"}
                                 <div class="card-header with-icon">
-                                    <i class="fa fa-trash mr10"></i>{__("Delete Event")}
+                                    <i class="fa fa-trash mr10"></i>{__("Delete Panel")}
                                 </div>
                                 <div class="card-body">
                                     <div class="alert alert-warning">
@@ -880,7 +880,7 @@
 
                                     <div class="text-center">
                                         <button class="btn btn-danger js_delete-group" data-id="{$group['group_id']}">
-                                            <i class="fa fa-trash mr10"></i>{__("Delete Group")}
+                                            <i class="fa fa-trash mr10"></i>{__("Delete Panel")}
                                         </button>
                                     </div>
                                 </div>

@@ -16,7 +16,7 @@
 
             <!-- tabs -->
             <div class="content-tabs rounded-sm shadow-sm clearfix">
-                <ul>
+            <ul>
                     <li {if $view == ""}class="active"{/if}>
                         <a href="{$system['system_url']}/groups">{__("Panels")}</a>
                     </li>
@@ -255,7 +255,7 @@
                     <!-- see-more -->
                 {else}
                     <p class="text-center text-muted">
-                        {__("No Panels to show")}
+                        {__("No Panels to show")} 
                     </p>
                 {/if}
             </div>
