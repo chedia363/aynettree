@@ -6565,6 +6565,24 @@ class User {
         return $refresh;
     }
 
+public function delete_story($media_id) {
+        global $db, $system;
+        /* (check|get) post */
+        // $post = $this->get_storieuser($post_id, false, true);
+        // if(!$post) {
+        //     _error(403);
+        // }
+      
+        /* delete post */
+        $refresh = false;
+        $test= $db->query(sprintf("DELETE FROM stories_media WHERE media_id = %s", secure($media_id, 'int') )) or _error("SQL_ERROR_THROWEN");
+        if($test){
+         $refresh = true;
+        }
+        // /* points balance */
+        // $this->points_balance("delete", "post", $post['author_id']);
+        return $refresh;
+    }
 
     /**
      * edit_post

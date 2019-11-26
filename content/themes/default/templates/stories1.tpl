@@ -71,7 +71,7 @@
                                              <i class="fa fa-trash-alt"></i>
                                     </a> -->
                                     
-                                    <button data-toggle="tooltip" data-placement="top" title='{__("Delete")}' class="btn btn-sm btn-icon btn-rounded btn-danger js_admin-deleter" data-handle="Stories" data-id="{$row['media_id']}">
+                                    <button data-toggle="tooltip" data-placement="top" title='{__("Delete")}' class="btn btn-sm btn-icon btn-rounded btn-danger js_delete-story" data-handle="Stories" data-id="{$row['media_id']}">
                                         <i class="fa fa-trash-alt"></i>
                                     </button>
                                 </td>

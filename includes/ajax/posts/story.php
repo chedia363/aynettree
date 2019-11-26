@@ -86,6 +86,16 @@ try {
 			$return['callback'] = "$('#modal').modal('show'); $('.modal-content:last').html(response.story_publisher);";
 			break;
 
+		case 'delete_story':
+			$refresh = $user->delete_story($_POST['id']);
+			if($refresh) {
+				$return['refresh'] = true;
+			}
+			//  $db->query(sprintf("DELETE FROM stories_media WHERE media_id = %s", secure($media_id, 'int') )) or _error("SQL_ERROR_THROWEN");
+			//  $return['callback'] = "window.location.reload();";
+		break;
+	
+
 		default:
 			_error(400);
 			break;
