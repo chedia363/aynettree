@@ -7664,3 +7664,7 @@ msgstr "المرفقات"
 
 msgid "My Stories"
 msgstr "جلساتي"
+
+
+msgid "now following you"
+msgstr "قام بمتابعتك"

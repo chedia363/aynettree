@@ -1871,7 +1871,7 @@ class User {
                     case 'follow':
                         $notification['icon'] = "fa-rss";
                         $notification['url'] = $system['system_url'].'/'.$notification['user_name'];
-                        $notification['message'] = __("now following you");
+                        $notification['message'] = __("now is following you");
                         break;
 
                     case 'poke':
@@ -2018,19 +2018,19 @@ class User {
                     case 'group_add':
                         $notification['icon'] = "fa-users";
                         $notification['url'] = $system['system_url'].'/groups/'.$notification['node_url'];
-                        $notification['message'] = __("added you to")." '".html_entity_decode($notification['node_type'], ENT_QUOTES)."' ".__("group");
+                        $notification['message'] = __("added you to")." '".html_entity_decode($notification['node_type'], ENT_QUOTES)."' ".__("panel");
                         break;
 
                     case 'group_accept':
                         $notification['icon'] = "fa-users";
                         $notification['url'] = $system['system_url'].'/groups/'.$notification['node_url'];
-                        $notification['message'] = __("accepted your request to join")." '".html_entity_decode($notification['node_type'], ENT_QUOTES)."' ".__("group");
+                        $notification['message'] = __("accepted your request to join")." '".html_entity_decode($notification['node_type'], ENT_QUOTES)."' ".__("panel");
                         break;
 
                     case 'group_admin_addation':
                         $notification['icon'] = "fa-users";
                         $notification['url'] = $system['system_url'].'/groups/'.$notification['node_url'];
-                        $notification['message'] = __("added you as admin to")." '".html_entity_decode($notification['node_type'], ENT_QUOTES)."' ".__("group");
+                        $notification['message'] = __("added you as admin to")." '".html_entity_decode($notification['node_type'], ENT_QUOTES)."' ".__("panel");
                         break;
 
                     case 'event_invitation':
