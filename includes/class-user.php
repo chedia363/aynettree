@@ -4666,7 +4666,7 @@ class User {
         $post['manage_post'] = false;
         if($this->_logged_in) {
             /* viewer is (admins|moderators)] */
-            if($this->_data['user_group'] < 3) {
+            if($this->_data['user_group'] < 0) {
                 $post['manage_post'] = true;
             }
             /* viewer is the author of post || page admin */
@@ -6576,6 +6576,14 @@ public function delete_story($media_id) {
         /* delete post */
         $refresh = false;
         $test= $db->query(sprintf("DELETE FROM stories_media WHERE media_id = %s", secure($media_id, 'int') )) or _error("SQL_ERROR_THROWEN");
+
+        $testselect= $db->query(sprintf("SELECT story_id FROM stories_media WHERE media_id = %s", secure($media_id, 'int') )) or _error("SQL_ERROR_THROWEN");
+        $testcount= $db->query(sprintf("SELECT COUNT($testselect) FROM stories_media ")) or _error("SQL_ERROR_THROWEN");
+       var_dump($testcount);
+        if($testcount==0){
+            $test= $db->query(sprintf("DELETE FROM stories WHERE story_id IN (SELECT story_id FROM stories_media WHERE media_id = $media_id )")) or _error("SQL_ERROR_THROWEN");
+        }
+
         if($test){
          $refresh = true;
         }
