@@ -5131,23 +5131,8 @@ msgstr "شارك"
 msgid "'s"
 msgstr " "
 
-msgid "video"
-msgstr "فيديو"
-
 msgid "link"
 msgstr "رابط"
-
-msgid "poll"
-msgstr "تصويت"
-
-msgid "album"
-msgstr "ألبوم"
-
-msgid "audio"
-msgstr "صوتي"
-
-msgid "file"
-msgstr "الملف"
 
 msgid "shared a link"
 msgstr "شارك رابط"
@@ -7675,3 +7660,96 @@ msgstr "هل أنت متأكد من رغبتك في حذف الجلسة؟"
 
 msgid "Delete Story"
 msgstr "حذف الجلسة"
+
+
+msgid "video"
+msgstr "مقطع"
+
+msgid "poll"
+msgstr "إستطلاع"
+
+msgid "album"
+msgstr "مجلد صور"
+
+msgid "audio"
+msgstr "صوت"
+
+msgid "file"
+msgstr "مستند"
+
+msgid "location"
+msgstr "موقع"
+
+msgid "Your Panel's Name"
+msgstr "أكتب اسم مجلسك كما تحب أن يظهر للآخرين"
+
+
+msgid "A brief about your Panel (optional)"
+msgstr "شرح مختصر لمحتوى مجلسك (غير إلزامي)"
+
+
+msgid "The Glorious and Performance of Qur'an"
+msgstr "النص والأداء القرآني"
+
+
+msgid "Tafsir and Qur'anic Sciences"
+msgstr "التفسير وعلوم القرآن"
+
+msgid "Different Languages"
+msgstr "اللغات"
+
+msgid "Media"
+msgstr "الإعلام"
+
+msgid "Skills and Technology"
+msgstr "المهارات والتقنية"
+
+
+msgid "Name Your panel"
+msgstr "إسم المجلس الفرعي"
+
+
+#: events classification79
+
+msgid "Conference"
+msgstr "مؤتمر"
+
+msgid "Exhibition"
+msgstr "معرض"
+
+msgid "Symposium"
+msgstr "ندوة"
+
+msgid "Forum"
+msgstr "ملتقى"
+
+msgid "Workshop"
+msgstr "ورشة"
+
+msgid "Training Course"
+msgstr "دورة"
+
+msgid "Lecture"
+msgstr "محاضرة"
+
+msgid "Contest"
+msgstr "مسابقة"
+
+msgid "Discussion"
+msgstr "مناقشة"
+
+msgid "Opening"
+msgstr "افتتاح"
+
+msgid "Celebration"
+msgstr "احتفال"
+
+msgid "Journey"
+msgstr "رحلة"
+
+msgid "Inauguration"
+msgstr "تدشين"
+
+msgid "Product launch"
+msgstr "إطلاق منتج"
+ 
