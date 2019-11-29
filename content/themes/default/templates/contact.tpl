@@ -36,19 +36,50 @@
                         </div>
 
                         <div class="form-group">
-                            <label class="form-control-label">{__("Email")} <span class="text-danger">*</span></label>
-                            <input type="email" class="form-control" name="email">
+                            <label class="form-control-label">{__("Country")}</label>
+                            <select class="form-control" name="user_country">
+                                <option value="none">{__("Select Country")}</option>
+                                {foreach $countries as $country}
+
+                                   {if $system['language']['dir'] == "LTR"}
+                                     <option {if $data['user_country'] == $country['country_id']}selected{/if} value="{$country['country_id']}">{$country['country_name']}</option>
+                                   {else}
+                                     <option {if $data['user_country'] == $country['country_id']}selected{/if} value="{$country['country_id']}">{$country['country_nameAr']}</option>
+                                   {/if}
+                                {/foreach}
+                            </select>
                         </div>
+                        
 
                         <div class="form-group">
+                            <label class="form-control-label">{__("City")} <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" name="City">
+                        </div>
+
+                        <!--<div class="form-group">
                             <label class="form-control-label">{__("Subject")} <span class="text-danger">*</span></label>
                             <input type="text" class="form-control" name="subject">
-                        </div>
+                        </div>-->
 
                         <div class="form-group">
                             <label class="form-control-label">{__("Message")} <span class="text-danger">*</span></label>
                             <textarea class="form-control" name="message" rows="5"></textarea>
                         </div>
+
+                        
+                        <div class="form-group">
+                            <label class="form-control-label">{__("Mobile Number")} <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" name="user_phone">
+                        </div>
+
+                       <!-- <div class="form-group">
+                     
+                         
+                          <label class="form-control-label">{__("Select Folder")}*</label>
+                          <input type="file" name="folder" class="form-control" style="transform: translate(5px,-2px);width:359px;">
+                      
+                         
+                        </div>-->
 
                         {if $system['reCAPTCHA_enabled']}
                             <div class="form-group">

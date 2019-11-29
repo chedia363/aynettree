@@ -3507,7 +3507,7 @@ msgid "Closed Event"
 msgstr "مناسبة مغلقة"
 
 msgid "Secret Event"
-msgstr "مناسبة سرية"
+msgstr "مناسبة خاصة"
 
 msgid "to"
 msgstr "إلى"
@@ -7752,4 +7752,38 @@ msgstr "تدشين"
 
 msgid "Product launch"
 msgstr "إطلاق منتج"
+
+msgid "City"
+msgstr "المدينة"
  
+
+msgid "Your message has been sent! We will be back to you soon"
+msgstr "تم ارسال رسالتك! سنعود اليك قريبا"
+
+
+msgid "Select Folder"
+msgstr "إختر ملف"
+
+
+
+msgid "You should enter your name"
+msgstr "يجب عليك إدخال اسمك"
+
+
+msgid "You should select your country"
+msgstr "يجب عليك اختيار بلدك"
+
+
+msgid "You should select your city"
+msgstr "يجب عليك اختيار مدينتك"
+
+
+msgid "You should enter a message"
+msgstr "يجب عليك إدخال رسالة"
+
+
+msgid "Mobile Number"
+msgstr "رقم هاتفك"
+
+msgid "You should enter your mobile Number"
+msgstr " يجب عليك إدخال رقم هاتفك"
