@@ -112,7 +112,6 @@
                             </a>
                         </li>
                         <!-- Contact -->
-
                         <!-- Design -->
                         <li {if $view == "design"}class="active"{/if}>
                             <a href="{$system['system_url']}/admincp/design">
