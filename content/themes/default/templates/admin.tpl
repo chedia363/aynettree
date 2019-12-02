@@ -103,6 +103,15 @@
                             </a>
                         </li>
                         <!-- Themes -->
+
+                        <!-- Contact -->
+                        <li {if $view == "Contact"}class="active"{/if}>
+                            <a href="{$system['system_url']}/admincp/Contact">
+                                <i class="fa fa-desktop fa-fw mr10" style="color: #3F51B5"></i>{__("Contact")}
+                            </a>
+                        </li>
+                        <!-- Contact -->
+                        
                         <!-- Design -->
                         <li {if $view == "design"}class="active"{/if}>
                             <a href="{$system['system_url']}/admincp/design">

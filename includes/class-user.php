@@ -3498,7 +3498,25 @@ class User {
 
 
 
+   /*Begin get All Contacts */
 
+        public function get_ContactAdmn() {
+
+            global $db;
+         
+            $get_ctcs = $db->query(sprintf("SELECT /*contact.name*/ * FROM contact INNER JOIN system_countries ON contact.user_country = system_countries.country_id /*GROUP BY contact.name*/ ")) or _error("SQL_ERROR_THROWEN");
+            if($get_ctcs->num_rows > 0) {
+                while($ctcts = $get_ctcs->fetch_assoc()) {
+                    $ctct[] = $ctcts;
+                }
+            }
+            return $ctct;
+
+
+        }
+   
+   
+    /*End get All Contacts */
 
 
 

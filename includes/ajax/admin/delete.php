@@ -223,6 +223,11 @@ try {
 			$db->query(sprintf("DELETE FROM stories_media WHERE media_id = %s", secure($_POST['id'], 'int') )) or _error("SQL_ERROR_THROWEN");
 			break;
 
+		case 'Contact':
+			$db->query(sprintf("DELETE FROM contact WHERE idcontact = %s", secure($_POST['id'], 'int') )) or _error("SQL_ERROR_THROWEN");
+			break;
+			
+
 		default:
 			_error(400);
 			break;

@@ -7342,8 +7342,10 @@ msgid "Careers"
 msgstr "وظائف"
 
 msgid "Sponsored by :<br>His Royal Highness Prince Meteb Bin Abdulaziz Al Saud and his sons"
-msgstr "  هذه الشبكة بدعم من:<br>
+msgstr "شبكة آي نت إحدى مشروعات الوقف العالمي للقرآن الكريم.وبدعم كريم من:<br>
 صاحب السمو الملكي الأمير / متعب بن عبدالعزيز آل سعود، وأولاده البررة، كتب الله أجرهم"
+
+
 
 
 
@@ -7787,3 +7789,22 @@ msgstr "رقم هاتفك"
 
 msgid "You should enter your mobile Number"
 msgstr " يجب عليك إدخال رقم هاتفك"
+
+
+msgid "Contact"
+msgstr "قائمة الإتصالات"
+
+msgid "Sender Name"
+msgstr "المرسل"
+
+msgid "Sender Message"
+msgstr "الرسالة"
+
+msgid "User phone"
+msgstr "هاتف المرسل"
+
+msgid "country"
+msgstr "بلد المرسل"
+
+msgid "Contact Time"
+msgstr "توقيت الرسالة"
