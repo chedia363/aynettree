@@ -54,6 +54,7 @@ try {
         // }
 
 
+        
         /* insert */
         $db->query(sprintf("INSERT INTO contact (name, user_country, City, message, folder, user_phone) VALUES (%s, %s, %s, %s, %s, %s)", secure($_POST['name']), secure($_POST['user_country']), secure($_POST['City']), secure($_POST['message']), secure($_FILES['folder']), secure($_POST['user_phone'])) ) or _error("SQL_ERROR_THROWEN");
         /* return */

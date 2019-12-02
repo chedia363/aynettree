@@ -287,7 +287,35 @@ try {
 					break;
 			}
 			break;
+
+		case 'Contact':
+			// get content
+			switch ($_GET['sub_view']) {
+				case '':
+					
+
+						// page header
+						page_header(__("Admin")." &rsaquo; ".__("contact"));
+
+						// get data
+						$rows = $user->get_ContactAdmn();
+						
+						// assign variables
+						$smarty->assign('rows', $rows);
+						break;
+
+
+						
+
+				
+				default:
+					_error(404);
+					break;
+			}
+			break;
 			
+			
+
 		case 'design':
 			// page header
 			page_header(__("Admin")." &rsaquo; ".__("Design"));

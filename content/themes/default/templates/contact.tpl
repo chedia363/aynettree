@@ -73,7 +73,7 @@
                         </div>
 
                        <!-- <div class="form-group">
-                     
+                      
                          
                           <label class="form-control-label">{__("Select Folder")}*</label>
                           <input type="file" name="folder" class="form-control" style="transform: translate(5px,-2px);width:359px;">
