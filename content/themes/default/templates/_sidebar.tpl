@@ -9,24 +9,35 @@
                 </a>
             </li>
 
-            <li>
-                <a href="{$system['system_url']}/messages">
-                    <img src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/message.svg">
-                    {__("Messages")}
+
+            <li {if $page== "groups"}class="active"{/if}>
+                <a href="{$system['system_url']}/groups">
+                    <img src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/groups.svg">
+                    {__("Panels")}
                 </a>
             </li>
 
-            <li>
-                <a href="{$system['system_url']}/settings">
-                    <img src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/settingm.svg">
-                    {__("Settings")}
+
+            <li {if $page== "people"}class="active"{/if}>
+                <a href="{$system['system_url']}/people">
+                    <img src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/members.svg">
+                    {__("People")}
                 </a>
             </li>
+
+            {if $system['events_enabled']}
+                <li {if $page== "events"}class="active"{/if}>
+                    <a href="{$system['system_url']}/events">
+                        <img src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/event.svg">
+                        {__("Events")}
+                    </a>
+                </li>
+            {/if}
 
             {if $user->_data['user_group'] == 1}
                 <li>
                     <a href="{$system['system_url']}/admincp">
-                        <img src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/adminp.svg">
+                        <img src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/adminpanel.svg">
                         {__("Admin Panel")}
                     </a>
                 </li>
@@ -41,12 +52,12 @@
             <li {if $page== "index" && ($view == "" || $view == "discover" || $view == "popular")}class="active"{/if}>
                 {if !$system['popular_posts_enabled'] && !$system['discover_posts_enabled']}
                     <a href="{$system['system_url']}">
-                        <img src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/newsfeed.svg">
+                        <img src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/news.svg">
                         {__("News Feed")}
                     </a>
                 {else}
                     <a href="#newsfeed" data-toggle="collapse" {if $page== "index" && ($view == "" || $view == "discover" || $view == "popular")}aria-expanded="true"{/if}>
-                        <img src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/newsfeed.svg">
+                        <img src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/news.svg">
                         {__("News Feed")}
                     </a>
                     <div class='collapse {if $page== "index" && ($view == "" || $view == "discover" || $view == "popular")}show{/if}' id="newsfeed">
@@ -63,13 +74,16 @@
                                     </a>
                                 </li>
                             {/if}
-                            {if $system['discover_posts_enabled']}
+
+
+                           <!-- {if $system['discover_posts_enabled']}
                                 <li {if $page== "index" && $view == "discover"}class="active"{/if}>
                                     <a href="{$system['system_url']}/discover">
                                          {__("Discover Posts")}
                                     </a>
                                 </li>
                             {/if}
+                            -->
                         </ul>
                     </div>
                 {/if}
@@ -84,30 +98,30 @@
                 </li>
             {/if}
             
-            {if $system['market_enabled']}
+           <!-- {if $system['market_enabled']}
                 <li {if $page== "index" && $view == "products"}class="active"{/if}>
                     <a href="{$system['system_url']}/products">
                         <img src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/products.png">
                         {__("My Products")}
                     </a>
                 </li>
-            {/if}
+            {/if} -->
 
             <li {if $page== "index" && $view == "saved"}class="active"{/if}>
                 <a href="{$system['system_url']}/saved">
-                    <img src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/savedpost.svg">
+                    <img src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/particip.svg">
                     {__("Saved Posts")}
                 </a>
             </li>
 
-            {if $system['memories_enabled']}
+            <!-- {if $system['memories_enabled']}
                 <li {if $page== "index" && $view == "memories"}class="active"{/if}>
                     <a href="{$system['system_url']}/memories">
                         <img src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/memories.png">
                         {__("Memories")}
                     </a>
                 </li>
-            {/if}
+            {/if} -->
             <!-- favorites -->
 
             <!-- advertising -->
@@ -135,7 +149,7 @@
                     
                     <li {if $page== "index" && $view == "boosted_pages"}class="active"{/if}>
                         <a href="{$system['system_url']}/boosted/pages">
-                            <img src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/boosted_pages.png">
+                            <img src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/page.svg">
                             {__("Boosted Pages")}
                         </a>
                     </li>
@@ -148,67 +162,64 @@
                 <small class="text-muted">{__("explore")|upper}</small>
             </li>
 
-            <li {if $page== "people"}class="active"{/if}>
-                <a href="{$system['system_url']}/people">
-                    <img src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/people.svg">
-                    {__("People")}
-                </a>
-            </li>
+
             <!--
             <li {if $page== "pages"}class="active"{/if}>
                 <a href="{$system['system_url']}/pages">
-                    <img src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/pages.png">
+                    <img src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/pages.svg">
                     {__("Pages")}
                 </a>
             </li>
             -->
 
-            <li {if $page== "groups"}class="active"{/if}>
-                <a href="{$system['system_url']}/groups">
-                    <img src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/group.svg">
-                    {__("Panels")}
-                </a>
-            </li>
 
-            <li {if $page== "stories"}class="active"{/if}>
-                <a href="{$system['system_url']}/stories.php">
-                    <img src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/group.svg">
-                    {__("Stories")}
-                </a>
-            </li> 
-    <li {if $page== "stories1"}class="active"{/if}>
-                <a href="{$system['system_url']}/stories1.php">
-                    <img src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/group.svg">
-                    {__("Stories1")}
-                </a>
-            </li> 
 
-            
-            {if $system['events_enabled']}
-            <li {if $page== "events"}class="active"{/if}>
-                <a href="{$system['system_url']}/events">
-                    <img src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/event.svg">
-                    {__("Events")}
-                </a>
-            </li>
-            {/if}
+
+   <!-- <li {if $page== "stories"}class="active"{/if}>
+     <a href="{$system['system_url']}/stories.php"><img src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/group.svg">{__("Stories")}</a>
+   </li> -->
+
+    <!--<li {if $page== "stories1"}class="active"{/if}>
+        <a href="{$system['system_url']}/stories1.php">
+            <img src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/group.svg">
+            {__("Stories1")}
+        </a>
+    </li> -->
+
+
+
             {if $system['blogs_enabled']}
                 <li>
                     <a href="{$system['system_url']}/blogs">
-                        <img src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/blog.svg">
+                        <img src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/news.svg">
                         {__("Blogs")}
                     </a>
                 </li>
             {/if}
 
-            {if $system['market_enabled']}
+
+             <li>
+                <a href="{$system['system_url']}/messages">
+                    <img src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/message.svg">
+                    {__("Messages")}
+                </a>
+            </li>
+
+            <li>
+                <a href="{$system['system_url']}/settings">
+                    <img src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/setting.svg">
+                    {__("Settings")}
+                </a>
+            </li>
+
+            <!-- {if $system['market_enabled']}
                 <li>
                     <a href="{$system['system_url']}/market">
                         <img src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/market.png">
                         {__("Market")}
                     </a>
                 </li>
-            {/if}
+            {/if} -->
 
             {if $system['forums_enabled']}
                 <li>
