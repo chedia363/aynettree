@@ -7567,7 +7567,7 @@ msgid "Please wait until finishing upload"
 msgstr "يرجى الانتظار حتى الانتهاء من التحميل"
 
 msgid "Message"
-msgstr "!رسالة"
+msgstr "رسالة!"
 
 msgid "Photos number should be between 1 and 12 photos"
 msgstr "يجب أن يتراوح عدد الصور بين 1 و 12 صورة"
