@@ -3349,10 +3349,10 @@ msgid "Add Friend"
 msgstr "إضافة صديق"
 
 msgid "Following"
-msgstr "متابعين"
+msgstr "متابع"
 
 msgid "Follow"
-msgstr "متابعة"
+msgstr "تابع"
 
 msgid "Update Info"
 msgstr "تحديث البيانات"
@@ -3738,7 +3738,7 @@ msgid "Trending"
 msgstr "الشائع"
 
 msgid "Friend Suggestions"
-msgstr "اقتراحات الأصدقاء"
+msgstr "اقتراحات الأعضاء"
 
 msgid "Suggested Pages"
 msgstr "الصفحات المقترحة"
