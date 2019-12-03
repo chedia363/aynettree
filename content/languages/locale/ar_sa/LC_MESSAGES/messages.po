@@ -4366,7 +4366,7 @@ msgid "Last name"
 msgstr "اللقب"
 
 msgid "By creating your account, you agree to our"
-msgstr "عن طريق إنشاء حسابك ، فإنك توافق على"
+msgstr "أوافق على"
 
 msgid "Terms"
 msgstr "شروط الخدمة"
@@ -7389,11 +7389,42 @@ msgstr "اقتراحات مشاركون"
 
 
 #: First Group
-msgid "The Glorious Qur'an"
-msgstr "النص القرآني:"
+
+msgid "The Glorious and Performance of Qur'an"
+msgstr "النص والأداء القرآني"
+
+
+msgid "Text of the Quran"
+msgstr "نص المصحف"
+
+
+msgid "Science of readings"
+msgstr "علم القراءات"
+
+
+msgid "Draw"
+msgstr "الرسم"
+
+
+msgid "Adjustment"
+msgstr "الضبط"
+
+msgid "Number"
+msgstr "العدد"
+
+msgid "Similarities"
+msgstr "المتشابهات"
+
+
+msgid "Qur'an Calligraphe"
+msgstr "كتابة المصحف"
 
 msgid "Tajwid"
-msgstr "تجويد"
+msgstr "التجويد"
+
+
+msgid "Quran recitation"
+msgstr "الروايات القرآنية"
 
 msgid "Qira'at (Modes of Qur’anic Reading)"
 msgstr "قراءات"
@@ -7401,28 +7432,72 @@ msgstr "قراءات"
 msgid "Qur'an Albums"
 msgstr "مصاحف مرتلة"
 
+msgid "Qur'an Audios"
+msgstr "مقاطع صوتية"
+
+
+msgid "Science of Endowment and Getting Started"
+msgstr "الوقف والابتداء"
+
+msgid "Quran Parties"
+msgstr "أحزاب القرآن"
+
+
+msgid "Qur'an Memorization"
+msgstr "التحفيظ"
+
 
 #: second Group
+
 msgid "Tafsir and Qur'anic Sciences"
-msgstr "تفسير وعلوم القرآن:"
+msgstr "التفسير وعلوم القرآن"
 
-msgid "Tafsir (Exegesis)"
-msgstr "تفسير"
+msgid "Topics"
+msgstr "المعاني"
 
 
-msgid "Qur'anic Sciences"
-msgstr "علوم القرآن"
+msgid "Strange Quran (Quran Sciences)"
+msgstr "الغريب"
+
+
+msgid "reflection in the Quran"
+msgstr "التدبر"
+
+
+msgid "Quran Themes"
+msgstr "موضوعات القرآن"
+
+
+msgid "Provisions of the Qur'an"
+msgstr "أحكام القرآن"
+
+
+msgid "Qur'anic Language"
+msgstr "اللغة"
+
+
+msgid "Quranic rhetoric"
+msgstr "البلاغة"
+
+msgid "Miracles"
+msgstr "الإعجاز"
+
+msgid "Investigations in Quran Sciences"
+msgstr "مباحث قرآنية"
+
 
 
 
 #: third Group
+
 msgid "Different Languages"
-msgstr "لغات:"
+msgstr "اللغات"
 
-msgid "Qur'an Translations"
-msgstr "ترجمات معاني القرآن"
 
-msgid "Sign Language"
+msgid "Translations"
+msgstr "الترجمات"
+
+msgid "Sign language"
 msgstr "لغة الإشارة"
 
 msgid "Braille"
@@ -7434,11 +7509,22 @@ msgstr "لغة برايل"
 
 #: forth group
 msgid "Media"
-msgstr "إعلام:"
+msgstr "الإعلام والمهارات"
 
 
-msgid "Movie Making"
-msgstr "توثيق"
+msgid "Movies/Documentaries"
+msgstr "أفـلام وثائقية"
+
+msgid "Calligraphy"
+msgstr "خط"
+
+
+msgid "Designing"
+msgstr "تصميم"
+
+
+msgid "Montage(Film editing)"
+msgstr "مونتاج"
 
 msgid "Competitions"
 msgstr "مسابقات"
@@ -7446,40 +7532,26 @@ msgstr "مسابقات"
 msgid "Events "
 msgstr "فعاليات"
 
-msgid "Eminent Persons"
+msgid "Flags"
 msgstr "أعلام"
 
 
-#: fifth group
-msgid "Skills"
-msgstr "مهارات:"
-
-msgid "Calligraphy"
-msgstr "خط"
-
-msgid "Ornamentation"
-msgstr "زخرفة"
-
-msgid "Designing"
-msgstr "تصميم"
-
-msgid "Montage (Film editing)"
-msgstr "مونتاج"
+msgid "History of the Quran"
+msgstr "تاريخ القــرآن"
 
 
-
-#: sixth group
+#: Fifth group
 msgid "Technology"
-msgstr "تقنية:"
-
-msgid "Programs, Applications"
-msgstr "برامج - تطبيقات"
+msgstr "التقنية"
 
 msgid "Programming"
 msgstr "برمجة"
 
-msgid "Technology Products"
-msgstr "منتجات تقنية"
+msgid "Applications"
+msgstr "تطبيقات"
+
+msgid "Products"
+msgstr "منتجات"
 
 msgid "What is on your mind? #Hashtag.. @Mention.. Link.."
 msgstr "ماذا يخطر في بالك؟"
@@ -7690,21 +7762,6 @@ msgid "A brief about your Panel (optional)"
 msgstr "شرح مختصر لمحتوى مجلسك (غير إلزامي)"
 
 
-msgid "The Glorious and Performance of Qur'an"
-msgstr "النص والأداء القرآني"
-
-
-msgid "Tafsir and Qur'anic Sciences"
-msgstr "التفسير وعلوم القرآن"
-
-msgid "Different Languages"
-msgstr "اللغات"
-
-msgid "Media"
-msgstr "الإعلام"
-
-msgid "Skills and Technology"
-msgstr "المهارات والتقنية"
 
 
 msgid "Name Your panel"
