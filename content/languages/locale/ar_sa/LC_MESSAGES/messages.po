@@ -2735,7 +2735,7 @@ msgid "Username "
 msgstr "اسم المستخدم (بالإنجليزية)"
 
 msgid "Joined"
-msgstr "انضم"
+msgstr "مهتم"
 
 msgid "Activated"
 msgstr "تم التنشيط"
@@ -3642,7 +3642,7 @@ msgid "Pending"
 msgstr "قيد الانتظار"
 
 msgid "Join"
-msgstr "انضم إلينا"
+msgstr "إهتمام"
 
 msgid "Public Group"
 msgstr "المجلس العام"
@@ -7342,9 +7342,8 @@ msgid "Careers"
 msgstr "وظائف"
 
 msgid "Sponsored by :<br>His Royal Highness Prince Meteb Bin Abdulaziz Al Saud and his sons"
-msgstr "شبكة آي نت إحدى مشروعات الوقف العالمي للقرآن الكريم.وبدعم كريم من:<br>
-صاحب السمو الملكي الأمير / متعب بن عبدالعزيز آل سعود، وأولاده البررة، كتب الله أجرهم"
-
+msgstr "شبكة آي نت إحدى مشروعات الوقف العالمي للقرآن الكريم. وبدعم كريم من:<br>
+صاحب السمو الملكي الأمير / متعب بن عبدالعزيز آل سعود، رحمه الله، وأولاده البررة، كتب الله أجرهم"
 
 
 
