@@ -67,7 +67,7 @@ msgid "Currencies"
 msgstr "العملات"
 
 msgid "Users"
-msgstr "المستخدمون"
+msgstr "الأعضاء"
 
 msgid "Admins"
 msgstr "مسؤولو المجلس"
@@ -3643,6 +3643,10 @@ msgstr "قيد الانتظار"
 
 msgid "Join"
 msgstr "إهتمام"
+
+
+msgid "Join Us"
+msgstr "انضم إلينا"
 
 msgid "Public Group"
 msgstr "المجلس العام"
