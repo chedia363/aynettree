@@ -271,16 +271,16 @@ msgid "Explorer"
 msgstr "المستكشف"
 
 msgid "Posts Directory"
-msgstr "دليل المشاركات"
+msgstr "مستكشف المشاركات"
 
 msgid "Users Directory"
-msgstr "دليل الأعضاء"
+msgstr "مستكشف الأعضاء"
 
 msgid "Pages Directory"
-msgstr "دليل الصفحات"
+msgstr "مستكشف الصفحات"
 
 msgid "Events Directory"
-msgstr "دليل المناسبات "
+msgstr "مستكشف المناسبات "
 
 msgid "Discover Events"
 msgstr "اكتشف المناسبات"
@@ -3463,7 +3463,7 @@ msgid "Discover new users’create new connections and make new friends"
 msgstr "اكتشاف أعضاء جدد وإنشاء اتصالات جديدة وصداقات جديدة"
 
 msgid "Search for users, pages and #hashtags"
-msgstr "ابحث عن أعضاء  وصفحات و#هاشتاج"
+msgstr "ابحث عن أعضاء ومجالس و#هاشتاج"
 
 
 msgid "News Feed"
@@ -4604,7 +4604,7 @@ msgid "Privacy Settings"
 msgstr "إعدادات الخصوصية"
 
 msgid "Turn Off Chat"
-msgstr "قفل"
+msgstr "قفل الدردشة"
 
 msgid "Turn On Chat"
 msgstr "قم بتفعيل الدردشة"
