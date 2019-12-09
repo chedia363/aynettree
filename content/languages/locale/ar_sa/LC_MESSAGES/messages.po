@@ -90,6 +90,10 @@ msgstr "إضافة تصنيف جديد"
 msgid "Panels"
 msgstr "المجالس"
 
+
+msgid "Panels "
+msgstr "بوابة المجالس"
+
 msgid "Events"
 msgstr "المناسبات"
 
@@ -277,7 +281,7 @@ msgid "Users Directory"
 msgstr "مستكشف الأعضاء"
 
 msgid "Pages Directory"
-msgstr "مستكشف الصفحات"
+msgstr "مستكشف المجالس"
 
 msgid "Events Directory"
 msgstr "مستكشف المناسبات "
@@ -339,6 +343,11 @@ msgstr "مجالس أتابعها"
 msgid "Your Panels"
 msgstr "مجالس خاصة بك"
 
+
+msgid "All Panels"
+msgstr "كل المجالس"
+
+
 msgid "Welcome"
 msgstr "مرحباً بحضراتكم"
 
@@ -397,7 +406,7 @@ msgid "Friend Requests Sent"
 msgstr "طلبات الصداقة المرسلة"
 
 msgid "Account Settings"
-msgstr "إعدادات الحساب"
+msgstr "الإعدادات"
 
 msgid "Edit Profile"
 msgstr "تحرير الملف الشخصي"
@@ -2572,7 +2581,7 @@ msgid "When a user creates a new account, select which groups you want to auto j
 msgstr "عندما ينشئ المستخدم حسابًا جديدًا ، حدد المجموعات التي تريد الانضمام التلقائي إليها"
 
 msgid "Select Groups"
-msgstr "اختر مجموعات"
+msgstr "اختر مجلسك"
 
 msgid "Search for groups you want new accounts to auto join"
 msgstr "ابحث عن مجموعات تريد انضمام حسابات جديدة إليها"
@@ -3739,7 +3748,7 @@ msgid "Pro Pages"
 msgstr "الصفحات المؤيدة"
 
 msgid "Trending"
-msgstr "الشائع"
+msgstr "وسم"
 
 msgid "Friend Suggestions"
 msgstr "اقتراحات الأعضاء"
@@ -3757,7 +3766,7 @@ msgid "Invite Your Friends"
 msgstr "ادع أصدقاءك"
 
 msgid "Contacts"
-msgstr "الاتصال بنا"
+msgstr "اتصل بنا"
 
 msgid "My Information"
 msgstr "معلوماتي"
@@ -4393,8 +4402,8 @@ msgstr "تحديث معلوماتك"
 msgid "Step 3"
 msgstr "الخطوة 3"
 
-msgid "Add Friends"
-msgstr "إضافة الأصدقاء"
+msgid "Add followers"
+msgstr "أضف متابعين"
 
 msgid "Let's start with your photo"
 msgstr "لنبدأ مع الصورة الخاصة بك"
@@ -4969,7 +4978,7 @@ msgid "Links"
 msgstr "الروابط"
 
 msgid "Media"
-msgstr "وسائل الإعلام"
+msgstr "الإعلام"
 
 msgid "Maps"
 msgstr "الخرائط"
@@ -6478,7 +6487,7 @@ msgid "Your privacy settings have been updated"
 msgstr "تم تحديث إعدادات الخصوصية الخاصة بك"
 
 msgid "Your email notifications settings have been updated"
-msgstr "تم تحديث إعدادات إشعارات البريد الإلكتروني"
+msgstr "تم تحديث الإشعارات"
 
 msgid "Your info has been updated"
 msgstr "تم تحديث معلوماتك"
@@ -6512,7 +6521,7 @@ msgid "Post copied"
 msgstr "تم نسخ المشاركة"
 
 msgid "Create your group"
-msgstr "انشئ مجلسك"
+msgstr "إنشاء مجلس"
 
 msgid "Sub-groups"
 msgstr "مجالس متخصصة"
@@ -7511,7 +7520,7 @@ msgstr "لغة برايل"
 
 
 #: forth group
-msgid "Media"
+msgid "Media "
 msgstr "الإعلام والمهارات"
 
 
@@ -7868,3 +7877,6 @@ msgstr "بلد المرسل"
 
 msgid "Contact Time"
 msgstr "توقيت الرسالة"
+
+msgid "comment "
+msgstr "تعليق"

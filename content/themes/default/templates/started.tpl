@@ -1,43 +1,35 @@
 {include file='_head.tpl'}
 {include file='_header.tpl'}
-
-<!-- page header -->
-<div class="page-header bg-3">
-    <div class="crystal c03"></div>
-    <div class="circle-2"></div>
-    <div class="circle-3"></div>
-    <div class="inner">
-        <h2>{__("Getting Started")}</h2>
-        <p>{__("This information will let us know more about you")}</p>
-    </div>
-</div>
-<!-- page header -->
-
 <!-- page content -->
-<div class="container" style="margin-top: -25px;">
+<div class="container" style="margin-top: 30px;">
     <div class="row">
     	<div class="col-12 col-md-10 mx-md-auto">
             <div class="card shadow">
+            <div class="card-header">
+                <h3 style="color:#29b6ac">{__("This information will let us know more about you")}</h3>
+              
+            </div>
                 <div class="card-body">
+                 
 
                     <!-- nav -->
                     <ul class="nav nav-pills nav-fill nav-started mb30 js_wizard-steps">
                         <li class="nav-item">
                             <a class="nav-link active" href="#step-1">
-                                <h4 class="mb5">{__("Step 1")}</h4>
+                                <!-- <h4 class="mb5">{__("Step 1")}</h4> -->
                                 <p class="mb0">{__("Upload your photo")}</p>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link disabled" href="#step-2">
-                                <h4 class="mb5">{__("Step 2")}</h4>
+                                <!-- <h4 class="mb5">{__("Step 2")}</h4> -->
                                 <p class="mb0">{__("Update your info")}</p>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link disabled" href="#step-3">
-                                <h4 class="mb5">{__("Step 3")}</h4>
-                                <p class="mb0">{__("Add Friends")}</p>
+                                <!-- <h4 class="mb5">{__("Step 3")}</h4> -->
+                                <p class="mb0">{__("Add followers")}</p>
                             </a>
                         </li>
                     </ul>
@@ -47,7 +39,7 @@
                     <div class="js_wizard-content" id="step-1">
                         <div class="text-center">
                             <h3 class="mb5">{__("Welcome")} <span class="text-primary">{$user->_data['user_firstname']}</span></h3>
-                            <p class="mb20">{__("Let's start with your photo")}</p>
+                            <!--<p class="mb20">{__("Let's start with your photo")}</p>-->
                         </div>
                         
                         <!-- profile-avatar -->
