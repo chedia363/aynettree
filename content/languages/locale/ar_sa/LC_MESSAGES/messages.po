@@ -3682,7 +3682,7 @@ msgid "doesn't have members"
 msgstr "لا يملك أعضاء"
 
 msgid "Join Requests"
-msgstr "الانضمام إلى الطلبات"
+msgstr "طلبات الانضمام"
 
 msgid "Delete Panel"
 msgstr "حذف المجلس"
