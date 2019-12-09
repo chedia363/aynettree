@@ -54,6 +54,19 @@ try {
 			$smarty->assign('get', "groups");
 
 			break;
+			
+		case 'get_all':
+
+			// page header
+			page_header(__("All Groups"));
+			
+			// get managed groups
+			$groups = $user->get_groups(array('get_all' => true));
+			/* assign variables */
+			$smarty->assign('groups', $groups);
+			$smarty->assign('get', "All");
+
+			break;
 
 		default:
 			_error(404);

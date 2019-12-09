@@ -128,6 +128,7 @@ RewriteRule ^pages/([^/]+)/([^/]+)/([^/]+)/?$ page.php?username=$1&view=$2&id=$3
 RewriteRule ^groups/?$ groups.php [L,QSA]
 RewriteRule ^groups/joined/?$ groups.php?view=joined [L,QSA]
 RewriteRule ^groups/manage/?$ groups.php?view=manage [L,QSA]
+RewriteRule ^groups/get_all/?$ groups.php?view=get_all [L,QSA]
 RewriteRule ^groups/([^/]+)/?$ group.php?username=$1 [L,QSA]
 RewriteRule ^groups/([^/]+)/([^/]+)/?$ group.php?username=$1&view=$2 [L,QSA]
 RewriteRule ^groups/([^/]+)/([^/]+)/([^/]+)/?$ group.php?username=$1&view=$2&id=$3 [L,QSA]
@@ -206,3 +207,4 @@ RewriteRule ^([^/]+)/([^/]+)/([^/]+)/?$ profile.php?username=$1&view=$2&id=$3 [L
 RewriteRule ^stories1/?$ stories1.php [L,QSA]
 RewriteRule ^stories1/([^/]+)/?$ stories1.php?view=$1 [L,QSA]
 RewriteRule ^stories1/edit/([^/]+)/?$ stories1.php?view=edit&media_id=$1 [L,QSA]
+

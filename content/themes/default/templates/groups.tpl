@@ -18,7 +18,7 @@
             <div class="content-tabs rounded-sm shadow-sm clearfix">
             <ul>
                     <li {if $view == ""}class="active"{/if}>
-                        <a href="{$system['system_url']}/groups">{__("Panels")}</a>
+                        <a href="{$system['system_url']}/groups">{__("Panels ")}</a>
                     </li>
                     {if $user->_data['user_group'] < 3 && $system['groups_enabled']}
                     <li {if $view == "manage"}class="active"{/if}>
@@ -28,15 +28,17 @@
                     <li {if $view == "joined"}class="active"{/if}>
                         <a href="{$system['system_url']}/groups/joined">{__("Joined Panels")}</a>
                     </li>
-                    
+                     <li {if $view == "get_all"}class="active"{/if}>
+                        <a href="{$system['system_url']}/groups/get_all">{__("All Panels")}</a>
+                    </li>
                 </ul>
                 {if $user->_data['user_group'] < 2 && $system['groups_enabled']}
                     <div class="mt10 float-right">
                         <button class="btn btn-sm btn-success d-none d-lg-block" data-toggle="modal" data-url="#create-group">
-                             <img class="iconspost" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/story.svg"> {__("Create your group")}
+                             <img class="iconspost" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/addgroup.svg"> {__("Create your group")}
                         </button>
                         <button class="btn btn-sm btn-icon btn-success d-block d-lg-none" data-toggle="modal" data-url="#create-group">
-                            <img class="iconspost" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/story.svg">
+                            <img class="iconspost" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/addgroup.svg">
                         </button>
                     </div>
                 {/if}
@@ -225,7 +227,7 @@
                             </li>
                            
                         </ul>
-                              <a href="{$system['system_url']}/groups/gr4"  class="centerblock"><button class="groupssbtn">{__("Media")}</button></a>
+                              <a href="{$system['system_url']}/groups/gr4"  class="centerblock"><button class="groupssbtn">{__("Media ")}</button></a>
                              <ul>
                            <li>
                                 <a   class="groupsscolor">
