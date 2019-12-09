@@ -29,7 +29,7 @@
                         <li class="nav-item">
                             <a class="nav-link disabled" href="#step-3">
                                 <!-- <h4 class="mb5">{__("Step 3")}</h4> -->
-                                <p class="mb0">{__("Add followers")}</p>
+                                <p class="mb0">{__("Add Users")}</p>
                             </a>
                         </li>
                     </ul>

@@ -1006,7 +1006,7 @@ msgid "Interested"
 msgstr "مهتم بها" 
 
 msgid "Going"
-msgstr "قائمة"
+msgstr "ذاهب إليها"
 
 msgid "Invited"
 msgstr "مدعو إليها"
@@ -3337,7 +3337,7 @@ msgid "See More"
 msgstr "شاهد المزيد"
 
 msgid "Participants"
-msgstr "المشاركون"
+msgstr "مشاركون"
 
 msgid "mutual friends"
 msgstr "أصدقاء مشتركون"
@@ -3980,7 +3980,7 @@ msgid "KM"
 msgstr "كم"
 
 msgid "Keyword"
-msgstr "كلمة مفتاحية"
+msgstr "كلمة البحث"
 
 msgid "Gender"
 msgstr "الجنس"
@@ -4402,8 +4402,8 @@ msgstr "تحديث معلوماتك"
 msgid "Step 3"
 msgstr "الخطوة 3"
 
-msgid "Add followers"
-msgstr "أضف متابعين"
+msgid "Add Users"
+msgstr "إضافة الأعضاء"
 
 msgid "Let's start with your photo"
 msgstr "لنبدأ مع الصورة الخاصة بك"
@@ -5256,7 +5256,7 @@ msgid "Make Admin"
 msgstr "إضافة مسؤول"
 
 msgid "Approve"
-msgstr "يوافق"
+msgstr "موافقة"
 
 msgid "The file type is not valid image"
 msgstr "نوع الملف ليس صورة صالحة "
@@ -7566,7 +7566,7 @@ msgid "Products"
 msgstr "منتجات"
 
 msgid "What is on your mind? #Hashtag.. @Mention.. Link.."
-msgstr "ماذا يخطر في بالك؟"
+msgstr "المجالس المفتوحة لطرح الأفكار والمقترحات والمناقشات العامة"
 
 msgid "Who can see your"
 msgstr "من يمكن ان يرى"
