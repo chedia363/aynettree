@@ -170,7 +170,7 @@ msgid "Banned IPs"
 msgstr "المحظور IP"
 
 msgid "Verification"
-msgstr "التوثيق"
+msgstr "عضوية متخصص"
 
 msgid "Requests"
 msgstr "الطلبات"
@@ -3935,13 +3935,17 @@ msgid "Verification Documents"
 msgstr "وثائق التحقق"
 
 msgid "Your Photo"
-msgstr "صورتك"
+msgstr "صورة مؤهلك"
 
 msgid "Passport or National ID"
-msgstr "جواز السفر أو الهوية الوطنية"
+msgstr "PDF-السيرة الذاتية"
 
 msgid "Please attach your photo and your Passport or National ID"
 msgstr "يرجى إرفاق صورتك وجواز السفر أو الهوية الوطنية"
+
+msgid "Please attach the latest qualification you got + file for your CV"
+msgstr "يرجى ارفاق اخر مؤهل حصلت عليه + ملف لسيرتك الذاتية"
+
 
 msgid "Additional Information"
 msgstr "معلومة إضافية"

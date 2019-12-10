@@ -144,7 +144,7 @@
                     {else}
                         <!-- report -->
                         <button class="btn btn-icon btn-rounded btn-light js_report ml5" data-handle="page" data-id="{$spage['page_id']}">
-                            <i class="fa fa-flag fa-fw"></i>
+                           <img class="iconspost"src="{$system['system_url']}/content/themes/default/images/icons/page.svg">
                         </button>
                         <!-- report -->
                     {/if}
@@ -156,17 +156,17 @@
                     <ul>
                         <li>
                             <a href="{$system['system_url']}/pages/{$spage['page_name']}" {if $view == ""}class="active"{/if}>
-                                <i class="fa fa-newspaper fa-fw mr5"></i>{__("Timeline")}
+                               <img class="iconspost" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/article.svg" class="mr5"> {__("Timeline")}
                             </a>
                         </li>
                         <li>
                             <a href="{$system['system_url']}/pages/{$spage['page_name']}/photos" {if $view == "photos" || $view == "albums" || $view == "album"}class="active"{/if}>
-                                <i class="fa fa-images fa-fw mr5"></i>{__("Photos")}
+                                                                <img class="iconspost" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/image.svg" class="mr5">{__("Photos")}
                             </a>
                         </li>
                         <li>
                             <a href="{$system['system_url']}/pages/{$spage['page_name']}/videos" {if $view == "videos"}class="active"{/if}>
-                                <i class="fa fa-video fa-fw mr5"></i>{__("Videos")}
+                                <img class="iconspost mr5" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/video.svg"> {__("Videos")}
                             </a>
                         </li>
                         {if $spage['i_like']}
@@ -179,7 +179,7 @@
                         {if $spage['i_admin']}
                             <li>
                                 <a href="{$system['system_url']}/pages/{$spage['page_name']}/settings" {if $view == "settings"}class="active"{/if}>
-                                    <i class="fa fa-cog fa-fw mr5"></i>{__("Settings")}
+                                   <img class="iconspost mr5" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/setting.svg"> {__("Settings")}
                                 </a>
                             </li>
                         {/if}
@@ -243,7 +243,7 @@
                                     {if $spage['page_website']}
                                         <li>
                                             <div class="about-list-item">
-                                                <i class="fa fa-link fa-fw fa-lg"></i>
+                                              <img class="iconspost" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/url.svg">
                                                 <a target="_blank" href="{$spage['page_website']}">{$spage['page_website']}</a>
                                             </div>
                                         </li>
@@ -251,7 +251,7 @@
                                     {if $spage['page_location']}
                                         <li>
                                             <div class="about-list-item">
-                                                <i class="fa fa-map-marker fa-fw fa-lg"></i>
+                                                <img class="iconspost" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/localisation.svg">
                                                 {$spage['page_location']}
                                             </div>
                                         </li>
@@ -298,12 +298,12 @@
                                 <div class="card-body text-center">
                                     {if $spage['page_social_facebook']}
                                         <a target="_blank" href="{$spage['page_social_facebook']}" class="btn btn-sm btn-rounded btn-social-icon btn-facebook">
-                                            <i class="fab fa-facebook"></i>
+                                           <img class="iconspublic" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/facebook.svg">
                                         </a>
                                     {/if}
                                     {if $spage['page_social_twitter']}
                                         <a target="_blank" href="{$spage['page_social_twitter']}" class="btn btn-sm btn-rounded btn-social-icon btn-twitter">
-                                            <i class="fab fa-twitter"></i>
+                                           <img class="iconspublic" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/twitter.svg">
                                         </a>
                                     {/if}
                                     {if $spage['page_social_google']}
@@ -313,22 +313,22 @@
                                     {/if}
                                     {if $spage['page_social_youtube']}
                                         <a target="_blank" href="{$spage['page_social_youtube']}" class="btn btn-sm btn-rounded btn-social-icon btn-pinterest">
-                                            <i class="fab fa-youtube"></i>
+   <img class="iconspublic" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/youtube.svg">
                                         </a>
                                     {/if}
                                     {if $spage['page_social_instagram']}
                                         <a target="_blank" href="{$spage['page_social_instagram']}" class="btn btn-sm btn-rounded btn-social-icon btn-instagram">
-                                            <i class="fab fa-instagram"></i>
+ <img class="iconspublic" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/instagram.svg">
                                         </a>
                                     {/if}
                                     {if $spage['page_social_linkedin']}
                                         <a target="_blank" href="{$spage['page_social_linkedin']}" class="btn btn-sm btn-rounded btn-social-icon btn-linkedin">
-                                            <i class="fab fa-linkedin"></i>
+ <img class="iconspublic" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/linkedin.svg">
                                         </a>
                                     {/if}
                                     {if $spage['page_social_vkontakte']}
                                         <a target="_blank" href="{$spage['page_social_vkontakte']}" class="btn btn-sm btn-rounded btn-social-icon btn-vk">
-                                            <i class="fab fa-vk"></i>
+                                           <img class="iconspost" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/urlnew.svg">
                                         </a>
                                     {/if}
                                 </div>
@@ -344,7 +344,7 @@
                         {if $spage['photos']}
                             <div class="card panel-photos">
                                 <div class="card-header bg-transparent">
-                                    <i class="fa fa-images mr5"></i>
+                                                                    <img class="iconspost" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/image.svg" class="mr5">
                                     <strong><a href="{$system['system_url']}/pages/{$spage['page_name']}/photos">{__("Photos")}</a></strong>
                                 </div>
                                 <div class="card-body ptb10 plr10">
@@ -408,7 +408,7 @@
                             <div class="card-header with-icon with-nav">
                                 <!-- panel title -->
                                 <div class="mb20">
-                                    <i class="fa fa-images mr10"></i>{__("Photos")}
+                                                                    <img class="iconspost" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/image.svg" class="mr10">{__("Photos")}
                                 </div>
                                 <!-- panel title -->
 
@@ -453,7 +453,7 @@
                             <div class="card-header with-icon with-nav">
                                 <!-- panel title -->
                                 <div class="mb20">
-                                    <i class="fa fa-images mr10"></i>{__("Photos")}
+                                                                    <img class="iconspost" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/image.svg" class="mr10">{__("Photos")}
                                 </div>
                                 <!-- panel title -->
 
@@ -508,7 +508,7 @@
 
                                 <!-- panel title -->
                                 <div class="mb20">
-                                    <i class="fa fa-images mr10"></i>{__("Photos")}
+                                                                     <img class="iconspost" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/image.svg" class="mr10">{__("Photos")}
                                 </div>
                                 <!-- panel title -->
 
@@ -537,7 +537,7 @@
                             <div class="card-header with-icon">
                                 <!-- panel title -->
                                 <div class="mb20">
-                                    <i class="fa fa-video mr10"></i>{__("Videos")}
+                                     <img class="iconspost mr10" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/video.svg"> {__("Videos")}
                                 </div>
                                 <!-- panel title -->
                             </div>
@@ -608,7 +608,7 @@
                                 <ul class="side-nav">
                                     <li {if $sub_view == ""}class="active"{/if}>
                                         <a href="{$system['system_url']}/pages/{$spage['page_name']}/settings">
-                                            <i class="fa fa-cog fa-fw mr10"></i>{__("Page Settings")}
+                                            <img class="iconspost mr5" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/setting.svg"> {__("Page Settings")}
                                         </a>
                                     </li>
                                     <li {if $sub_view == "info"}class="active"{/if}>
@@ -643,7 +643,7 @@
                         <div class="card">
                             {if $sub_view == ""}
                                 <div class="card-header with-icon">
-                                    <i class="fa fa-cog mr10"></i>{__("Page Settings")}
+                                   <img class="iconspost mr5" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/setting.svg"> {__("Page Settings")}
                                 </div>
                                 <form class="js_ajax-forms " data-url="pages_groups_events/create.php?type=page&do=edit&edit=settings&id={$spage['page_id']}">
                                     <div class="card-body">
@@ -704,7 +704,7 @@
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="#social" data-toggle="tab">
-                                                <i class="fab fa-facebook fa-fw mr5"></i><strong class="pr5">{__("Social Links")}</strong>
+                                                <img class="iconspublic" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/facebook.svg"><strong class="pr5">{__("Social Links")}</strong>
                                             </a>
                                         </li>
                                     </ul>
@@ -838,7 +838,7 @@
                                                         <label class="form-control-label">{__("Facebook Profile URL")}</label>
                                                         <div class="input-group">
                                                             <div class="input-group-prepend">
-                                                                <span class="input-group-text bg-transparent"><i class="fab fa-facebook fa-lg" style="color: #3B579D"></i></span>
+                                                                <span class="input-group-text bg-transparent"> <img class="iconspublic" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/facebook.svg"></span>
                                                             </div>
                                                             <input type="text" class="form-control" name="facebook" value="{$spage['page_social_facebook']}">
                                                         </div>
@@ -848,7 +848,7 @@
                                                         <label class="form-control-label">{__("Twitter Profile URL")}</label>
                                                         <div class="input-group">
                                                             <div class="input-group-prepend">
-                                                                <span class="input-group-text bg-transparent"><i class="fab fa-twitter fa-lg" style="color: #55ACEE"></i></span>
+                                                                <span class="input-group-text bg-transparent">  <img class="iconspublic" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/twitter.svg"></span>
                                                             </div>
                                                             <input type="text" class="form-control" name="twitter" value="{$spage['page_social_twitter']}">
                                                         </div>
@@ -860,7 +860,7 @@
                                                         <label class="form-control-label">{__("Google+ Profile URL")}</label>
                                                         <div class="input-group">
                                                             <div class="input-group-prepend">
-                                                                <span class="input-group-text bg-transparent"><i class="fab fa-google-plus fa-lg" style="color: #DC4A38"></i></span>
+                                                                <span class="input-group-text bg-transparent">  <img class="iconspublic" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/snapchat.svg"></span>
                                                             </div>
                                                             <input type="text" class="form-control" name="google" value="{$spage['page_social_google']}">
                                                         </div>
@@ -870,7 +870,7 @@
                                                         <label class="form-control-label">{__("YouTube Profile URL")}</label>
                                                         <div class="input-group">
                                                             <div class="input-group-prepend">
-                                                                <span class="input-group-text bg-transparent"><i class="fab fa-youtube fa-lg" style="color: #E62117"></i></span>
+                                                                <span class="input-group-text bg-transparent"><img class="iconspublic" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/youtube.svg"></span>
                                                             </div>
                                                             <input type="text" class="form-control" name="youtube" value="{$spage['page_social_youtube']}">
                                                         </div>
@@ -882,7 +882,7 @@
                                                         <label class="form-control-label">{__("Instagram Profile URL")}</label>
                                                         <div class="input-group">
                                                             <div class="input-group-prepend">
-                                                                <span class="input-group-text bg-transparent"><i class="fab fa-instagram fa-lg" style="color: #3f729b"></i></span>
+                                                                <span class="input-group-text bg-transparent"> <img class="iconspublic" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/instagram.svg"></span>
                                                             </div>
                                                             <input type="text" class="form-control" name="instagram" value="{$spage['page_social_instagram']}">
                                                         </div>
@@ -892,7 +892,7 @@
                                                         <label class="form-control-label">{__("LinkedIn Profile URL")}</label>
                                                         <div class="input-group">
                                                             <div class="input-group-prepend">
-                                                                <span class="input-group-text bg-transparent"><i class="fab fa-linkedin fa-lg" style="color: #1A84BC"></i></span>
+                                                                <span class="input-group-text bg-transparent"> <img class="iconspublic" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/linkedin.svg"></span>
                                                             </div>
                                                             <input type="text" class="form-control" name="linkedin" value="{$spage['page_social_linkedin']}">
                                                         </div>
@@ -904,7 +904,7 @@
                                                         <label class="form-control-label">{__("Vkontakte Profile URL")}</label>
                                                         <div class="input-group">
                                                             <div class="input-group-prepend">
-                                                                <span class="input-group-text bg-transparent"><i class="fab fa-vk fa-lg" style="color: #527498"></i></span>
+                                                                <span class="input-group-text bg-transparent"><img class="iconspost" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/urlnew.svg"></span>
                                                             </div>
                                                             <input type="text" class="form-control" name="vkontakte" value="{$spage['page_social_vkontakte']}">
                                                         </div>
@@ -926,7 +926,7 @@
                             
                             {elseif $sub_view == "admins"}
                                 <div class="card-header with-icon">
-                                    <i class="fa fa-users mr10"></i>{__("Members")}
+                                    <img class="iconspost mr10" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/members.svg">{__("Members")}
                                 </div>
                                 <div class="card-body">
                                     <!-- admins -->
@@ -1047,7 +1047,7 @@
                                                         </div>
                                                     </div>
                                                     <span class="form-text">
-                                                        {__("Please attach your photo and your Passport or National ID")}
+                                                        {__("Please attach the latest qualification you got + file for your CV")}
                                                     </span>
                                                 </div>
                                             </div>
@@ -1058,9 +1058,9 @@
                                                 </label>
                                                 <div class="col-md-9">
                                                     <textarea class="form-control" name="message"></textarea>
-                                                    <span class="form-text">
+                                                   <!-- <span class="form-text">
                                                         {__("Please share why your account should be verified")}
-                                                    </span>
+                                                    </span> -->
                                                 </div>
                                             </div>
                                             
@@ -1074,7 +1074,7 @@
                                         </div>
                                         <div class="card-footer text-right">
                                             <button type="submit" class="btn btn-primary">
-                                                <i class="fa fa-check-circle mr10"></i>{__("Send Verification Request")}
+                                                <i class="fa fa-check-circle mr10"></i>{__("Send")}
                                             </button>
                                         </div>
                                     </form>

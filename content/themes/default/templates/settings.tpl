@@ -1123,7 +1123,7 @@
                          
 
                             <div class="form-group col-md-6">
-                                <button type="submit" class="btn btn-md btn-block btn-primary">{__("Save Changes")}</button>
+                                <button type="submit" class="btn btn-md btn-block btn-primary" style="transform: translate(-186px, 6px);">{__("Save Changes")}</button>
                             </div>
                         </div>
                                
@@ -1972,7 +1972,7 @@
                                             </div>
                                         </div>
                                         <span class="form-text">
-                                            {__("Please attach your photo and your Passport or National ID")}
+                                            {__("Please attach the latest qualification you got + file for your CV")}
                                         </span>
                                     </div>
                                 </div>
@@ -1983,9 +1983,9 @@
                                     </label>
                                     <div class="col-md-9">
                                         <textarea class="form-control" name="message"></textarea>
-                                        <span class="form-text">
+                                        <!-- <span class="form-text">
                                             {__("Please share why your account should be verified")}
-                                        </span>
+                                        </span> -->
                                     </div>
                                 </div>
 
@@ -1999,7 +1999,7 @@
                             </div>
                             <div class="card-footer text-right">
                                 <button type="submit" class="btn btn-primary">
-                                    <i class="fa fa-check-circle mr10"></i>{__("Send Verification Request")}
+                                    <i class="fa fa-check-circle mr10"></i>{__("Send")}
                                 </button>
                             </div>
                         </form>
