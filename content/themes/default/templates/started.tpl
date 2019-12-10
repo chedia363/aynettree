@@ -1,5 +1,7 @@
 {include file='_head.tpl'}
 {include file='_header.tpl'}
+
+
 <!-- page content -->
 <div class="container" style="margin-top: 30px;">
     <div class="row">
@@ -111,10 +113,10 @@
                                         <label class="form-control-label" for="city">{__("Current City")}</label>
                                         <input type="text" class="form-control js_geocomplete" name="city" id="city" value="{$user->_data['user_current_city']}">
                                     </div>
-                                    <div class="form-group col-md-6">
-                                        <label class="form-control-label" for="hometown">{__("Hometown")}</label>
-                                        <input type="text" class="form-control js_geocomplete" name="hometown" id="hometown" value="{$user->_data['user_hometown']}">
-                                    </div>
+                                   <!-- <div class="form-group col-md-6">
+                                        <label class="form-control-label" for="hometown">{__("Hometown")}</label> -->
+                                        <input type="hidden" class="form-control js_geocomplete" name="hometown" id="hometown" value="{$user->_data['user_hometown']}">
+                                   <!-- </div> -->
                                 </div>
                             </div>
 
@@ -189,8 +191,8 @@
 
                     <div class="js_wizard-content x-hidden" id="step-3">
                         <div class="text-center">
-                            <h3 class="mb5">{__("Add Friends")}</h3>
-                            <p class="mb20">{__("Get latest activities from our popular users")}</p>
+                            <h3 class="mb5">{__("Add Users")}</h3>
+                            <p class="mb20">{__("Build broad scientific relationships")}</p>
                         </div>
                         
                         <!-- new people -->

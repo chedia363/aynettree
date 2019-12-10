@@ -2860,7 +2860,7 @@ msgid "Widowed"
 msgstr "ارمل"
 
 msgid "Country"
-msgstr "الدولة"
+msgstr "الجنسية"
 
 msgid "Select Country"
 msgstr "حدد الدولة"
@@ -4414,8 +4414,8 @@ msgstr "الخطوة التالية"
 msgid "Share your information with our community"
 msgstr "مشاركة المعلومات الخاصة بك"
 
-msgid "Get latest activities from our popular users"
-msgstr "الحصول على أحدث الأنشطة من المستخدمين شعبية"
+msgid "Build broad scientific relationships"
+msgstr "كوّن علاقات علمية واسعة"
 
 msgid "Finish"
 msgstr "الانتهاء والانتقال لصفحتك"
@@ -7880,3 +7880,7 @@ msgstr "توقيت الرسالة"
 
 msgid "comment "
 msgstr "تعليق"
+
+
+msgid "Nonprofit network"
+msgstr "شبكة غير ربحية"
