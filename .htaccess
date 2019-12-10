@@ -86,6 +86,7 @@ RewriteRule ^settings/([^/]+)/([^/]+)/?$ settings.php?view=$1&sub_view=$2 [L,QSA
 
 # Posts & Photos
 RewriteRule ^posts/([^/]+)/?$ post.php?post_id=$1 [L,QSA]
+RewriteRule ^posts/editt/([^/]+)/?$ posts.php?view=editt&post_id=$1 [L,QSA]
 RewriteRule ^photos/([^/]+)/?$ photo.php?photo_id=$1 [L,QSA]
 
 # Popular

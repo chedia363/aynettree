@@ -33,13 +33,13 @@
                     {if $_post['i_save']}
                         <div href="#" class="dropdown-item pointer js_unsave-post">
                             <div class="action no-desc">
-                                 <img class="icondelet" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/savedpostt.svg">  <span>{__("Unsave Post")}</span>
+                                 <img class="iconspost" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/savedpost.svg">  <span>{__("Unsave Post")}</span>
                             </div>
                         </div>
                     {else}
                         <div class="dropdown-item pointer js_save-post">
                             <div class="action no-desc">
-                                <img class="icondelet" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/savedpostt.svg"> <span>{__("Save Post")}</span>
+                                <img class="iconspost" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/savedpost.svg"> <span>{__("Save Post")}</span>
                             </div>
                         </div>
                     {/if}
@@ -80,7 +80,7 @@
                         {else}
                             <div class="dropdown-item pointer js_pin-post">
                                 <div class="action no-desc">
-                                   <img class="icondelet" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/pinpost.svg"><span>{__("Pin Post")}</span>
+                                   <img class="iconspost" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/pinpost.svg"><span>{__("Pin Post")}</span>
                                 </div>
                             </div>
                         {/if}
@@ -89,41 +89,36 @@
                         {if $_post['post_type'] == "product"}
                             <div class="dropdown-item pointer" data-toggle="modal" data-url="posts/product.php?do=edit&post_id={$_post['post_id']}">
                                 <div class="action no-desc">
-                                    <img class="icondelet" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/editpost.svg"> {__("Edit Product")}
+                                    <img class="iconspost" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/editpost.svg"> {__("Edit Product")}
                                 </div>
                             </div>
                         {elseif $_post['post_type'] == "article"}
                             <a href="{$system['system_url']}/blogs/edit/{$_post['post_id']}" class="dropdown-item pointer">
                                 <div class="action no-desc">
-                                     <img class="icondelet" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/editpost.svg">  {__("Edit Article")}
+                                     <img class="iconspost" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/editpost.svg">  {__("Edit Article")}
                                 </div>
                             </a>
                         {else}
-                            <div class="dropdown-item pointer js_edit-post">
+                          <!--   <div class="dropdown-item pointer js_edit-post">
                                 <div class="action no-desc">
-                                   <img class="icondelet" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/editpost.svg"> {__("Edit Post")}
+                                   <img class="iconspost" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/editpost.svg"> {__("Edit Post")}
                                 </div>
-                            </div>
+                            </div> -->
+
+                            <a href="{$system['system_url']}/posts/editt/{$_post['post_id']}" class="dropdown-item pointer">
+                                <div class="action no-desc">
+                                     <img class="iconspost" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/editpost.svg">  {__("Edit Post")}
+                                </div>
+                            </a> 
                         {/if}
                         <!-- Edit -->
-
-                         <!-- Delete enabled if user not an admin & user not the owner's post -->
-                         
-                     
-                          	{if !$group['i_admin'] && $user->_data['user_group'] != '1' && !($user->_data['user_group'] <= 2)}
-			          
-                                <div class="dropdown-item pointer js_delete-post">
-                                    <div class="action no-desc">
-                                          <img class="icondelet" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/delet.png"> {__("Delete Post")}
-                                    </div>
-                                </div>
-                                
-                            {/if} 
                         <!-- Delete -->
-
-
-
-                   
+                        <div class="dropdown-item pointer js_delete-post">
+                            <div class="action no-desc">
+                                  <img class="iconspost" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/delete.svg"> {__("Delete Post")}
+                            </div>
+                        </div>
+                        <!-- Delete -->
                         <!-- Disable Comments -->
                         {if $_post['comments_disabled']}
                             <div class="dropdown-item pointer js_enable-post-comments">
@@ -134,7 +129,7 @@
                         {else}
                             <div class="dropdown-item pointer js_disable-post-comments">
                                 <div class="action no-desc">
-                                    <img class="icondelet" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/publisher/turncomment.svg"> <span>{__("Turn off Commenting")}</span>
+                                    <img class="iconspost" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/publisher/stoppost.svg"> <span>{__("Turn off Commenting")}</span>
                                 </div>
                             </div>
                         {/if}
@@ -143,27 +138,27 @@
                         {if $_post['user_type'] == "user"}
                             <div class="dropdown-item pointer js_hide-author" data-author-id="{$_post['user_id']}" data-author-name="{$_post['post_author_name']}">
                                 <div class="action">
-                                    <i class="fa fa-minus-circle fa-fw"></i> {__("Unfollow")} {$_post['user_firstname']}
+                                    <img class="iconspost" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/cancelfollow.svg"> {__("Unfollow")} {$_post['user_firstname']}
                                 </div>
                                 <div class="action-desc">{__("Stop seeing posts but stay friends")}</div>
                             </div>
                         {/if}
                         <div class="dropdown-item pointer js_hide-post">
                             <div class="action">
-                                <i class="fa fa-eye-slash fa-fw"></i> {__("Hide this post")}
+                                 <img class="iconspost" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/eyepost.svg"> {__("Hide this post")}
                             </div>
                             <div class="action-desc">{__("See fewer posts like this")}</div>
                         </div>
                         <div class="dropdown-item pointer js_report" data-handle="post" data-id="{$_post['post_id']}">
                             <div class="action no-desc">
-                                 <img class="icondelet" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/reportpost.png">  {__("Report post")}
+                                 <img class="iconspost" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/tabligh.svg">  {__("Report post")}
                             </div>
                         </div>
                     {/if}
                     <div class="dropdown-divider"></div>
                     <a href="{$system['system_url']}/posts/{$_post['post_id']}" target="_blank" class="dropdown-item">
                         <div class="action no-desc">
-                            <img class="icondelet" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/urlpost.png"> {__("Open post in new tab")}
+                            <img class="iconspost" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/url.svg"> {__("Open post in new tab")}
                         </div>
                     </a>
                 </div>
@@ -277,7 +272,7 @@
             {/if}
 
             {if $_get != 'posts_group' && $_post['in_group']}
-                <i class="fa fa-caret-right ml5 mr5"></i> <img class="iconscommt"src="{$system['system_url']}/content/themes/default/images/icons/flag.svg"><a href="{$system['system_url']}/groups/{$_post['group_name']}">{$_post['group_title']}</a>
+                <i class="fa fa-caret-left ml5 mr5"></i> <img class="iconspost"src="{$system['system_url']}/content/themes/default/images/icons/groups.svg"><a href="{$system['system_url']}/groups/{$_post['group_name']}">{$_post['group_title']}</a>
 
             {elseif $_get != 'posts_event' && $_post['in_event']}
                 <i class="fa fa-caret-right ml5 mr5"></i><i class="fa fa-calendar ml5 mr5"></i><a href="{$system['system_url']}/events/{$_post['event_id']}">{$_post['event_title']}</a>
@@ -303,7 +298,7 @@
         <div class="post-time">
             <a href="{$system['system_url']}/posts/{$_post['post_id']}" class="js_moment" data-time="{$_post['time']}">{$_post['time']}</a>
             {if $_post['location']}
-             - <i class="fa fa-map-marker"></i> <span>{$_post['location']}</span>
+             -  <img class="iconspost" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/localisation.svg"> <span>{$_post['location']}</span>
             {/if}
             {if $system['post_translation_enabled']}
              - <span class="text-link js_translator">{__("Translate")}</span>
@@ -314,41 +309,43 @@
                 {if $_post['privacy'] == "me"}
                     <div class="btn-group" data-toggle="tooltip" data-placement="top" data-value="me" title='{__("Shared with: Only Me")}'>
                         <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" data-display="static">
-                            <i class="btn-group-icon fa fa-lock"></i>
+                           <img class="iconspublic mr10" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/moipubbl.svg">
                         </button>
                 {elseif $_post['privacy'] == "friends"}
                     <div class="btn-group" data-toggle="tooltip" data-placement="top" data-value="friends" title='{__("Shared with: Friends")}'>
                         <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" data-display="static">
-                            <i class="btn-group-icon fa fa-users"></i>
+                             <img class="iconspublic mr10" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/friendpubbl.svg">
                         </button>
                 {elseif $_post['privacy'] == "public"}
                     <div class="btn-group" data-toggle="tooltip" data-placement="top" data-value="public" title='{__("Shared with: Public")}'>
                         <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" data-display="static">
-                            <i class="btn-group-icon fa fa-globe"></i>
+                             <img class="iconspublic mr10" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/public.svg">
                         </button>
                 {/if}
                     <div class="dropdown-menu dropdown-menu-right">
                         <div class="dropdown-item pointer js_edit-privacy" data-title='{__("Shared with: Public")}' data-value="public">
-                            <i class="fa fa-globe"></i> {__("Public")}
+                             <img class="iconspublic mr10" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/publicbl.svg">{__("Public")}
                         </div>
-                        <div class="dropdown-item pointer js_edit-privacy" data-title='{__("Shared with: Friends")}' data-value="friends">
-                            <img class="iconstable" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/group.svg"> {__("Friends")}
-                        </div>
+                       
                         <div class="dropdown-item pointer js_edit-privacy" data-title='{__("Shared with: Only Me")}' data-value="me">
-                            <i class="fa fa-lock"></i> {__("Only Me")}
+                            <img class="iconspublic mr10" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/moipubbl.svg"> {__("Only Me")}
                         </div>
                     </div>
                 </div>
                 <!-- privacy -->
             {else}
                 {if $_post['privacy'] == "me"}
-                    <i class="fa fa-lock" data-toggle="tooltip" data-placement="top" title='{__("Shared with")} {__("Only Me")}'></i>
+                 <img class="iconspublic mr10" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/moipubbl.svg" data-toggle="tooltip" data-placement="top" title='{__("Shared with")} {__("Only Me")}'>
+                    <!-- <i class="fa fa-lock" data-toggle="tooltip" data-placement="top" title='{__("Shared with")} {__("Only Me")}'></i> -->
                 {elseif $_post['privacy'] == "friends"}
-                    <i class="fa fa-users" data-toggle="tooltip" data-placement="top" title='{__("Shared with")} {__("Friends")}'></i>
+                 <img class="iconspublic mr10" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/friendpubbl.svg" data-toggle="tooltip" data-placement="top" title='{__("Shared with")} {__("Friends")}'>
+                   <!--  <i class="fa fa-users" data-toggle="tooltip" data-placement="top" title='{__("Shared with")} {__("Friends")}'></i> -->
                 {elseif $_post['privacy'] == "public"}
-                    <i class="fa fa-globe" data-toggle="tooltip" data-placement="top" title='{__("Shared with")} {__("Public")}'></i>
+                 <img class="iconspublic mr10" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/publicbl.svg" data-toggle="tooltip" data-placement="top" title='{__("Shared with")} {__("Public")}'>
+                    <!-- <i class="fa fa-globe" data-toggle="tooltip" data-placement="top" title='{__("Shared with")} {__("Public")}'></i> -->
                 {elseif $_post['privacy'] == "custom"}
-                    <i class="fa fa-cog" data-toggle="tooltip" data-placement="top" title='{__("Shared with")} {__("Custom People")}'></i>
+                <img class="iconspublic mr10" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/publicbl.svg" data-toggle="tooltip" data-placement="top" title='{__("Shared with")} {__("Custom People")}'>
+                    <!-- <i class="fa fa-cog" data-toggle="tooltip" data-placement="top" title='{__("Shared with")} {__("Custom People")}'></i> -->
                 {/if}
             {/if}
         </div>
@@ -575,7 +572,7 @@
     </div>
     {if $_post['product']['location']}
         <div class="mb10 text-muted">
-            <i class="fa fa-map-marker fa-fw"></i> {$_post['product']['location']}
+            <img class="iconspost" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/localisation.svg"> {$_post['product']['location']}
         </div>
     {/if}
     <!-- post text -->
@@ -627,7 +624,7 @@
     {if $_post['author_id'] != $user->_data['user_id'] }
         <div class="mt10 clearfix">
             <button type="button" class="btn btn-sm btn-primary float-right js_chat-start" data-uid="{$_post['author_id']}" data-name="{$_post['post_author_name']}">
-                <img class="iconscommt"src="{$system['system_url']}/content/themes/default/images/icons/commentpostt.png"> {__("Contact Seller")}
+                <img class="iconspost"src="{$system['system_url']}/content/themes/default/images/icons/comment.svg"> {__("Contact Seller")}
             </button>
         </div>
     {/if}
