@@ -9,7 +9,7 @@
                     <i class="fa fa-tv"></i><span class="ml5 d-none d-lg-inline-block">{__("View Profile")}</span>
                 </a>
                 <button type="button" class="btn btn-sm btn-danger js_admin-deleter" data-handle="user_posts" data-id="{$data['user_id']}">
-                    <i class="fa fa-trash-alt"></i><span class="ml5 d-none d-lg-inline-block">{__("Delete All Posts")}</span>
+ <img class="iconspost" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/deletea.svg"><span class="ml5 d-none d-lg-inline-block">{__("Delete All Posts")}</span>
                 </button>
             </div>
         {elseif $sub_view == "banned"}
@@ -87,7 +87,7 @@
                                             <i class="fa fa-pencil-alt"></i>
                                         </a>
                                         <button data-toggle="tooltip" data-placement="top" title='{__("Delete")}' class="btn btn-sm btn-icon btn-rounded btn-danger js_admin-deleter" data-handle="user" data-id="{$row['user_id']}">
-                                            <i class="fa fa-trash-alt"></i>
+                                           <img class="iconspost" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/deletea.svg">
                                         </button>
                                     </td>
                                 </tr>
@@ -556,7 +556,7 @@
                                     <label class="form-control-label">{__("Facebook Profile URL")}</label>
                                     <div class="input-group">
                                         <div class="input-group-prepend">
-                                            <span class="input-group-text bg-transparent"><i class="fab fa-facebook fa-lg" style="color: #3B579D"></i></span>
+                                            <span class="input-group-text bg-transparent"> <img class="iconspublic" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/facebook.svg"></span>
                                         </div>
                                         <input type="text" class="form-control" name="facebook" value="{$data['user_social_facebook']}" placeholder="{__("Facebook Profile URL")}">
                                     </div>
@@ -566,7 +566,7 @@
                                     <label class="form-control-label">{__("Twitter Profile URL")}</label>
                                     <div class="input-group">
                                         <div class="input-group-prepend">
-                                            <span class="input-group-text bg-transparent"><i class="fab fa-twitter fa-lg" style="color: #55ACEE"></i></span>
+                                            <span class="input-group-text bg-transparent">  <img class="iconspublic" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/twitter.svg"></span>
                                         </div>
                                         <input type="text" class="form-control" name="twitter" value="{$data['user_social_twitter']}" placeholder="{__("Twitter Profile URL")}">
                                     </div>
@@ -578,7 +578,7 @@
                                     <label class="form-control-label">{__("Google+ Profile URL")}</label>
                                     <div class="input-group">
                                         <div class="input-group-prepend">
-                                            <span class="input-group-text bg-transparent"><i class="fab fa-google-plus fa-lg" style="color: #DC4A38"></i></span>
+                                            <span class="input-group-text bg-transparent">  <img class="iconspublic" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/snapchat.svg"></span>
                                         </div>
                                         <input type="text" class="form-control" name="google" value="{$data['user_social_google']}" placeholder="{__("Google+ Profile URL")}">
                                     </div>
@@ -588,7 +588,7 @@
                                     <label class="form-control-label">{__("YouTube Profile URL")}</label>
                                     <div class="input-group">
                                         <div class="input-group-prepend">
-                                            <span class="input-group-text bg-transparent"><i class="fab fa-youtube fa-lg" style="color: #E62117"></i></span>
+                                            <span class="input-group-text bg-transparent"><img class="iconspublic" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/youtube.svg"></span>
                                         </div>
                                         <input type="text" class="form-control" name="youtube" value="{$data['user_social_youtube']}" placeholder="{__("YouTube Profile URL")}">
                                     </div>
@@ -600,7 +600,7 @@
                                     <label class="form-control-label">{__("Instagram Profile URL")}</label>
                                     <div class="input-group">
                                         <div class="input-group-prepend">
-                                            <span class="input-group-text bg-transparent"><i class="fab fa-instagram fa-lg" style="color: #3f729b"></i></span>
+                                            <span class="input-group-text bg-transparent"> <img class="iconspublic" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/instagram.svg"></span>
                                         </div>
                                         <input type="text" class="form-control" name="instagram" value="{$data['user_social_instagram']}" placeholder="{__("Instagram Profile URL")}">
                                     </div>
@@ -610,7 +610,7 @@
                                     <label class="form-control-label">{__("LinkedIn Profile URL")}</label>
                                     <div class="input-group">
                                         <div class="input-group-prepend">
-                                            <span class="input-group-text bg-transparent"><i class="fab fa-linkedin fa-lg" style="color: #1A84BC"></i></span>
+                                            <span class="input-group-text bg-transparent"> <img class="iconspublic" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/linkedin.svg"></span>
                                         </div>
                                         <input type="text" class="form-control" name="linkedin" value="{$data['user_social_linkedin']}" placeholder="{__("LinkedIn Profile URL")}">
                                     </div>
@@ -622,7 +622,7 @@
                                     <label class="form-control-label">{__("Vkontakte Profile URL")}</label>
                                     <div class="input-group">
                                         <div class="input-group-prepend">
-                                            <span class="input-group-text bg-transparent"><i class="fab fa-vk fa-lg" style="color: #527498"></i></span>
+                                            <span class="input-group-text bg-transparent"><img class="iconspost" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/urlnew.svg"></span>
                                         </div>
                                         <input type="text" class="form-control" name="vkontakte" value="{$data['user_social_vkontakte']}" placeholder="{__("Vkontakte Profile URL")}">
                                     </div>
@@ -743,7 +743,7 @@
                                 <label class="form-control-label">{__("Who can post on your wall")}</label>
                                 <div class="input-group">
                                     <div class="input-group-prepend">
-                                        <span class="input-group-text"><i class="fas fa-newspaper"></i></span>
+                                    <span class="input-group-text"><img class="iconspost" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/article.svg" class="mr5"></span>
                                     </div>
                                     <select class="form-control" name="privacy_wall" id="privacy_wall">
                                         <option {if $data['user_privacy_wall'] == "public"}selected{/if} value="public">
@@ -780,7 +780,7 @@
                             </div>
 
                             <div class="form-group col-md-6">
-                                <label class="form-control-label">{__("Who can see your")} {__("relationship")}</label>
+                                <label class="form-control-label">{__("Who can see your")} {__("my relationship")}</label>
                                 <div class="input-group">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="fas fa-heart"></i></span>
@@ -800,7 +800,7 @@
                             </div>
 
                             <div class="form-group col-md-6">
-                                <label class="form-control-label">{__("Who can see your")} {__("basic info")}</label>
+                                <label class="form-control-label">{__("Who can see your")} {__("my basic info")}</label>
                                 <div class="input-group">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="fas fa-user"></i></span>
@@ -820,10 +820,10 @@
                             </div>
 
                             <div class="form-group col-md-6">
-                                <label class="form-control-label">{__("Who can see your")} {__("work info")}</label>
+                                <label class="form-control-label">{__("Who can see your")} {__("my work info")}</label>
                                 <div class="input-group">
                                     <div class="input-group-prepend">
-                                        <span class="input-group-text"><i class="fas fa-briefcase"></i></span>
+                                        <span class="input-group-text"> <img class="iconspetit" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/infowork.svg"></span>
                                     </div>
                                     <select class="form-control" name="privacy_work" id="privacy_work">
                                         <option {if $data['user_privacy_work'] == "public"}selected{/if} value="public">
@@ -840,10 +840,10 @@
                             </div>
 
                             <div class="form-group col-md-6">
-                                <label class="form-control-label">{__("Who can see your")} {__("location info")}</label>
+                                <label class="form-control-label">{__("Who can see your")} {__("my location info")}</label>
                                 <div class="input-group">
                                     <div class="input-group-prepend">
-                                        <span class="input-group-text"><i class="fas fa-map-marker-alt"></i></span>
+                                        <span class="input-group-text"> <img class="iconspost" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/localisation.svg"></span>
                                     </div>
                                     <select class="form-control" name="privacy_location" id="privacy_location">
                                         <option {if $data['user_privacy_location'] == "public"}selected{/if} value="public">
@@ -900,7 +900,7 @@
                             </div>
 
                             <div class="form-group col-md-6">
-                                <label class="form-control-label">{__("Who can see your")} {__("friends")}</label>
+                                <label class="form-control-label">{__("Who can see your")} {__("My friends")}</label>
                                 <div class="input-group">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="fas fa-user-friends"></i></span>
@@ -920,11 +920,12 @@
                             </div>
 
                             <div class="form-group col-md-6">
-                                <label class="form-control-label">{__("Who can see your")} {__("photos")}</label>
+                                <label class="form-control-label">{__("Who can see your")} {__(" My photos")}</label>
                                 <div class="input-group">
                                     <div class="input-group-prepend">
-                                        <span class="input-group-text"><i class="fas fa-images"></i></span>
-                                    </div>
+                                    <span class="input-group-text">
+                                    <img class="iconspost" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/image.svg" class="mr5"> </span>
+                                     </div>
                                     <select class="form-control" name="privacy_photos" id="privacy_photos">
                                         <option {if $data['user_privacy_photos'] == "public"}selected{/if} value="public">
                                             {__("Everyone")}
@@ -1047,7 +1048,7 @@
                                         <td>{$session['user_ip']}</td>
                                         <td>
                                             <button data-toggle="tooltip" data-placement="top" title='{__("End Session")}' class="btn btn-sm btn-icon btn-rounded btn-danger js_admin-deleter" data-handle="session" data-id="{$session['session_id']}">
-                                                <i class="fa fa-trash-alt"></i>
+                                              <img class="iconspost" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/deletea.svg">
                                             </button>
                                         </td>
                                     </tr>
@@ -1138,7 +1139,7 @@
                                     <div class="col-md-9 offset-md-3">
                                         {if $data['user_subscribed']}
                                             <button type="button" class="btn btn-danger js_admin-deleter" data-handle="user_package" data-id="{$data['user_id']}">
-                                                <i class="fa fa-trash-alt mr10"></i>{__("Remove Package")}
+                                                <img class="iconspost" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/deletea.svg"> {__("Remove Package")}
                                             </button>
                                         {/if}
                                     </div>
