@@ -2791,7 +2791,7 @@ msgid "User Group"
 msgstr "مجموعة المستخدمين"
 
 msgid "Administrators"
-msgstr "المدريين"
+msgstr "المديرين"
 
 msgid "Email Address"
 msgstr "عنوان البريد الإلكتروني"
