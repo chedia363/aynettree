@@ -18,7 +18,7 @@ require('bootstrap.php');
 
 try {
 
-	// get view content
+	// get view contentt
 	switch ($_GET['view']) {
 	
 

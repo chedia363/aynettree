@@ -146,7 +146,7 @@ RewriteRule ^events/([^/]+)/([^/]+)/([^/]+)/?$ event.php?event_id=$1&view=$2&id=
 
 # Blogs
 RewriteRule ^articles/?$ index.php?view=articles [L,QSA]
-RewriteRule ^blogs/?$ blogs.php [L,QSA]
+RewriteRule ^blogs/?$ blogs.php [L,QSA] 
 RewriteRule ^blogs/new/?$ blogs.php?view=new [L,QSA]
 RewriteRule ^blogs/edit/([^/]+)/?$ blogs.php?view=edit&post_id=$1 [L,QSA]
 RewriteRule ^blogs/category/([^/]+)/([^/]+)/?$ blogs.php?view=category&category_id=$1 [L,QSA]

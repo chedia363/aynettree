@@ -16,7 +16,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="js_ajax-forms-html " data-url="posts/article.php?do=edit&id={$post['post_id']}">
+                    <div class="js_ajax-forms-html " data-url="posts/postmodif.php?do=edit&id={$post['post_id']}">
                         <div class="card-body">
                          
 
@@ -25,7 +25,7 @@
                                     {__("Content")}
                                 </label>
                                 <div class="col-md-10">
-                                    <textarea name="text" class="form-control js_wysiwyg">{$post['text_plain']}</textarea>
+                                    <textarea name="text" class="form-control js_wysiwyg_post">{$post['text_plain']}</textarea>
                                 </div>
                             </div>
 
