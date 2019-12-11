@@ -234,7 +234,7 @@ try {
 			break;
 	}
 
-	// return
+	// returncomment
 	return_json();
 
 } catch (Exception $e) {

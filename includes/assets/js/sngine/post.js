@@ -535,7 +535,7 @@ $(function() {
         /* get (user|page|group|event) id */
         var id = publisher.data('id');
         /* get text */
-        var textarea = publisher.find('textarea');
+      
         /* get link */
         var link = publisher.data('scraping');
         /* get album */
@@ -585,14 +585,21 @@ $(function() {
         var gif = gif_meta.find('input');
         /* get privacy */
         var privacy = publisher.find('.btn-group').data('value');
+        var textpost = document.getElementById("message").value;
+        if(textpost==="" && tinymce.get('message') != null)
+        {
+            textpost = tinymce.get('message').getContent();
+        }
         /* return if no data to post */
-        if(is_empty(textarea.val()) && link === undefined && poll_options === undefined && product === undefined && video === undefined && audio === undefined && file === undefined && photos === undefined && feeling.val() == "" && location.val() == "" ) {
+        if(is_empty(textpost) && link === undefined && poll_options === undefined && product === undefined && video === undefined && audio === undefined && file === undefined && photos === undefined && feeling.val() == "" && location.val() == "" ) {
+            modal('#modal-message', {title: __['Error'], message: __['There is something that went wrong!']});
             return;
         }
         /* button loading */
         button_status(_this, "loading");
         posts_stream.data('loading', true);
-        $.post(api['posts/post'], {'handle': handle, 'id': id, 'message': textarea.val(), 'link': JSON.stringify(link), 'album':album.val(), 'poll_options': JSON.stringify(poll_options), 'product': JSON.stringify(product), 'video': JSON.stringify(video), 'video_thumbnail': video_thumbnail, 'audio': JSON.stringify(audio), 'file': JSON.stringify(file), 'photos': JSON.stringify(photos), 'feeling_action':feeling.data('action'), 'feeling_value':feeling.val(), 'location':location.val(), 'privacy': privacy}, function(response) {
+        $.post(api['posts/post'], {'handle': handle, 'id': id, 'message': textpost, 'link': JSON.stringify(link), 'album':album.val(), 'poll_options': JSON.stringify(poll_options), 'product': JSON.stringify(product), 'video': JSON.stringify(video), 'video_thumbnail': video_thumbnail, 'audio': JSON.stringify(audio), 'file': JSON.stringify(file), 'photos': JSON.stringify(photos), 'feeling_action':feeling.data('action'), 'feeling_value':feeling.val(), 'location':location.val(), 'privacy': privacy}, function(response) {
+           
             if(response.callback) {
                 /* button reset */
                 button_status(_this, "reset");
@@ -603,8 +610,8 @@ $(function() {
                 /* prepare publisher */
                 /* remove (active|activated|disabled) from all tabs */
                 publisher.find('.js_publisher-tab').removeClass('active activated disabled');
-                textarea.val('').removeAttr('style');
-                textarea.attr('placeholder', textarea.data('init-placeholder'));
+               
+               
                 /* hide & empty album */
                 album.val('');
                 album_meta.hide();
@@ -653,6 +660,9 @@ $(function() {
             button_status(_this, "reset");
             modal('#modal-message', {title: __['Error'], message: __['There is something that went wrong!']});
         });
+        setTimeout("window.location.reload()", 5000);
+       
+
     });
     /* publish new story */
     $('body').on('click', '.js_publisher-story', function() {
@@ -1060,32 +1070,29 @@ $(function() {
             });
         });
     });
-
-    /* delete story */
-    $('body').on('click', '.js_delete-story', function (e) {
-        e.preventDefault();
-        var id = $(this).data('id');
-        confirm(__['Delete Story'], __['Are you sure you want to delete this story?'], function() { 
-            // post.hide();
-            $.post(api['posts/story'], {'do': 'delete_story', 'id': id}, function(response) {
-                /* check the response */
-            
-
-                $('#modal').modal('hide');
-                if(response.callback) {
-                    eval(response.callback);
-                }
-                window.location = site_path + "/stories1.php";
-
+        /* delete story */
+        $('body').on('click', '.js_delete-story', function (e) {
+            e.preventDefault();
+            var id = $(this).data('id');
+            confirm(__['Delete Story'], __['Are you sure you want to delete this story?'], function() { 
+                // post.hide();
+                $.post(api['posts/story'], {'do': 'delete_story', 'id': id}, function(response) {
+                    /* check the response */
                 
-            }, 'json')
-            .fail(function() {
-                modal('#modal-message', {title: __['Error'], message: __['There is something that went wrong!']});
+    
+                    $('#modal').modal('hide');
+                    if(response.callback) {
+                        eval(response.callback);
+                    }
+                    window.location = site_path + "/stories.php";
+    
+                    
+                }, 'json')
+                .fail(function() {
+                    modal('#modal-message', {title: __['Error'], message: __['There is something that went wrong!']});
+                });
             });
         });
-    });
-
-    
     /* delete article */
     $('body').on('click', '.js_delete-article', function (e) {
         e.preventDefault();
@@ -1745,7 +1752,7 @@ $(function() {
                 /* change reaction-btn-name */
                 _parent.find('.reaction-btn-name:first').text(__['Like']).removeClass('blue red yellow orange');
                 /* change reaction-btn-icon */
-                _parent.find('.reaction-btn-icon:first').html('<i class="fa fa-thumbs-up fa-fw"></i>');
+                _parent.find('.reaction-btn-icon:first').html('<i class=""></i>');
                 /* hide reactions-container */
                 _parent.find('.reactions-container:visible').removeAttr('style').hide();
                 /* AJAX */
@@ -1815,7 +1822,7 @@ $(function() {
             /* change reaction-btn-name */
             _parent.find('.reaction-btn-name:first').text(__['Like']).removeClass('blue red yellow orange');
             /* change reaction-btn-icon */
-            _parent.find('.reaction-btn-icon:first').html('<i class="fa fa-thumbs-up fa-fw"></i>');
+            _parent.find('.reaction-btn-icon:first').html('<img class="iconspost" src="https://www.aaynet.com/dev/content/themes/default/images/icons/likesicons.svg">');
             /* hide reactions-container */
             _parent.find('.reactions-container:visible').removeAttr('style').hide();
             /* AJAX */

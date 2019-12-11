@@ -16,7 +16,12 @@
                     {__("Panels")}
                 </a>
             </li>
-
+            <li {if $page== "Stories"}class="active"{/if}>
+                <a href="{$system['system_url']}/Stories.php">
+                    <img  src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/story.svg" class="iconspost">
+                    {__("Stories")}
+                </a>
+            </li>
 
             <li {if $page== "people"}class="active"{/if}>
                 <a href="{$system['system_url']}/people">

@@ -99,7 +99,8 @@
                        <!-- Themes -->
                         <li {if $view == "Stories"}class="active"{/if}>
                             <a href="{$system['system_url']}/admincp/Stories">
-                                <i class="fa fa-desktop fa-fw mr10" style="color: #3F51B5"></i>{__("Stories")}
+                                    <img  src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/story.svg" class="iconspost">
+                                    {__("Stories")}
                             </a>
                         </li>
                         <!-- Themes -->

@@ -1,7 +1,8 @@
 <div class="card">
     <div class="card-header with-icon">
        
-        <i class="fa fa-money-bill-alt mr10"></i>{__("Stories")}
+          <img  src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/story.svg" class="iconspost">
+          {__("Stories")}
 
     </div>
 
@@ -13,7 +14,7 @@
                     <thead>
                         <tr>
                             
-                            <!-- <th>{__("story_id")}</th> -->
+                        
                             <th>{__("Username")}</th>
                             <th>{__("story Image")}</th>
                             <th>{__("story Message")}</th>

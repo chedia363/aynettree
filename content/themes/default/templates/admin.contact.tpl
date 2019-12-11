@@ -14,7 +14,7 @@
                         <tr>
                             
                          
-                            <!--<th>{__("Contact")}</th>-->
+                           
                             <th>{__("Sender Name")}</th>
                             <th>{__("Sender Message")}</th>
                             <th>{__("User phone")}</th>
