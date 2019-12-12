@@ -61,10 +61,21 @@ try {
 			page_header(__("All Groups"));
 			
 			// get managed groups
-			$groups = $user->get_groups(array('get_all' => true));
+			$groups1 = $user->get_groups1();
+			$groups2 = $user->get_groups2();	
+			$groups3 = $user->get_groups3();
+			$groups4 = $user->get_groups4();				
+			$groups5 = $user->get_groups5();					
+
+		
 			/* assign variables */
-			$smarty->assign('groups', $groups);
-			$smarty->assign('get', "All");
+			$smarty->assign('groups1', $groups1);
+			$smarty->assign('groups2', $groups2);
+			$smarty->assign('groups3', $groups3);
+			$smarty->assign('groups4', $groups4);	
+			$smarty->assign('groups5', $groups5);	
+
+			$smarty->assign('get', "groups");
 
 			break;
 

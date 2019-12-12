@@ -32,7 +32,7 @@
                         <a href="{$system['system_url']}/groups/get_all">{__("All Panels")}</a>
                     </li>
                 </ul>
-                {if $user->_data['user_group'] < 2 && $system['groups_enabled']}
+                {if $user->_data['user_id'] < 2 && $system['groups_enabled']}
                     <div class="mt10 float-right">
                         <button class="btn btn-sm btn-success d-none d-lg-block" data-toggle="modal" data-url="#create-group">
                              <img class="iconspost" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/addgroup.svg"> {__("Create your group")}
@@ -307,7 +307,114 @@
              </div>
 
              </div>
-            
+            {elseif $view == "get_all"}
+
+              <!-- content -->
+            <div>
+                {if $groups1 || $groups2|| $groups3|| $groups4|| $groups5}
+                <a href="{$system['system_url']}/groups/gr1"> <button class="btn btn-sm btn-success d-none d-lg-block">
+                 <img class="iconspost" src="http://aynettree.test/content/themes/default/images/icons/addgroup.svg">
+                {__("The Glorious and Performance of Qur'an")}
+                </button></a>
+                
+            <ul class="row">
+                       
+                            {foreach $groups1 as $_group}
+    
+                                {include file='__feeds_Allgroup.tpl' _tpl='box'}
+    
+                            {/foreach}
+            </ul>
+<a href="{$system['system_url']}/groups/gr2">            
+ <button class="btn btn-sm btn-success d-none d-lg-block">
+     <img class="iconspost" src="http://aynettree.test/content/themes/default/images/icons/addgroup.svg">
+     {__("Tafsir and Qur'anic Sciences")}
+ </button>
+</a>
+
+            <ul class="row">
+                      {foreach $groups2 as $_group}
+
+                            {include file='__feeds_Allgroup.tpl' _tpl='box'}
+
+                        {/foreach}
+  </ul>
+
+  
+<a href="{$system['system_url']}/groups/gr3">
+ <button class="btn btn-sm btn-success d-none d-lg-block">
+     <img class="iconspost" src="http://aynettree.test/content/themes/default/images/icons/addgroup.svg">
+{__("Different Languages")}
+ </button></a>
+  <ul class="row">
+                      {foreach $groups3 as $_group}
+
+                            {include file='__feeds_Allgroup.tpl' _tpl='box'}
+
+                        {/foreach}
+
+</ul>
+
+
+
+ <a href="{$system['system_url']}/groups/gr4">
+ <button class="btn btn-sm btn-success d-none d-lg-block">
+     <img class="iconspost" src="http://aynettree.test/content/themes/default/images/icons/addgroup.svg">
+    {__("Media ")}
+ </button></a>
+<ul class="row">
+
+                      {foreach $groups4 as $_group}
+
+                            {include file='__feeds_Allgroup.tpl' _tpl='box'}
+
+                        {/foreach}
+
+</ul>
+
+
+
+  <a href="{$system['system_url']}/groups/gr5">
+ <button class="btn btn-sm btn-success d-none d-lg-block">
+     <img class="iconspost" src="http://aynettree.test/content/themes/default/images/icons/addgroup.svg">
+    {__("Technology")}
+ </button></a>
+<ul class="row">
+
+                      {foreach $groups5 as $_group}
+
+                            {include file='__feeds_Allgroup.tpl' _tpl='box'}
+
+                        {/foreach}  
+
+</ul>                      
+                    <!-- see-more -->
+                    {if count($groups) >= $system['max_results_even']}
+                        <div class="alert alert-post see-more js_see-more" data-get="{$get}" data-uid="{$user->_data['user_id']}">
+                            <span>{__("See More")}</span>
+                            <div class="loader loader_small x-hidden"></div>
+                        </div>
+                    {/if}
+                    <!-- see-more -->
+                {else}
+                    <p class="text-center text-muted">
+                        {__("No Panels to show")} 
+                    </p>
+                {/if}
+
+
+
+            </div>
+
+          
+          
+
+
+
+
+
+
+
 
             {else}
             <!-- content -->

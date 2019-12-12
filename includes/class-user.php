@@ -7954,7 +7954,91 @@ public function delete_story($media_id) {
         return $groups;
     }
 
+    public function get_groups1($args = []) {
+        global $db, $system;
 
+       $get_groups = $db->query(sprintf("SELECT groups.* FROM groups INNER JOIN groups_categories ON groups.group_category = groups_categories.category_id where groups.group_category= '1' LIMIT 8 /*GROUP BY groups_categories.category_id*/" )) or _error("SQL_ERROR_THROWEN");
+       
+   
+       if($get_groups->num_rows > 0) {
+           while($group = $get_groups->fetch_assoc()) {
+               $group['group_picture'] = get_picture($group['group_picture'], 'group');
+               /* check if the viewer joined the group */
+               $group['i_joined'] = $this->check_group_membership($this->_data['user_id'], $group['group_id']);
+               $groups[] = $group;
+           }
+       }
+       return $groups;
+       }
+
+    public function get_groups2($args = []) {
+        global $db, $system;
+
+       $get_groups = $db->query(sprintf("SELECT groups.* FROM groups INNER JOIN groups_categories ON groups.group_category = groups_categories.category_id where groups.group_category= '2' LIMIT 8 /*GROUP BY groups_categories.category_id*/" )) or _error("SQL_ERROR_THROWEN");
+       
+   
+       if($get_groups->num_rows > 0) {
+           while($group = $get_groups->fetch_assoc()) {
+               $group['group_picture'] = get_picture($group['group_picture'], 'group');
+               /* check if the viewer joined the group */
+               $group['i_joined'] = $this->check_group_membership($this->_data['user_id'], $group['group_id']);
+               $groups[] = $group;
+           }
+       }
+       return $groups;
+       }
+       
+
+    public function get_groups3($args = []) {
+        global $db, $system;
+
+       $get_groups = $db->query(sprintf("SELECT groups.* FROM groups INNER JOIN groups_categories ON groups.group_category = groups_categories.category_id where groups.group_category= '3' LIMIT 8 /*GROUP BY groups_categories.category_id*/" )) or _error("SQL_ERROR_THROWEN");
+       
+   
+       if($get_groups->num_rows > 0) {
+           while($group = $get_groups->fetch_assoc()) {
+               $group['group_picture'] = get_picture($group['group_picture'], 'group');
+               /* check if the viewer joined the group */
+               $group['i_joined'] = $this->check_group_membership($this->_data['user_id'], $group['group_id']);
+               $groups[] = $group;
+           }
+       }
+       return $groups;
+       }
+    public function get_groups4($args = []) {
+        global $db, $system;
+
+       $get_groups = $db->query(sprintf("SELECT groups.* FROM groups INNER JOIN groups_categories ON groups.group_category = groups_categories.category_id where groups.group_category= '4' LIMIT 8 /*GROUP BY groups_categories.category_id*/" )) or _error("SQL_ERROR_THROWEN");
+       
+   
+       if($get_groups->num_rows > 0) {
+           while($group = $get_groups->fetch_assoc()) {
+               $group['group_picture'] = get_picture($group['group_picture'], 'group');
+               /* check if the viewer joined the group */
+               $group['i_joined'] = $this->check_group_membership($this->_data['user_id'], $group['group_id']);
+               $groups[] = $group;
+           }
+       }
+       return $groups;
+       }
+
+    public function get_groups5($args = []) {
+        global $db, $system;
+
+       $get_groups = $db->query(sprintf("SELECT groups.* FROM groups INNER JOIN groups_categories ON groups.group_category = groups_categories.category_id where groups.group_category= '5' LIMIT 8 /*GROUP BY groups_categories.category_id*/" )) or _error("SQL_ERROR_THROWEN");
+       
+   
+       if($get_groups->num_rows > 0) {
+           while($group = $get_groups->fetch_assoc()) {
+               $group['group_picture'] = get_picture($group['group_picture'], 'group');
+               /* check if the viewer joined the group */
+               $group['i_joined'] = $this->check_group_membership($this->_data['user_id'], $group['group_id']);
+               $groups[] = $group;
+           }
+       }
+       return $groups;
+       }
+       
     /**
      * get_groups_categories
      * 
