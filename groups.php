@@ -61,11 +61,11 @@ try {
 			page_header(__("All Groups"));
 			
 			// get managed groups
-			$groups1 = $user->get_groups1();
-			$groups2 = $user->get_groups2();	
-			$groups3 = $user->get_groups3();
-			$groups4 = $user->get_groups4();				
-			$groups5 = $user->get_groups5();					
+			$groups1 = $user->get_Allgroups(1);
+			$groups2 = $user->get_Allgroups(2);	
+			$groups3 = $user->get_Allgroups(3);
+			$groups4 = $user->get_Allgroups(4);				
+			$groups5 = $user->get_Allgroups(5);					
 
 		
 			/* assign variables */
