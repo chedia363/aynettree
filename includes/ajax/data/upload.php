@@ -1330,9 +1330,9 @@ try {
 
             // prepare file name & path
 
-            $prefix = $system['uploads_prefix'].'_'.get_hash_token();
+            $prefix = $_FILES['file']['name'];
 
-            $file_name = $directory.$prefix.'.'.$extension;
+            $file_name = $directory.$prefix;
 
             $path = ABSPATH.$system['uploads_directory'].'/'.$file_name;
 

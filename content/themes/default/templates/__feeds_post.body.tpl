@@ -99,11 +99,12 @@
                                 </div>
                             </a>
                         {else}
-                          <!--   <div class="dropdown-item pointer js_edit-post">
-                                <div class="action no-desc">
-                                   <img class="iconspost" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/editpost.svg"> {__("Edit Post")}
-                                </div>
-                            </div> -->
+                           <!-- <div class="dropdown-item pointer js_edit-post">
+                                 <div class="action no-desc">
+                                    <img class="iconspost" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/editpost.svg"> {__("Edit Post")}
+                                 </div>
+                                </div> 
+                            -->
 
                             <a href="{$system['system_url']}/posts/editt/{$_post['post_id']}" class="dropdown-item pointer">
                                 <div class="action no-desc">
@@ -537,12 +538,15 @@
         </audio>
     </div>
 {elseif $_post['post_type'] == "file" && $_post['file']}
+<!--{var_dump($_post['file'])}-->
     <div class="post-downloader">
         <div class="icon">
             <i class="fa fa-file-alt fa-2x"></i>
         </div>
         <div class="info">
-            <strong>{__("File Type")}</strong>: {get_extension({$_post['file']['source']})}
+            <strong>{__("File Type")}</strong>: {get_extension({$_post['file']['source']})} <br/>
+             
+            <strong>{__("File name")}</strong>: {substr($_post['file']['source'],14)}
             <div class="mt10">
                 <a class="btn btn-primary btn-sm" href="{$system['system_uploads']}/{$_post['file']['source']}">{__("Download")}</a>
             </div>
