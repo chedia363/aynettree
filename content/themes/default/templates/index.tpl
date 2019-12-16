@@ -2,29 +2,43 @@
 {include file='_header.tpl'}
 <!-- page content -->
 {if !$user->_logged_in}
-<div class="slider--container">
-    <div class="slider-content">
+     <div class="slider--container">
+    <div class="slider-contentsign">
         <div class="container pt10 offcanvas">
-       		<div class="slider--heading">
-                <h1 class="titleaynat">{__("Welcome To Aaynet")}</h1>
-                <p class="titleaynatt">{__("Learn about the benefits of joining aaynet.")}</p>
+            <div class="slider--heading">
+                <div class="cardd">
+                    <div class="row">
+                        <div class="col-lg-12 mx-md-auto">
+                         <div class="card-homeloginayat">
+                            <h1 class="titleaynat">{__("Welcome to the Quranic communication network")}</h1>
+                            <h1 class="titleaynat">{__("(Aaynet)")}</h1>
+                <p class="titleaynatt">{__("Learn about the benefits of joining our network")}</p>
                 <div class="title-icons text-justify">
-                    <img class="iconsblanc" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/groupsblancc.svg"> <span>{__("Specialit Panels")} </span><br> <br>
-                    <img class="iconsblanc" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/dailysession.svg"> <span>{__("Daily sessions")} </span><br> <br>
-                    <img class="iconsblanc" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/membersblanc.svg"> <span>{__("Scholars and Skilled Specialists")} </span>
+                    <img class="iconspost" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/groups.svg"> <span class="hometi">{__("Specialit Panels")} </span><br> <br>
+                    <img class="iconspost" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/story.svg"> <span class="hometi">{__("Daily sessions")} </span><br> <br>
+                    <img class="iconspost" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/addfriend.svg"> <span class="hometi">{__("Scholars and Skilled Specialists")} </span>
                 </div>
                 <div class="visitor-btn">
-                    <a href="{$system['system_url']}/signin" class="btn btn-defaultv">    <img class="iconsblanc" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/signin.svg">  {__("Sign In")}</a>
+                    <a href="{$system['system_url']}/signin" class="btn btn-defaultv">    <img class="iconspetit" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/signin.svg">  {__("Sign In")}</a>
                 </div>
                 <div class="visitor-btn">
-                    <a href="{$system['system_url']}/signup" class="btn btn-defaultv">  <img class="iconsblanc" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/signup.svg">  {__("Sign Up")}</a>
+                    <a href="{$system['system_url']}/signup" class="btn btn-defaultv">  <img class="iconspetit" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/signup.svg">  {__("Sign Up")}</a>
                 </div>
                  <div class="visitor-btnn">
-                    <a href="{$system['system_url']}/directory/posts" class="btn btn-defaultvisitor">  <img class="iconsblanc"  src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/visitor.svg">  {__("Visitor")}</a>
+                    <a href="{$system['system_url']}/explorer/posts" class="btn btn-defaultvisitor">  <img class="iconspetit"  src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/visitor.svg">  {__("Visitor")}</a>
                 </div>
-		    </div>
+                </div>
+
+                     <div class="col-sm-12 text-center" style="" >
+                        <div class="row footer">
+                             <span class="footerinfoayat" style="color: #035d03;font-weight: bold;">
+                             {__("Sponsored by :<br>His Royal Highness Prince Meteb Bin Abdulaziz Al Saud and his sons")}</span></div>
+                        </div>
+                    </div>
+                </div>
+             </div>
         </div>
-      
+    </div>
      </div>
     <img class="slider--image" src="{$system['system_url']}/content/themes/{$system['theme']}/images/gaynet.jpg" alt="winter-01" />
     <img class="slider--image" src="{$system['system_url']}/content/themes/{$system['theme']}/images/gaynet1.jpg" alt="winter-02" />
@@ -38,71 +52,7 @@
             <!-- side panel -->
             <div class="col-md-4 col-lg-3 offcanvas-sidebar js_sticky-sidebar">
                 {include file='_sidebar.tpl'}
-                <!-- addcardsection -->
-               <!-- <div class="card">
-                    <div class="card-body with-nav">
-                        <ul class="side-nav">
-                            <li {if $page== "groups"}class="active"{/if}>
-                                <a href="{$system['system_url']}">
-                                    {__("Shortcuts")}
-                                </a>
-                                <div>
-                                <ul>
-                                    <li>
-                                        <a href="{$system['system_url']}">
-                                            {__("Your reply today")}
-                                        </a>
-                                    </li>
-                                </ul>
-                                </div>
-                            </li>
-                        </ul>
-                        <div class="card cardAyQur">
-                         <p class="text-justify">{__("وَتَرَى ٱلشَّمْسَ إِذَا طَلَعَت تَّزَٰوَرُ عَن كَهْفِهِمْ ذَاتَ ٱلْيَمِينِ وَإِذَا غَرَبَت تَّقْرِضُهُمْ ذَاتَ ٱلشِّمَالِ وَهُمْ فِى فَجْوَةٍۢ مِّنْهُ ۚ ذَٰلِكَ مِنْ ءَايَٰتِ ٱللَّهِ ۗ مَن يَهْدِ ٱللَّهُ فَهُوَ ٱلْمُهْتَدِ ۖ وَمَن يُضْلِلْ فَلَن تَجِدَ لَهُۥ وَلِيًّۭا مُّرْشِدًۭا")} </p>
-                         
-                        </div>
-                         <ul class="side-nav">
-                            <div>
-                                <ul>
-                                    <li>
-                                        <a href="{$system['system_url']}">
-                                          <i class="fa fa-genderless" aria-hidden="true"></i>
-                                            {__("Meanings of words")}
-                                        </a>
-                                    </li>
-                                     <li>
-                                        <a href="{$system['system_url']}">
-                                          <i class="fa fa-genderless" aria-hidden="true"></i>
-                                            {__("Causes of descent")}
-                                        </a>
-                                    </li>
-                                     <li>
-                                        <a href="{$system['system_url']}">
-                                          <i class="fa fa-genderless" aria-hidden="true"></i>
-                                            {__("Stories of the Holy Quran")}
-                                        </a>
-                                    </li>
-                                    <li>
-                                      
-                                        <a href="{$system['system_url']}">
-                                          <i class="fa fa-genderless" aria-hidden="true"></i>
-                                            {__("Latest boards")}
-                                        </a>
-                                    </li>
-                                     <li>
-                                        <a href="{$system['system_url']}">
-                                          <i class="fa fa-genderless" aria-hidden="true"></i>
-                                            {__("The most interactive councils")}
-
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </ul>
-
-                    </div>
-                <!-- </div> -->
-                  <!-- addcardsection -->
+               
             </div>
             <!-- side panel -->
 
@@ -124,7 +74,8 @@
                                     <div class="card-header bg-transparent border-bottom-0">
                                         <strong class="text-muted">{__("Stories")}</strong>
                                         <div class="d-none d-sm-block text-muted pointer float-right">
-                                            <i class="fa fa-info-circle" data-toggle="tooltip" data-placement="top" title='{__("Stories are photos and videos that only last 24 hours")}'></i>
+                                             <img class="iconspost" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/information.svg" data-toggle="tooltip" data-placement="top" title='{__("Stories are photos and videos that only last 24 hours")}'>
+                                            <!-- <i class="fa fa-info-circle" data-toggle="tooltip" data-placement="top" title='{__("Stories are photos and videos that only last 24 hours")}'></i> -->
                                         </div>
                                     </div>
                                     <div class="card-body pt5 stories-wrapper">
@@ -133,7 +84,7 @@
                                                 <div class="img" style="background-image:url({$user->_data['user_picture']});">
                                                 </div>
                                                 <div class="add">
-                                                    <i class="fa fa-plus-circle"></i>
+                                                <i class="fa fa-plus-circle" style="color:#29b6ac"></i>
                                                 </div>
                                             </div>
                                         </div>
@@ -142,11 +93,9 @@
                             {/if}
                             <!-- stories -->
 
-                            <!-- publisher -->
-                          
-                            <div class="publisher" style="display: none;"> </div>
-                            <!-- publisher -->
-
+                        <!-- publisher -->
+                        {include file='_publisher_profile.tpl' _handle="me" _privacy=true}
+                        <!-- publisher -->
                             <!-- boosted post -->
                             {if $boosted_post}
                                 {include file='_boosted_post.tpl' post=$boosted_post}
@@ -310,7 +259,8 @@
                         {if $trending_hashtags}
                             <div class="card bg-gradient-red border-0">
                                 <div class="card-header pt20 pb10 bg-transparent border-bottom-0">
-                                    <h6 class="mb0"><i class="fa fa-fire mr5"></i> {__("Trending")}</h6>
+                                <h6 class="mb0"> <img class="iconspost" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/trend.png"> {__("Trending")}</h6>
+                               
                                 </div>
                                 <div class="card-body pt0">
                                     {foreach $trending_hashtags as $hashtag}
@@ -415,7 +365,7 @@
                          {if $system['invitation_widget_enabled']}
                             <div class="card">
                                 <div class="card-header bg-transparent">
-                                     <img class="iconsfriend" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/friend.svg" class="mr5"> {__("Invite Your Friends")}
+                                     <img class="iconspost" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/friendpub.svg" class="mr5"> {__("Invite Your Friends")}
                                 </div>
                                 <div class="card-body with-form">
                                     <form class="js_ajax-forms" data-url="users/invitation.php">
@@ -423,8 +373,8 @@
                                             <div class="input-group">
                                                 <input type="text" class="form-control" name="email" placeholder='{__("Email")}'>
                                                 <div class="input-group-append">
-                                                    <button type="submit" name="submit" class="btn btn-primary plr20"><i class="fas fa-paper-plane"></i></button>
-                                                </div>
+                                                        <button type="submit" name="submit" class="btn btn-primary plr20"><img class="iconspetit" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/sendbl.svg"></button>
+                                                    </div>
                                             </div>
                                         </div>
 
@@ -440,18 +390,19 @@
                             </div>
                         {/if}
                         <!-- invitation widget -->
-
-                        <!-- mini footer -->
-                        {if count($user->_data['new_people']) > 0 || count($new_pages) > 0 || count($new_groups) > 0 || count($new_events) > 0}
-                            <div class="mtb20 plr10 d-none d-sm-block">
-                                <div class="col-12 mb5">
-                                  <div class="row footer1 {if $page == 'index' && !$user->_logged_in}border-top-0{/if}">
-	     <div class="col-sm-12 text-center" style="" ><span style="color: #035d03;font-weight: bold;">{__("Sponsored by :<br>His Royal Highness Prince Meteb Bin Abdulaziz Al Saud and his sons")}</span></div>
+<!-- mini footer -->
+{if count($user->_data['new_people']) > 0 || count($new_pages) > 0 || count($new_groups) > 0 || count($new_events) > 0}
+                            <div class="card d-none d-sm-block">
+                                <div class="card-body with-form">
+                                  <div class="row  {if $page == 'index' && !$user->_logged_in}border-top-0{/if}">
+	     <div class="col-sm-12 text-center" style="" >
+         <span style="color: #035d03;font-weight: bold;">
+         {__("Sponsored by :<br>His Royal Highness Prince Meteb Bin Abdulaziz Al Saud and his sons")}</span></div>
 
 
 
 </div>
-	<div class="row footer2">
+	<div class="row">
         <div class="col-sm-12 text-center">
     
            	<!-- { if count($static_pages) > 0 } 
@@ -515,11 +466,11 @@
 				<a href="https://docs.google.com/forms/d/e/1FAIpQLSfw6Ct-qiKVXFsSpLD_v2mHnVgtHc37ig6-vn2I5fhvmwCoDg/viewform" target="_blank" >
 					{__("Volunteers")}
 				</a>
-				|
+				<!--|
 				<a href="https://docs.google.com/forms/d/e/1FAIpQLSfUpCxOqXw4AqRPFGQ6CtKaNLWNsVnrtAu3m0ccoXfylvVu6w/viewform" target="_blank" >
 					{__("Careers")}
 				</a>
-				
+            -->
 
 
 			{elseif $system['language']['code']=='ar_sa'}
@@ -550,11 +501,11 @@
 				<a href="https://docs.google.com/forms/d/e/1FAIpQLSfw6Ct-qiKVXFsSpLD_v2mHnVgtHc37ig6-vn2I5fhvmwCoDg/viewform" target="_blank" >
 					{__("Volunteers")}
 				</a>
-				|
+				<!--|
 				<a href="https://docs.google.com/forms/d/e/1FAIpQLSfUpCxOqXw4AqRPFGQ6CtKaNLWNsVnrtAu3m0ccoXfylvVu6w/viewform" target="_blank" >
 					{__("Careers")}
 				</a>
-				
+            -->
 				
 			{/if}
 
@@ -562,7 +513,7 @@
 			
 <br/>
 <hr/>
-		<span style="color: #7f838a;font-weight: bold;"> &copy; 2020 {__("Aaynet")} · </span>
+		<span style="color: #7f838a;font-weight: bold;font-size: 13px;"> &copy; 2020 {__("aaynet")} - {__("Nonprofit network")}  </span>
 		</div>
 		
 		

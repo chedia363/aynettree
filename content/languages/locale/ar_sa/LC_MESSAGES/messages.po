@@ -7326,7 +7326,7 @@ msgid "Specialized councils"
 msgstr "مجالس متخصصة"
 
 msgid "Daily sessions"
-msgstr "جلسات يومية"
+msgstr "ترانيم يومية"
 
 msgid "Quran Society"
 msgstr "مجتمع القرآن"
@@ -7906,3 +7906,14 @@ msgstr "المجالس المتخصصة"
 
 msgid "Open Panels"
 msgstr "المجلس المفتوح"
+
+
+
+msgid "Welcome to the Quranic communication network"
+msgstr "مرحبا بك في شبكة التواصل القرآنية"
+
+msgid "(Aaynet)"
+msgstr "( آي نت )"
+
+msgid "Learn about the benefits of joining our network"
+msgstr "تعرف على مزايا الانضمام إلى شبكتنا"
