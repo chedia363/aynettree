@@ -1627,7 +1627,7 @@ msgid "Red block message will appear to make user disable adblock from his brows
 msgstr "من متصفحه adblock سوف تظهر رسالة كتلة حمراء لجعل المستخدم تعطيل"
 
 msgid "Stories"
-msgstr "الترانيم"
+msgstr "ترانيم"
 
 msgid "Turn the stories On and Off"
 msgstr "تمكين وتعطيل الترانيم"
@@ -3406,7 +3406,7 @@ msgid "Timeline"
 msgstr "السجل"
 
 msgid "Create New Story"
-msgstr "إضافة جلسة جديدة"
+msgstr "إضافة ترنم جديد"
 
 msgid "Videos"
 msgstr "المقاطع"
@@ -7326,7 +7326,7 @@ msgid "Specialized councils"
 msgstr "مجالس متخصصة"
 
 msgid "Daily sessions"
-msgstr "ترانيم يومية"
+msgstr "جلسات يومية"
 
 msgid "Quran Society"
 msgstr "مجتمع القرآن"
