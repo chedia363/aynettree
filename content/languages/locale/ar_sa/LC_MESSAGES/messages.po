@@ -352,7 +352,7 @@ msgid "Welcome"
 msgstr "مرحباً بحضراتكم"
 
 msgid "Popular Posts"
-msgstr "مشاركات مشهورة"
+msgstr "مشاركات متداولة"
 
 msgid "Discover Posts"
 msgstr "اكتشاف المشاركات"
@@ -3476,7 +3476,7 @@ msgstr "ابحث عن أعضاء ومجالس و#هاشتاج"
 
 
 msgid "News Feed"
-msgstr "آخر الأحداث"
+msgstr "المشاركات"
 
 
 msgid "Communicate with the people who share your interests"
@@ -4973,7 +4973,7 @@ msgid "Pinned Post"
 msgstr "الوظائف المضافة"
 
 msgid "Recent Updates"
-msgstr "التحديثات الأخيرة"
+msgstr "مشاركات حديثة"
 
 msgid "Text"
 msgstr "النص"
@@ -7895,3 +7895,14 @@ msgstr "شبكة غير ربحية"
 
 msgid "You can paste the post in advance format, or reformat the post"
 msgstr "يمكنك لصق المشاركة بتنسيق مسبق، أو إعادة تنسيقها"
+
+
+msgid "Blogging"
+msgstr "التدوين"
+
+
+msgid "Panels "
+msgstr "المجالس المتخصصة"
+
+msgid "Open Panels"
+msgstr "المجلس المفتوح"
