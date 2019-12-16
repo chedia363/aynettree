@@ -7892,3 +7892,6 @@ msgstr "تعليق"
 
 msgid "Nonprofit network"
 msgstr "شبكة غير ربحية"
+
+msgid "You can paste the post in advance format, or reformat the post"
+msgstr "يمكنك لصق المشاركة بتنسيق مسبق، أو إعادة تنسيقها"
