@@ -3406,7 +3406,7 @@ msgid "Timeline"
 msgstr "السجل"
 
 msgid "Create New Story"
-msgstr "إضافة ترنم جديد"
+msgstr "إضافة ترانيم جديدة"
 
 msgid "Videos"
 msgstr "المقاطع"
