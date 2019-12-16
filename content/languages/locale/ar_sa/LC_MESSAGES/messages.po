@@ -73,7 +73,7 @@ msgid "Admins"
 msgstr "مسؤولو المجلس"
 
 msgid "Moderators"
-msgstr "المشرفون"
+msgstr "متخصصون"
 
 msgid "Online"
 msgstr "متصل"
@@ -415,7 +415,7 @@ msgid "Change Password"
 msgstr "تغيير كلمة المرور"
 
 msgid "Manage Sessions"
-msgstr "إدارة الجلسات"
+msgstr "إدارة الترانيم"
 
 msgid "Two steps Authentication " 
 msgstr "توثيق بخطوتين"
@@ -1627,13 +1627,13 @@ msgid "Red block message will appear to make user disable adblock from his brows
 msgstr "من متصفحه adblock سوف تظهر رسالة كتلة حمراء لجعل المستخدم تعطيل"
 
 msgid "Stories"
-msgstr "الجلسات"
+msgstr "الترانيم"
 
 msgid "Turn the stories On and Off"
-msgstr "تمكين وتعطيل الجلسات"
+msgstr "تمكين وتعطيل الترانيم"
 
 msgid "Stories are photos and videos that only last 24 hours"
-msgstr "الجلسات عبارة عن صور ومقاطع فيديو تستمر 24 ساعة فقط"
+msgstr "الترانيم عبارة عن صوتيات ومقاطع فيديو تستمر 24 ساعة فقط"
 
 msgid "Turn the popular posts On and Off"
 msgstr "تمكين وتعطيل المشاركات العامة"
@@ -2653,7 +2653,7 @@ msgid "List Admins"
 msgstr "قائمة المسؤولين"
 
 msgid "List Moderators"
-msgstr "قائمة المشرفين"
+msgstr "قائمة المتخصصين"
 
 msgid "List Online"
 msgstr "إدارة المتصلين"
@@ -2750,7 +2750,7 @@ msgid "Activated"
 msgstr "تم التنشيط"
 
 msgid "No data to show"
-msgstr "لا يوجد نتائج لإظهارها"
+msgstr "لاتوجد نتائج لإظهارها"
 
 msgid "User ID"
 msgstr "هوية المستخدم"
@@ -3097,7 +3097,7 @@ msgid "View"
 msgstr "عرض"
 
 msgid "No campaigns to show"
-msgstr "لا حملات لإظهارها"
+msgstr "لا توجد حملات لإظهارها"
 
 msgid "Your current wallet credit is"
 msgstr "رصيدك الحالي هو"
@@ -3376,7 +3376,7 @@ msgid "More Stories"
 msgstr "شاهد المزيد"
 
 msgid "No posts to show"
-msgstr "لا توجد مشاركات لإظهار"
+msgstr "لا توجد مشاركات لإظهارها"
 
 msgid "Edit Product"
 msgstr "تحرير المنتج"
@@ -3409,7 +3409,7 @@ msgid "Create New Story"
 msgstr "إضافة جلسة جديدة"
 
 msgid "Videos"
-msgstr "الفيديوهات"
+msgstr "المقاطع"
 
 msgid "No reactions yet"
 msgstr "لا ردود فعل حتى الان"
@@ -3546,7 +3546,7 @@ msgid "Back to Albums"
 msgstr "العودة إلى ألبوم"
 
 msgid "doesn't have videos"
-msgstr "لايوجد فيديوهات"
+msgstr "لا تحتوي على مقاطع"
 
 msgid "Invites"
 msgstr "دعوات"
@@ -3793,7 +3793,7 @@ msgid "User Gender"
 msgstr "جنس المستخدم"
 
 msgid "Your Sessions"
-msgstr "جلساتك"
+msgstr "ترانيمك"
 
 msgid "Active Session"
 msgstr "الجلسة النشطة"
@@ -4101,7 +4101,7 @@ msgid "Articles"
 msgstr "المقالات"
 
 msgid "No results to show"
-msgstr "لا يوجد نتائج لإظهار"
+msgstr "لا توجد نتائج لإظهارها"
 
 msgid "My Affiliates"
 msgstr "بلدي المنتسبون"
@@ -4788,7 +4788,7 @@ msgid "There is something that went wrong!"
 msgstr "هناك خطأ ما حدث!"
 
 msgid "There is no more data to show"
-msgstr "لا يوجد نتائج لإظهارها"
+msgstr "لاتوجد نتائج لإظهارها"
 
 msgid "This website uses cookies to ensure you get the best experience on our website"
 msgstr "يستخدم هذا الموقع ملفات تعريف الارتباط لضمان حصولك على أفضل تجربة"
@@ -4997,7 +4997,7 @@ msgid "Add New Article"
 msgstr "مقالة جديدة"
 
 msgid "Video uploaded successfully"
-msgstr "الفيديوهات التي تم تحميلها بنجاح"
+msgstr "المقاطع التي تم تحميلها بنجاح"
 
 msgid "Custom Video Thumbnail"
 msgstr "تخصيص صورة مصغرة للفيديو"
@@ -5219,6 +5219,10 @@ msgstr "الصوتHTML5 المتصفح الخاص بك لا يدعم "
 
 msgid "File Type"
 msgstr "نوع الملف"
+
+
+msgid "File name"
+msgstr "إسم الملف"
 
 msgid "Show Attachments"
 msgstr "إظهار المرفقات"
@@ -7322,7 +7326,7 @@ msgid "Specialized councils"
 msgstr "مجالس متخصصة"
 
 msgid "Daily sessions"
-msgstr "جلسات يومية"
+msgstr "ترانيم يومية"
 
 msgid "Quran Society"
 msgstr "مجتمع القرآن"
@@ -7570,7 +7574,7 @@ msgid "Products"
 msgstr "منتجات"
 
 msgid "What is on your mind? #Hashtag.. @Mention.. Link.."
-msgstr "المجالس المفتوحة لطرح الأفكار والمقترحات والمناقشات العامة"
+msgstr "شارك، اقترح ، ناقش، في المجلس العام"
 
 msgid "Who can see your"
 msgstr "من يمكن ان يرى"
@@ -7738,7 +7742,7 @@ msgid "Attachements"
 msgstr "المرفقات"
 
 msgid "My Stories"
-msgstr "جلساتي"
+msgstr "ترانيمي"
 
 
 msgid "now following you"
