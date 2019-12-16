@@ -1093,6 +1093,31 @@ $(function() {
                 });
             });
         });
+  
+      /* delete story */
+        $('body').on('click', '.js_delete-storyArchiv', function (e) {
+            e.preventDefault();
+            var id = $(this).data('id');
+            confirm(__['Delete Story'], __['Are you sure you want to delete this story?'], function() { 
+                // post.hide();
+                $.post(api['posts/story'], {'do': 'delete_story', 'id': id}, function(response) {
+                    /* check the response */
+                
+    
+                    $('#modal').modal('hide');
+                    if(response.callback) {
+                        eval(response.callback);
+                    }
+                    window.location = site_path + "/archivStories.php";
+    
+                    
+                }, 'json')
+                .fail(function() {
+                    modal('#modal-message', {title: __['Error'], message: __['There is something that went wrong!']});
+                });
+            });
+        });
+        
     /* delete article */
     $('body').on('click', '.js_delete-article', function (e) {
         e.preventDefault();
