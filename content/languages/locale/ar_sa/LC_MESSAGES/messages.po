@@ -7920,3 +7920,7 @@ msgstr "تعرف على مزايا الانضمام إلى شبكتنا"
 
 msgid "Archived Story"
 msgstr "ترانيمي المؤرشفة"
+
+
+msgid "My Archived Stories"
+msgstr "ترانيمي المؤرشفة"

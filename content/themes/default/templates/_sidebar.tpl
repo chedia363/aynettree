@@ -52,7 +52,12 @@
                                    {__("Stories")}
                                </a>
                             </li>                           
-
+                            <li {if $page== "archivStories"}class="active"{/if}>
+                               <a href="{$system['system_url']}/archivStories">
+                                   <img  src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/story.svg" class="iconspost">
+                                   {__("Archived Story")}
+                               </a>
+                            </li>  
                         </ul>
                     </div>  
             </li>
@@ -86,7 +91,8 @@
 
                             <li {if $page== "index" && $view == "saved"}class="active"{/if}>
                               <a href="{$system['system_url']}/saved">
-                                  <img src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/particip.svg">
+                                  <!-- <img src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/particip.svg">
+                                 -->
                                   {__("Saved Posts")}
                               </a>
                             </li>

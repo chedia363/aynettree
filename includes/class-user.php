@@ -3422,7 +3422,36 @@ class User {
 
       /* End get My stories */
 
-
+    public function get_Archivstorieuser() {
+        global $db, $system, $smarty;
+        $stories = [];
+        
+ 
+        $friends_list = $this->_data['user_id'];
+        // var_dump($this->_data['user_id']);
+        $get_stories1 = $db->query("SELECT stories.*, users.user_id, users.user_name, users.user_firstname, users.user_lastname, users.user_gender, users.user_picture FROM stories INNER JOIN users ON stories.user_id = users.user_id WHERE stories.user_id IN ($friends_list) ORDER BY stories.story_id DESC") or _error("SQL_ERROR_THROWEN");
+        if($get_stories1->num_rows > 0) {
+            while($_story = $get_stories1->fetch_assoc()) {
+                $story['id'] = $_story['story_id'];
+                $story['photo'] = get_picture($_story['user_picture'], $_story['user_gender']);
+                $story['name'] = $_story['user_firstname']." ".$_story['user_lastname'];
+                $story['lastUpdated'] = strtotime($_story['time']);
+                $story['items'] = [];
+                /* get story media items */
+                $get_stories = $db->query(sprintf("SELECT * FROM stories_media WHERE story_id = %s", secure($_story['story_id'], 'int') )) or _error("SQL_ERROR_THROWEN");
+                while($media_item = $get_stories->fetch_assoc()) {
+                    $stories[] = $media_item;
+                }
+              
+            }
+        }
+        // if($get_stories->num_rows > 0) {
+        //     while($currency = $get_stories->fetch_assoc()) {
+        //         $stories[] = $currency;
+        //     }
+        // }
+        return $stories;
+    }
 
 
    /*Begin get All stories */
