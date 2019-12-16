@@ -7731,11 +7731,11 @@ msgstr "أدخل نص مع الخلفية"
 
 
 msgid "story Image"
-msgstr "صورة الجلسة"
+msgstr "محتوى الترنيمة"
 
 
 msgid "story Message"
-msgstr "رسالة الجلسة"
+msgstr "رسالة الترنيمة"
 
 
 msgid "Attachements"
@@ -7749,11 +7749,11 @@ msgid "now following you"
 msgstr "قام بمتابعتك"
 
 msgid "Are you sure you want to delete this story?"
-msgstr "هل أنت متأكد من رغبتك في حذف الجلسة؟"
+msgstr "هل أنت متأكد من رغبتك في حذف  الترنيمة؟"
 
 
 msgid "Delete Story"
-msgstr "حذف الجلسة"
+msgstr "حذف الترنيمة"
 
 
 msgid "video"
@@ -7917,3 +7917,6 @@ msgstr "( آي نت )"
 
 msgid "Learn about the benefits of joining our network"
 msgstr "تعرف على مزايا الانضمام إلى شبكتنا"
+
+msgid "Archived Story"
+msgstr "ترانيمي المؤرشفة"
