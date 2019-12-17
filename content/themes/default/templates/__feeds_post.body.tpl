@@ -546,7 +546,7 @@
         <div class="info">
             <strong>{__("File Type")}</strong>: {get_extension({$_post['file']['source']})} <br/>
              
-            <strong>{__("File name")}</strong>: {substr($_post['file']['source'],14)}
+            <strong>{__("File name")}</strong>: {substr($_post['file']['source'],46)}
             <div class="mt10">
                 <a class="btn btn-primary btn-sm" href="{$system['system_uploads']}/{$_post['file']['source']}">{__("Download")}</a>
             </div>
