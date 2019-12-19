@@ -6,19 +6,11 @@
 
          
 
-                   <a href="#profile" data-toggle="collapse" aria-expanded="false">
+                   <a href="{$system['system_url']}/{$user->_data['user_name']}">
                         <img class="rounded-circle" src="{$user->_data.user_picture}" alt="{$user->_data['user_firstname']} {$user->_data['user_lastname']}">
                         <span style="color: #29b6ac;">{$user->_data['user_firstname']} {$user->_data['user_lastname']}</span>
                     </a>
-                    <div class='collapse hide' id="profile">
-                        <ul>
-                            <li class="active">
-                                <a href="{$system['system_url']}/{$user->_data['user_name']}">
-                                   {__("Profile")}
-                                </a>
-                            </li>
-                        </ul>
-                    </div>  
+                
             </li>
 
 
@@ -29,7 +21,7 @@
          
 
                    <a href="#Blogging" data-toggle="collapse" aria-expanded="false">
-                        <img class="rounded-circle" src="{$user->_data.user_picture}" alt="{$user->_data['user_firstname']} {$user->_data['user_lastname']}">
+                    <img src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/blogs.svg">
                         <span style="color: #29b6ac;">  {__("Blogging")}</span>
                     </a>
                     <div class='collapse hide' id="Blogging">
@@ -40,24 +32,19 @@
                                   {__("Panels ")}
                               </a>
                             </li>
-                            <li>
+                            <!--<li>
                               <a href="{$system['system_url']}">
-                                  <img src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/groups.svg">
+                                  <img src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/opengroup.svg">
                                   {__("Open Panels")}
                               </a>
-                            </li>
+                            </li>-->
                             <li {if $page== "Stories"}class="active"{/if}>
                                <a href="{$system['system_url']}/stories.php">
-                                   <img  src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/story.svg" class="iconspost">
+                                   <img  src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/taranim.svg" class="iconspost">
                                    {__("Stories")}
                                </a>
                             </li>                           
-                            <li {if $page== "archivStories"}class="active"{/if}>
-                               <a href="{$system['system_url']}/archivStories">
-                                   <img  src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/story.svg" class="iconspost">
-                                   {__("Archived Story")}
-                               </a>
-                            </li>  
+
                         </ul>
                     </div>  
             </li>
@@ -312,7 +299,7 @@
             <!-- explore -->
             <li>
               <a href="{$system['system_url']}/signout"> 
-                 <img src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/signout.svg">
+                 <img src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/signoutvert.svg">
                  {__("Log Out")}
                </a>
             </li>
