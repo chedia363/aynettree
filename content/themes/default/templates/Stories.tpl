@@ -15,10 +15,22 @@
         <!-- content panel -->
         <div class="col-md-8 col-lg-9 offcanvas-mainbar">
 
-<div class="card">
-    <div class="card-header with-icon">
-         <img  src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/story.svg" class="iconspost">
-         {__("My Stories")}
+    <div class="card">
+       <div class="card-header with-icon">
+            <a href="{$system['system_url']}">
+             <img  src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/taranim.svg" class="iconspost">
+             {__("My Stories")}
+            </a>
+
+
+
+         <div class="float-right">
+            <a href="{$system['system_url']}/archivStories">
+                  <img  src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/taranim.svg" class="iconspost">
+                  {__("Archived Story")}
+            </a>
+
+         </div>
         {if $view == "edit"}
             <div class="float-right">
                 <a href="{$system['system_url']}/stories.php" class="btn btn-sm btn-light">
@@ -39,7 +51,7 @@
                         
                        
                             <th>{__("story Image")}</th>
-                            <th>{__("story Message")}</th>
+                        
                             <th>{__("Time")}</th>
                             <th>{__("Actions")}</th>
                         </tr>
@@ -48,23 +60,25 @@
                         {foreach $rows as $row}
                             <tr>
                                
-                                {if $row['source']=="photos/1.png"}
-                                <td>{__("No Image or Video")}</td>
-                                {else}
-                                <td><img class="tbl-imageStry1" src="{$system['system_uploads']}/{$row['source']}"></td>
-                                {/if}
-                                {if $row['text']==""}
-                                <td>{__("No Message for this story")}</td>
-                                {else}
-                                <td>{$row['text']}</td>
-                                {/if}
+                             
+                                <td>
+                                    
+                                    
+                                        <video class="js_fluidplayer" style="width: 250px; "controls>
+                                            <source src="{$system['system_uploads']}/{$row['source']}" type="video/webm">
+                                            </video>
+                                    </td>
+                               
+                               
                                 
-                                <td>{$row['time']}</td>
+                                <td> 
+                                    <span class="js_moment" data-time="{$row['time']}">{$row['time']}</span>
+                               </td>
                               
                                 <td>
                                   
 
-                                    <a  href="{$system['system_url']}/stories.php/edit/{$row['media_id']}" class="btn btn-sm btn-icon btn-rounded btn-primary">
+                                    <a  href="#" class="btn btn-sm btn-icon btn-rounded btn-primary">
                                              <i class="fa fa-pencil-alt"></i> 
                                     </a>
 
@@ -92,5 +106,6 @@
 
 
 
+    </div>
 </div>
 {include file='_footer.tpl'}

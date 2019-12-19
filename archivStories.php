@@ -30,7 +30,7 @@ try {
 
 		
 
-
+  
 		// 	$rows = $user->get_Stories($_GET['post_id']);
 		// 	if(!$rows)  {
 		// 		// _error(404);
@@ -38,16 +38,16 @@ try {
 		// 	}
 		// 	/* assign variables */
 		// 	$smarty->assign('rows', $rows);
+		// // 	break;
+		// 	// /* valid inputs */
+		// 	// if(!isset($_GET['media_id']) || !is_numeric($_GET['media_id'])) {
+		// 	// 	_error(400);
+		// 	// }
+		// 	// /* update */
+		// 	// $db->query(sprintf("UPDATE stories SET time = %s WHERE media_id = %s", secure($_POST['time'],NOW()), secure($_GET['id'], 'int') )) or _error("SQL_ERROR_THROWEN");
+		// 	// /* return */
+		// 	// return_json( array('success' => true, 'message' => __("stories info have been updated")) );
 		// 	break;
-			// /* valid inputs */
-			// if(!isset($_GET['media_id']) || !is_numeric($_GET['media_id'])) {
-			// 	_error(400);
-			// }
-			// /* update */
-			// $db->query(sprintf("UPDATE stories SET time = %s WHERE media_id = %s", secure($_POST['time'],NOW()), secure($_GET['id'], 'int') )) or _error("SQL_ERROR_THROWEN");
-			// /* return */
-			// return_json( array('success' => true, 'message' => __("stories info have been updated")) );
-			// break;
 		default:
 			_error(404);
 			break;

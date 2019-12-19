@@ -17,7 +17,7 @@
 
 <div class="card">
     <div class="card-header with-icon">
-         <img  src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/story.svg" class="iconspost">
+         <img  src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/taranim.svg" class="iconspost">
          {__("My Archived Stories")}
         {if $view == "edit"}
             <div class="float-right">
@@ -26,39 +26,44 @@
                 </a>
             </div>
         {/if}
-       
+          
     </div>
 
     {if $view == ""}
 
         <div class="card-body">
             <div class="table-responsive">
-                <table class="table table-striped table-bordered table-hover js_dataTable">
+                 
+                   <table class="table table-striped table-bordered table-hover js_dataTable">
                     <thead>
                         <tr>
                         
                        
                             <th>{__("story Image")}</th>
-                            <!--<th>{__("story Message")}</th>-->
+                        
                             <th>{__("Time")}</th>
+
                             <th>{__("Actions")}</th>
                         </tr>
                     </thead>
-                    <tbody>
+                     {if $rows}
+                    <tbody class="publisher-mini">
+                 
                         {foreach $rows as $row}
                             <tr>
-                               
-                                {if $row['source']=="photos/1.png"}
-                                <td>{__("No Image or Video")}</td>
-                                {else}
-                                <td><img class="tbl-imageStry1" src="{$system['system_uploads']}/{$row['source']}"></td>
-                                {/if}
                                 
-                               <!-- {if $row['text']==""}
-                                <td>{__("No Message for this story")}</td>
-                                {else}
-                                <td>{$row['text']}</td>
-                                {/if} -->
+                                <td>
+                                                                  
+                                 <video class="js_fluidplayer" style="width: 250px; "controls>
+                                     <source src="{$system['system_uploads']}/{$row['source']}" type="video/webm">
+                                 </video>
+
+                                </td>
+                               
+                               
+
+
+                               
                                 
                                 <td>{$row['time']}</td>
                               
@@ -72,21 +77,34 @@
                                     <!-- <a  href="{$system['system_url']}/stories1.php/delete/{$row['media_id']}" class="btn btn-sm btn-icon btn-rounded btn-primary">
                                              <i class="fa fa-trash-alt"></i>
                                     </a> -->
-                                    
+                                   <button type="button" class="btn btn-primary js_publisher-story2" data-id="{$row['media_id']}">{__("Publish")}</button>
+
+                                  
+
                                     <button data-toggle="tooltip" data-placement="top" title='{__("Delete")}' class="btn btn-sm btn-icon btn-rounded btn-danger js_delete-storyArchiv" data-handle="ArchivStories" data-id="{$row['media_id']}">
                                         <i class="fa fa-trash-alt"></i>
                                     </button>
                                 </td>
                             </tr>
+                            
                         {/foreach}
+
+
                     </tbody>
+                {else}
+                    <p class="text-center text-muted">
+                        {__("No Archived Stories to show")} 
+                    </p>
+                {/if}
+                   
                 </table>
+
             </div>
         </div>
 
-   {elseif $view == "edit"}
+    {elseif $view == "edit"}
 
-        cc
+        cc 
 
     {/if}
 

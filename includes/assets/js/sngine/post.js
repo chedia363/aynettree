@@ -712,6 +712,83 @@ $(function() {
             modal('#modal-message', {title: __['Error'], message: __['There is something that went wrong!']});
         });
     });
+
+
+   /* publish new story */
+    // $('body').on('click', '.js_publisher-story2', function() {
+    //     var _this = $(this);
+    //     /* get publisher */
+    //     // var publisher = _this.parents('.publisher-mini');
+    //     // /* get text */
+    //     // var textarea = publisher.find('textarea');
+    //     // /* get photos */
+    //     // var photos = publisher.data('photos');
+    //     // /* get videos */
+    //     // var videos = publisher.data('video');
+
+    //     // var photos = $("input[name='src']").val();
+    //     // /* return if no data to post */
+    //     // if(photos === undefined && videos === undefined) {
+    //     //     if(color=='1'){
+    //     //   photos={"photos/1.png":"photos/1.png"};
+    //     //  //alert(color);
+    //     //     }
+    //     //     if(color=='2'){
+    //     //         photos={"photos/2.png":"photos/2.png"};
+    //     //        //alert(color);
+    //     //           }
+    //     //           if(color=='3'){
+    //     //             photos={"photos/3.png":"photos/3.png"};
+    //     //            //alert(color);
+    //     //               }
+    //     //               if(color=='4'){
+    //     //                 photos={"photos/4.png":"photos/4.png"};
+    //     //                //alert(color);
+    //     //                   } 
+    //     // }
+    //     /* button loading */
+    //     button_status(_this, "loading");
+    //     $.post(api['posts/story'], {'do': 'publish1'}, function(response) {
+    //         if(response.callback) {
+    //             /* button reset */
+    //             button_status(_this, "reset");
+    //             eval(response.callback);
+    //            // alert(JSON.stringify(photos));
+    //         }
+    //     }, "json")
+    //     .fail(function() {
+    //         /* button reset */
+    //         button_status(_this, "reset");
+    //         modal('#modal-message', {title: __['Error'], message: __['There is something that went wrong!']});
+    //     });
+    // });
+
+    $('body').on('click', '.js_publisher-story2', function (e) {
+        e.preventDefault();
+        var id = $(this).data('id');
+        confirm(__['Update Story'], __['Are you sure you want to update this story?'], function() { 
+            // post.hide();
+            $.post(api['posts/story'], {'do': 'publish1', 'id': id}, function(response) {
+                /* check the response */
+            
+
+                $('#modal').modal('hide');
+                if(response.callback) {
+                    eval(response.callback);
+                }
+                window.location = site_path + "/archivStories.php";
+
+                
+            }, 'json')
+            .fail(function() {
+                modal('#modal-message', {title: __['Error'], message: __['There is something that went wrong!']});
+            });
+        });
+    });
+
+
+
+    
     /* publish new product */
     $('body').on('click', '.js_publisher-product', function() {
         var _this = $(this);

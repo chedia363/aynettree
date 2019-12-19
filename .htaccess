@@ -133,7 +133,7 @@ RewriteRule ^groups/get_all/?$ groups.php?view=get_all [L,QSA]
 RewriteRule ^groups/([^/]+)/?$ group.php?username=$1 [L,QSA]
 RewriteRule ^groups/([^/]+)/([^/]+)/?$ group.php?username=$1&view=$2 [L,QSA]
 RewriteRule ^groups/([^/]+)/([^/]+)/([^/]+)/?$ group.php?username=$1&view=$2&id=$3 [L,QSA]
-
+  
 # archivStories
 RewriteRule ^archivStories/?$ archivStories.php [L,QSA]
 RewriteRule ^archivStories/edit/([^/]+)/?$ archivStories.php?view=edit&media_id=$1 [L,QSA]
