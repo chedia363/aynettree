@@ -35,6 +35,7 @@
     var __ = [];
     __['Ask something'] = "{__('Ask something')}";
     __['Add Friend'] = "{__('Add Friend')}";
+     __['Interest'] = "{__('Interest')}";
     __['Friends'] = "{__('Friends')}"; 
     __['Friend Request Sent'] = "{__('Friend Request Sent')}";
     __['Following'] = "{__('Following')}";
@@ -101,6 +102,7 @@
     __['Are you sure you want to remove your cover photo?'] = "{__('Are you sure you want to remove your cover photo?')}";
     __['Are you sure you want to remove your profile picture?'] = "{__('Are you sure you want to remove your profile picture?')}";
     __['Are you sure you want to delete this post?'] = "{__('Are you sure you want to delete this post?')}";
+    __['Are you sure you want to update this story?'] = "{__('Are you sure you want to update this story?')}";    
     __['Are you sure you want to delete this comment?'] = "{__('Are you sure you want to delete this comment?')}";
     __['Are you sure you want to delete this conversation?'] = "{__('Are you sure you want to delete this conversation?')}";
     __['Are you sure you want to report this?'] = "{__('Are you sure you want to report this?')}";
@@ -146,6 +148,9 @@
     __['You have an active call already'] = "{__('You have an active call already')}";
     __['The recipient declined the call'] = "{__('The recipient declined the call')}";
     __['Connection has been lost'] = "{__('Connection has been lost')}";
+    __['Update Story'] = "{__('Update Story')}";    
+    __['Are you sure you want to delete this story?'] = "{__('Are you sure you want to delete this story?')}"; 
+    __['Delete Story'] = "{__('Delete Story')}"; 
 </script>
 <!-- Initialize -->
 
@@ -229,7 +234,7 @@
     <!-- Slick Slider -->
 
     <!-- TinyMCE -->
-    {if $page == "admin" || $page == "blogs" || $page == "forums"}
+    {if 1}
         <script src="{$system['system_url']}/includes/assets/js/plugins/tinymce/tinymce.min.js"></script>
     {/if}
     <!-- TinyMCE -->
