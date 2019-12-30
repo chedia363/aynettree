@@ -4767,7 +4767,7 @@ msgid "Are you sure you want to delete this conversation?"
 msgstr "هل أنت متأكد من حذف المحادثة؟"
 
 msgid "Are you sure you want to report this?"
-msgstr "هل أنت متأكد أنك تريد الإبلاغ عن هذا المستخدم؟"
+msgstr "هل أنت متأكد أنك تريد الإبلاغ عن هذه التدوينة؟"
 
 msgid "Are you sure you want to block this user?"
 msgstr "هل أنت متأكد أنك تريد حظر هذا المستخدم؟"
