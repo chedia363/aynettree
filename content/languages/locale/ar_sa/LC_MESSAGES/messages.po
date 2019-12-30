@@ -3661,10 +3661,10 @@ msgid "Join Us"
 msgstr "انضم إلينا"
 
 msgid "Public Group"
-msgstr "المجلس المفتوح"
+msgstr "عام"
 
 msgid "Closed Group"
-msgstr "المجلس الخاص"
+msgstr "خاص"
 
 msgid "Secret Group"
 msgstr "مجلس سري"
