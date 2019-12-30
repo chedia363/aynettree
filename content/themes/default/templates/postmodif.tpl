@@ -40,7 +40,7 @@
                         </div>
                         <div class="card-footer text-right">
                            
-                            <button type="submit" class="btn btn-primary">{__("Publish")}</button>
+                            <button type="submit" class="btn btn-primary">{__("Edit")}</button>
                         </div>
                     </div>
                 </div>
