@@ -1006,7 +1006,10 @@ msgid "Delete All Posts"
 msgstr "حذف جميع المشاركات"
 
 msgid "Interested"
-msgstr "مهتم بها" 
+msgstr "مهتم" 
+
+msgid "Interest"
+msgstr "إهتمام" 
 
 msgid "Going"
 msgstr "ذاهب إليها"
@@ -3941,20 +3944,20 @@ msgid "Your Photo"
 msgstr "صورة مؤهلك"
 
 msgid "Passport or National ID"
-msgstr "PDF-السيرة الذاتية"
+msgstr "السيرة الذاتية"
 
 msgid "Please attach your photo and your Passport or National ID"
-msgstr "يرجى إرفاق صورتك وجواز السفر أو الهوية الوطنية"
+msgstr "يرجى إرفاق صورة مؤهلك والسيرة الذاتية"
 
 msgid "Please attach the latest qualification you got + file for your CV"
 msgstr "يرجى ارفاق اخر مؤهل حصلت عليه + ملف لسيرتك الذاتية"
 
 
 msgid "Additional Information"
-msgstr "معلومة إضافية"
+msgstr "سيرة مختصرة"
 
 msgid "Please share why your account should be verified"
-msgstr "الرجاء مشاركة سبب ضرورة التحقق من حسابك"
+msgstr "الرجاء كتابة سيرة مختصرة"
 
 msgid "Send Verification Request"
 msgstr "إرسال طلب التحقق"
@@ -4971,9 +4974,6 @@ msgstr "يظهر على جميع الصفحات بعد رأس الصفحة مب�
 
 msgid "Appears on all pages right before the footer"
 msgstr "يظهر على جميع الصفحات قبل التذييل مباشرةً"
-
-msgid "Are you sure you want to update this story?"
-msgstr "هل أنت متأكد من إعادة نشر الترنيمة؟"
 
 msgid "Pinned Post"
 msgstr "الوظائف المضافة"
@@ -7761,6 +7761,8 @@ msgstr "قام بمتابعتك"
 msgid "Are you sure you want to delete this story?"
 msgstr "هل أنت متأكد من رغبتك في حذف  الترنيمة؟"
 
+msgid "Are you sure you want to update this story?"
+msgstr "هل أنت متأكد من إعادة نشر الترنيمة؟"
 
 msgid "Delete Story"
 msgstr "حذف الترنيمة"
@@ -7953,3 +7955,6 @@ msgstr "إلغاء التمييز"
 
 msgid "There are no specialists to display"
 msgstr "لا يوجد متخصصون لعرضهم"
+
+msgid "video & audio"
+msgstr "مقطع صوتي أو مرئي"
