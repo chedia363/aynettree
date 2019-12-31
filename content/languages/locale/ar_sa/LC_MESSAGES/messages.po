@@ -3316,7 +3316,7 @@ msgid "Custom"
 msgstr "مخصص"
 
 msgid "Post"
-msgstr "مشاركة"
+msgstr "تدوين"
 
 msgid "Edit Album"
 msgstr "تعديل الألبوم"
@@ -3754,7 +3754,7 @@ msgid "Pro Pages"
 msgstr "الصفحات المؤيدة"
 
 msgid "Trending"
-msgstr "وسم"
+msgstr "شائع"
 
 msgid "Friend Suggestions"
 msgstr "اقتراحات الأعضاء"
@@ -4767,6 +4767,9 @@ msgid "Are you sure you want to delete this conversation?"
 msgstr "هل أنت متأكد من حذف المحادثة؟"
 
 msgid "Are you sure you want to report this?"
+msgstr "هل أنت متأكد أنك تريد الإبلاغ عن هذا المستخدم؟"
+
+msgid "Are you sure you want to report this Post?"
 msgstr "هل أنت متأكد أنك تريد الإبلاغ عن هذه التدوينة؟"
 
 msgid "Are you sure you want to block this user?"
@@ -5131,13 +5134,13 @@ msgid "Turn off Commenting"
 msgstr "إيقاف المناقشات"
 
 msgid "Unfollow"
-msgstr "إلغاء المتابَعة"
+msgstr "إلغاء متابَعة"
 
 msgid "Stop seeing posts but stay friends"
 msgstr "التوقف عن رؤية المشاركات مع بقاء الصداقة"
 
 msgid "Hide this post"
-msgstr "إخفاء"
+msgstr "إخفاء المشاركة"
 
 msgid "See fewer posts like this"
 msgstr "مشاهدة القليل مثل هذا ال"
@@ -7958,3 +7961,14 @@ msgstr "لا يوجد متخصصون لعرضهم"
 
 msgid "video & audio"
 msgstr "مقطع صوتي أو مرئي"
+
+
+msgid "You can jot 5000 characters"
+msgstr "يمكنك تدوين 5000 حرف"
+
+msgid "You can jot 500 characters"
+msgstr "يمكنك تدوين 500 حرف"
+
+
+
+

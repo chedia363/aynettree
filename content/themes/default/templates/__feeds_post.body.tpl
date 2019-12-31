@@ -99,18 +99,19 @@
                                 </div>
                             </a>
                         {else}
-                           <!-- <div class="dropdown-item pointer js_edit-post">
-                                 <div class="action no-desc">
-                                    <img class="iconspost" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/editpost.svg"> {__("Edit Post")}
-                                 </div>
-                                </div> 
-                            -->
-
-                            <a href="{$system['system_url']}/posts/editt/{$_post['post_id']}" class="dropdown-item pointer">
-                                <div class="action no-desc">
-                                     <img class="iconspost" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/editpost.svg">  {__("Edit Post")}
-                                </div>
-                            </a> 
+                        {if 1}
+                        <div class="dropdown-item pointer js_edit-post">
+                            <div class="action no-desc">
+                               <img class="iconspost" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/editpost.svg"> {__("Edit Post")}
+                            </div>
+                        </div> 
+                        {else}
+                        <a href="{$system['system_url']}/posts/editpost/{$_post['post_id']}" class="dropdown-item pointer">
+                            <div class="action no-desc">
+                                 <img class="iconspost" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/editpost.svg">  {__("Edit Post")}
+                            </div>
+                        </a> 
+                        {/if}
                         {/if}
                         <!-- Edit -->
                         <!-- Delete -->
@@ -141,14 +142,14 @@
                                 <div class="action">
                                     <img class="iconspost" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/cancelfollow.svg"> {__("Unfollow")} {$_post['user_firstname']}
                                 </div>
-                                <div class="action-desc">{__("Stop seeing posts but stay friends")}</div>
+                                <!-- <div class="action-desc">{__("Stop seeing posts but stay friends")}</div> -->
                             </div>
                         {/if}
                         <div class="dropdown-item pointer js_hide-post">
                             <div class="action">
                                  <img class="iconspost" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/eyepost.svg"> {__("Hide this post")}
                             </div>
-                            <div class="action-desc">{__("See fewer posts like this")}</div>
+                            <!-- <div class="action-desc">{__("See fewer posts like this")}</div> -->
                         </div>
                         <div class="dropdown-item pointer js_report" data-handle="post" data-id="{$_post['post_id']}">
                             <div class="action no-desc">
@@ -276,7 +277,8 @@
                 <i class="fa fa-caret-left ml5 mr5"></i> <img class="iconspost"src="{$system['system_url']}/content/themes/default/images/icons/groups.svg"><a href="{$system['system_url']}/groups/{$_post['group_name']}">{$_post['group_title']}</a>
 
             {elseif $_get != 'posts_event' && $_post['in_event']}
-                <i class="fa fa-caret-right ml5 mr5"></i><i class="fa fa-calendar ml5 mr5"></i><a href="{$system['system_url']}/events/{$_post['event_id']}">{$_post['event_title']}</a>
+            <i class="fa fa-caret-right ml5 mr5"></i><img class="iconspost mr5" src="{$system['system_url']}/content/themes/default/images/icons/event.svg"><a href="{$system['system_url']}/events/{$_post['event_id']}">{$_post['event_title']}</a>
+
 
             {elseif $_post['in_wall']}
                 <i class="fa fa-caret-right ml5 mr5"></i>
@@ -310,12 +312,12 @@
                 {if $_post['privacy'] == "me"}
                     <div class="btn-group" data-toggle="tooltip" data-placement="top" data-value="me" title='{__("Shared with: Only Me")}'>
                         <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" data-display="static">
-                           <img class="iconspublic mr10" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/moipubbl.svg">
+                           <img class="iconspublic mr10" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/mee.svg">
                         </button>
                 {elseif $_post['privacy'] == "friends"}
                     <div class="btn-group" data-toggle="tooltip" data-placement="top" data-value="friends" title='{__("Shared with: Friends")}'>
                         <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" data-display="static">
-                             <img class="iconspublic mr10" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/friendpubbl.svg">
+                             <img class="iconspublic mr10" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/sharedfriend.svg">
                         </button>
                 {elseif $_post['privacy'] == "public"}
                     <div class="btn-group" data-toggle="tooltip" data-placement="top" data-value="public" title='{__("Shared with: Public")}'>
@@ -342,11 +344,11 @@
                  <img class="iconspublic mr10" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/friendpubbl.svg" data-toggle="tooltip" data-placement="top" title='{__("Shared with")} {__("Friends")}'>
                    <!--  <i class="fa fa-users" data-toggle="tooltip" data-placement="top" title='{__("Shared with")} {__("Friends")}'></i> -->
                 {elseif $_post['privacy'] == "public"}
-                 <img class="iconspublic mr10" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/publicbl.svg" data-toggle="tooltip" data-placement="top" title='{__("Shared with")} {__("Public")}'>
-                    <!-- <i class="fa fa-globe" data-toggle="tooltip" data-placement="top" title='{__("Shared with")} {__("Public")}'></i> -->
+                <!-- <img class="iconspublic mr10" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/public.svg" data-toggle="tooltip" data-placement="top" title='{__("Shared with")} {__("Public")}'> -->
+                <!-- <i class="fa fa-globe" data-toggle="tooltip" data-placement="top" title='{__("Shared with")} {__("Public")}'></i> -->
                 {elseif $_post['privacy'] == "custom"}
-                <img class="iconspublic mr10" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/publicbl.svg" data-toggle="tooltip" data-placement="top" title='{__("Shared with")} {__("Custom People")}'>
-                    <!-- <i class="fa fa-cog" data-toggle="tooltip" data-placement="top" title='{__("Shared with")} {__("Custom People")}'></i> -->
+                <!-- <img class="iconspublic mr10" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/public.svg" data-toggle="tooltip" data-placement="top" title='{__("Shared with")} {__("Custom People")}'> -->
+                <!-- <i class="fa fa-cog" data-toggle="tooltip" data-placement="top" title='{__("Shared with")} {__("Custom People")}'></i> -->
                 {/if}
             {/if}
         </div>
@@ -531,27 +533,27 @@
     </div>
 {elseif $_post['post_type'] == "audio" && $_post['audio']}
     <div>
-        <audio id="audio-{$_post['audio']['audio_id']}" onplay="update_media_views('audio', {$_post['audio']['audio_id']})" controls preload="auto" style="width: 100%;">
-            <source src="{$system['system_uploads']}/{$_post['audio']['source']}" type="audio/mpeg">
-            <source src="{$system['system_uploads']}/{$_post['audio']['source']}" type="audio/mp3">
-            {__("Your browser does not support HTML5 audio")}
-        </audio>
+        <div>
+            <video id="audio-{$_post['audio']['audio_id']}" class="js_fluidplayer" onplay="update_media_views('audio', {$_post['audio']['audio_id']})" controls preload="auto" style="width: 100%;" poster="{$system['system_url']}/content/themes/{$system['theme']}/images/audiobg.jpg">
+                <source src="{$system['system_uploads']}/{$_post['audio']['source']}" type="video/mp4">
+                <source src="{$system['system_uploads']}/{$_post['audio']['source']}" type="video/webm">
+            </video>
+        </div>
     </div>
 {elseif $_post['post_type'] == "file" && $_post['file']}
-<!--{var_dump($_post['file'])}-->
-    <div class="post-downloader">
-        <div class="icon">
-            <i class="fa fa-file-alt fa-2x"></i>
-        </div>
-        <div class="info">
-            <strong>{__("File Type")}</strong>: {get_extension({$_post['file']['source']})} <br/>
-             
-            <strong>{__("File name")}</strong>: {substr($_post['file']['source'],46)}
-            <div class="mt10">
-                <a class="btn btn-primary btn-sm" href="{$system['system_uploads']}/{$_post['file']['source']}">{__("Download")}</a>
-            </div>
-        </div>
+<div class="post-downloader">
+    
+    <img class="iconspost" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/publisher/fichier.svg">
+
+<div class="info">
+    <strong>{__("File Type")}</strong>: {get_extension({$_post['file']['source']})} <br/>
+     
+    <strong>{__("File name")}</strong>: {substr($_post['file']['source'],46)}
+    <div class="mt10">
+        <a class="btn btn-primary btn-sm" href="{$system['system_uploads']}/{$_post['file']['source']}">{__("Download")}</a>
     </div>
+</div>
+</div>
 {elseif $_post['post_type'] == "map"}
     <div class="post-map">
         <img src="https://maps.googleapis.com/maps/api/staticmap?center={$_post['location']}&amp;zoom=13&amp;size=600x250&amp;maptype=roadmap&amp;markers=color:red%7C{$_post['location']}&amp;key={$system['geolocation_key']}" width="100%">
