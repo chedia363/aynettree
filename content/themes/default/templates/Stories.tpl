@@ -17,11 +17,15 @@
 
     <div class="card">
        <div class="card-header with-icon">
-            <a href="{$system['system_url']}">
+       
+            <a href="{$system['system_url']}" data-toggle="modal" data-url="posts/story.php?do=create">
              <img  src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/taranim.svg" class="iconspost">
              {__("My Stories")}
             </a>
 
+
+                                        
+           
 
 
          <div class="float-right">
@@ -64,7 +68,7 @@
                                 <td>
                                     
                                     
-                                        <video class="js_fluidplayer" style="width: 250px; "controls>
+                                        <video style="width: 250px; "controls>
                                             <source src="{$system['system_uploads']}/{$row['source']}" type="video/webm">
                                             </video>
                                     </td>
@@ -73,18 +77,20 @@
                                 
                                 <td> 
                                     <span class="js_moment" data-time="{$row['time']}">{$row['time']}</span>
-                               </td>
+                                </td>
                               
                                 <td>
                                   
 
-                                    <a  href="#" class="btn btn-sm btn-icon btn-rounded btn-primary">
+                                   <!-- <a  href="#" class="btn btn-sm btn-icon btn-rounded btn-primary">
                                              <i class="fa fa-pencil-alt"></i> 
                                     </a>
 
-                                    <!-- <a  href="{$system['system_url']}/stories1.php/delete/{$row['media_id']}" class="btn btn-sm btn-icon btn-rounded btn-primary">
+                                    <a  href="{$system['system_url']}/stories1.php/delete/{$row['media_id']}" class="btn btn-sm btn-icon btn-rounded btn-primary">
                                              <i class="fa fa-trash-alt"></i>
                                     </a> -->
+
+                                    <button type="button" class="btn btn-primary js_publisher-storyArchiv" data-id="{$row['media_id']}">{__("Archive")}</button>
                                     
                                     <button data-toggle="tooltip" data-placement="top" title='{__("Delete")}' class="btn btn-sm btn-icon btn-rounded btn-danger js_delete-story" data-handle="Stories" data-id="{$row['media_id']}">
                                         <i class="fa fa-trash-alt"></i>

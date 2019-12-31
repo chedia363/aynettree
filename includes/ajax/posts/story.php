@@ -69,67 +69,11 @@ try {
 			}
 
 		
-			// $radioVal = $_POST["color"];
-
-			// if($radioVal == "2")
-			// {
-			// 	modal("MESSAGE", __("Message"), __("You chose the second value"));
-		
-			// }
 			$user->post_story(str_replace('"','`',$_POST['message']), $photos, $videos);
 			$return['callback'] = "window.location.reload();";
 			break;
-case 'publish1':
-			// valid inputs
-			// if(!isset($_POST['photos']) && !isset($_POST['videos']) ) {
-			// 	// _error(400);
-			// 	modal("MESSAGE", __("Message"), __("Photos or Videos doesn't exist"));
-
-			// }
-			// if(strlen($_POST['message']) > 300)
-			// {
-			// 	modal("MESSAGE", __("Error"), __("Very long text"));	
-				
-			// }
-
-			/* filter photos */
-			// $photos = array();
-			// if(isset($_POST['photos'])) {
-				// $_POST['photos'] = $_POST['photos'];
-				// $photos = $_POST['photos'];
-			// 	if(is_object($_POST['photos'])) {
-			// 		/* filter the photos */
-			// 		foreach($_POST['photos'] as $photo) {
-			// 			$photos[] = $photo;
-			// 		}
-			// 	}
-			// }
-			// /* filter videos */
-			// $videos = array();
-			// if(isset($_POST['videos'])) {
-			// 	$_POST['videos'] = _json_decode($_POST['videos']);
-
-					
-			// 	if(is_object($_POST['videos'])) {
-			// 		/* filter the videos */
-			// 		foreach($_POST['videos'] as $video) {
-			// 			$videos[] = $video;
-			// 		}
-			// 	}
-			// }
-			// if(count($photos) == 0 && count($videos) == 0) {
-			// 	// _error(400);
-			// 	modal("MESSAGE", __("Message"), __("Please wait until finishing upload"));
-			// }
-
-		
-			// $radioVal = $_POST["color"];
-
-			// if($radioVal == "2")
-			// {
-			// 	modal("MESSAGE", __("Message"), __("You chose the second value"));
-		
-			// }
+        case 'publish1':
+			
 			$user->post_archvstory($_POST['id']);
 			$return['callback'] = "window.location.reload();";
 
@@ -139,6 +83,14 @@ case 'publish1':
 			// 	$return['refresh'] = true;
 			// }
 			break;
+        case 'archiv':
+			
+			$user->archv_story($_POST['id']);
+			$return['callback'] = "window.location.reload();";
+
+
+			break;
+			
 		case 'create':
 			// prepare publisher
 			$return['story_publisher'] = $smarty->fetch("ajax.story.publisher.tpl");

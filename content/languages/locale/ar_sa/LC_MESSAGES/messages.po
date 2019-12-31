@@ -7970,5 +7970,25 @@ msgid "You can jot 500 characters"
 msgstr "يمكنك تدوين 500 حرف"
 
 
+msgid "Archive"
+msgstr "ارشفة"
+
+
+
+msgid "Archive Story"
+msgstr "ارشفة الترنيمة"
+
+
+msgid "Are you sure you want to archive this story?"
+msgstr "هل أنت متأكد أنك تريد أرشفة هذه الترنيمة؟"
+
+
+
+msgid "Edit or Delete"
+msgstr "حذف أو تعديل"
+
+
+
+
 
 

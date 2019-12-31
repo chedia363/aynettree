@@ -3356,7 +3356,7 @@ class User {
         /* add viewer to this list */
         $authors[] = $this->_data['user_id'];
         $friends_list = implode(',',$authors);
-        $get_stories = $db->query("SELECT stories.*, users.user_id, users.user_name, users.user_firstname, users.user_lastname, users.user_gender, users.user_picture FROM stories INNER JOIN users ON stories.user_id = users.user_id WHERE stories.story_id IN (SELECT story_id FROM stories_media) AND time>=DATE_SUB(NOW(), INTERVAL 1 DAY) AND stories.user_id IN ($friends_list) ORDER BY stories.story_id DESC") or _error("SQL_ERROR_THROWEN");
+        $get_stories = $db->query("SELECT stories.*, users.user_id, users.user_name, users.user_firstname, users.user_lastname, users.user_gender, users.user_picture FROM stories INNER JOIN users ON stories.user_id = users.user_id WHERE stories.story_id IN (SELECT story_id FROM stories_media WHERE time>=DATE_SUB(NOW(), INTERVAL 1 DAY)) AND time>=DATE_SUB(NOW(), INTERVAL 1 DAY) AND stories.user_id IN ($friends_list) ORDER BY stories.story_id DESC") or _error("SQL_ERROR_THROWEN");
         if($get_stories->num_rows > 0) {
             while($_story = $get_stories->fetch_assoc()) {
                 $story['id'] = $_story['story_id'];
@@ -3611,6 +3611,31 @@ class User {
   
     }
 
+    
+   public function archv_story($media_id) {
+    global $db, $system, $date;
+    /* check latest story */
+    $get_last_story = $db->query(sprintf("SELECT story_id FROM stories WHERE time = DATE_SUB(NOW(), INTERVAL 1 DAY) AND stories.user_id = %s ORDER BY story_id DESC", secure($this->_data['user_id'], 'int') )) or _error("SQL_ERROR_THROWEN");
+       if($get_last_story->num_rows > 0) {
+           /* get story_id */
+           $story_id = $get_last_story->fetch_assoc()['story_id'];
+           /* update story time */
+           $db->query(sprintf("UPDATE stories SET time = DATE_SUB(NOW(), INTERVAL 1 DAY) WHERE story_id = %s", secure($story_id, 'int') )) or _error("SQL_ERROR_THROWEN");
+           
+        } else {
+          /* insert new story */
+          //insert new story with time-1
+          $db->query(sprintf("INSERT INTO stories (user_id, time) VALUES (%s, DATE_SUB(NOW(), INTERVAL 1 DAY))", secure($this->_data['user_id'], 'int') )) or _error("SQL_ERROR_THROWEN");
+          //get last id
+          $story_id = $db->insert_id;
+        }
+    
+ 
+       /* insert story media items */
+       $db->query(sprintf("UPDATE stories_media SET time = DATE_SUB(NOW(), INTERVAL 1 DAY), story_id= %s WHERE media_id = %s",  secure($story_id, 'int'), secure($media_id, 'int') )) or _error("SQL_ERROR_THROWEN");
+      
+     
+    }
     /* ------------------------------- */
     /* Publisher */
     /* ------------------------------- */
@@ -6672,28 +6697,28 @@ public function delete_story($media_id) {
         // $this->points_balance("delete", "post", $post['author_id']);
         return $refresh;
     }
-public function update_archvstory($media_id) {
-        global $db, $system, $date;
+// public function update_archvstory($media_id) {
+//         global $db, $system, $date;
    
     
-        /* check latest story */
-        $get_last_story = $db->query(sprintf("SELECT story_id FROM stories WHERE time>=DATE_SUB(NOW(), INTERVAL 1 DAY) AND stories.user_id = %s", secure($this->_data['user_id'], 'int') )) or _error("SQL_ERROR_THROWEN");
-        if($get_last_story->num_rows > 0) {
-            /* get story_id */
-            $story_id = $get_last_story->fetch_assoc()['story_id'];
-            /* update story time */
-            $db->query(sprintf("UPDATE stories SET time = %s WHERE story_id = %s", secure($date), secure($story_id, 'int') )) or _error("SQL_ERROR_THROWEN");
+//         /* check latest story */
+//         $get_last_story = $db->query(sprintf("SELECT story_id FROM stories WHERE time>=DATE_SUB(NOW(), INTERVAL 1 DAY) AND stories.user_id = %s", secure($this->_data['user_id'], 'int') )) or _error("SQL_ERROR_THROWEN");
+//         if($get_last_story->num_rows > 0) {
+//             /* get story_id */
+//             $story_id = $get_last_story->fetch_assoc()['story_id'];
+//             /* update story time */
+//             $db->query(sprintf("UPDATE stories SET time = %s WHERE story_id = %s", secure($date), secure($story_id, 'int') )) or _error("SQL_ERROR_THROWEN");
             
-        } else {
-            /* insert new story */
-            $db->query(sprintf("INSERT INTO stories (user_id, time) VALUES (%s, %s)", secure($this->_data['user_id'], 'int'), secure($date) )) or _error("SQL_ERROR_THROWEN");
-            /* get story_id */
-            $story_id = $db->insert_id;
-        }
-        /* insert story media items */
+//         } else {
+//             /* insert new story */
+//             $db->query(sprintf("INSERT INTO stories (user_id, time) VALUES (%s, %s)", secure($this->_data['user_id'], 'int'), secure($date) )) or _error("SQL_ERROR_THROWEN");
+//             /* get story_id */
+//             $story_id = $db->insert_id;
+//         }
+//         /* insert story media items */
        
-            // $db->query(sprintf("INSERT INTO stories_media (story_id, source, text, time) VALUES (%s, %s, %s, %s)", secure($story_id, 'int'), secure($photo), secure($message), secure($date) )) or _error("SQL_ERROR_THROWEN");
-             $test= $db->query(sprintf("UPDATE stories_media SET time = %s, story_id WHERE media_id = %s", secure($date), secure($story_id, 'int'), secure($media_id, 'int') )) or _error("SQL_ERROR_THROWEN");
+//             // $db->query(sprintf("INSERT INTO stories_media (story_id, source, text, time) VALUES (%s, %s, %s, %s)", secure($story_id, 'int'), secure($photo), secure($message), secure($date) )) or _error("SQL_ERROR_THROWEN");
+//              $test= $db->query(sprintf("UPDATE stories_media SET time = %s, story_id WHERE media_id = %s", secure($date), secure($story_id, 'int'), secure($media_id, 'int') )) or _error("SQL_ERROR_THROWEN");
 
 
 
@@ -6703,41 +6728,41 @@ public function update_archvstory($media_id) {
 
 
       
-        /* delete post */
-        $refresh = false;
+//         /* delete post */
+//         $refresh = false;
        
 
-    //     $vble= $db->query(sprintf("SELECT story_id FROM stories_media WHERE media_id = %s", secure($media_id, 'int') )) or _error("SQL_ERROR_THROWEN");
+//     //     $vble= $db->query(sprintf("SELECT story_id FROM stories_media WHERE media_id = %s", secure($media_id, 'int') )) or _error("SQL_ERROR_THROWEN");
 
-    //     if($vble->num_rows > 0) {
-    //         $story_id = $vble->fetch_assoc()['story_id'];
-    //         /* update story time */
-    //         $db->query(sprintf("UPDATE stories SET time = %s WHERE story_id = %s", secure($date), secure($story_id, 'int') )) or _error("SQL_ERROR_THROWEN");
+//     //     if($vble->num_rows > 0) {
+//     //         $story_id = $vble->fetch_assoc()['story_id'];
+//     //         /* update story time */
+//     //         $db->query(sprintf("UPDATE stories SET time = %s WHERE story_id = %s", secure($date), secure($story_id, 'int') )) or _error("SQL_ERROR_THROWEN");
 
-    //         // $db->query(sprintf("UPDATE stories SET time = %s WHERE story_id = %s", secure($date), secure($media_id, 'int') )) or _error("SQL_ERROR_THROWEN");   
-    //     }
+//     //         // $db->query(sprintf("UPDATE stories SET time = %s WHERE story_id = %s", secure($date), secure($media_id, 'int') )) or _error("SQL_ERROR_THROWEN");   
+//     //     }
 
-    // //    $db->query(sprintf("DELETE FROM stories_media WHERE media_id = %s", secure($media_id, 'int') )) or _error("SQL_ERROR_THROWEN");
-    //    $test= $db->query(sprintf("UPDATE stories_media SET time = %s WHERE media_id = %s", secure($date), secure($media_id, 'int') )) or _error("SQL_ERROR_THROWEN");            
-    //     // $vbletest= $db->query(sprintf("SELECT COUNT(story_id) FROM stories_media WHERE story_id = %s", secure($vble, 'int') )) or _error("SQL_ERROR_THROWEN");
-    //     // var_dump($testcount);
-    //     // if($vbletest==0){
-    //     //     $test= $db->query(sprintf("DELETE FROM stories WHERE story_id = %s", secure($vble, 'int') )) or _error("SQL_ERROR_THROWEN");
-    //     //     $refresh = true;
-    //     // }
+//     // //    $db->query(sprintf("DELETE FROM stories_media WHERE media_id = %s", secure($media_id, 'int') )) or _error("SQL_ERROR_THROWEN");
+//     //    $test= $db->query(sprintf("UPDATE stories_media SET time = %s WHERE media_id = %s", secure($date), secure($media_id, 'int') )) or _error("SQL_ERROR_THROWEN");            
+//     //     // $vbletest= $db->query(sprintf("SELECT COUNT(story_id) FROM stories_media WHERE story_id = %s", secure($vble, 'int') )) or _error("SQL_ERROR_THROWEN");
+//     //     // var_dump($testcount);
+//     //     // if($vbletest==0){
+//     //     //     $test= $db->query(sprintf("DELETE FROM stories WHERE story_id = %s", secure($vble, 'int') )) or _error("SQL_ERROR_THROWEN");
+//     //     //     $refresh = true;
+//     //     // }
 
 
 
 
         
 
-        if($test){
-         $refresh = true;
-        }
-        // /* points balance */
-        // $this->points_balance("delete", "post", $post['author_id']);
-        return $refresh;
-    }
+//         if($test){
+//          $refresh = true;
+//         }
+//         // /* points balance */
+//         // $this->points_balance("delete", "post", $post['author_id']);
+//         return $refresh;
+//     }
     /**
      * edit_post
      * 
