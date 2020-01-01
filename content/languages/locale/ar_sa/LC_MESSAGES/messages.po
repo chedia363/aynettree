@@ -5910,7 +5910,7 @@ msgid "Invitation email could not be sent"
 msgstr "البريد الإلكتروني دعوة لا يمكن إرسالها"
 
 msgid "You already invited this email before"
-msgstr "لقد قمت بالفعل بالتبليغ عن هذا!"
+msgstr "لقد قمت بالفعل بدعوة هذا البريد الإلكتروني من قبل!"
 
 msgid "You have reached the maximum number of invitations per day"
 msgstr "لقد وصلت إلى الحد الأقصى لعدد الدعوات في اليوم"
@@ -7410,6 +7410,11 @@ msgstr "علماء و مهرة متخصصون"
 msgid "Add your birthdate"
 msgstr "أضف تاريخ ميلادك"
 
+
+msgid "Birthdate"
+msgstr "تاريخ ميلادك"
+
+
 msgid "Comments"
 msgstr "المناقشات" 
 
@@ -7605,6 +7610,11 @@ msgstr "رسالة"
 
 msgid "Photos number should be between 1 and 12 photos"
 msgstr "يجب أن يتراوح عدد الصور بين 1 و 12 صورة"
+
+
+msgid "Photos number should be between 1 and 4 photos"
+msgstr "يجب أن يتراوح عدد الصور بين 1 و 4 صور"
+
 
 msgid "blog must be enabled"
 msgstr "يجب تمكين المدونة من قبل الأدمن"
@@ -7987,6 +7997,10 @@ msgstr "هل أنت متأكد أنك تريد أرشفة هذه الترنيم�
 msgid "Edit or Delete"
 msgstr "حذف أو تعديل"
 
+
+
+msgid "See All"
+msgstr "شاهد الكل"
 
 
 

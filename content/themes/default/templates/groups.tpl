@@ -18,7 +18,7 @@
             <div class="content-tabs rounded-sm shadow-sm clearfix">
             <ul>
                     <li {if $view == ""}class="active"{/if}>
-                        <a href="{$system['system_url']}/groups">{__("Panels ")}</a>
+                        <a href="{$system['system_url']}/groups">{__("Gate panels")}</a>
                     </li>
                     {if $user->_data['user_group'] < 3 && $system['groups_enabled']}
                     <li {if $view == "manage"}class="active"{/if}>
@@ -34,276 +34,32 @@
                 </ul>
                 {if $user->_data['user_id'] < 2 && $system['groups_enabled']}
                     <div class="mt10 float-right">
-                        <button class="btn btn-sm btn-success d-none d-lg-block" data-toggle="modal" data-url="#create-group">
-                             <img class="iconspost" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/addgroup.svg"> {__("Create your group")}
+                        <button class="btn btn-sm btn-success " data-toggle="modal" data-url="#create-group">
+                             <!-- <img class="iconspost" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/addgroup.svg"> --> {__("Create your group")}
                         </button>
-                        <button class="btn btn-sm btn-icon btn-success d-block d-lg-none" data-toggle="modal" data-url="#create-group">
-                            <img class="iconspost" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/addgroup.svg">
-                        </button>
+                      
                     </div>
                 {/if}
             </div>
             <!-- tabs -->
             {if $view == ""}
-            <div class="groupsblock">
+            <div class="groupsblock text-center ">
              <div class="btn-group-vertical" role="group" aria-label="Button group with nested dropdown">
                             <a href="{$system['system_url']}/groups/gr1" class="centerblock"><button class="groupssbtn">{__("The Glorious and Performance of Qur'an")}</button></a>
-                        <ul>
-                            <li>
-                                <a    class="groupsscolor">
-                                    <i class="fa fa-genderless" aria-hidden="true"></i>
-                                    {__("Text of the Quran")}
-                                </a>
-                            </li>
-                                <li>
-                                <a   class="groupsscolor">
-                                    <i class="fa fa-genderless" aria-hidden="true"></i>
-                                    {__("Science of readings")}
-                                </a>
-                            </li>
-                             <li>
-                                <a    class="groupsscolor">
-                                    <i class="fa fa-genderless" aria-hidden="true"></i>
-                                    {__("Draw")}
-                                </a>
-                            </li>
-                             <li>
-                                <a    class="groupsscolor">
-                                    <i class="fa fa-genderless" aria-hidden="true"></i>
-                                    {__("Adjustment")}
-                                </a>
-                            </li>
-                            <li>
-                                <a    class="groupsscolor">
-                                    <i class="fa fa-genderless" aria-hidden="true"></i>
-                                    {__("Number")}
-                                </a>
-                            </li>
-                             <li>
-                                <a   class="groupsscolor">
-                                    <i class="fa fa-genderless" aria-hidden="true"></i>
-                                    {__("Similarities")}
-                                </a>
-                            </li>
-                             <li>
-                                <a   class="groupsscolor">
-                                    <i class="fa fa-genderless" aria-hidden="true"></i>
-                                    {__("Qur'an Calligraphe")}
-                                </a>
-                            </li>                            
-                                <li>
-                                <a   class="groupsscolor">
-                                    <i class="fa fa-genderless" aria-hidden="true"></i>
-                                    {__("Tajwid")}
-                                </a>
-                            </li>
-                                <li>
-                                <a   class="groupsscolor">
-                                    <i class="fa fa-genderless" aria-hidden="true"></i>
-                                    {__("Quran recitation")}
-                                </a>
-                            </li>
-                                <li>
-                                <a   class="groupsscolor">
-                                    <i class="fa fa-genderless" aria-hidden="true"></i>
-                                    {__("Qur'an Albums")}
-                                </a>
-                            </li>       
-                            <li>
-                                <a   class="groupsscolor">
-                                    <i class="fa fa-genderless" aria-hidden="true"></i>
-                                    {__("Qur'an Audios")}
-                                </a>
-                            </li>      
-                            <li>
-                                <a   class="groupsscolor">
-                                    <i class="fa fa-genderless" aria-hidden="true"></i>
-                                    {__("Science of Endowment and Getting Started")}
-                                </a>
-                            </li>  
-                            <li>
-                                <a   class="groupsscolor">
-                                    <i class="fa fa-genderless" aria-hidden="true"></i>
-                                    {__("Quran Parties")}
-                                </a>
-                            </li>                              
-                            <li>
-                                <a   class="groupsscolor">
-                                    <i class="fa fa-genderless" aria-hidden="true"></i>
-                                    {__("Qur'an Memorization")}
-                                </a>
-                            </li>                                                                   
-                                                 
-
-                        </ul> 
+                         
                 
                      
                           <a href="{$system['system_url']}/groups/gr2" class="centerblock"><button class="groupssbtn">{__("Tafsir and Qur'anic Sciences")}</button></a>
-                          <ul>
-                            <li>
-                                <a class="groupsscolor">
-                                    <i class="fa fa-genderless" aria-hidden="true"></i>
-                                    {__("Topics")}
-                                </a>
-                            </li>
-                            <li>
-                                <a class="groupsscolor">
-                                    <i class="fa fa-genderless" aria-hidden="true"></i>
-                                    {__("Strange Quran (Quran Sciences)")}
-                                </a>
-                            </li>
-
-                            <li>
-                                <a class="groupsscolor">
-                                    <i class="fa fa-genderless" aria-hidden="true"></i>
-                                    {__("reflection in the Quran")}
-                                </a>
-                            </li>    
-                            <li>
-                                <a class="groupsscolor">
-                                    <i class="fa fa-genderless" aria-hidden="true"></i>
-                                    {__("Quran Themes")}
-                                </a>
-                            </li>    
-                             <li>
-                                <a    class="groupsscolor">
-                                    <i class="fa fa-genderless" aria-hidden="true"></i>
-                                    {__("Provisions of the Qur'an")}
-                                </a>
-                            </li>                            
-                             <li>
-                                <a    class="groupsscolor">
-                                    <i class="fa fa-genderless" aria-hidden="true"></i>
-                                    {__("Qur'anic Language")}
-                                </a>
-                            </li>    
-
-
-                                <li>
-                                <a   class="groupsscolor">
-                                    <i class="fa fa-genderless" aria-hidden="true"></i>
-                                    {__("Quranic rhetoric")}
-                                </a>
-                            </li>
-                        
-
-
-                                <li>
-                                <a   class="groupsscolor">
-                                    <i class="fa fa-genderless" aria-hidden="true"></i>
-                                    {__("Miracles")}
-                                </a>
-                            </li>
-                       
-                             <li>
-                                <a   class="groupsscolor">
-                                    <i class="fa fa-genderless" aria-hidden="true"></i>
-                                    {__("Investigations in Quran Sciences")}
-                                </a>
-                            </li>
                           
-                        </ul> 
                     
                        
                             <a href="{$system['system_url']}/groups/gr3"  class="centerblock"><button class="groupssbtn">{__("Different Languages")}</button></a>
-                           <ul>
-                           <li>
-                                <a   class="groupsscolor">
-                                    <i class="fa fa-genderless" aria-hidden="true"></i>
-                                    {__("Translations")}
-                                </a>
-                            </li>
-                             <li>
-                                <a   class="groupsscolor">
-                                    <i class="fa fa-genderless" aria-hidden="true"></i>
-                                    {__("Sign language")}
-                                </a>
-                            </li>
-                              <li>
-                                <a   class="groupsscolor">
-                                    <i class="fa fa-genderless" aria-hidden="true"></i>
-                                    {__("Braille")}
-                                </a>
-                            </li>
-                           
-                        </ul>
+                       
                               <a href="{$system['system_url']}/groups/gr4"  class="centerblock"><button class="groupssbtn">{__("Media ")}</button></a>
-                             <ul>
-                           <li>
-                                <a   class="groupsscolor">
-                                    <i class="fa fa-genderless" aria-hidden="true"></i>
-                                    {__("Movies/Documentaries")}
-                                </a>
-                            </li>
-
-                           <li>
-                                <a   class="groupsscolor">
-                                    <i class="fa fa-genderless" aria-hidden="true"></i>
-                                    {__("Calligraphy")}
-                                </a>
-                            </li>
-                           <li>
-                                <a   class="groupsscolor">
-                                    <i class="fa fa-genderless" aria-hidden="true"></i>
-                                    {__("Designing")}
-                                </a>
-                            </li>      
-                           <li>
-                                <a   class="groupsscolor">
-                                    <i class="fa fa-genderless" aria-hidden="true"></i>
-                                    {__("Montage(Film editing)")}
-                                </a>
-                            </li>      
-
-                             <li>
-                                <a   class="groupsscolor">
-                                    <i class="fa fa-genderless" aria-hidden="true"></i>
-                                    {__("Competitions")}
-                                </a>
-                            </li>
-                              <li>
-                                <a   class="groupsscolor">
-                                    <i class="fa fa-genderless" aria-hidden="true"></i>
-                                    {__("Events ")}
-                                </a>
-                            </li>
-                              <li>
-                                <a   class="groupsscolor">
-                                    <i class="fa fa-genderless" aria-hidden="true"></i>
-                                    {__("Flags")}
-                                </a>
-                            </li>
-                             <li>
-                                <a   class="groupsscolor">
-                                    <i class="fa fa-genderless" aria-hidden="true"></i>
-                                    {__("History of the Quran")}
-                                </a>
-                            </li>
-                           
-                        </ul>
+                             
                           
                                 <a href="{$system['system_url']}/groups/gr5"  class="centerblock"><button class="groupssbtn">{__("Technology")}</button></a>
-                                <ul>
-                      
-                             <li>
-                                <a   class="groupsscolor">
-                                    <i class="fa fa-genderless" aria-hidden="true"></i>
-                                    {__("Programming")}
-                                </a>
-                            </li>
-                             <li>
-                                <a   class="groupsscolor">
-                                    <i class="fa fa-genderless" aria-hidden="true"></i>
-                                    {__("Applications")}
-                                </a>
-                            </li>
-                              <li>
-                                <a   class="groupsscolor">
-                                    <i class="fa fa-genderless" aria-hidden="true"></i>
-                                    {__("Products")}
-                                </a>
-                            </li>
-                            </ul>
+                                
              </div>
 
              </div>
@@ -312,10 +68,17 @@
               <!-- content -->
             <div>
                 {if $groups1 || $groups2|| $groups3|| $groups4|| $groups5}
-                <a href="{$system['system_url']}/groups/gr1"> <button class="btn btn-sm btn-success d-none d-lg-block">
-                 <img class="iconspost" src="http://aynettree.test/content/themes/default/images/icons/addgroup.svg">
+                <a href="{$system['system_url']}/groups/gr1"> <button class="btn btn-sm btn-success ">
+                 <img class="iconspost" src="{$system['system_url']}/content/themes/default/images/icons/addgroup.svg">
                 {__("The Glorious and Performance of Qur'an")}
                 </button></a>
+
+                <a href="{$system['system_url']}/groups/gr1/Subgroups">
+                    <button class="alert alert-info see-more mt20 js_see-more" style="transform: translate(-550px, 2px);">
+                        {__("See All")}
+                    </button>
+                </a>                
+                <br>
                 
             <ul class="row">
                        
@@ -324,68 +87,102 @@
                                 {include file='__feeds_Allgroup.tpl' _tpl='box'}
     
                             {/foreach}
-            </ul>
-<a href="{$system['system_url']}/groups/gr2">            
- <button class="btn btn-sm btn-success d-none d-lg-block">
-     <img class="iconspost" src="http://aynettree.test/content/themes/default/images/icons/addgroup.svg">
-     {__("Tafsir and Qur'anic Sciences")}
- </button>
-</a>
 
+                         
+            </ul>
+            
+    <a href="{$system['system_url']}/groups/gr2">            
+     <button class="btn btn-sm btn-success">
+         <img class="iconspost" src="{$system['system_url']}/content/themes/default/images/icons/addgroup.svg">
+         {__("Tafsir and Qur'anic Sciences")}
+     </button>
+    </a>
+
+    <a href="{$system['system_url']}/groups/gr2/Subgroups">
+     <button class="alert alert-info see-more mt20 js_see-more" style="transform: translate(-550px, 2px);">
+         {__("See All")}
+     </button>
+    </a>
+    <br>
             <ul class="row">
                       {foreach $groups2 as $_group}
 
                             {include file='__feeds_Allgroup.tpl' _tpl='box'}
 
                         {/foreach}
+
+
   </ul>
 
   
 <a href="{$system['system_url']}/groups/gr3">
- <button class="btn btn-sm btn-success d-none d-lg-block">
-     <img class="iconspost" src="http://aynettree.test/content/themes/default/images/icons/addgroup.svg">
+ <button class="btn btn-sm btn-success ">
+     <img class="iconspost" src="{$system['system_url']}/content/themes/default/images/icons/addgroup.svg">
 {__("Different Languages")}
  </button></a>
+<a href="{$system['system_url']}/groups/gr3/Subgroups">
+  <button class="alert alert-info see-more mt20 js_see-more" style="transform: translate(-608px, 2px);">
+      {__("See More")}
+  </button>
+</a>
+ <br>
   <ul class="row">
-                      {foreach $groups3 as $_group}
+                       {foreach $groups3 as $_group}
 
                             {include file='__feeds_Allgroup.tpl' _tpl='box'}
 
                         {/foreach}
+
+
 
 </ul>
 
 
 
  <a href="{$system['system_url']}/groups/gr4">
- <button class="btn btn-sm btn-success d-none d-lg-block">
-     <img class="iconspost" src="http://aynettree.test/content/themes/default/images/icons/addgroup.svg">
+ <button class="btn btn-sm btn-success ">
+     <img class="iconspost" src="{$system['system_url']}/content/themes/default/images/icons/addgroup.svg">
     {__("Media ")}
  </button></a>
+                     <a href="{$system['system_url']}/groups/gr4/Subgroups">
+                     <button class="alert alert-info see-more mt20 js_see-more" style="transform: translate(-550px, 2px);">
+                         {__("See More")}
+                     </button>
+                    </a>
+ <br>
 <ul class="row">
 
-                      {foreach $groups4 as $_group}
+                        {foreach $groups4 as $_group}
 
                             {include file='__feeds_Allgroup.tpl' _tpl='box'}
 
                         {/foreach}
+
+
 
 </ul>
 
 
 
   <a href="{$system['system_url']}/groups/gr5">
- <button class="btn btn-sm btn-success d-none d-lg-block">
-     <img class="iconspost" src="http://aynettree.test/content/themes/default/images/icons/addgroup.svg">
+ <button class="btn btn-sm btn-success ">
+     <img class="iconspost" src="{$system['system_url']}/content/themes/default/images/icons/addgroup.svg">
     {__("Technology")}
  </button></a>
+    <a href="{$system['system_url']}/groups/gr5/Subgroups">
+     <button class="alert alert-info see-more mt20 js_see-more" style="transform: translate(-598px, 2px);">
+         {__("See More")}
+     </button>
+    </a>   
+ <br>
 <ul class="row">
 
-                      {foreach $groups5 as $_group}
+                        {foreach $groups5 as $_group}
 
                             {include file='__feeds_Allgroup.tpl' _tpl='box'}
 
                         {/foreach}  
+                     
 
 </ul>                      
                     <!-- see-more -->
