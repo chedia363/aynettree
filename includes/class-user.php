@@ -108,18 +108,7 @@ class User {
         return $countries;
     }
 
-    // public function get_story($media_id) {
-    //     global $db, $system;
-    //     $data = [];
 
-    //     $data1 = $db->query("SELECT * FROM stories_media WHERE media_id = %s", secure($_GET['id'], 'int')) or _error("SQL_ERROR_THROWEN");
-    //     if($data1->num_rows > 0) {
-    //         while($country = $data1->fetch_assoc()) {
-    //             $data[] = $country;
-    //         }
-    //     }
-    //     return $data;
-    // }
 
     /* ------------------------------- */
     /* System Currencies */
@@ -176,6 +165,18 @@ class User {
     public function get_followings_ids($user_id) {
         global $db;
         $followings = [];
+        $get_followings = $db->query(sprintf("SELECT following_id FROM followings WHERE user_id = %s", secure($user_id, 'int'))) or _error("SQL_ERROR_THROWEN");
+        if($get_followings->num_rows > 0) {
+            while($following = $get_followings->fetch_assoc()) {
+                $followings[] = $following['following_id'];
+            }
+        }
+        return $followings;
+    }
+
+    public function get_followings_idsx($user_id) {
+        global $db;
+        $followings = [];
         $get_followings = $db->query(sprintf("SELECT following_id FROM followings INNER JOIN users ON (followings.following_id = users.user_id) WHERE users.user_group < 3 and  followings.user_id = %s", secure($user_id, 'int'))) or _error("SQL_ERROR_THROWEN");
         if($get_followings->num_rows > 0) {
             while($following = $get_followings->fetch_assoc()) {
@@ -184,6 +185,7 @@ class User {
         }
         return $followings;
     }
+
 
 
     /**
@@ -364,6 +366,22 @@ class User {
      * @param boolean $get_all
      * @return array
      */
+    public function get_followingsx($user_id, $offset = 0, $get_all = false) {
+        global $db, $system;
+        $followings = [];
+        $offset *= $system['min_results_even'];
+        $limit_statement = ($get_all)? "" : sprintf("LIMIT %s, %s", secure($offset, 'int', false), secure($system['min_results_even'], 'int', false) );
+        $get_followings = $db->query(sprintf('SELECT users.user_id, users.user_name, users.user_firstname, users.user_lastname, users.user_gender, users.user_picture, users.user_subscribed, users.user_verified ,users.user_group FROM followings INNER JOIN users ON (followings.following_id = users.user_id) WHERE  users.user_group < 3 and followings.user_id = %s '.$limit_statement, secure($user_id, 'int') )) or _error("SQL_ERROR_THROWEN");
+        if($get_followings->num_rows > 0) {
+            while($following = $get_followings->fetch_assoc()) {
+                $following['user_picture'] = get_picture($following['user_picture'], $following['user_gender']);
+                /* get the connection between the viewer & the target */
+                $following['connection'] = $this->connection($following['user_id'], false);
+                $followings[] = $following;
+            }
+        }
+        return $followings;
+    }
     public function get_followings($user_id, $offset = 0, $get_all = false) {
         global $db, $system;
         $followings = [];
@@ -380,7 +398,6 @@ class User {
         }
         return $followings;
     }
-
 
     /**
      * get_followers
@@ -555,9 +572,9 @@ class User {
         }
         /* get users */
         if($random) {
-            $get_users = $db->query(sprintf("SELECT * FROM (SELECT user_id, user_name, user_firstname, user_lastname, user_gender, user_picture, user_subscribed, user_verified, (%s * acos(cos(radians(%s)) * cos(radians(user_latitude)) * cos(radians(user_longitude) - radians(%s)) + sin(radians(%s)) * sin(radians(user_latitude))) ) AS distance FROM users ".$where." HAVING distance < %s ORDER BY distance ASC LIMIT %s) tmp ORDER BY RAND() LIMIT %s", secure($unit, 'int'), secure($this->_data['user_latitude']), secure($this->_data['user_longitude']), secure($this->_data['user_latitude']), secure($distance, 'int'), secure($system['max_results']*2, 'int', false), secure($system['min_results'], 'int', false) )) or _error("SQL_ERROR_THROWEN");
+            $get_users = $db->query(sprintf("SELECT * FROM (SELECT user_id, user_name, user_firstname, user_lastname, user_gender, user_picture, user_subscribed, user_verified, user_group, (%s * acos(cos(radians(%s)) * cos(radians(user_latitude)) * cos(radians(user_longitude) - radians(%s)) + sin(radians(%s)) * sin(radians(user_latitude))) ) AS distance FROM users ".$where." HAVING distance < %s ORDER BY distance ASC LIMIT %s) tmp ORDER BY RAND() LIMIT %s", secure($unit, 'int'), secure($this->_data['user_latitude']), secure($this->_data['user_longitude']), secure($this->_data['user_latitude']), secure($distance, 'int'), secure($system['max_results']*2, 'int', false), secure($system['min_results'], 'int', false) )) or _error("SQL_ERROR_THROWEN");
         } else {
-            $get_users = $db->query(sprintf("SELECT user_id, user_name, user_firstname, user_lastname, user_gender, user_picture, user_subscribed, user_verified, (%s * acos(cos(radians(%s)) * cos(radians(user_latitude)) * cos(radians(user_longitude) - radians(%s)) + sin(radians(%s)) * sin(radians(user_latitude))) ) AS distance FROM users ".$where." HAVING distance < %s ORDER BY distance ASC LIMIT %s, %s", secure($unit, 'int'), secure($this->_data['user_latitude']), secure($this->_data['user_longitude']), secure($this->_data['user_latitude']), secure($distance, 'int'), secure($offset, 'int', false), secure($system['min_results'], 'int', false) )) or _error("SQL_ERROR_THROWEN");
+            $get_users = $db->query(sprintf("SELECT user_id, user_name, user_firstname, user_lastname, user_gender, user_picture, user_subscribed, user_verified, user_group, (%s * acos(cos(radians(%s)) * cos(radians(user_latitude)) * cos(radians(user_longitude) - radians(%s)) + sin(radians(%s)) * sin(radians(user_latitude))) ) AS distance FROM users ".$where." HAVING distance < %s ORDER BY distance ASC LIMIT %s, %s", secure($unit, 'int'), secure($this->_data['user_latitude']), secure($this->_data['user_longitude']), secure($this->_data['user_latitude']), secure($distance, 'int'), secure($offset, 'int', false), secure($system['min_results'], 'int', false) )) or _error("SQL_ERROR_THROWEN");
         }
         if($get_users->num_rows > 0) {
             while($user = $get_users->fetch_assoc()) {
@@ -668,7 +685,7 @@ class User {
         global $db, $system;
         $results = [];
         /* search users */
-        $get_users = $db->query(sprintf('SELECT user_id, user_name, user_firstname, user_lastname, user_gender, user_picture, user_subscribed, user_verified FROM users WHERE user_name LIKE %1$s OR user_firstname LIKE %1$s OR user_lastname LIKE %1$s OR CONCAT(user_firstname,  " ", user_lastname) LIKE %1$s LIMIT %2$s', secure($query, 'search'), secure($system['min_results'], 'int', false) )) or _error("SQL_ERROR_THROWEN");
+        $get_users = $db->query(sprintf('SELECT user_id, user_name, user_firstname, user_lastname, user_gender, user_picture, user_subscribed, user_verified, user_group FROM users WHERE user_name LIKE %1$s OR user_firstname LIKE %1$s OR user_lastname LIKE %1$s OR CONCAT(user_firstname,  " ", user_lastname) LIKE %1$s LIMIT %2$s', secure($query, 'search'), secure($system['min_results'], 'int', false) )) or _error("SQL_ERROR_THROWEN");
         if($get_users->num_rows > 0) {
             while($user = $get_users->fetch_assoc()) {
                 $user['user_picture'] = get_picture($user['user_picture'], $user['user_gender']);
@@ -750,7 +767,7 @@ class User {
             }
         }
         /* search users */
-        $get_users = $db->query(sprintf('SELECT user_id, user_name, user_firstname, user_lastname, user_gender, user_picture, user_subscribed, user_verified FROM users WHERE user_name LIKE %1$s OR user_firstname LIKE %1$s OR user_lastname LIKE %1$s OR CONCAT(user_firstname,  " ", user_lastname) LIKE %1$s ORDER BY user_firstname ASC LIMIT %2$s, %3$s', secure($query, 'search'), secure($offset, 'int', false), secure($system['max_results'], 'int', false) )) or _error("SQL_ERROR_THROWEN");
+        $get_users = $db->query(sprintf('SELECT user_id, user_name, user_firstname, user_lastname, user_gender, user_picture, user_subscribed, user_verified, user_group FROM users WHERE user_name LIKE %1$s OR user_firstname LIKE %1$s OR user_lastname LIKE %1$s OR CONCAT(user_firstname,  " ", user_lastname) LIKE %1$s ORDER BY user_firstname ASC LIMIT %2$s, %3$s', secure($query, 'search'), secure($offset, 'int', false), secure($system['max_results'], 'int', false) )) or _error("SQL_ERROR_THROWEN");
         if($get_users->num_rows > 0) {
             while($user = $get_users->fetch_assoc()) {
                 $user['user_picture'] = get_picture($user['user_picture'], $user['user_gender']);
@@ -807,58 +824,20 @@ class User {
         global $db, $system;
         $results = [];
         $offset *= $system['max_results'];
-        // validation
-        /* validate distance */
-        $unit = 6371;
-        $distance = ($distance && is_numeric($distance) && $distance > 0)? $distance : 25;
-        /* validate gender */
-        if(!in_array($gender, array('any', 'male', 'female', 'other'))) {
-            return $results;
-        }
-        /* validate relationship */
-        if(!in_array($relationship, array('any','single', 'relationship', 'married', "complicated", 'separated', 'divorced', 'widowed'))) {
-            return $results;
-        }
-        /* validate status */
-        if(!in_array($status, array('any', 'online', 'offline'))) {
-            return $results;
-        }
-        // prepare where statement
-        $where = "";
-        /* merge (friends, followings, friend requests & friend requests sent) and get the unique ids  */
-        $old_people_ids = array_unique(array_merge($this->_data['friends_ids'], $this->_data['followings_ids'], $this->_data['friend_requests_ids'], $this->_data['friend_requests_sent_ids']));
-        /* add the viewer to this list */
-        $old_people_ids[] = $this->_data['user_id'];
-        /* make a list from old people */
-        $old_people_ids_list = implode(',',$old_people_ids);
-        $where .= sprintf("WHERE user_banned = '0' AND user_id NOT IN (%s)", $old_people_ids_list);
-        if($system['activation_enabled']) {
-            $where .= " AND user_activated = '1'";
-        }
+       
+       
+       
         /* keyword */
         if($keyword) {
-            $where .= sprintf(' AND (user_name LIKE %1$s OR user_firstname LIKE %1$s OR user_lastname LIKE %1$s OR CONCAT(user_firstname,  " ", user_lastname) LIKE %1$s)', secure($keyword, 'search'));
+            $where .= sprintf(' WHERE (user_name LIKE %1$s OR user_firstname LIKE %1$s OR user_lastname LIKE %1$s OR CONCAT(user_firstname,  " ", user_lastname) LIKE %1$s)', secure($keyword, 'search'));
         }
-        /* gender */
-        if($gender != "any") {
-            $where .= " AND users.user_gender = '$gender'";
-        }
-        /* relationship */
-        if($relationship != "any") {
-            $where .= " AND users.user_relationship = '$relationship'";
-        }
+ 
         /* status */
-        if($status != "any") {
-            if($status == "online") {
-                $where .= sprintf(" AND user_last_seen >= SUBTIME(NOW(), SEC_TO_TIME(%s))", secure($system['offline_time'], 'int', false));
-            } else {
-                $where .= sprintf(" AND user_last_seen < SUBTIME(NOW(), SEC_TO_TIME(%s))", secure($system['offline_time'], 'int', false));
-            }
-        }
+    
         /* get users */
-        $query = sprintf("SELECT *, (%s * acos(cos(radians(%s)) * cos(radians(user_latitude)) * cos(radians(user_longitude) - radians(%s)) + sin(radians(%s)) * sin(radians(user_latitude))) ) AS distance FROM users ", secure($unit, 'int'), secure($this->_data['user_latitude']), secure($this->_data['user_longitude']), secure($this->_data['user_latitude']));
+        $query = sprintf("SELECT * FROM users ");
         $query .= $where;
-        $query .= sprintf(" HAVING distance < %s ORDER BY distance ASC LIMIT %s", secure($distance, 'int'), secure($system['max_results'], 'int', false) );
+        $query .= sprintf("  ORDER BY user_name ASC LIMIT %s", secure($system['max_results'], 'int', false) );
         $get_users = $db->query($query) or _error("SQL_ERROR_THROWEN");
         if($get_users->num_rows > 0) {
             while($user = $get_users->fetch_assoc()) {
@@ -867,6 +846,7 @@ class User {
                 $user['connection'] = $this->connection($user['user_id']);
                 $results[] = $user;
             }
+        
         }
         return $results;
     }
@@ -1840,9 +1820,9 @@ class User {
         $offset *= $system['max_results'];
         $notifications = [];
         if($last_notification_id !== null) {
-            $get_notifications = $db->query(sprintf("SELECT notifications.*, users.user_id, users.user_name, users.user_firstname, users.user_lastname, users.user_gender, users.user_picture, users.user_subscribed, users.user_verified FROM notifications INNER JOIN users ON notifications.from_user_id = users.user_id WHERE (notifications.to_user_id = %s OR notifications.to_user_id = '0') AND notifications.notification_id > %s ORDER BY notifications.notification_id DESC", secure($this->_data['user_id'], 'int'), secure($last_notification_id, 'int') )) or _error("SQL_ERROR_THROWEN");
+            $get_notifications = $db->query(sprintf("SELECT notifications.*, users.user_id, users.user_name, users.user_firstname, users.user_lastname, users.user_gender, users.user_picture, users.user_subscribed, users.user_verified ,users.user_group FROM notifications INNER JOIN users ON notifications.from_user_id = users.user_id WHERE (notifications.to_user_id = %s OR notifications.to_user_id = '0') AND notifications.notification_id > %s ORDER BY notifications.notification_id DESC", secure($this->_data['user_id'], 'int'), secure($last_notification_id, 'int') )) or _error("SQL_ERROR_THROWEN");
         } else {
-            $get_notifications = $db->query(sprintf("SELECT notifications.*, users.user_id, users.user_name, users.user_firstname, users.user_lastname, users.user_gender, users.user_picture, users.user_subscribed, users.user_verified FROM notifications INNER JOIN users ON notifications.from_user_id = users.user_id WHERE notifications.to_user_id = %s OR notifications.to_user_id = '0' ORDER BY notifications.notification_id DESC LIMIT %s, %s", secure($this->_data['user_id'], 'int'), secure($offset, 'int', false), secure($system['max_results'], 'int', false) )) or _error("SQL_ERROR_THROWEN");
+            $get_notifications = $db->query(sprintf("SELECT notifications.*, users.user_id, users.user_name, users.user_firstname, users.user_lastname, users.user_gender, users.user_picture, users.user_subscribed, users.user_verified, users.user_group FROM notifications INNER JOIN users ON notifications.from_user_id = users.user_id WHERE notifications.to_user_id = %s OR notifications.to_user_id = '0' ORDER BY notifications.notification_id DESC LIMIT %s, %s", secure($this->_data['user_id'], 'int'), secure($offset, 'int', false), secure($system['max_results'], 'int', false) )) or _error("SQL_ERROR_THROWEN");
         }
         if($get_notifications->num_rows > 0) {
             while($notification = $get_notifications->fetch_assoc()) {
@@ -2012,7 +1992,7 @@ class User {
                     case 'group_join':
                         $notification['icon'] = "fa-users";
                         $notification['url'] = $system['system_url'].'/groups/'.$notification['node_url'].'/settings/requests';
-                        $notification['message'] = __("asked to join your group")." '".html_entity_decode($notification['node_type'], ENT_QUOTES)."'";
+                        $notification['message'] = __("asked to join your Panel")." '".html_entity_decode($notification['node_type'], ENT_QUOTES)."'";
                         break;
 
                     case 'group_add':
@@ -3253,7 +3233,13 @@ class User {
      * @return string
      */
     function decode_hashtags($text, $trending_hashtags, $post_id) {
+        
+    
+
         $pattern = '/(\s|^)((#|\x{ff03}){1}([0-9_\p{L}&;]*[_\p{L}&;][0-9_\p{L}&;]*))/u';
+
+        if(strpos($text,"&lt", 4)==0)
+        {
         $text = preg_replace_callback($pattern, function($matches) use($trending_hashtags, $post_id) {
             global $system, $db, $date;
             if($trending_hashtags) {
@@ -3268,8 +3254,11 @@ class User {
                 /* connect hashtag with the post */
                 $db->query(sprintf("INSERT INTO hashtags_posts (post_id, hashtag_id, created_at) VALUES (%s, %s, %s)", secure($post_id, 'int'), secure($hashtag_id, 'int'), secure($date) ));
             }
-            return $matches[1].'<a href=" class="htag" '.$system['system_url'].'/search/hashtag/'.$matches[4].'">'.$matches[2].'</a>';                
+            return $matches[1].'<a class="htag" href="'.$system['system_url'].'/search/hashtag/'.$matches[4].'">'.$matches[2].'</a>';                
         }, $text);
+    }
+
+
         return $text;
     }
 
@@ -3348,7 +3337,7 @@ class User {
      * 
      * @return array
      */
-    public function get_stories() {  
+   public function get_stories() {
         global $db, $system, $smarty;
         $stories = [];
         /* get stories */
@@ -3365,7 +3354,7 @@ class User {
                 $story['lastUpdated'] = strtotime($_story['time']);
                 $story['items'] = [];
                 /* get story media items */
-                $get_media_items = $db->query(sprintf("SELECT * FROM stories_media WHERE story_id = %s AND time>=DATE_SUB(NOW(), INTERVAL 1 DAY)", secure($_story['story_id'], 'int') )) or _error("SQL_ERROR_THROWEN");
+                $get_media_items = $db->query(sprintf("SELECT * FROM stories_media WHERE time>=DATE_SUB(NOW(), INTERVAL 1 DAY) AND story_id = %s", secure($_story['story_id'], 'int') )) or _error("SQL_ERROR_THROWEN");
                 while($media_item = $get_media_items->fetch_assoc()) {
                     $story_item['id'] = $media_item['media_id'];
                     $story_item['type'] = ($media_item['is_photo'])? 'photo' : 'video';
@@ -3380,180 +3369,6 @@ class User {
         }
         return array("array"=> $stories, "json" => json_encode($stories));
     }
-
-
-        /**
-     * Begin get My stories 
-     * 
-     * @return array
-     */
-
-
-    public function get_storieuser() {
-        global $db, $system, $smarty;
-        $stories = [];
-        
- 
-        $friends_list = $this->_data['user_id'];
-        // var_dump($this->_data['user_id']);
-        $get_stories1 = $db->query("SELECT stories.*, users.user_id, users.user_name, users.user_firstname, users.user_lastname, users.user_gender, users.user_picture FROM stories INNER JOIN users ON stories.user_id = users.user_id WHERE time>=DATE_SUB(NOW(), INTERVAL 1 DAY) AND stories.user_id IN ($friends_list) ORDER BY stories.story_id DESC") or _error("SQL_ERROR_THROWEN");
-        if($get_stories1->num_rows > 0) {
-            while($_story = $get_stories1->fetch_assoc()) {
-                $story['id'] = $_story['story_id'];
-                $story['photo'] = get_picture($_story['user_picture'], $_story['user_gender']);
-                $story['name'] = $_story['user_firstname']." ".$_story['user_lastname'];
-                $story['lastUpdated'] = strtotime($_story['time']);
-                $story['items'] = [];
-                /* get story media items */
-                $get_stories = $db->query(sprintf("SELECT * FROM stories_media WHERE story_id = %s AND time>=DATE_SUB(NOW(), INTERVAL 1 DAY)", secure($_story['story_id'], 'int') )) or _error("SQL_ERROR_THROWEN");
-                while($media_item = $get_stories->fetch_assoc()) {
-                    $stories[] = $media_item;
-                }
-              
-            }
-        }
-        // if($get_stories->num_rows > 0) {
-        //     while($currency = $get_stories->fetch_assoc()) {
-        //         $stories[] = $currency;
-        //     }
-        // }
-        return $stories;
-    }
-
-      /* End get My stories */
-
-    public function get_Archivstorieuser() {
-        global $db, $system, $smarty;
-        $stories = [];
-        
- 
-        $friends_list = $this->_data['user_id'];
-        // var_dump($this->_data['user_id']);
-        $get_stories1 = $db->query("SELECT stories.*, users.user_id, users.user_name, users.user_firstname, users.user_lastname, users.user_gender, users.user_picture FROM stories INNER JOIN users ON stories.user_id = users.user_id WHERE stories.user_id IN ($friends_list) AND time<DATE_SUB(NOW(), INTERVAL 1 DAY) ORDER BY stories.story_id DESC") or _error("SQL_ERROR_THROWEN");
-        if($get_stories1->num_rows > 0) {
-            while($_story = $get_stories1->fetch_assoc()) {
-                $story['id'] = $_story['story_id'];
-                $story['photo'] = get_picture($_story['user_picture'], $_story['user_gender']);
-                $story['name'] = $_story['user_firstname']." ".$_story['user_lastname'];
-                $story['lastUpdated'] = strtotime($_story['time']);
-                $story['items'] = [];
-                /* get story media items */
-                $get_stories = $db->query(sprintf("SELECT * FROM stories_media WHERE story_id = %s AND time<DATE_SUB(NOW(), INTERVAL 1 DAY)", secure($_story['story_id'], 'int') )) or _error("SQL_ERROR_THROWEN");
-                while($media_item = $get_stories->fetch_assoc()) {
-                    $stories[] = $media_item;
-                }
-              
-            }
-        }
-        // if($get_stories->num_rows > 0) {
-        //     while($currency = $get_stories->fetch_assoc()) {
-        //         $stories[] = $currency;
-        //     }
-        // }
-        return $stories;
-    }
-
-
-   /*Begin get All stories */
-    public function get_storieesAdmn() {
-       global $db, $system, $smarty;
-       $stories = [];
-    
-   
-       $get_stories1 = $db->query("SELECT stories.*, users.user_id, users.user_name, users.user_firstname, users.user_lastname, users.user_gender, users.user_picture FROM stories INNER JOIN users ON stories.user_id = users.user_id WHERE time>=DATE_SUB(NOW(), INTERVAL 1 DAY) ORDER BY stories.story_id DESC") or _error("SQL_ERROR_THROWEN");
-       if($get_stories1->num_rows > 0) {
-           while($_story = $get_stories1->fetch_assoc()) {
-               $story['id'] = $_story['story_id'];
-               $story['photo'] = get_picture($_story['user_picture'], $_story['user_gender']);
-               $story['name'] = $_story['user_firstname']." ".$_story['user_lastname'];
-               $story['lastUpdated'] = strtotime($_story['time']);
-               $story['items'] = [];
-               /* get story media items */
-               $get_stories = $db->query(sprintf("SELECT * FROM stories_media WHERE story_id = %s", secure($_story['story_id'], 'int') )) or _error("SQL_ERROR_THROWEN");
-               while($media_item = $get_stories->fetch_assoc()) {
-                   $media_item['name'] = $_story['user_firstname']." ".$_story['user_lastname'];
-                   $stories[] = $media_item;
-               }
-             
-           }
-       }
-   
-       return $stories;
-       }
-   
-   
-    /*End get All stories */
-
-/***test 6:04 21/11/2019 */
-
-//     global $db, $system, $smarty;
-//     $stories = [];
-//     /* get stories */
-//     $authors = $this->_data['followings_ids'];
- 
-//     $get_stories1 = $db->query("SELECT users.user_name,users.user_firstname, users.user_lastname FROM stories INNER JOIN users ON stories.user_id = users.user_id WHERE time>=DATE_SUB(NOW(), INTERVAL 1 DAY)  ORDER BY stories.story_id DESC") or _error("SQL_ERROR_THROWEN");
-//     if($get_stories1->num_rows > 0) {
-//         while($_story = $get_stories1->fetch_assoc()) {
-//             $story['id'] = $_story['story_id'];
-//             // var_dump($story['id']);
-    
-//             $story['name'] = $_story['user_firstname']." ".$_story['user_lastname'];
-// // var_dump($story['name']);
-
-//         }
-//             $get_media_items = $db->query(sprintf("SELECT * FROM stories_media  JOIN stories ON stories_media.story_id = stories.story_id") ) or _error("SQL_ERROR_THROWEN");
-           
-//             while($media_item = $get_media_items->fetch_assoc()) {
-//                 $story_item['id'] = $media_item['media_id'];
-  
-//                 $story['id'] = $media_item['story_id'];
-//                 // var_dump( $story['id']);
-//                 $story_item['src'] = $system['system_uploads'].'/'.$media_item['source'];
-            
-//                 $story_item['linkText'] = $media_item['text'];
-//                 $story_item['time'] = $media_item['time'];
-//                 $media_item['name'] = $_story['user_firstname']." ".$_story['user_lastname'];
-//                 $story_item['namee'] = $media_item['name'];
-              
-//             $story['items'][] = $story_item;
-          
-//         }
-//           $stories[] = $story;
-//         }
-
-/***End test 6:04 21/11/2019 */
-
-
-
-
-
-   /*Begin get All Contacts */
-
-   /*Begin get All Contacts */
-
-        public function get_ContactAdmn() {
-
-            global $db;
-         
-            $get_ctcs = $db->query(sprintf("SELECT /*contact.name*/ * FROM contact INNER JOIN system_countries ON contact.user_country = system_countries.country_id /*GROUP BY contact.name*/ ")) or _error("SQL_ERROR_THROWEN");
-            if($get_ctcs->num_rows > 0) {
-                while($ctcts = $get_ctcs->fetch_assoc()) {
-                    $ctct[] = $ctcts;
-                }
-            }
-            return $ctct;
-
-
-        }
-   
-   
-    /*End get All Contacts */
-
-
-
-
-
-
 
     /**
      * post_story
@@ -3572,7 +3387,6 @@ class User {
             $story_id = $get_last_story->fetch_assoc()['story_id'];
             /* update story time */
             $db->query(sprintf("UPDATE stories SET time = %s WHERE story_id = %s", secure($date), secure($story_id, 'int') )) or _error("SQL_ERROR_THROWEN");
-            
         } else {
             /* insert new story */
             $db->query(sprintf("INSERT INTO stories (user_id, time) VALUES (%s, %s)", secure($this->_data['user_id'], 'int'), secure($date) )) or _error("SQL_ERROR_THROWEN");
@@ -3588,54 +3402,8 @@ class User {
         }
     }
 
-   public function post_archvstory($media_id) {
-    global $db, $system, $date;
-    /* check latest story */
-    $get_last_story = $db->query(sprintf("SELECT story_id FROM stories WHERE time>=DATE_SUB(NOW(), INTERVAL 1 DAY) AND stories.user_id = %s", secure($this->_data['user_id'], 'int') )) or _error("SQL_ERROR_THROWEN");
-    if($get_last_story->num_rows > 0) {
-        /* get story_id */
-        $story_id = $get_last_story->fetch_assoc()['story_id'];
-        /* update story time */
-        $db->query(sprintf("UPDATE stories SET time = %s WHERE story_id = %s", secure($date), secure($story_id, 'int') )) or _error("SQL_ERROR_THROWEN");
-        
-    } else {
-        /* insert new story */
-        $db->query(sprintf("INSERT INTO stories (user_id, time) VALUES (%s, %s)", secure($this->_data['user_id'], 'int'), secure($date) )) or _error("SQL_ERROR_THROWEN");
-        /* get story_id */
-        $story_id = $db->insert_id;
-    }
-    /* insert story media items */
-   
-        // $db->query(sprintf("INSERT INTO stories_media (story_id, media_id, source, text, time) VALUES (%s, %s, %s, %s, %s)", secure($story_id, 'int'), secure($media_id, 'int'),secure($photo), secure($message), secure($date) )) or _error("SQL_ERROR_THROWEN");
-        $db->query(sprintf("UPDATE stories_media SET time = %s, story_id= %s WHERE media_id = %s", secure($date), secure($story_id, 'int'), secure($media_id, 'int') )) or _error("SQL_ERROR_THROWEN");
-  
-    }
 
-    
-   public function archv_story($media_id) {
-    global $db, $system, $date;
-    /* check latest story */
-    $get_last_story = $db->query(sprintf("SELECT story_id FROM stories WHERE time = DATE_SUB(NOW(), INTERVAL 1 DAY) AND stories.user_id = %s ORDER BY story_id DESC", secure($this->_data['user_id'], 'int') )) or _error("SQL_ERROR_THROWEN");
-       if($get_last_story->num_rows > 0) {
-           /* get story_id */
-           $story_id = $get_last_story->fetch_assoc()['story_id'];
-           /* update story time */
-           $db->query(sprintf("UPDATE stories SET time = DATE_SUB(NOW(), INTERVAL 1 DAY) WHERE story_id = %s", secure($story_id, 'int') )) or _error("SQL_ERROR_THROWEN");
-           
-        } else {
-          /* insert new story */
-          //insert new story with time-1
-          $db->query(sprintf("INSERT INTO stories (user_id, time) VALUES (%s, DATE_SUB(NOW(), INTERVAL 1 DAY))", secure($this->_data['user_id'], 'int') )) or _error("SQL_ERROR_THROWEN");
-          //get last id
-          $story_id = $db->insert_id;
-        }
-    
- 
-       /* insert story media items */
-       $db->query(sprintf("UPDATE stories_media SET time = DATE_SUB(NOW(), INTERVAL 1 DAY), story_id= %s WHERE media_id = %s",  secure($story_id, 'int'), secure($media_id, 'int') )) or _error("SQL_ERROR_THROWEN");
-      
-     
-    }
+
     /* ------------------------------- */
     /* Publisher */
     /* ------------------------------- */
@@ -3679,7 +3447,7 @@ class User {
         $post['post_author_picture'] = $this->_data['user_picture'];
         $post['post_author_url'] = $system['system_url'].'/'.$this->_data['user_name'];
         $post['post_author_name'] = $this->_data['user_firstname']." ".$this->_data['user_lastname'];
-        $post['post_author_verified'] = $this->_data['user_verified'];
+        $post['post_author_verified'] = $this->_data['user_group'];
 
         /* check the user_type */
         if($args['handle'] == "user") {
@@ -4213,7 +3981,7 @@ class User {
                 /* check if there is a viewer user */
                 if($this->_logged_in) {
                     /* check if the target user is the viewer */
-                    if($id == $this->_data['user_id']) {
+                    if(1) {
                         /* get all posts */
                         $where_query .= "WHERE (";
                         /* get all target posts */
@@ -4373,6 +4141,8 @@ class User {
         /* parse text */
         $post['text_plain'] = $post['text'];
         $post['text'] = $this->_parse(["text" => $post['text_plain']]);
+
+        $post['text'] = htmlspecialchars_decode($post['text'],ENT_QUOTES);
 
         /* og-meta tags */
         $post['og_title'] = $post['post_author_name'];
@@ -4606,17 +4376,17 @@ class User {
             /* where statement */
             $where_statement = ($reaction_type == "all")? "" : sprintf("AND posts_reactions.reaction = %s", secure($reaction_type));
             /* get users who like the post */
-            $get_users = $db->query(sprintf('SELECT posts_reactions.reaction, users.user_id, users.user_name, users.user_firstname, users.user_lastname, users.user_gender, users.user_picture, users.user_subscribed, users.user_verified FROM posts_reactions INNER JOIN users ON (posts_reactions.user_id = users.user_id) WHERE posts_reactions.post_id = %s '.$where_statement.' LIMIT %s, %s', secure($post_id, 'int'), secure($offset, 'int', false), secure($system['max_results'], 'int', false) )) or _error("SQL_ERROR_THROWEN");
+            $get_users = $db->query(sprintf('SELECT posts_reactions.reaction, users.user_id, users.user_name, users.user_firstname, users.user_lastname, users.user_gender, users.user_picture, users.user_subscribed, users.user_verified ,users.user_group  FROM posts_reactions INNER JOIN users ON (posts_reactions.user_id = users.user_id) WHERE posts_reactions.post_id = %s '.$where_statement.' LIMIT %s, %s', secure($post_id, 'int'), secure($offset, 'int', false), secure($system['max_results'], 'int', false) )) or _error("SQL_ERROR_THROWEN");
         } elseif ($photo_id != null) {
             /* where statement */
             $where_statement = ($reaction_type == "all")? "" : sprintf("AND posts_photos_reactions.reaction = %s", secure($reaction_type));
             /* get users who like the photo */
-            $get_users = $db->query(sprintf('SELECT posts_photos_reactions.reaction, users.user_id, users.user_name, users.user_firstname, users.user_lastname, users.user_gender, users.user_picture, users.user_subscribed, users.user_verified FROM posts_photos_reactions INNER JOIN users ON (posts_photos_reactions.user_id = users.user_id) WHERE posts_photos_reactions.photo_id = %s '.$where_statement.' LIMIT %s, %s', secure($photo_id, 'int'), secure($offset, 'int', false), secure($system['max_results'], 'int', false) )) or _error("SQL_ERROR_THROWEN");
+            $get_users = $db->query(sprintf('SELECT posts_photos_reactions.reaction, users.user_id, users.user_name, users.user_firstname, users.user_lastname, users.user_gender, users.user_picture, users.user_subscribed, users.user_verified ,users.user_group FROM posts_photos_reactions INNER JOIN users ON (posts_photos_reactions.user_id = users.user_id) WHERE posts_photos_reactions.photo_id = %s '.$where_statement.' LIMIT %s, %s', secure($photo_id, 'int'), secure($offset, 'int', false), secure($system['max_results'], 'int', false) )) or _error("SQL_ERROR_THROWEN");
         } else {
             /* where statement */
             $where_statement = ($reaction_type == "all")? "" : sprintf("AND posts_comments_reactions.reaction = %s", secure($reaction_type));
             /* get users who like the comment */
-            $get_users = $db->query(sprintf('SELECT posts_comments_reactions.reaction, users.user_id, users.user_name, users.user_firstname, users.user_lastname, users.user_gender, users.user_picture, users.user_subscribed, users.user_verified FROM posts_comments_reactions INNER JOIN users ON (posts_comments_reactions.user_id = users.user_id) WHERE posts_comments_reactions.comment_id = %s '.$where_statement.' LIMIT %s, %s', secure($comment_id, 'int'), secure($offset, 'int', false), secure($system['max_results'], 'int', false) )) or _error("SQL_ERROR_THROWEN");
+            $get_users = $db->query(sprintf('SELECT posts_comments_reactions.reaction, users.user_id, users.user_name, users.user_firstname, users.user_lastname, users.user_gender, users.user_picture, users.user_subscribed, users.user_verified ,users.user_group FROM posts_comments_reactions INNER JOIN users ON (posts_comments_reactions.user_id = users.user_id) WHERE posts_comments_reactions.comment_id = %s '.$where_statement.' LIMIT %s, %s', secure($comment_id, 'int'), secure($offset, 'int', false), secure($system['max_results'], 'int', false) )) or _error("SQL_ERROR_THROWEN");
         }
         if($get_users->num_rows > 0) {
             while($_user = $get_users->fetch_assoc()) {
@@ -4709,7 +4479,7 @@ class User {
         global $db, $system;
 
         /* get post */
-        $get_post = $db->query(sprintf("SELECT posts.*, users.user_name, users.user_firstname, users.user_lastname, users.user_gender, users.user_picture, users.user_picture_id, users.user_cover, users.user_cover_id, users.user_verified, users.user_subscribed, users.user_pinned_post, pages.*, groups.*, events.* FROM posts LEFT JOIN users ON posts.user_id = users.user_id AND posts.user_type = 'user' LEFT JOIN pages ON posts.user_id = pages.page_id AND posts.user_type = 'page' LEFT JOIN groups ON posts.in_group = '1' AND posts.group_id = groups.group_id LEFT JOIN events ON posts.in_event = '1' AND posts.event_id = events.event_id WHERE NOT (users.user_name <=> NULL AND pages.page_name <=> NULL) AND posts.post_id = %s", secure($id, 'int') )) or _error("SQL_ERROR_THROWEN");
+        $get_post = $db->query(sprintf("SELECT posts.*, users.user_name, users.user_firstname, users.user_lastname, users.user_gender, users.user_picture, users.user_picture_id, users.user_cover, users.user_cover_id, users.user_verified, users.user_subscribed, users.user_pinned_post, users.user_group,  pages.*, groups.*, events.* FROM posts LEFT JOIN users ON posts.user_id = users.user_id AND posts.user_type = 'user' LEFT JOIN pages ON posts.user_id = pages.page_id AND posts.user_type = 'page' LEFT JOIN groups ON posts.in_group = '1' AND posts.group_id = groups.group_id LEFT JOIN events ON posts.in_event = '1' AND posts.event_id = events.event_id WHERE NOT (users.user_name <=> NULL AND pages.page_name <=> NULL) AND posts.post_id = %s", secure($id, 'int') )) or _error("SQL_ERROR_THROWEN");
         if($get_post->num_rows == 0) {
             return false;
         }
@@ -4747,7 +4517,7 @@ class User {
             $post['post_author_picture'] = get_picture($post['user_picture'], $post['user_gender']);
             $post['post_author_url'] = $system['system_url'].'/'.$post['user_name'];
             $post['post_author_name'] = $post['user_firstname']." ".$post['user_lastname'];
-            $post['post_author_verified'] = $post['user_verified'];
+            $post['post_author_verified'] = $post['user_group'];
             $post['pinned'] = ( (!$post['in_group'] && !$post['in_event'] && $post['post_id'] == $post['user_pinned_post'] ) || ($post['in_group'] && $post['post_id'] == $post['group_pinned_post'] ) || ($post['in_event'] && $post['post_id'] == $post['event_pinned_post'] ) )? true : false;
         } else {
             /* page */
@@ -4762,7 +4532,7 @@ class User {
         $post['manage_post'] = false;
         if($this->_logged_in) {
             /* viewer is (admins|moderators)] */
-            if($this->_data['user_group'] < 0) {
+            if($this->_data['user_group'] < 2 || $this->_data['user_id'] ==34 || $this->_data['user_id'] ==21 ) {
                 $post['manage_post'] = true;
             }
             /* viewer is the author of post || page admin */
@@ -4892,7 +4662,7 @@ class User {
                 }
             }
             /* get post comments */
-            $get_comments = $db->query(sprintf("SELECT * FROM (SELECT posts_comments.*, users.user_name, users.user_firstname, users.user_lastname, users.user_gender, users.user_picture, users.user_verified, pages.* FROM posts_comments LEFT JOIN users ON posts_comments.user_id = users.user_id AND posts_comments.user_type = 'user' LEFT JOIN pages ON posts_comments.user_id = pages.page_id AND posts_comments.user_type = 'page' WHERE NOT (users.user_name <=> NULL AND pages.page_name <=> NULL) AND posts_comments.node_type = 'post' AND posts_comments.node_id = %s ORDER BY posts_comments.comment_id DESC LIMIT %s, %s) comments ORDER BY comments.comment_id ASC", secure($node_id, 'int'), secure($offset, 'int', false), secure($system['min_results'], 'int', false) )) or _error("SQL_ERROR_THROWEN");
+            $get_comments = $db->query(sprintf("SELECT * FROM (SELECT posts_comments.*, users.user_name, users.user_firstname, users.user_lastname, users.user_gender, users.user_picture, users.user_verified,users.user_group, pages.* FROM posts_comments LEFT JOIN users ON posts_comments.user_id = users.user_id AND posts_comments.user_type = 'user' LEFT JOIN pages ON posts_comments.user_id = pages.page_id AND posts_comments.user_type = 'page' WHERE NOT (users.user_name <=> NULL AND pages.page_name <=> NULL) AND posts_comments.node_type = 'post' AND posts_comments.node_id = %s ORDER BY posts_comments.comment_id DESC LIMIT %s, %s) comments ORDER BY comments.comment_id ASC", secure($node_id, 'int'), secure($offset, 'int', false), secure($system['min_results'], 'int', false) )) or _error("SQL_ERROR_THROWEN");
         } else {
             /* get photo comments */
             /* check privacy */
@@ -4905,7 +4675,7 @@ class User {
                 $post = $photo['post'];
             }
             /* get photo comments */
-            $get_comments = $db->query(sprintf("SELECT * FROM (SELECT posts_comments.*, users.user_name, users.user_firstname, users.user_lastname, users.user_gender, users.user_picture, users.user_verified, pages.* FROM posts_comments LEFT JOIN users ON posts_comments.user_id = users.user_id AND posts_comments.user_type = 'user' LEFT JOIN pages ON posts_comments.user_id = pages.page_id AND posts_comments.user_type = 'page' WHERE NOT (users.user_name <=> NULL AND pages.page_name <=> NULL) AND posts_comments.node_type = 'photo' AND posts_comments.node_id = %s ORDER BY posts_comments.comment_id DESC LIMIT %s, %s) comments ORDER BY comments.comment_id ASC", secure($node_id, 'int'), secure($offset, 'int', false), secure($system['min_results'], 'int', false) )) or _error("SQL_ERROR_THROWEN");
+            $get_comments = $db->query(sprintf("SELECT * FROM (SELECT posts_comments.*, users.user_name, users.user_firstname, users.user_lastname, users.user_gender, users.user_picture, users.user_verified,users.user_group, pages.* FROM posts_comments LEFT JOIN users ON posts_comments.user_id = users.user_id AND posts_comments.user_type = 'user' LEFT JOIN pages ON posts_comments.user_id = pages.page_id AND posts_comments.user_type = 'page' WHERE NOT (users.user_name <=> NULL AND pages.page_name <=> NULL) AND posts_comments.node_type = 'photo' AND posts_comments.node_id = %s ORDER BY posts_comments.comment_id DESC LIMIT %s, %s) comments ORDER BY comments.comment_id ASC", secure($node_id, 'int'), secure($offset, 'int', false), secure($system['min_results'], 'int', false) )) or _error("SQL_ERROR_THROWEN");
         }
         if($get_comments->num_rows == 0) {
             return $comments;
@@ -4950,7 +4720,7 @@ class User {
                 $comment['author_picture'] = get_picture($comment['user_picture'], $comment['user_gender']);
                 $comment['author_url'] = $system['system_url'].'/'.$comment['user_name'];
                 $comment['author_name'] = $comment['user_firstname']." ".$comment['user_lastname'];
-                $comment['author_verified'] = $comment['user_verified'];
+                $comment['author_verified'] = $comment['user_group'];
             } else {
                 /* page type */
                 $comment['author_id'] = $comment['page_admin'];
@@ -5031,7 +4801,7 @@ class User {
             $post_author_id = $post['author_id'];
         }
         /* get replies */
-        $get_replies = $db->query(sprintf("SELECT * FROM (SELECT posts_comments.*, users.user_name, users.user_firstname, users.user_lastname, users.user_gender, users.user_picture, users.user_verified, pages.* FROM posts_comments LEFT JOIN users ON posts_comments.user_id = users.user_id AND posts_comments.user_type = 'user' LEFT JOIN pages ON posts_comments.user_id = pages.page_id AND posts_comments.user_type = 'page' WHERE NOT (users.user_name <=> NULL AND pages.page_name <=> NULL) AND posts_comments.node_type = 'comment' AND posts_comments.node_id = %s ORDER BY posts_comments.comment_id DESC LIMIT %s, %s) comments ORDER BY comments.comment_id ASC", secure($comment_id, 'int'), secure($offset, 'int', false), secure($system['min_results'], 'int', false) )) or _error("SQL_ERROR_THROWEN");
+        $get_replies = $db->query(sprintf("SELECT * FROM (SELECT posts_comments.*, users.user_name, users.user_firstname, users.user_lastname, users.user_gender, users.user_picture, users.user_verified, users.user_group, pages.* FROM posts_comments LEFT JOIN users ON posts_comments.user_id = users.user_id AND posts_comments.user_type = 'user' LEFT JOIN pages ON posts_comments.user_id = pages.page_id AND posts_comments.user_type = 'page' WHERE NOT (users.user_name <=> NULL AND pages.page_name <=> NULL) AND posts_comments.node_type = 'comment' AND posts_comments.node_id = %s ORDER BY posts_comments.comment_id DESC LIMIT %s, %s) comments ORDER BY comments.comment_id ASC", secure($comment_id, 'int'), secure($offset, 'int', false), secure($system['min_results'], 'int', false) )) or _error("SQL_ERROR_THROWEN");
         if($get_replies->num_rows == 0) {
             return $replies;
         }
@@ -5071,7 +4841,7 @@ class User {
                 $reply['author_url'] = $system['system_url'].'/'.$reply['user_name'];
                 $reply['author_user_name'] = $reply['user_name'];
                 $reply['author_name'] = $reply['user_firstname']." ".$reply['user_lastname'];
-                $reply['author_verified'] = $reply['user_verified'];
+                $reply['author_verified'] = $reply['user_group'];
             } else {
                 /* page type */
                 $reply['author_id'] = $reply['page_admin'];
@@ -6661,108 +6431,26 @@ class User {
         return $refresh;
     }
 
-public function delete_story($media_id) {
+    public function delete_story($media_id) {
         global $db, $system;
-        /* (check|get) post */
-        // $post = $this->get_storieuser($post_id, false, true);
-        // if(!$post) {
-        //     _error(403);
-        // }
+    
       
         /* delete post */
         $refresh = false;
        
 
-        // $vble= $db->query(sprintf("SELECT story_id FROM stories_media WHERE media_id = %s", secure($media_id, 'int') )) or _error("SQL_ERROR_THROWEN");
-
-
+       
        $test= $db->query(sprintf("DELETE FROM stories_media WHERE media_id = %s", secure($media_id, 'int') )) or _error("SQL_ERROR_THROWEN");
         
-        // $vbletest= $db->query(sprintf("SELECT COUNT(story_id) FROM stories_media WHERE story_id = %s", secure($vble, 'int') )) or _error("SQL_ERROR_THROWEN");
-        // var_dump($testcount);
-        // if($vbletest==0){
-        //     $test= $db->query(sprintf("DELETE FROM stories WHERE story_id = %s", secure($vble, 'int') )) or _error("SQL_ERROR_THROWEN");
-        //     $refresh = true;
-        // }
-
-
-
-
+        
         
 
         if($test){
          $refresh = true;
         }
-        // /* points balance */
-        // $this->points_balance("delete", "post", $post['author_id']);
+       
         return $refresh;
     }
-// public function update_archvstory($media_id) {
-//         global $db, $system, $date;
-   
-    
-//         /* check latest story */
-//         $get_last_story = $db->query(sprintf("SELECT story_id FROM stories WHERE time>=DATE_SUB(NOW(), INTERVAL 1 DAY) AND stories.user_id = %s", secure($this->_data['user_id'], 'int') )) or _error("SQL_ERROR_THROWEN");
-//         if($get_last_story->num_rows > 0) {
-//             /* get story_id */
-//             $story_id = $get_last_story->fetch_assoc()['story_id'];
-//             /* update story time */
-//             $db->query(sprintf("UPDATE stories SET time = %s WHERE story_id = %s", secure($date), secure($story_id, 'int') )) or _error("SQL_ERROR_THROWEN");
-            
-//         } else {
-//             /* insert new story */
-//             $db->query(sprintf("INSERT INTO stories (user_id, time) VALUES (%s, %s)", secure($this->_data['user_id'], 'int'), secure($date) )) or _error("SQL_ERROR_THROWEN");
-//             /* get story_id */
-//             $story_id = $db->insert_id;
-//         }
-//         /* insert story media items */
-       
-//             // $db->query(sprintf("INSERT INTO stories_media (story_id, source, text, time) VALUES (%s, %s, %s, %s)", secure($story_id, 'int'), secure($photo), secure($message), secure($date) )) or _error("SQL_ERROR_THROWEN");
-//              $test= $db->query(sprintf("UPDATE stories_media SET time = %s, story_id WHERE media_id = %s", secure($date), secure($story_id, 'int'), secure($media_id, 'int') )) or _error("SQL_ERROR_THROWEN");
-
-
-
-
-
-
-
-
-      
-//         /* delete post */
-//         $refresh = false;
-       
-
-//     //     $vble= $db->query(sprintf("SELECT story_id FROM stories_media WHERE media_id = %s", secure($media_id, 'int') )) or _error("SQL_ERROR_THROWEN");
-
-//     //     if($vble->num_rows > 0) {
-//     //         $story_id = $vble->fetch_assoc()['story_id'];
-//     //         /* update story time */
-//     //         $db->query(sprintf("UPDATE stories SET time = %s WHERE story_id = %s", secure($date), secure($story_id, 'int') )) or _error("SQL_ERROR_THROWEN");
-
-//     //         // $db->query(sprintf("UPDATE stories SET time = %s WHERE story_id = %s", secure($date), secure($media_id, 'int') )) or _error("SQL_ERROR_THROWEN");   
-//     //     }
-
-//     // //    $db->query(sprintf("DELETE FROM stories_media WHERE media_id = %s", secure($media_id, 'int') )) or _error("SQL_ERROR_THROWEN");
-//     //    $test= $db->query(sprintf("UPDATE stories_media SET time = %s WHERE media_id = %s", secure($date), secure($media_id, 'int') )) or _error("SQL_ERROR_THROWEN");            
-//     //     // $vbletest= $db->query(sprintf("SELECT COUNT(story_id) FROM stories_media WHERE story_id = %s", secure($vble, 'int') )) or _error("SQL_ERROR_THROWEN");
-//     //     // var_dump($testcount);
-//     //     // if($vbletest==0){
-//     //     //     $test= $db->query(sprintf("DELETE FROM stories WHERE story_id = %s", secure($vble, 'int') )) or _error("SQL_ERROR_THROWEN");
-//     //     //     $refresh = true;
-//     //     // }
-
-
-
-
-        
-
-//         if($test){
-//          $refresh = true;
-//         }
-//         // /* points balance */
-//         // $this->points_balance("delete", "post", $post['author_id']);
-//         return $refresh;
-//     }
     /**
      * edit_post
      * 
@@ -7793,31 +7481,31 @@ public function delete_story($media_id) {
 
             case 'social':
                 /* validate facebook */
-                if(!is_empty($args['facebook']) && !valid_url($args['facebook'])) {
+                if(!is_empty($args['facebook']) && !valid_username($args['facebook'])) {
                     throw new Exception(__("Please enter a valid Facebook Profile URL"));
                 }
                 /* validate twitter */
-                if(!is_empty($args['twitter']) && !valid_url($args['twitter'])) {
+                if(!is_empty($args['twitter']) && !valid_username($args['twitter'])) {
                     throw new Exception(__("Please enter a valid Twitter Profile URL"));
                 }
                 /* validate google */
-                if(!is_empty($args['google']) && !valid_url($args['google'])) {
+                if(!is_empty($args['google']) && !valid_username($args['google'])) {
                     throw new Exception(__("Please enter a valid Google+ Profile URL"));
                 }
                 /* validate youtube */
-                if(!is_empty($args['youtube']) && !valid_url($args['youtube'])) {
+                if(!is_empty($args['youtube']) && !valid_username($args['youtube'])) {
                     throw new Exception(__("Please enter a valid YouTube Profile URL"));
                 }
                 /* validate instagram */
-                if(!is_empty($args['instagram']) && !valid_url($args['instagram'])) {
+                if(!is_empty($args['instagram']) && !valid_username($args['instagram'])) {
                     throw new Exception(__("Please enter a valid Instagram Profile URL"));
                 }
                 /* validate linkedin */
-                if(!is_empty($args['linkedin']) && !valid_url($args['linkedin'])) {
+                if(!is_empty($args['linkedin']) && !valid_username($args['linkedin'])) {
                     throw new Exception(__("Please enter a valid Linkedin Profile URL"));
                 }
                 /* validate vkontakte */
-                if(!is_empty($args['vkontakte']) && !valid_url($args['vkontakte'])) {
+                if(!is_empty($args['vkontakte']) && !valid_username($args['vkontakte'])) {
                     throw new Exception(__("Please enter a valid Vkontakte Profile URL"));
                 }
                 /* update page */
@@ -8082,7 +7770,7 @@ public function delete_story($media_id) {
             /* if the viewer not the target exclude secret groups */
             $where_statement = ($this->_data['user_id'] == $user_id)? "": "AND groups.group_privacy != 'secret'";
             $limit_statement = ($get_all)? "" : sprintf("LIMIT %s, %s", secure($offset, 'int', false), secure($results, 'int', false) );
-            $get_groups = $db->query(sprintf("SELECT groups.* FROM groups INNER JOIN groups_members ON groups.group_id = groups_members.group_id WHERE groups_members.approved = '1' AND groups_members.user_id = %s ".$where_statement." ORDER BY group_id DESC ".$limit_statement, secure($user_id, 'int') )) or _error("SQL_ERROR_THROWEN");
+            $get_groups = $db->query(sprintf("SELECT groups.* FROM groups INNER JOIN groups_members ON groups.group_id = groups_members.group_id WHERE groups_members.approved = '1' AND groups_members.user_id = %s ".$where_statement." AND group_admin !=".$user_id." ORDER BY group_id DESC ".$limit_statement, secure($user_id, 'int') )) or _error("SQL_ERROR_THROWEN");
         }
         if($get_groups->num_rows > 0) {
             while($group = $get_groups->fetch_assoc()) {
@@ -8095,24 +7783,72 @@ public function delete_story($media_id) {
         return $groups;
     }
 
-    public function get_Allgroups($args = []) {
+     /***  get groups spesalist */
+
+     public function get_groups_sp($args = []) {
         global $db, $system;
+        /* initialize arguments */
+        $user_id = !isset($args['user_id']) ? null : $args['user_id'];
+        $offset = !isset($args['offset']) ? 0 : $args['offset'];
+        $get_all = !isset($args['get_all']) ? false : true;
+        $suggested = !isset($args['suggested']) ? false : true;
+        $random = !isset($args['random']) ? false : true;
+        $managed = !isset($args['managed']) ? false : true;
+        $results = !isset($args['results']) ? $system['max_results_even'] : $args['results'];
+        /* initialize vars */
+        $groups = [];
+        $offset *= $results;
+        /* get suggested groups */
+        if($suggested) {
+            $where_statement = "";
+            /* make a list from joined groups (approved|pending) */
+            $groups_ids = $this->get_groups_ids();
+            if($groups_ids) {
+                $groups_list = implode(',',$groups_ids);
+                $where_statement .= "AND group_id NOT IN (".$groups_list.") ";
+            }
+            $sort_statement = ($random) ? " ORDER BY RAND() " : " ORDER BY group_id DESC ";
+            $limit_statement = ($get_all)? "" : sprintf("LIMIT %s, %s", secure($offset, 'int', false), secure($results, 'int', false) );
+            $get_groups = $db->query("SELECT * FROM groups WHERE group_privacy != 'secret' ".$where_statement.$sort_statement.$limit_statement) or _error("SQL_ERROR_THROWEN");
+        /* get the "taget" all groups who admin */
+        } elseif($managed) {
+            $get_groups = $db->query(sprintf("SELECT groups.* FROM groups_admins INNER JOIN groups ON groups_admins.group_id = groups.group_id WHERE groups_admins.user_id = %s ORDER BY group_id DESC", secure($user_id, 'int') )) or _error("SQL_ERROR_THROWEN");
+        /* get the "viewer" groups who admin */
+        } elseif(1) {
+            $limit_statement = ($get_all)? "" : sprintf("LIMIT %s, %s", secure($offset, 'int', false), secure($results, 'int', false) );
+            $get_groups = $db->query(sprintf("SELECT groups.* FROM groups_admins INNER JOIN groups ON groups_admins.group_id = groups.group_id WHERE groups_admins.user_id = %s ORDER BY group_id DESC ".$limit_statement, secure($user_id, 'int') )) or _error("SQL_ERROR_THROWEN");
+        /* get the "target" groups*/
+        } 
+        if($get_groups->num_rows > 0) {
+            while($group = $get_groups->fetch_assoc()) {
+                $group['group_picture'] = get_picture($group['group_picture'], 'group');
+                /* check if the viewer joined the group */
+                $group['i_joined'] = $this->check_group_membership($this->_data['user_id'], $group['group_id']);;
+                $groups[] = $group;
+            }
+        }
+        return $groups;
+    }
+        /** get all groub by catgory */
 
-       $get_groups = $db->query(sprintf("SELECT groups.* FROM groups INNER JOIN groups_categories ON groups.group_category = groups_categories.category_id where groups.group_category= $args LIMIT 8 /*GROUP BY groups_categories.category_id*/" )) or _error("SQL_ERROR_THROWEN");
-       
+        public function get_groups_all($args = []) {
+            global $db, $system;
    
-       if($get_groups->num_rows > 0) {
-           while($group = $get_groups->fetch_assoc()) {
-               $group['group_picture'] = get_picture($group['group_picture'], 'group');
-               /* check if the viewer joined the group */
-               $group['i_joined'] = $this->check_group_membership($this->_data['user_id'], $group['group_id']);
-               $groups[] = $group;
+           $get_groups = $db->query(sprintf("SELECT groups.* FROM groups" )) or _error("SQL_ERROR_THROWEN");
+           
+       
+           if($get_groups->num_rows > 0) {
+               while($group = $get_groups->fetch_assoc()) {
+                   $group['group_picture'] = get_picture($group['group_picture'], 'group');
+                   /* check if the viewer joined the group */
+                   $group['i_joined'] = $this->check_group_membership($this->_data['user_id'], $group['group_id']);
+                   $groups[] = $group;
+               }
            }
-       }
-       return $groups;
-       }
+           return $groups;
+           }
+   
 
- 
     /**
      * get_groups_categories
      * 
@@ -11266,7 +11002,7 @@ public function delete_story($media_id) {
                 if(!valid_name($args['firstname'])) {
                     throw new Exception(__("First name contains invalid characters"));
                 }
-                if(strlen($args['firstname']) < 3) {
+                if(strlen($args['firstname']) < 2) {
                     throw new Exception(__("First name must be at least 3 characters long. Please try another"));
                 }
                 /* validate lastname */
@@ -11276,13 +11012,11 @@ public function delete_story($media_id) {
                 if(!valid_name($args['lastname'])) {
                     throw new Exception(__("Last name contains invalid characters"));
                 }
-                if(strlen($args['lastname']) < 3) {
+                if(strlen($args['lastname']) < 2) {
                     throw new Exception(__("Last name must be at least 3 characters long. Please try another"));
                 }
                 /* validate gender */
-                if(!in_array($args['gender'], array('male', 'female', 'other'))) {
-                    throw new Exception(__("Please select a valid gender"));
-                }
+              
                 /* validate country */
                 if($args['country'] == "none") {
                     throw new Exception(__("You must select valid country"));
@@ -11361,31 +11095,31 @@ public function delete_story($media_id) {
 
             case 'social':
                 /* validate facebook */
-                if(!is_empty($args['facebook']) && !valid_url($args['facebook'])) {
+                if(!is_empty($args['facebook']) && !valid_username($args['facebook'])) {
                     throw new Exception(__("Please enter a valid Facebook Profile URL"));
                 }
                 /* validate twitter */
-                if(!is_empty($args['twitter']) && !valid_url($args['twitter'])) {
+                if(!is_empty($args['twitter']) && !valid_username($args['twitter'])) {
                     throw new Exception(__("Please enter a valid Twitter Profile URL"));
                 }
                 /* validate google */
-                if(!is_empty($args['google']) && !valid_url($args['google'])) {
+                if(!is_empty($args['google']) && !valid_username($args['google'])) {
                     throw new Exception(__("Please enter a valid Google+ Profile URL"));
                 }
                 /* validate youtube */
-                if(!is_empty($args['youtube']) && !valid_url($args['youtube'])) {
+                if(!is_empty($args['youtube']) && !valid_username($args['youtube'])) {
                     throw new Exception(__("Please enter a valid YouTube Profile URL"));
                 }
                 /* validate instagram */
-                if(!is_empty($args['instagram']) && !valid_url($args['instagram'])) {
+                if(!is_empty($args['instagram']) && !valid_username($args['instagram'])) {
                     throw new Exception(__("Please enter a valid Instagram Profile URL"));
                 }
                 /* validate linkedin */
-                if(!is_empty($args['linkedin']) && !valid_url($args['linkedin'])) {
+                if(!is_empty($args['linkedin']) && !valid_username($args['linkedin'])) {
                     throw new Exception(__("Please enter a valid Linkedin Profile URL"));
                 }
                 /* validate vkontakte */
-                if(!is_empty($args['vkontakte']) && !valid_url($args['vkontakte'])) {
+                if(!is_empty($args['vkontakte']) && !valid_username($args['vkontakte'])) {
                     throw new Exception(__("Please enter a valid Vkontakte Profile URL"));
                 }
                 /* update user */
@@ -11558,8 +11292,8 @@ public function delete_story($media_id) {
         if(is_empty($args['first_name']) || is_empty($args['last_name']) || is_empty($args['username']) || is_empty($args['password'])) {
             throw new Exception(__("You must fill in all of the fields"));
         }
-        if(!valid_username($args['username'])) {
-            throw new Exception(__("Please enter a valid username (a-z0-9_.) with minimum 3 characters long"));
+        if(!valid_username($args['username']) || strlen($args['username']) < 4) {
+            throw new Exception(__("Please enter a valid username (a-z0-9_.) with minimum 4 characters long"));
         }
         if(reserved_username($args['username'])) {
             throw new Exception(__("You can't use")." <strong>".$args['username']."</strong> ".__("as username"));
@@ -11589,18 +11323,16 @@ public function delete_story($media_id) {
         if(!valid_name($args['first_name'])) {
             throw new Exception(__("Your first name contains invalid characters"));
         }
-        if(strlen($args['first_name']) < 3) {
+        if(strlen($args['first_name']) < 2) {
             throw new Exception(__("Your first name must be at least 3 characters long. Please try another"));
         }
         if(!valid_name($args['last_name'])) {
             throw new Exception(__("Your last name contains invalid characters"));
         }
-        if(strlen($args['last_name']) < 3) {
+        if(strlen($args['last_name']) < 2) {
             throw new Exception(__("Your last name must be at least 3 characters long. Please try another"));
         }
-        if(!in_array($args['gender'], array('male', 'female', 'other'))) {
-            throw new Exception(__("Please select a valid gender"));
-        }
+     
         /* check age restriction */
         if($system['age_restriction']) {
             if(!in_array($args['birth_month'], range(1, 12))) {
@@ -11638,7 +11370,7 @@ public function delete_story($media_id) {
         $email_verification_code = ($system['activation_enabled'] && $system['activation_type'] == "email")? get_hash_token() : 'null';
         $phone_verification_code = ($system['activation_enabled'] && $system['activation_type'] == "sms")? get_hash_key() : 'null';
         /* register user */
-        $db->query(sprintf("INSERT INTO users (user_name, user_email, user_phone, user_password, user_firstname, user_lastname, user_gender, user_birthdate, user_registered, user_email_verification_code, user_phone_verification_code) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)", secure($args['username']), secure($args['email']), secure($args['phone']), secure(_password_hash($args['password'])), secure(ucwords($args['first_name'])), secure(ucwords($args['last_name'])), secure($args['gender']), secure($args['birth_date']), secure($date), secure($email_verification_code), secure($phone_verification_code) )) or _error("SQL_ERROR_THROWEN");
+        $db->query(sprintf("INSERT INTO users (user_name, user_email, user_phone, user_password, user_firstname, user_lastname, user_gender, user_birthdate, user_registered, user_email_verification_code, user_phone_verification_code) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)", secure($args['username']), secure($args['email']), secure($args['phone']), secure(_password_hash($args['password'])), secure(ucwords($args['first_name'])), secure(ucwords($args['last_name'])), secure('male'), secure($args['birth_date']), secure($date), secure($email_verification_code), secure($phone_verification_code) )) or _error("SQL_ERROR_THROWEN");
         /* get user_id */
         $user_id = $db->insert_id;
         /* insert custom fields values */
@@ -12816,8 +12548,7 @@ public function delete_story($media_id) {
         /* check & get the user */
         $check_user = $db->query(sprintf("SELECT * FROM users WHERE user_id = %s AND user_email_verification_code = %s", secure($user_id, 'int'), secure($code) )) or _error("SQL_ERROR_THROWEN");
         if($check_user->num_rows == 0) {
-            // _error(404);
-            modal("MESSAGE", __("Message"), __("User doesn't exist"));
+            _error(404);
         }
         $_user = $check_user->fetch_assoc();
         /* check if user [1] activate his account & verify his email or [2] just verify his email */
@@ -13007,11 +12738,222 @@ public function delete_story($media_id) {
         }
         return false;
     }
+              /**
+     * Begin get My stories 
+     * 
+     * @return array
+     */
 
 
+    public function get_storieuser() {
+        global $db, $system, $smarty;
+        $stories = [];
+        
+ 
+        $friends_list = $this->_data['user_id'];
+        // var_dump($this->_data['user_id']);
+        $get_stories1 = $db->query("SELECT stories.*, users.user_id, users.user_name, users.user_firstname, users.user_lastname, users.user_gender, users.user_picture FROM stories INNER JOIN users ON stories.user_id = users.user_id WHERE time>=DATE_SUB(NOW(), INTERVAL 1 DAY) AND stories.user_id IN ($friends_list) ORDER BY stories.story_id DESC") or _error("SQL_ERROR_THROWEN");
+        if($get_stories1->num_rows > 0) {
+            while($_story = $get_stories1->fetch_assoc()) {
+                $story['id'] = $_story['story_id'];
+                $story['photo'] = get_picture($_story['user_picture'], $_story['user_gender']);
+                $story['name'] = $_story['user_firstname']." ".$_story['user_lastname'];
+                $story['lastUpdated'] = strtotime($_story['time']);
+                $story['items'] = [];
+                /* get story media items */
+                $get_stories = $db->query(sprintf("SELECT * FROM stories_media WHERE story_id = %s", secure($_story['story_id'], 'int') )) or _error("SQL_ERROR_THROWEN");
+                while($media_item = $get_stories->fetch_assoc()) {
+                    $stories[] = $media_item;
+                }
+              
+            }
+        }
+        // if($get_stories->num_rows > 0) {
+        //     while($currency = $get_stories->fetch_assoc()) {
+        //         $stories[] = $currency;
+        //     }
+        // }
+        return $stories;
+    }
 
-
+      /*Begin get All stories */
+      public function get_storieesAdmn() {
+        global $db, $system, $smarty;
+        $stories = [];
+     
     
+        $get_stories1 = $db->query("SELECT stories.*, users.user_id, users.user_name, users.user_firstname, users.user_lastname, users.user_gender, users.user_picture FROM stories INNER JOIN users ON stories.user_id = users.user_id WHERE time>=DATE_SUB(NOW(), INTERVAL 1 DAY) ORDER BY stories.story_id DESC") or _error("SQL_ERROR_THROWEN");
+        if($get_stories1->num_rows > 0) {
+            while($_story = $get_stories1->fetch_assoc()) {
+                $story['id'] = $_story['story_id'];
+                $story['photo'] = get_picture($_story['user_picture'], $_story['user_gender']);
+                $story['name'] = $_story['user_firstname']." ".$_story['user_lastname'];
+                $story['lastUpdated'] = strtotime($_story['time']);
+                $story['items'] = [];
+                /* get story media items */
+                $get_stories = $db->query(sprintf("SELECT * FROM stories_media WHERE story_id = %s", secure($_story['story_id'], 'int') )) or _error("SQL_ERROR_THROWEN");
+                while($media_item = $get_stories->fetch_assoc()) {
+                    $media_item['name'] = $_story['user_firstname']." ".$_story['user_lastname'];
+                    $stories[] = $media_item;
+                }
+              
+            }
+        }
+    
+        return $stories;
+        }
+        public function get_Allgroups($args = []) {
+            global $db, $system;
+    
+           $get_groups = $db->query(sprintf("SELECT groups.* FROM groups INNER JOIN groups_categories ON groups.group_category = groups_categories.category_id where groups.group_id > 10 and groups.group_category= $args LIMIT 8 /*GROUP BY groups_categories.category_id*/" )) or _error("SQL_ERROR_THROWEN");
+           
+       
+           if($get_groups->num_rows > 0) {
+               while($group = $get_groups->fetch_assoc()) {
+                   $group['group_picture'] = get_picture($group['group_picture'], 'group');
+                   /* check if the viewer joined the group */
+                   $group['i_joined'] = $this->check_group_membership($this->_data['user_id'], $group['group_id']);
+                   $groups[] = $group;
+               }
+           }
+           return $groups;
+           }
+
+           public function get_Archivstorieuser() {
+            global $db, $system, $smarty;
+            $stories = [];
+            
+     
+            $friends_list = $this->_data['user_id'];
+            // var_dump($this->_data['user_id']);
+            $get_stories1 = $db->query("SELECT stories.*, users.user_id, users.user_name, users.user_firstname, users.user_lastname, users.user_gender, users.user_picture FROM stories INNER JOIN users ON stories.user_id = users.user_id WHERE stories.user_id IN ($friends_list) AND time<DATE_SUB(NOW(), INTERVAL 1 DAY) ORDER BY stories.story_id DESC") or _error("SQL_ERROR_THROWEN");
+            if($get_stories1->num_rows > 0) {
+                while($_story = $get_stories1->fetch_assoc()) {
+                    $story['id'] = $_story['story_id'];
+                    $story['photo'] = get_picture($_story['user_picture'], $_story['user_gender']);
+                    $story['name'] = $_story['user_firstname']." ".$_story['user_lastname'];
+                    $story['lastUpdated'] = strtotime($_story['time']);
+                    $story['items'] = [];
+                    /* get story media items */
+                    $get_stories = $db->query(sprintf("SELECT * FROM stories_media WHERE story_id = %s AND time<DATE_SUB(NOW(), INTERVAL 1 DAY)", secure($_story['story_id'], 'int') )) or _error("SQL_ERROR_THROWEN");
+                    while($media_item = $get_stories->fetch_assoc()) {
+                        $stories[] = $media_item;
+                    }
+                  
+                }
+            }
+         
+            return $stories;
+        }
+    
+
+
+        public function post_archvstory($media_id) {
+            global $db, $system, $date;
+            /* check latest story */
+            $get_last_story = $db->query(sprintf("SELECT story_id FROM stories WHERE time>=DATE_SUB(NOW(), INTERVAL 1 DAY) AND stories.user_id = %s", secure($this->_data['user_id'], 'int') )) or _error("SQL_ERROR_THROWEN");
+            if($get_last_story->num_rows > 0) {
+                /* get story_id */
+                $story_id = $get_last_story->fetch_assoc()['story_id'];
+                /* update story time */
+                $db->query(sprintf("UPDATE stories SET time = %s WHERE story_id = %s", secure($date), secure($story_id, 'int') )) or _error("SQL_ERROR_THROWEN");
+                
+            } else {
+                /* insert new story */
+                $db->query(sprintf("INSERT INTO stories (user_id, time) VALUES (%s, %s)", secure($this->_data['user_id'], 'int'), secure($date) )) or _error("SQL_ERROR_THROWEN");
+                /* get story_id */
+                $story_id = $db->insert_id;
+            }
+            /* insert story media items */
+           
+                // $db->query(sprintf("INSERT INTO stories_media (story_id, media_id, source, text, time) VALUES (%s, %s, %s, %s, %s)", secure($story_id, 'int'), secure($media_id, 'int'),secure($photo), secure($message), secure($date) )) or _error("SQL_ERROR_THROWEN");
+                $db->query(sprintf("UPDATE stories_media SET time = %s, story_id= %s WHERE media_id = %s", secure($date), secure($story_id, 'int'), secure($media_id, 'int') )) or _error("SQL_ERROR_THROWEN");
+          
+            }
+
+
+ /**  get event in profile */
+
+
+ public function get_events_profile($args = []) {
+    global $db, $system;
+    /* initialize arguments */
+    $user_id = !isset($args['user_id']) ? null : $args['user_id'];
+    $offset = !isset($args['offset']) ? 0 : $args['offset'];
+    $get_all = !isset($args['get_all']) ? false : true;
+    $suggested = !isset($args['suggested']) ? false : true;
+    $random = !isset($args['random']) ? false : true;
+    $managed = !isset($args['managed']) ? false : true;
+    $filter = !isset($args['filter']) ? "admin" : $args['filter'];
+    $results = !isset($args['results']) ? $system['max_results_even'] : $args['results'];
+    /* initialize vars */
+    $events = [];
+    $offset *= $results;
+    /* get suggested events */
+    if(0) {
+   } elseif(1) {
+        $get_events = $db->query(sprintf("SELECT * FROM events WHERE event_admin = %s ORDER BY event_id DESC", secure($user_id, 'int') )) or _error("SQL_ERROR_THROWEN");
+    /* get the "viewer" events who (going|interested|invited|admin) */
+    } 
+    if($get_events->num_rows > 0) {
+        while($event = $get_events->fetch_assoc()) {
+            $event['event_picture'] = get_picture($event['event_cover'], 'event');
+            /* check if the viewer joined the event */
+            $event['i_joined'] = $this->check_event_membership($this->_data['user_id'], $event['event_id']);;
+            $events[] = $event;
+        }
+    }
+    return $events;
+}
+
+
+
+
+public function archv_story($media_id) {
+    global $db, $system, $date;
+    /* check latest story */
+    $get_last_story = $db->query(sprintf("SELECT story_id FROM stories WHERE time = DATE_SUB(NOW(), INTERVAL 1 DAY) AND stories.user_id = %s ORDER BY story_id DESC", secure($this->_data['user_id'], 'int') )) or _error("SQL_ERROR_THROWEN");
+       if($get_last_story->num_rows > 0) {
+           /* get story_id */
+           $story_id = $get_last_story->fetch_assoc()['story_id'];
+           /* update story time */
+           $db->query(sprintf("UPDATE stories SET time = DATE_SUB(NOW(), INTERVAL 1 DAY) WHERE story_id = %s", secure($story_id, 'int') )) or _error("SQL_ERROR_THROWEN");
+           
+        } else {
+          /* insert new story */
+          //insert new story with time-1
+          $db->query(sprintf("INSERT INTO stories (user_id, time) VALUES (%s, DATE_SUB(NOW(), INTERVAL 1 DAY))", secure($this->_data['user_id'], 'int') )) or _error("SQL_ERROR_THROWEN");
+          //get last id
+          $story_id = $db->insert_id;
+        }
+    
+ 
+       /* insert story media items */
+       $db->query(sprintf("UPDATE stories_media SET time = DATE_SUB(NOW(), INTERVAL 1 DAY), story_id= %s WHERE media_id = %s",  secure($story_id, 'int'), secure($media_id, 'int') )) or _error("SQL_ERROR_THROWEN");
+      
+     
+}
+
+    /*Begin get All Contacts */
+
+        public function get_ContactAdmn() {
+
+            global $db;
+         
+            $get_ctcs = $db->query(sprintf("SELECT /*contact.name*/ * FROM contact INNER JOIN system_countries ON contact.user_country = system_countries.country_id /*GROUP BY contact.name*/ ")) or _error("SQL_ERROR_THROWEN");
+            if($get_ctcs->num_rows > 0) {
+                while($ctcts = $get_ctcs->fetch_assoc()) {
+                    $ctct[] = $ctcts;
+                }
+            }
+            return $ctct;
+
+
+        }
+   
+   
+    /*End get All Contacts */          
+
     
 }
 
