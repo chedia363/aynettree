@@ -95,7 +95,7 @@ msgid "Gate panels"
 msgstr "بوابة المجالس"
 
 msgid "Events"
-msgstr "المناسبات"
+msgstr "الأحداث"
 
 msgid "Blogs"
 msgstr "المدونات"
@@ -284,22 +284,22 @@ msgid "Pages Directory"
 msgstr "مستكشف المجالس"
 
 msgid "Events Directory"
-msgstr "مستكشف المناسبات "
+msgstr "مستكشف الأحداث "
 
 msgid "Discover Events"
-msgstr "اكتشف المناسبات"
+msgstr "اكتشف الأحداث"
 
 msgid "Going Events"
-msgstr "مناسبات قائمة" 
+msgstr "أحداث قائمة" 
 
 msgid "Interested Events"
-msgstr "مناسبات مهتم بها"
+msgstr "أحداث مهتم بها"
 
 msgid "Invited Events"
-msgstr "مناسبات مدعو إليها"
+msgstr "أحداث مدعو إليها"
 
 msgid "Your Events"
-msgstr "مناسباتك"
+msgstr "أحداثك"
 
 msgid "Write New Thread"
 msgstr "كتابة تسلسل جديد"
@@ -808,7 +808,7 @@ msgid "User Profile"
 msgstr "ملف العضو "
 
 msgid "Where you want to use this field for user profile, page, panel or event"
-msgstr "حيث تريد استخدام هذا الحقل لملف تعريف المستخدم أو الصفحة أو  المجالس أو المناسبة"
+msgstr "حيث تريد استخدام هذا الحقل لملف تعريف المستخدم أو الصفحة أو  المجالس أو الحدث"
 
 msgid "Select Options"
 msgstr "أشر على الخيارات"
@@ -847,7 +847,7 @@ msgid "Show in Profile Page"
 msgstr "عرض في صفحة الملف الشخصي"
 
 msgid "Show the field in the user's profile page, fan page, group or event"
-msgstr "إظهار الحقل في صفحة الملف الشخصي للمستخدم أو صفحة المعجبين أو المجلس أو المناسبة"
+msgstr "إظهار الحقل في صفحة الملف الشخصي للمستخدم أو صفحة المعجبين أو المجلس أو الحدث"
 
 msgid "The label of your custom field, also will be used as a placeholder"
 msgstr "سيتم استخدام تصنيف الحقل المخصص أيضًا كعنصر نائب" 
@@ -895,7 +895,7 @@ msgid "Manage Panels"
 msgstr "إدارة المجالس"
 
 msgid "Manage Events"
-msgstr "إدارة المناسبات"
+msgstr "إدارة الأحداث"
 
 msgid "Night Mode is Default"
 msgstr "الوضع الليلي هو الافتراضي"
@@ -1000,22 +1000,22 @@ msgid "for the Emojis, You must replace underscores with hyphens, For example: :
 msgstr "chickas للنمط والفقس hatching_chick: بالنسبة إلى الرموز التعبيرية ، يجب استبدال الشُرط السفلية مع الواصلات ، على سبيل المثال:"
 
 msgid "View Event"
-msgstr "عرض المناسبات"
+msgstr "عرض الأحداث"
 
 msgid "Delete All Posts"
 msgstr "حذف جميع المشاركات"
 
 msgid "Interested"
-msgstr "مهتم" 
+msgstr "اهتمام" 
 
 msgid "Interest"
 msgstr "اهتمام" 
 
 msgid "Going"
-msgstr "ذاهب إليها"
+msgstr "حضور"
 
 msgid "Invited"
-msgstr "مدعو إليها"
+msgstr "دعوة"
 
 msgid "Public"
 msgstr "السجل العام"
@@ -1027,13 +1027,13 @@ msgid "Secret"
 msgstr "سرية"
 
 msgid "Event ID"
-msgstr "معرف المناسبة"
+msgstr "معرف الحدث"
 
 msgid "Event Settings"
-msgstr "إعدادات المناسبة"
+msgstr "إعدادات الحدث"
 
 msgid "Name Your Event"
-msgstr "اسم المناسبة"
+msgstr "اسم الحدث"
 
 msgid "Location"
 msgstr "الموقع"
@@ -2682,7 +2682,7 @@ msgid "List Groups"
 msgstr "قائمة المجالس"
 
 msgid "List Events"
-msgstr "قائمة المناسبات"
+msgstr "قائمة الأحداث"
 
 msgid "Forums Settings"
 msgstr "إعدادات المنتديات"
@@ -3228,7 +3228,7 @@ msgid "Select Event"
 msgstr "اختر الحدث"
 
 msgid "Select one of your events you want to advertise for"
-msgstr "حدد أحد المناسبات التي تريد الإعلان عنها"
+msgstr "حدد أحد الأحداث التي تريد الإعلان عنها"
 
 msgid "Ads Placement"
 msgstr "مواضع الإعلانات"
@@ -3512,7 +3512,7 @@ msgid "No Panels to show"
 msgstr "لا توجد مجالس لعرضها"
 
 msgid "No events to show"
-msgstr "لا توجد مناسبات لعرضها"
+msgstr "لا توجد أحداث لعرضها"
 
 msgid "No games to show"
 msgstr "لا توجد ألعاب لإظهارها"
@@ -3521,13 +3521,13 @@ msgid "Drag to reposition cover"
 msgstr "اسحب لتغيير موضع الغطاء"
 
 msgid "Public Event"
-msgstr "مناسبة عامة"
+msgstr "حدث عام"
 
 msgid "Closed Event"
-msgstr "مناسبة مغلقة"
+msgstr "حدث مغلق"
 
 msgid "Secret Event"
-msgstr "مناسبة خاصة"
+msgstr "حدث خاص"
 
 msgid "to"
 msgstr "إلى"
@@ -3569,7 +3569,7 @@ msgid "No people available"
 msgstr "لا يوجد أعضاء متاحون"
 
 msgid "Delete Event"
-msgstr "حذف المناسبة"
+msgstr "حذف الحدث"
 
 msgid "Once you delete your event you will no longer can access it again"
 msgstr "عند حذف الحدث الخاص بك ، لن يمكنك الوصول إليه مرة أخرى"
@@ -3581,10 +3581,10 @@ msgid "Discover"
 msgstr "اكتشف"
 
 msgid "My Events"
-msgstr "مناسباتي"
+msgstr "أحداثي"
 
 msgid "Create Event"
-msgstr "إنشاء مناسبة"
+msgstr "إنشاء حدث"
 
 msgid "The great place to discuss topics with other users"
 msgstr "مكان رائع للمناقشة مع المستخدمين الآخرين"
@@ -3826,7 +3826,7 @@ msgid "Your Panels"
 msgstr "مجالسك"
 
 msgid "Your events"
-msgstr "المناسبات الخاصة بك"
+msgstr "الأحداث الخاصة بك"
 
 msgid "Your posts"
 msgstr "مشاركاتك"
@@ -4691,7 +4691,7 @@ msgid "Create New panel"
 msgstr "مجلس جديد"
 
 msgid "Create New Event"
-msgstr "إضافة مناسبة جديدة"
+msgstr "إضافة حدث جديد"
 
 msgid "Send To"
 msgstr "أرسل إلى"
@@ -4936,13 +4936,13 @@ msgid "Only members can find the panel and see posts"
 msgstr "يمكن للأعضاء فقط العثور على المجالس ومشاهدة المشاركات"
 
 msgid "Anyone can see the event, its users and posts"
-msgstr "يمكن لأي شخص مشاهدة المناسبة والأعضاء والمشاركات"
+msgstr "يمكن لأي شخص مشاهدة الحدث والأعضاء والمشاركات"
 
 msgid "Only event users can see posts"
 msgstr "يمكن للأعضاء فقط مشاهدة المشاركات"
 
 msgid "Only invited users and event users can find the event"
-msgstr "يمكن فقط للأعضاء المدعوين العثور على المناسبة "
+msgstr "يمكن فقط للأعضاء المدعوين العثور على الحدث "
 
 msgid "Appears on the right panel of home page"
 msgstr "يظهر على اللوحة اليمنى للصفحة الرئيسية"
@@ -5214,7 +5214,7 @@ msgid "updated panel cover"
 msgstr "قام بتحديث صورة الغلاف  للمجلس"
 
 msgid "updated event cover"
-msgstr "حدث غلاف المناسبة"
+msgstr "حدث غلاف الحدث"
 
 msgid "is"
 msgstr "هو"
@@ -5405,7 +5405,7 @@ msgid "accepted your request to join"
 msgstr "قبل طلبك للانضمام"
 
 msgid "invite you to join an event"
-msgstr "يدعوك للانضمام إلى حدث مناسبة"
+msgstr "يدعوك للانضمام إلى حدث "
 
 msgid "replied to your thread"
 msgstr "رد على التسلسل الخاص بك"
@@ -5567,25 +5567,25 @@ msgid "You must select a valid privacy for your group"
 msgstr "يجب عليك تحديد خصوصية مجلسك"
 
 msgid "You must enter a name for your event"
-msgstr "يجب عليك إدخال اسم للمناسبة الخاصة بك"
+msgstr "يجب عليك إدخال اسم للحدث الخاص بك"
 
 msgid "Event name must be at least 3 characters long. Please try another"
-msgstr "يجب أن يكون اسم للحدث المناسبة 3 أحرف على الأقل. يرجى المحاولة مرة أخرى"
+msgstr "يجب أن يكون اسم الحدث  3 أحرف على الأقل. يرجى المحاولة مرة أخرى"
 
 msgid "You have to enter the event start date"
-msgstr "يجب عليك إدخال تاريخ بدء المناسبة"
+msgstr "يجب عليك إدخال تاريخ بدء الحدث"
 
 msgid "You have to enter the event end date"
-msgstr "يجب عليك إدخال تاريخ انتهاء المناسبة"
+msgstr "يجب عليك إدخال تاريخ انتهاء الحدث"
 
 msgid "Event end date must be after the start date"
-msgstr "يجب أن يكون تاريخ نهاية المناسبة بعد تاريخ البدء"
+msgstr "يجب أن يكون تاريخ نهاية الحدث بعد تاريخ البدء"
 
 msgid "You must select a valid privacy for your event"
-msgstr "يجب عليك تحديد خصوصية المناسبة"
+msgstr "يجب عليك تحديد خصوصية الحدث"
 
 msgid "You must select valid category for your event"
-msgstr "يجب عليك تحديد فئة المناسبة"
+msgstr "يجب عليك تحديد فئة الحدث"
 
 msgid "You can't add a thread to a main section"
 msgstr "لا يمكنك إضافة سلسلة رسائل إلى قسم رئيسي"
