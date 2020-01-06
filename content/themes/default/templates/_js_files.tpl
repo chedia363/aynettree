@@ -106,6 +106,8 @@
     __['Are you sure you want to delete this comment?'] = "{__('Are you sure you want to delete this comment?')}";
     __['Are you sure you want to delete this conversation?'] = "{__('Are you sure you want to delete this conversation?')}";
     __['Are you sure you want to report this?'] = "{__('Are you sure you want to report this?')}";
+    __['Are you sure you want to report this event?'] = "{__('Are you sure you want to report this event?')}"; 
+    __['Are you sure you want to report this Group?'] = "{__('Are you sure you want to report this Group?')}"; 
     __['Are you sure you want to block this user?'] = "{__('Are you sure you want to block this user?')}";
     __['Are you sure you want to unblock this user?'] = "{__('Are you sure you want to unblock this user?')}";
     __['Are you sure you want to delete your account?'] = "{__('Are you sure you want to delete your account?')}";
@@ -151,6 +153,15 @@
     __['Update Story'] = "{__('Update Story')}";    
     __['Are you sure you want to delete this story?'] = "{__('Are you sure you want to delete this story?')}"; 
     __['Delete Story'] = "{__('Delete Story')}"; 
+    __['Are you sure you want to report this Post?'] = "{__('Are you sure you want to report this Post?')}"; 
+    __['Are you sure you want to archive this story?'] = "{__('Are you sure you want to archive this story?')}"; 
+    __['Archive Story'] = "{__('Archive Story')}"; 
+    __['play'] = "{__('play')}"; 
+    __['mute'] = "{__('mute')}"; 
+    __['fullscreen'] = "{__('fullscreen')}"; 
+    __['Pause'] = "{__('Pause')}";
+    __['Unmute'] = "{__('Unmute')}";
+    __['Select Country'] = "{__('Select Country')}";
 </script>
 <!-- Initialize -->
 
@@ -163,6 +174,8 @@
     <script src="https://cdn.rtlcss.com/bootstrap/v4.2.1/js/bootstrap.min.js" integrity="sha384-a9xOd0rz8w0J8zqj1qJic7GPFfyMfoiuDjC9rqXlVOcGO/dmRqzMn34gZYDTel8k" crossorigin="anonymous" {if !$user->_logged_in}defer{/if}></script>
 {/if}
 <!-- Dependencies Libs [jQuery|Bootstrap] -->
+<link href="{$system['system_url']}/includes/assets/js/plugins/select2/select2.css" rel="stylesheet" />
+<script src="{$system['system_url']}/includes/assets/js/plugins/select2/select2.js"></script>
 
 <!-- Dependencies Plugins -->
 <script src="{$system['system_url']}/includes/assets/js/plugins/mustache/mustache.min.js" {if !$user->_logged_in}defer{/if}></script>
@@ -172,8 +185,8 @@
 <script src="{$system['system_url']}/includes/assets/js/plugins/autosize/autosize.min.js" {if !$user->_logged_in}defer{/if}></script>
 <script src="{$system['system_url']}/includes/assets/js/plugins/readmore/readmore.min.js" {if !$user->_logged_in}defer{/if}></script>
 <script src="{$system['system_url']}/includes/assets/js/plugins/moment/moment-with-locales.min.js" {if !$user->_logged_in}defer{/if}></script>
-<script src="https://cdn.fluidplayer.com/v2/current/fluidplayer.min.js" {if !$user->_logged_in}defer{/if}></script>
-<link rel="stylesheet" href="https://cdn.fluidplayer.com/v2/current/fluidplayer.min.css" type="text/css"/>
+<script src="{$system['system_url']}/includes/assets/js/plugins/fluid-player/fluidplayer.js" {if !$user->_logged_in}defer{/if}></script>
+<link rel="stylesheet" href="{$system['system_url']}/includes/assets/js/plugins/fluid-player/fluidplayer.css" type="text/css"/>
 
 {if $user->_logged_in}
     <!-- jQuery-UI -->
@@ -270,7 +283,7 @@
     <script src="{$system['system_url']}/includes/assets/js/sngine/user.js"></script>
     <script src="{$system['system_url']}/includes/assets/js/sngine/post.js"></script>
     <script src="{$system['system_url']}/includes/assets/js/sngine/chat.js"></script>
-    <script src="{$system['system_url']}/includes/assets/js/sngine/showads.js"></script>
+   
 {/if}
 <!-- Sngine [JS] -->
 
