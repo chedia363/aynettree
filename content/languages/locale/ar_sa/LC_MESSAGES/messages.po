@@ -27,7 +27,7 @@ msgid "Emails Settings"
 msgstr "إعدادات البريد الإلكتروني"
 
 msgid "SMS Settings"
-msgstr "إعدادات الرسائل القصيرة"
+msgstr "إعدادات المحادثات القصيرة"
 
 msgid "Chat Settings"
 msgstr "إعدادات المحادثة"
@@ -376,7 +376,7 @@ msgid "Boosted Pages"
 msgstr "الصفحات المدعومة"
 
 msgid "Messages"
-msgstr "الرسائل"
+msgstr "المحادثات"
 
 msgid "Notifications"
 msgstr "الإشعارات"
@@ -1237,7 +1237,7 @@ msgid "Subject"
 msgstr "الموضوع"
 
 msgid "Message"
-msgstr "رسالة"
+msgstr "محادثة"
 
 msgid "Is HTML"
 msgstr "هل هي HTML"
@@ -1537,7 +1537,7 @@ msgid "Website Email"
 msgstr "البريد الإلكتروني للموقع"
 
 msgid "The contact email that all messages send to"
-msgstr "البريد الإلكتروني للاتصال الذي ترسل اليه جميع الرسائل"
+msgstr "البريد الإلكتروني للاتصال الذي ترسل اليه جميع المحادثات"
 
 msgid "Datetime Format"
 msgstr "تنسيق التاريخ"
@@ -1851,10 +1851,10 @@ msgid "Activation Via"
 msgstr "تفعيل عبر"
 
 msgid "SMS"
-msgstr "الرسائل القصيرة"
+msgstr "المحادثات القصيرة"
 
 msgid "Select Email or SMS activation to send activation code to user's email/phone"
-msgstr "حدد البريد الإلكتروني أو تفعيل الرسائل القصيرة لإرسال رمز التفعيل إلى البريد الإلكتروني / الهاتف"
+msgstr "حدد البريد الإلكتروني أو تفعيل المحادثات القصيرة لإرسال رمز التفعيل إلى البريد الإلكتروني / الهاتف"
 
 msgid "Enable two-factor authentication to log in with a code from your email/phone as well as a password"
 msgstr "تمكين المصادقة الثنائية لتسجيل الدخول باستخدام رمز من بريدك الإلكتروني / هاتفك وكذلك كلمة مرور"
@@ -1866,7 +1866,7 @@ msgid "Google Authenticator"
 msgstr "مصدق جوجل"
 
 msgid "Select Email, SMS or Google Authenticator to send log in code to user"
-msgstr "حدد البريد الإلكتروني أو الرسائل القصيرة أو مصدق جوجل لإرسال رمز تسجيل الدخول إلى المستخدم"
+msgstr "حدد البريد الإلكتروني أو المحادثات القصيرة أو مصدق جوجل لإرسال رمز تسجيل الدخول إلى المستخدم"
 
 msgid "Verification Requests"
 msgstr "طلبات التحقق"
@@ -2451,7 +2451,7 @@ msgid "Chat Heartbeat"
 msgstr "دردشة نبض القلب"
 
 msgid "The update interval to check for new messages (in seconds)"
-msgstr "الفاصل الزمني للتحديث للتحقق من وجود رسائل جديدة (بالثواني)"
+msgstr "الفاصل الزمني للتحديث للتحقق من وجود محادثات جديدة (بالثواني)"
 
 msgid "Offline After"
 msgstr "العمل دون اتصال بعد"
@@ -3330,7 +3330,7 @@ msgid "Save"
 msgstr "حفظ"
 
 msgid "Loading Older Messages"
-msgstr "تحميل الرسائل القديمة"
+msgstr "تحميل المحادثات القديمة"
 
 msgid "Delete"
 msgstr "حذف"
@@ -3850,16 +3850,16 @@ msgid "No products to show"
 msgstr "لا توجد منتجات لعرضها"
 
 msgid "my messages"
-msgstr "مبعوث  رسائلي"              
+msgstr "مبعوث  محادثاتي"              
 
 msgid "Load Older Threads"
 msgstr "تحميل الموضوعات القديمة"
 
 msgid "New Message"
-msgstr "رسالة جديدة"
+msgstr "محادثة جديدة"
 
 msgid "No Conversation Selected"
-msgstr "لم يتم اختيار رسالة"
+msgstr "لم يتم اختيار محادثة"
 
 msgid "minutes"
 msgstr "الدقائق"
@@ -4208,10 +4208,10 @@ msgid "System Notifications"
 msgstr "إشعارات النظام"
 
 msgid "Sound notification of message"
-msgstr "اشعار صوتي بالرسالة"
+msgstr "اشعار صوتي بالمحادثة"
 
 msgid "A sound will be played each time you receive a new message on an inactive chat window"
-msgstr "سيتم تشغيل تنبية صوتي في كل مرة تتلقى رسالة جديدة على نافذة دردشة غير نشطة"
+msgstr "سيتم تشغيل تنبية صوتي في كل مرة تتلقى محادثة جديدة على نافذة دردشة غير نشطة"
 
 msgid "Notifications Sound"
 msgstr "صوت التنبيه"
@@ -4454,10 +4454,10 @@ msgid "Promoted Posts"
 msgstr "ترويج المشاركات"
 
 msgid "Send a New Message"
-msgstr "أرسل رسالة جديدة"
+msgstr "أرسل محادثة جديدة"
 
 msgid "No messages"
-msgstr "لا توجد رسائل"
+msgstr "لا توجد محادثات"
 
 msgid "Alert Sound"
 msgstr "صوت التنبيه"
@@ -4628,10 +4628,10 @@ msgid "Privacy Settings"
 msgstr "إعدادات الخصوصية"
 
 msgid "Turn Off Chat"
-msgstr "قفل الدردشة"
+msgstr "قفل المحادثة"
 
 msgid "Turn On Chat"
-msgstr "قم بتفعيل الدردشة"
+msgstr "قم بتفعيل المحادثة"
 
 msgid "Calling"
 msgstr "مكالمة" 
@@ -4906,7 +4906,7 @@ msgid "Shared with: Only Me"
 msgstr "المشاركة معي فقط"
 
 msgid "Write a message"
-msgstr "اكتب رسالة"
+msgstr "اكتب محادثة"
 
 msgid "Add an option"
 msgstr "إضافة خيار"
@@ -5432,7 +5432,7 @@ msgid "You are not authorized to do this"
 msgstr "غير مصرح لك أن تفعل هذا"
 
 msgid "You aren't allowed to message"
-msgstr "غير مسموح لك بالرسالة"
+msgstr "غير مسموح لك بالمحادثة"
 
 msgid "This feature has been disabled by the admin"
 msgstr "تم تعطيل هذه الميزة بواسطة مسؤول النظام"
@@ -5450,7 +5450,7 @@ msgid "Characters"
 msgstr "حروف"
 
 msgid "Your message characters length is over the allowed limit ("
-msgstr "حروف الرسالة أكثر من المسموح به"
+msgstr "حروف المحادثة أكثر من المسموح به"
 
 msgid "You have reached the maximum limit of comments/hour, please try again later"
 msgstr "لقد بلغت الحد الأقصى للتعليقات للاستفسارات / ساعة ، يرجى إعادة المحاولة لاحقًا"
@@ -6245,7 +6245,7 @@ msgid "You must enter the email subject"
 msgstr "يجب عليك إدخال موضوع البريد الإلكتروني"
 
 msgid "You must enter the message subject"
-msgstr "يجب عليك إدخال موضوع الرسالة"
+msgstr "يجب عليك إدخال موضوع المحادثة"
 
 msgid "Email could not be sent"
 msgstr "تعذر إرسال البريد الإلكتروني"
@@ -7972,7 +7972,7 @@ msgstr "لا توجد ترانيم"
 
 
 msgid "Messenger"
-msgstr "رسائل"
+msgstr "المحادثات"
 
 msgid "dislike"
 msgstr "إلغاء التمييز"
@@ -8043,3 +8043,17 @@ msgstr "هل أنت متأكد أنك تريد الإبلاغ عن هذا الح
 
 msgid "Are you sure you want to report this Group?"
 msgstr "هل أنت متأكد أنك تريد الإبلاغ عن هذا المجلس؟"
+
+msgid "A sub-group can be created within one of the five main groups by choosing the (Create sub-group) button"
+msgstr ".(إنشاء مجلس) يمكن إنشاء مجلس فرعي داخل أحد المجالس الرئيسة الخمسة باختيار زر"
+
+
+msgid "From here you can manage all your archived and newest stories"
+msgstr "من هنا تستطيع إدارة جميع ترانيمك المنشورة والمؤرشفة"
+
+
+msgid "choose from here your sub-group name within the subjects of main group"
+msgstr "اختر من هنا اسم مجلسك الفرعي ضمن موضوعات المجلس الرئيسي"
+
+
+
