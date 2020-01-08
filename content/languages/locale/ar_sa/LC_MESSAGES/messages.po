@@ -2752,7 +2752,7 @@ msgstr "اسم المستخدم"
 
 
 msgid "Username "
-msgstr "اسم المستخدم (بالإنجليزية) +  لايقل عن 4 أحرف"
+msgstr "اسم المستخدم 4 أحرف إنجليزية فأكثر"
 
 msgid "Joined"
 msgstr "مهتم"
@@ -8080,3 +8080,5 @@ msgstr "شبكة التواصل القرآنية"
 msgid "Welcomes you"
 msgstr "ترحب بكم"
 
+msgid "All Network People"
+msgstr "كل أعضاء الشبكة"
