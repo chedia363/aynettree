@@ -118,7 +118,7 @@ class User {
         }
         return $categs;
     }
-
+ 
 
     /* ------------------------------- */
     /* System Currencies */
@@ -600,7 +600,114 @@ class User {
         return $results;
     }
 
+    public function get_Moderators($offset = 0, $random = false) {
+        global $db, $system;
+        $results = [];
+        $offset *= $system['min_results'];
+        $unit = 6371;
+        $distance = 10000;
+        // prepare where statement
+        $where = "";
+        /* merge (friends, followings, friend requests & friend requests sent) and get the unique ids  */
+        $old_people_ids = array_unique(array_merge($this->_data['friends_ids'], $this->_data['followings_ids'], $this->_data['friend_requests_ids'], $this->_data['friend_requests_sent_ids']));
+        /* add the viewer to this list */
+        $old_people_ids[] = $this->_data['user_id'];
+        /* make a list from old people */
+        $old_people_ids_list = implode(',',$old_people_ids);
+        $where .= sprintf("WHERE user_group = '2' AND user_id NOT IN (%s)", $old_people_ids_list);
+        if($system['activation_enabled']) {
+            $where .= " AND user_activated = '1'";
+        }
+        /* get users */
+        $get_users = $db->query(sprintf("SELECT user_id, user_name, user_firstname, user_lastname, user_gender, user_picture, user_subscribed, user_verified, user_group FROM users ".$where." ")) or _error("SQL_ERROR_THROWEN");
 
+        if($get_users->num_rows > 0) {
+            while($user = $get_users->fetch_assoc()) {
+                /* check if there is any blocking between the viewer & the target user */
+                if($this->blocked($user['user_id']) ) {
+                    continue;
+                }
+                $user['user_picture'] = get_picture($user['user_picture'], $user['user_gender']);
+                $user['mutual_friends_count'] = $this->get_mutual_friends_count($user['user_id']);
+                $results[] = $user;
+            }
+        }
+        return $results;
+    }
+
+
+    
+    public function get_Participnts() {
+        global $db, $system;
+        $results = [];
+        $offset *= $system['min_results'];
+        $unit = 6371;
+        $distance = 10000;
+        // prepare where statement
+        $where = "";
+        /* merge (friends, followings, friend requests & friend requests sent) and get the unique ids  */
+        $old_people_ids = array_unique(array_merge($this->_data['friends_ids'], $this->_data['followings_ids'], $this->_data['friend_requests_ids'], $this->_data['friend_requests_sent_ids']));
+        /* add the viewer to this list */
+        $old_people_ids[] = $this->_data['user_id'];
+        /* make a list from old people */
+        $old_people_ids_list = implode(',',$old_people_ids);
+        $where .= sprintf("WHERE user_group = '3' AND user_id NOT IN (%s)", $old_people_ids_list);
+        if($system['activation_enabled']) {
+            $where .= " AND user_activated = '1'";
+        }
+        /* get users */
+        $get_users = $db->query(sprintf("SELECT user_id, user_name, user_firstname, user_lastname, user_gender, user_picture, user_subscribed, user_verified, user_group FROM users ".$where." ")) or _error("SQL_ERROR_THROWEN");
+
+        if($get_users->num_rows > 0) {
+            while($user = $get_users->fetch_assoc()) {
+                /* check if there is any blocking between the viewer & the target user */
+                if($this->blocked($user['user_id']) ) {
+                    continue;
+                }
+                $user['user_picture'] = get_picture($user['user_picture'], $user['user_gender']);
+                $user['mutual_friends_count'] = $this->get_mutual_friends_count($user['user_id']);
+                $results[] = $user;
+            }
+        }
+        return $results;
+    }
+
+   
+    public function get_Netwkpeoples($offset = 0, $random = false) {
+        global $db, $system;
+        $results = [];
+        $offset *= $system['min_results'];
+        $unit = 6371;
+        $distance = 10000;
+        // prepare where statement
+        $where = "";
+
+        /* add the viewer to this list */
+        $old_people_ids[] = $this->_data['user_id'];
+        /* make a list from old people */
+        $old_people_ids_list = implode(',',$old_people_ids);
+        $where .= sprintf("WHERE user_group != '1' AND user_id NOT IN (%s)", $old_people_ids_list);
+        if($system['activation_enabled']) {
+            $where .= " AND user_activated = '1'";
+        }
+        /* get users */
+        $get_users = $db->query(sprintf("SELECT user_id, user_name, user_firstname, user_lastname, user_gender, user_picture, user_subscribed, user_verified, user_group FROM users ".$where." ")) or _error("SQL_ERROR_THROWEN");
+
+        if($get_users->num_rows > 0) {
+            while($user = $get_users->fetch_assoc()) {
+                /* check if there is any blocking between the viewer & the target user */
+                if($this->blocked($user['user_id']) ) {
+                    continue;
+                }
+                $user['user_picture'] = get_picture($user['user_picture'], $user['user_gender']);
+                $user['mutual_friends_count'] = $this->get_mutual_friends_count($user['user_id']);
+                $results[] = $user;
+            }
+        }
+        return $results;
+    }
+
+    
     /**
      * get_pro_members
      * 

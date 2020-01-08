@@ -116,6 +116,9 @@ RewriteRule ^people/?$ people.php [L,QSA]
 RewriteRule ^people/find/?$ people.php?view=find [L,QSA]
 RewriteRule ^people/friend_requests/?$ people.php?view=friend_requests [L,QSA]
 RewriteRule ^people/sent_requests/?$ people.php?view=sent_requests [L,QSA]
+RewriteRule ^people/Moderators/?$ people.php?view=Moderators [L,QSA]
+RewriteRule ^people/Participnts/?$ people.php?view=Participnts [L,QSA]
+RewriteRule ^people/Netwkpeoples/?$ people.php?view=Netwkpeoples [L,QSA]
 
 # Pages
 RewriteRule ^pages/?$ pages.php [L,QSA]

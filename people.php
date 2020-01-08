@@ -46,9 +46,41 @@ try {
 			page_header(__("Friend Requests Sent"));
 			break;
 
-		default:
-			_error(404);
+
+
+		case 'Moderators':
+			// page header
+			page_header(__("Moderators"));
+
+		
+			$Moderators = $user->get_Moderators();
+			$smarty->assign('Moderators', $Moderators);
+			break;	
+			
+			
+		case 'Participnts':
+			// page header
+			page_header(__("Participnts"));
+
+
+			$Participnts = $user->get_Participnts();
+			$smarty->assign('Participnts', $Participnts);
+			break;	
+			
+
+		case 'Netwkpeoples':
+			// page header
+			page_header(__("Network People"));
+
+			$Netwkpeoples = $user->get_Netwkpeoples();
+			$smarty->assign('Netwkpeoples', $Netwkpeoples);
 			break;
+
+
+
+		default:
+		_error(404);
+		break;
 	}
 	/* assign variables */
 	$smarty->assign('view', $_GET['view']);

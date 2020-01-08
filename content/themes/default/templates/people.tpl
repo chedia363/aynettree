@@ -20,8 +20,19 @@
                     <li {if $view == "" || $view == "find"}class="active"{/if}>
                         <a href="{$system['system_url']}/people">{__("Discover")}</a>
                     </li>
-                   
+
                     
+                    <li {if $view == "Moderators"}class="active"{/if}>
+                        <a href="{$system['system_url']}/people/Moderators">{__("Moderators")}</a>
+                    </li>                  
+                    <li {if $view == "Participnts"}class="active"{/if}>
+                        <a href="{$system['system_url']}/people/Participnts">{__("Participants")}</a>
+                    </li>       
+                    <li {if $view == "Netwkpeoples"}class="active"{/if}>
+                        <a href="{$system['system_url']}/people/Netwkpeoples">{__("Network peoples")}</a>
+                    </li>       
+                    
+                                      
                 </ul>
             </div>
             <!-- tabs -->
@@ -33,11 +44,11 @@
                     <!-- search panel -->
                     <div class="card">
                         <div class="card-header">
-                            <i class="fa fa-search mr5"></i>{__("Search")}
+                            <img class="iconspost" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/search.svg"> {__("Search")}
                         </div>
                         <div class="card-body">
                             <form action="{$system['system_url']}/people/find" method="post">
-                                <div class="form-group">
+                                <div class="form-group d-none">
                                     <label>{__("Distance")}</label>
                                     <div>
                                         <input type="range" class="custom-range" min="1" max="5000" value="5000" name="distance_slider" oninput="this.form.distance_value.value=this.value">
@@ -59,22 +70,10 @@
                                         <option value="any">{__("Any")}</option>
                                         <option value="male">{__("Male")}</option>
                                         <option value="female">{__("Female")}</option>
-                                        <option value="other">{__("Other")}</option>
+                                      
                                     </select>
                                 </div>
-                                <div class="form-group">
-                                    <label>{__("Relationship")}</label>
-                                    <select class="form-control" name="relationship">
-                                        <option value="any">{__("Any")}</option>
-                                        <option value="single">{__("Single")}</option>
-                                        <option value="relationship">{__("In a relationship")}</option>
-                                        <option value="married">{__("Married")}</option>
-                                        <option value="complicated">{__("It's complicated")}</option>
-                                        <option value="separated">{__("Separated")}</option>
-                                        <option value="divorced">{__("Divorced")}</option>
-                                        <option value="widowed">{__("Widowed")}</option>
-                                    </select>
-                                </div>
+                        
                                 <div class="form-group">
                                     <label>{__("Online Status")}</label>
                                     <select class="form-control" name="status">
@@ -83,7 +82,7 @@
                                         <option value="offline">{__("Offline")}</option>
                                     </select>
                                 </div>
-                                <button type="submit" class="btn btn-block btn-primary" name="submit"><i class="fa fa-search mr5"></i>{__("Search")}</button>
+                                <button type="submit" class="btn btn-block btn-primary" name="submit"> <img class="iconspetit" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/searchbl.svg"> {__("Search")}</button>
                             </form>
                         </div>
                     </div>
@@ -143,7 +142,96 @@
                                     </p>
                                 {/if}
                             </div>
-                        
+                        {elseif $view == "Moderators"}
+                            <div class="card-header bg-transparent">
+                                <strong>{__("Moderators You May Know")}</strong>
+                            </div>
+                            <div class="card-body">
+                                {if $Moderators}
+                                    <ul>
+                                        {foreach $Moderators as $_user}
+                                        {include file='__feeds_user.tpl' _tpl="list" _connection="add"}
+                                        {/foreach}
+                                    </ul>
+
+                                    <!-- see-more -->
+                                    {if count($Moderators) >= $system['min_results']}
+                                        <div class="alert alert-info see-more js_see-more" data-get="new_people">
+                                            <span>{__("See More")}</span>
+                                            <div class="loader loader_small x-hidden"></div>
+                                        </div>
+                                    {/if}
+                                    <!-- see-more -->
+                                {else}
+                                    <p class="text-center text-muted">
+                                        {__("No people available")}
+                                    </p>
+                                {/if}
+                            </div>    
+
+                            
+                        {elseif $view == "Participnts"}
+
+
+                            <div class="card-header bg-transparent">
+                                <strong>{__("Participants You May Know")}</strong>
+                            </div>
+                            <div class="card-body">
+                                {if $Participnts}
+                                    <ul>
+                                        {foreach $Participnts as $_user}
+                                        {include file='__feeds_user.tpl' _tpl="list" _connection="add"}
+                                        {/foreach}
+                                    </ul>
+
+                                    <!-- see-more -->
+                                    {if count($Participnts) >= $system['min_results']}
+                                        <div class="alert alert-info see-more js_see-more" data-get="new_people">
+                                            <span>{__("See More")}</span>
+                                            <div class="loader loader_small x-hidden"></div>
+                                        </div>
+                                    {/if}
+                                    <!-- see-more -->
+                                {else}
+                                    <p class="text-center text-muted">
+                                        {__("No people available")}
+                                    </p>
+                                {/if}
+                            </div>    
+
+
+                        {elseif $view == "Netwkpeoples"}
+
+
+                            <div class="card-header bg-transparent">
+                                <strong>{__("All Network People")}</strong>
+                            </div>
+                            <div class="card-body">
+                                {if $Netwkpeoples}
+                                    <ul>
+                                        {foreach $Netwkpeoples as $_user}
+                                        {include file='__feeds_user.tpl' _tpl="list" _connection="add"}
+                                        {/foreach}
+                                    </ul>
+
+                                    <!-- see-more -->
+                                    {if count($Netwkpeoples) >= $system['min_results']}
+                                        <div class="alert alert-info see-more js_see-more" data-get="new_people">
+                                            <span>{__("See More")}</span>
+                                            <div class="loader loader_small x-hidden"></div>
+                                        </div>
+                                    {/if}
+                                    <!-- see-more -->
+                                {else}
+                                    <p class="text-center text-muted">
+                                        {__("No people available")}
+                                    </p>
+                                {/if}
+                            </div>  
+
+
+
+                       
                         {elseif $view == "friend_requests"}
                             <div class="card-header bg-transparent">
                                 <strong>{__("Respond to Your Friend Request")}</strong>
