@@ -4015,6 +4015,13 @@ msgstr "غير متصل"
 msgid "People You May Know"
 msgstr "أعضاء قد تعرفهم"
 
+msgid "Moderators You May Know"
+msgstr "متخصصون قد تعرفهم"
+
+msgid "Participants You May Know"
+msgstr "مشاركون قد تعرفهم"
+
+
 msgid "No people available for your search"
 msgstr "لا يوجد أشخاص متاحون لبحثك"
 
@@ -5260,7 +5267,7 @@ msgid "Shares"
 msgstr "نشر"
 
 msgid "Add"
-msgstr "إضافة"
+msgstr "دعوة"
 
 msgid "Unblock"
 msgstr "رفع الحظر"
@@ -5396,7 +5403,7 @@ msgid "asked to join your Panel"
 msgstr "طلب الانضمام إلى مجلسك"
 
 msgid "added you to"
-msgstr "أضافك إلى"
+msgstr "دعاك إلى"
 
 msgid "Panel"
 msgstr "مجلس"
@@ -8045,7 +8052,7 @@ msgid "Are you sure you want to report this Group?"
 msgstr "هل أنت متأكد أنك تريد الإبلاغ عن هذا المجلس؟"
 
 msgid "A sub-group can be created within one of the five main groups by choosing the (Create sub-group) button"
-msgstr ".(إنشاء مجلس) يمكن إنشاء مجلس فرعي داخل أحد المجالس الرئيسة الخمسة باختيار زر"
+msgstr ". يمكن إنشاء مجلس فرعي داخل أحد المجالس الرئيسة الخمسة باختيار زر (إنشاء مجلس) "
 
 
 msgid "From here you can manage all your archived and newest stories"
@@ -8056,4 +8063,20 @@ msgid "choose from here your sub-group name within the subjects of main group"
 msgstr "اختر من هنا اسم مجلسك الفرعي ضمن موضوعات المجلس الرئيسي"
 
 
+msgid "Network peoples"
+msgstr "أعضاء الشبكة"
+
+
+msgid "you can create a subGroup within the Gate Panels"
+msgstr "يمكنك إنشاء مجلس من بوابة المجالس"
+
+
+msgid "Panel Owner"
+msgstr "صاحب المجلس"
+
+msgid "Quranic communication network"
+msgstr "شبكة التواصل القرآنية"
+
+msgid "Welcomes you"
+msgstr "ترحب بكم"
 
