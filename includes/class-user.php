@@ -107,7 +107,17 @@ class User {
         }
         return $countries;
     }
-
+    public function get_groupCateg() {
+        global $db, $system;
+        $categs = [];
+        $get_categs = $db->query("SELECT * FROM groups_categories order by category_id ASC") or _error("SQL_ERROR_THROWEN");
+        if($get_categs->num_rows > 0) {
+            while($categry = $get_categs->fetch_assoc()) {
+                $categs[] = $categry;
+            }
+        }
+        return $categs;
+    }
 
 
     /* ------------------------------- */

@@ -330,6 +330,9 @@ try {
 					}
 				} else {
 					$case = "request";
+					// get blocks
+					$case2 = $user->get_groupCateg();
+					$smarty->assign('case2', $case2);
 				}
 			}
 			/* assign variables */

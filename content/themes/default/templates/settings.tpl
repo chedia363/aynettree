@@ -68,11 +68,11 @@
                                             {__("Password")}
                                         </a>
                                     </li>
-                                    <li {if $view == "security" && $sub_view == "sessions"}class="active"{/if}>
+                                   <!-- <li {if $view == "security" && $sub_view == "sessions"}class="active"{/if}>
                                         <a href="{$system['system_url']}/settings/security/sessions">
                                             {__("Manage Sessions")}
                                         </a>
-                                    </li>
+                                    </li>-->
                                     {if $system['two_factor_enabled']}
                                         <li {if $view == "security" && $sub_view == "two-factor"}class="active"{/if}>
                                             <a href="{$system['system_url']}/settings/security/two-factor">
@@ -579,7 +579,7 @@
 
                                 <div class="row">
                                     <div class="form-group col-md-6">
-                                        <label class="form-control-label">{__("Google+ Profile URL")}</label>
+                                        <label class="form-control-label">{__("Snapchat")}</label>
                                         <div class="input-group">
                                             <div class="input-group-prepend">
                                                 <span class="input-group-text bg-transparent">  <img class="iconspublic" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/snapchat.svg"></span>
@@ -623,7 +623,7 @@
 
                                 <div class="row">
                                     <div class="form-group col-md-6">
-                                        <label class="form-control-label">{__("Vkontakte Profile URL")}</label>
+                                        <label class="form-control-label">{__("WhatsApp")}</label>
                                         <div class="input-group">
                                             <div class="input-group-prepend">
                                                 <span class="input-group-text bg-transparent"><img class="iconspost" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/urlnew.svg"></span>
@@ -1123,7 +1123,7 @@
                          
 
                             <div class="form-group col-md-6">
-                                <button type="submit" class="btn btn-md btn-block btn-primary" style="transform: translate(-186px, 6px);">{__("Save Changes")}</button>
+                                <button type="submit" class="btn btn-md btn-block btn-primary" >{__("Save Changes")}</button>
                             </div>
                         </div>
                                
@@ -1517,25 +1517,25 @@
                             </div>
                             <div class="text-center text-readable mb20">
                                 {__("Share")}<br>
-                                <a href="http://www.facebook.com/sharer.php?u={$system['system_url']}/?ref={$user->_data['user_name']}" class="btn btn-sm btn-rounded btn-social-icon btn-facebook" target="_blank">
+                                <a href="http://www.facebook.com/sharer.php?u={$system['system_url']}/?ref={$user->_data['user_name']}" class="btn btn-sm btn-rounded btn-social-icon" target="_blank">
                                   <img class="iconspublic" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/facebook.svg">
                                 </a>
-                                <a href="https://twitter.com/intent/tweet?url={$system['system_url']}/?ref={$user->_data['user_name']}" class="btn btn-sm btn-rounded btn-social-icon btn-rounded btn-twitter" target="_blank">
+                                <a href="https://twitter.com/intent/tweet?url={$system['system_url']}/?ref={$user->_data['user_name']}" class="btn btn-sm btn-rounded btn-social-icon btn-rounded" target="_blank">
                                      <img class="iconspublic" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/twitter.svg">
                                 </a>
-                                <a href="https://vk.com/share.php?url={$system['system_url']}/?ref={$user->_data['user_name']}" class="btn btn-sm btn-rounded btn-social-icon btn-vk" target="_blank">
+                                <a href="https://vk.com/share.php?url={$system['system_url']}/?ref={$user->_data['user_name']}" class="btn btn-sm btn-rounded btn-social-icon" target="_blank">
                                    <img class="iconspublic" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/urlnew.svg">
                                 </a>
-                                <a href="https://www.linkedin.com/shareArticle?mini=true&url={$system['system_url']}/?ref={$user->_data['user_name']}" class="btn btn-sm btn-rounded btn-social-icon btn-linkedin" target="_blank">
+                                <a href="https://www.linkedin.com/shareArticle?mini=true&url={$system['system_url']}/?ref={$user->_data['user_name']}" class="btn btn-sm btn-rounded btn-social-icon" target="_blank">
               <img class="iconspublic" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/linkedin.svg">
                                 </a>
-                                <a href="https://api.whatsapp.com/send?text={$system['system_url']}/?ref={$user->_data['user_name']}" class="btn btn-sm btn-rounded btn-social-icon btn-whatsapp" target="_blank">
+                                <a href="https://api.whatsapp.com/send?text={$system['system_url']}/?ref={$user->_data['user_name']}" class="btn btn-sm btn-rounded btn-social-icon" target="_blank">
                                   <img class="iconspublic" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/whatsap.svg">
                                 </a>
-                                <a href="https://reddit.com/submit?url={$system['system_url']}/?ref={$user->_data['user_name']}" class="btn btn-sm btn-rounded btn-social-icon btn-reddit" target="_blank">
+                                <a href="https://reddit.com/submit?url={$system['system_url']}/?ref={$user->_data['user_name']}" class="btn btn-sm btn-rounded btn-social-icon" target="_blank">
                                     <i class="fab fa-reddit"></i>
                                 </a>
-                                <a href="https://pinterest.com/pin/create/button/?url={$system['system_url']}/?ref={$user->_data['user_name']}" class="btn btn-sm btn-rounded btn-social-icon btn-pinterest" target="_blank">
+                                <a href="https://pinterest.com/pin/create/button/?url={$system['system_url']}/?ref={$user->_data['user_name']}" class="btn btn-sm btn-rounded btn-social-icon" target="_blank">
                                     <i class="fab fa-pinterest"></i>
                                 </a>
                             </div>
@@ -1937,9 +1937,9 @@
                                         <div class="row">
                                             <div class="col-sm-6">
                                                 <div class="section-title mb20">
-                                                    <i class="fas fa-camera-retro mr10"></i>{__("Your Photo")}
+                                                   {__("Your Photo")}
                                                 </div>
-                                                <div class="x-image full">
+                                                <div class="x-image full" style="margin-bottom: 20px;">
                                                     <button type="button" class="close x-hidden js_x-image-remover" title='{__("Remove")}'>
                                                         <span>×</span>
                                                     </button>
@@ -1948,27 +1948,38 @@
                                                             <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                                                         </div>
                                                     </div>
-                                                    <i class="fa fa-camera fa-2x js_x-uploader" data-handle="x-image"></i>
+                                                    <i class="js_x-uploader" data-handle="x-image"><img style=" width: 27px;" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/publisher/imageal.svg"></i>
                                                     <input type="hidden" class="js_x-image-input" name="photo" value="">
                                                 </div>
                                                 
                                             </div>
                                             <div class="col-sm-6">
                                                 <div class="section-title mb20">
-                                                    <i class="fas fa-passport mr10"></i>{__("Passport or National ID")}
+                                                    {__("Passport or National ID")}
                                                 </div>
-                                                <div class="x-image full">
-                                                    <button type="button" class="close x-hidden js_x-image-remover" title='{__("Remove")}'>
-                                                        <span>×</span>
-                                                    </button>
-                                                    <div class="x-image-loader">
-                                                        <div class="progress x-progress">
-                                                            <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                                                        </div>
+
+
+                                                    <div class="  x-form publisher " style="background-color: #eee;width: 100%; margin-top: -8px;height: 90px;overflow: hidden;display: block;border-radius: 2px;border: aliceblue;"> 
+                                                        <div class="publisher-meta" data-meta="file">
+                                                            <i class="fa fa-file-alt fa-fw"></i>
+                                                            {__("File uploaded successfully")}
+                                                            <div class="float-right">
+                                                                <button type="button" class="close js_publisher-attachment-file-remover" data-type="file">
+                                                                    <span>&times;</span>
+                                                                </button>
+                                                                 </div>
+                                                             </div>
+                                                <input type="hidden" class="js_x-image-input" name="cvfile" value="">
+                                           
+                                                    <div class="publisher-tools-tab attach js_publisher-tab" data-tab="file">
+                                                        <img style="float: left;
+                                                        margin-top: 50px;
+                                                        margin-left: 0px !important" src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/publisher/fichier.svg" class="js_x-uploader" data-handle="publisher" data-type="file"><!-- {__("Upload File")} -->
                                                     </div>
-                                                    <i class="fa fa-camera fa-2x js_x-uploader" data-handle="x-image"></i>
-                                                    <input type="hidden" class="js_x-image-input" name="passport" value="">
-                                                </div>
+                                                
+                                            
+                               
+                                                 </div>
                                             </div>
                                         </div>
                                         <span class="form-text">
@@ -1988,7 +1999,25 @@
                                         </span> -->
                                     </div>
                                 </div>
-
+                                <div class="form-group form-row">
+                                    <label class="col-md-3 form-control-label">
+                                        {__("Choose one or more majors")}
+                                    </label>
+                                    <div class="col-md-9">
+                                        <!--{var_dump($case2)}-->
+                                        <select name="chosengrp[]" class="form-control" multiple="multiple">
+                                         
+                                         {foreach $case2 as $cas}
+                                             <!-- <option value="" disabled selected>{__("Choose one or more majors")}</option> -->
+                                                      
+                                             <option value="{$cas['category_id']}">{$cas['category_nameAr']}</option>  
+                                         {/foreach}                                     
+                                        </select>
+                                    </div>
+                                    <span class="form-text" style="transform: translate(-129px, 10px);">
+                                      {__("Hold down the Ctrl (windows) / Command (Mac) button to select multiple options.")}
+                                    </span>
+                                </div>
                                 <!-- success -->
                                 <div class="alert alert-success mb0 x-hidden"></div>
                                 <!-- success -->
@@ -2199,3 +2228,6 @@
 <!-- page content -->
 
 {include file='_footer.tpl'}
+
+
+
