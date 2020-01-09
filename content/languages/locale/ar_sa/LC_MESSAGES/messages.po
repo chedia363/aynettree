@@ -2755,7 +2755,7 @@ msgid "Username "
 msgstr "اسم المستخدم 4 أحرف إنجليزية فأكثر"
 
 msgid "Joined"
-msgstr "مهتم"
+msgstr "مهتم" 
 
 msgid "Activated"
 msgstr "تم التنشيط"
@@ -8082,3 +8082,6 @@ msgstr "ترحب بكم"
 
 msgid "All Network People"
 msgstr "كل أعضاء الشبكة"
+
+msgid "Archiving"
+msgstr "أرشفة"
